@@ -1,0 +1,6 @@
+name: BLOOM
+pattern: ^(BLOOM)$
+description: Regex for BLOOM
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: SADPANDA (Title)
+pattern: ^(SADPANDA)$
+description: Regex for SADPANDA (Title)
+tags:
+- Trash Guides
+tests: []

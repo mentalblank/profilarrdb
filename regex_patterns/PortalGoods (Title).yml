@@ -1,0 +1,6 @@
+name: PortalGoods (Title)
+pattern: ^(PortalGoods)$
+description: Regex for PortalGoods (Title)
+tags:
+- Trash Guides
+tests: []

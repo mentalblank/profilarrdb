@@ -1,0 +1,6 @@
+name: SDCC
+pattern: ^(SDCC)$
+description: Regex for SDCC
+tags:
+- Trash Guides
+tests: []

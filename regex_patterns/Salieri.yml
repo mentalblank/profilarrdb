@@ -1,0 +1,6 @@
+name: Salieri
+pattern: \b(Salieri)\b
+description: Regex for Salieri
+tags:
+- Trash Guides
+tests: []

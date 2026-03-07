@@ -1,0 +1,6 @@
+name: STUTTERSHIT
+pattern: ^(STUTTERSHIT)$
+description: Regex for STUTTERSHIT
+tags:
+- Trash Guides
+tests: []

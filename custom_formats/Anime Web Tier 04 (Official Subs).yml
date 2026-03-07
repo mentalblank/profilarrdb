@@ -1,0 +1,43 @@
+trash_id: 9edaeee9ea3bcd585da9b7c0ac3fc54f
+name: Anime Web Tier 04 (Official Subs)
+includeCustomFormatWhenRenaming: false
+description: 'Anime Web Tier 04
+
+
+  Official sub groups.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Erai-Raws
+  negate: false
+  required: false
+  type: release_title
+  pattern: Erai-Raws
+- name: ToonsHub
+  negate: false
+  required: false
+  type: release_title
+  pattern: ToonsHub
+- name: VARYG
+  negate: false
+  required: false
+  type: release_title
+  pattern: VARYG
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

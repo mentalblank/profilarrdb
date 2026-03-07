@@ -1,0 +1,6 @@
+name: KC
+pattern: ^(KC)$
+description: Regex for KC
+tags:
+- Trash Guides
+tests: []

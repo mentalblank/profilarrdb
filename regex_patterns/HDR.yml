@@ -1,0 +1,6 @@
+name: HDR
+pattern: \b(HDR)\b
+description: Regex for HDR
+tags:
+- Trash Guides
+tests: []

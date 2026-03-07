@@ -1,0 +1,6 @@
+name: SHFS
+pattern: \b(SHFS)\b
+description: Regex for SHFS
+tags:
+- Trash Guides
+tests: []

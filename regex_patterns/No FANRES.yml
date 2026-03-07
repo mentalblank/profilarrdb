@@ -1,0 +1,6 @@
+name: No FANRES
+pattern: \b(FANRES)\b
+description: Regex for No FANRES
+tags:
+- Trash Guides
+tests: []

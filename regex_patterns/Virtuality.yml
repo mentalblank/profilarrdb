@@ -1,0 +1,6 @@
+name: Virtuality
+pattern: \b(Virtuality)\b
+description: Regex for Virtuality
+tags:
+- Trash Guides
+tests: []

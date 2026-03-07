@@ -1,0 +1,6 @@
+name: VARYG
+pattern: \b(VARYG)\b
+description: Regex for VARYG
+tags:
+- Trash Guides
+tests: []

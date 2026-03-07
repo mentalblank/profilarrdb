@@ -1,0 +1,6 @@
+name: Not DTS X
+pattern: '\b(dts[-_.: ]?x7?)\b(?![-_. ]?(26[456]))'
+description: Regex for Not DTS X
+tags:
+- Trash Guides
+tests: []

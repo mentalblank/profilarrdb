@@ -1,0 +1,6 @@
+name: HorribleSubs
+pattern: \b(HorribleSubs)\b
+description: Regex for HorribleSubs
+tags:
+- Trash Guides
+tests: []

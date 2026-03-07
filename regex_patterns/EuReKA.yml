@@ -1,0 +1,6 @@
+name: EuReKA
+pattern: ^(EuReKA)$
+description: Regex for EuReKA
+tags:
+- Trash Guides
+tests: []

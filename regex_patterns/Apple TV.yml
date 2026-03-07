@@ -1,0 +1,6 @@
+name: Apple TV
+pattern: \b(ATV)\b
+description: Regex for Apple TV
+tags:
+- Trash Guides
+tests: []

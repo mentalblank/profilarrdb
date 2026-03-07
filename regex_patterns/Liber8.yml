@@ -1,0 +1,6 @@
+name: Liber8
+pattern: ^(Liber8)$
+description: Regex for Liber8
+tags:
+- Trash Guides
+tests: []

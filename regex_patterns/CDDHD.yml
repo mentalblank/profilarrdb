@@ -1,0 +1,6 @@
+name: CDDHD
+pattern: ^(CDDHD)$
+description: Regex for CDDHD
+tags:
+- Trash Guides
+tests: []

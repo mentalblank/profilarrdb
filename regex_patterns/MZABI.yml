@@ -1,0 +1,6 @@
+name: MZABI
+pattern: ^(MZABI)$
+description: Regex for MZABI
+tags:
+- Trash Guides
+tests: []

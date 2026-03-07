@@ -1,0 +1,6 @@
+name: uP
+pattern: \[uP\]
+description: Regex for uP
+tags:
+- Trash Guides
+tests: []

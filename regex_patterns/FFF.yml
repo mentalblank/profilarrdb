@@ -1,0 +1,6 @@
+name: FFF
+pattern: \b(FFF)\b
+description: Regex for FFF
+tags:
+- Trash Guides
+tests: []

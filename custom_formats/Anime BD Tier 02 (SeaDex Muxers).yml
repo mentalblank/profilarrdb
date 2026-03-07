@@ -1,0 +1,124 @@
+trash_id: 66926c8fa9312bc74ab71bf69aae4f4a
+name: Anime BD Tier 02 (SeaDex Muxers)
+includeCustomFormatWhenRenaming: false
+description: 'Anime BD Tier 02
+
+
+  Groups that do the best releases as per SeaDex. They are more consistent and trump
+  others.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Aergia
+  negate: false
+  required: false
+  type: release_title
+  pattern: Aergia
+- name: Arg0
+  negate: false
+  required: false
+  type: release_title
+  pattern: Arg0
+- name: Arid
+  negate: false
+  required: false
+  type: release_title
+  pattern: Arid
+- name: FateSucks
+  negate: false
+  required: false
+  type: release_title
+  pattern: FateSucks
+- name: hchcsen
+  negate: false
+  required: false
+  type: release_title
+  pattern: hchcsen
+- name: hydes
+  negate: false
+  required: false
+  type: release_title
+  pattern: hydes
+- name: JOHNTiTOR
+  negate: false
+  required: false
+  type: release_title
+  pattern: JOHNTiTOR
+- name: JySzE
+  negate: false
+  required: false
+  type: release_title
+  pattern: JySzE
+- name: koala
+  negate: false
+  required: false
+  type: release_title
+  pattern: koala
+- name: Kulot
+  negate: false
+  required: false
+  type: release_title
+  pattern: Kulot
+- name: LostYears
+  negate: false
+  required: false
+  type: release_title
+  pattern: LostYears
+- name: Lulu
+  negate: false
+  required: false
+  type: release_title
+  pattern: Lulu
+- name: Meakes
+  negate: false
+  required: false
+  type: release_title
+  pattern: Meakes
+- name: Orphan
+  negate: false
+  required: false
+  type: release_title
+  pattern: Orphan
+- name: PMR
+  negate: false
+  required: false
+  type: release_title
+  pattern: PMR
+- name: Vodes
+  negate: false
+  required: false
+  type: release_title
+  pattern: Vodes
+- name: WAP
+  negate: false
+  required: false
+  type: release_title
+  pattern: WAP
+- name: YURI
+  negate: false
+  required: false
+  type: release_title
+  pattern: YURI
+- name: ZeroBuild
+  negate: false
+  required: false
+  type: release_title
+  pattern: ZeroBuild
+- name: Bluray
+  negate: false
+  required: false
+  type: source
+  source: bluray
+- name: Bluray Remux
+  negate: false
+  required: false
+  type: source
+  source: bluray_raw
+- name: DVD
+  negate: false
+  required: false
+  type: source
+  source: dvd
+tests: []

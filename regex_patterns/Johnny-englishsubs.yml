@@ -1,0 +1,6 @@
+name: Johnny-englishsubs
+pattern: \b(Johnny-englishsubs)\b
+description: Regex for Johnny-englishsubs
+tags:
+- Trash Guides
+tests: []

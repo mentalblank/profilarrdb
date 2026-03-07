@@ -1,0 +1,6 @@
+name: zza
+pattern: \[zza\]|-zza\b
+description: Regex for zza
+tags:
+- Trash Guides
+tests: []

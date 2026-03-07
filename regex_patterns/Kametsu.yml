@@ -1,0 +1,6 @@
+name: Kametsu
+pattern: \b(Kametsu)\b
+description: Regex for Kametsu
+tags:
+- Trash Guides
+tests: []

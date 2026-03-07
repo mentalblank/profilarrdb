@@ -1,0 +1,6 @@
+name: SEV
+pattern: \b(SEV)\b
+description: Regex for SEV
+tags:
+- Trash Guides
+tests: []

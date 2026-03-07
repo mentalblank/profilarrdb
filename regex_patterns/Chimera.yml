@@ -1,0 +1,6 @@
+name: Chimera
+pattern: \[Chimera\]|-Chimera\b
+description: Regex for Chimera
+tags:
+- Trash Guides
+tests: []

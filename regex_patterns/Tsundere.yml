@@ -1,0 +1,6 @@
+name: Tsundere
+pattern: \[Tsundere\]|-Tsundere(?!-)\b
+description: Regex for Tsundere
+tags:
+- Trash Guides
+tests: []

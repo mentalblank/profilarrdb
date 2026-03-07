@@ -1,0 +1,6 @@
+name: YTS
+pattern: ^(YTS(.(MX|LT|AG))?)$
+description: Regex for YTS
+tags:
+- Trash Guides
+tests: []

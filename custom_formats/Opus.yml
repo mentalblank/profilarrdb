@@ -1,0 +1,34 @@
+trash_id: a061e2e700f81932daf888599f8a8273
+name: Opus
+includeCustomFormatWhenRenaming: false
+description: 'Opus (Highly efficient lossy codec)
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized
+  by the Internet Engineering Task Force, designed to efficiently code speech and
+  general audio in a single format while remaining low-latency enough for real-time
+  interactive communication and low-complexity enough for low-end embedded processors.
+  Opus replaces both Vorbis and Speex for new applications, and several blind listening
+  tests have ranked it higher quality than any other standard audio format at any
+  given bitrate until transparency is reached, including MP3, AAC, and HE-AAC.'
+tags:
+- Release Group
+- Release Title
+- Trash Guides
+conditions:
+- name: Opus
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bopus(\b|\d)(?!.*[ ._-](\d{3,4}p))
+  pattern: Opus
+- name: Not OPUS Release Group
+  negate: true
+  required: true
+  type: release_group
+  _raw_pattern: opus
+  pattern: Not OPUS Release Group
+tests: []

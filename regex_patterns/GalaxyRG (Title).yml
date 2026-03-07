@@ -1,0 +1,6 @@
+name: GalaxyRG (Title)
+pattern: \b(GalaxyRG)\b
+description: Regex for GalaxyRG (Title)
+tags:
+- Trash Guides
+tests: []

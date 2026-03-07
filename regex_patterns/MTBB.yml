@@ -1,0 +1,6 @@
+name: MTBB
+pattern: \b(MTBB)\b
+description: Regex for MTBB
+tags:
+- Trash Guides
+tests: []

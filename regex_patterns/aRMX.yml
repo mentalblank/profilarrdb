@@ -1,0 +1,6 @@
+name: aRMX
+pattern: \b(aRMX)\b
+description: Regex for aRMX
+tags:
+- Trash Guides
+tests: []

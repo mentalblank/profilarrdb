@@ -1,0 +1,6 @@
+name: Not TrueHD
+pattern: True[ .-]?HD
+description: Regex for Not TrueHD
+tags:
+- Trash Guides
+tests: []

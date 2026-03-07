@@ -1,0 +1,6 @@
+name: TayTO
+pattern: ^(TayTO)$
+description: Regex for TayTO
+tags:
+- Trash Guides
+tests: []

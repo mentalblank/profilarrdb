@@ -1,0 +1,6 @@
+name: Disney+
+pattern: \b(dsnp|dsny|disney|Disney\+)\b
+description: Regex for Disney+
+tags:
+- Trash Guides
+tests: []

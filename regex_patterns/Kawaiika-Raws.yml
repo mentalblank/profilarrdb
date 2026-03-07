@@ -1,0 +1,6 @@
+name: Kawaiika-Raws
+pattern: Kawaiika[ ._-]?(Raws)
+description: Regex for Kawaiika-Raws
+tags:
+- Trash Guides
+tests: []

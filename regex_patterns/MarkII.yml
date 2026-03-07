@@ -1,0 +1,6 @@
+name: MarkII
+pattern: ^(MarkII)$
+description: Regex for MarkII
+tags:
+- Trash Guides
+tests: []

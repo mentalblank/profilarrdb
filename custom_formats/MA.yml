@@ -1,0 +1,28 @@
+trash_id: 2a6039655313bf5dab1e43523b62c374
+name: MA
+includeCustomFormatWhenRenaming: true
+description: 'Movies Anywhere
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Movies_Anywhere)
+
+
+  Movies Anywhere (MA) is a cloud-based digital rights locker and over-the-top streaming
+  platform that allows users to stream and download purchased films, including digital
+  copies redeemed from codes found in home video releases as well as digital purchases
+  from participating services. Movies Anywhere is operated by The Walt Disney Company.
+  The platform provides content from Walt Disney Studios, Sony Pictures, Universal
+  Pictures, and Warner Bros. The system utilizes an internal platform known as KeyChest,
+  which synchronizes content licenses from digital distribution platforms linked to
+  a central user account.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Movies Anywhere
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: (?<!dts[ .-]?hd[ .-]?)\b(ma|ykw)\b(?=.*\bweb[ ._-]?(dl|rip)\b)
+  pattern: Movies Anywhere
+tests: []

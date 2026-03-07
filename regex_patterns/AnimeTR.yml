@@ -1,0 +1,6 @@
+name: AnimeTR
+pattern: \b(AnimeTR)\b
+description: Regex for AnimeTR
+tags:
+- Trash Guides
+tests: []

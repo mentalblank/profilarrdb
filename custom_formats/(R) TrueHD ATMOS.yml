@@ -1,0 +1,48 @@
+trash_id: 496f355514737f7d83bf7aa4d24f8169
+name: (R) TrueHD ATMOS
+includeCustomFormatWhenRenaming: false
+description: "TrueHD ATMOS (Dolby TrueHD with Atmos \u2013 lossless)\n\nFrom Wikipedia,\
+  \ the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Atmos)\n\nDolby Atmos\
+  \ is a surround sound technology developed by Dolby Laboratories. It expands on\
+  \ existing surround sound systems by adding height channels, allowing sounds to\
+  \ be interpreted as three-dimensional objects."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: ATMOS
+  negate: false
+  required: true
+  type: release_title
+  pattern: (R) ATMOS
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not Basic Dolby Digital
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not Dolby Digital Plus
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not DTS
+- name: Not DTS X
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not DTS X
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not FLAC
+- name: TrueHD
+  negate: false
+  required: true
+  type: release_title
+  pattern: TrueHD
+tests: []

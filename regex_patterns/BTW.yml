@@ -1,0 +1,6 @@
+name: BTW
+pattern: ^(BTW)$
+description: Regex for BTW
+tags:
+- Trash Guides
+tests: []

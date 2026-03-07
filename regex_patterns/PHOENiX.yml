@@ -1,0 +1,6 @@
+name: PHOENiX
+pattern: ^(PHOENiX)$
+description: Regex for PHOENiX
+tags:
+- Trash Guides
+tests: []

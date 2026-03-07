@@ -1,0 +1,6 @@
+name: YURASUKA
+pattern: \[YURASUKA\]|-YURASUKA\b
+description: Regex for YURASUKA
+tags:
+- Trash Guides
+tests: []

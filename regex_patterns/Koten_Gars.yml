@@ -1,0 +1,6 @@
+name: Koten_Gars
+pattern: \b(Koten[ ._-]Gars)\b
+description: Regex for Koten_Gars
+tags:
+- Trash Guides
+tests: []

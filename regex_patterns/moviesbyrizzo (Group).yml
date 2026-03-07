@@ -1,0 +1,6 @@
+name: moviesbyrizzo (Group)
+pattern: \b(moviesbyrizzo)\b
+description: Regex for moviesbyrizzo (Group)
+tags:
+- Trash Guides
+tests: []

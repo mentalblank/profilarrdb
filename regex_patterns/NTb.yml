@@ -1,0 +1,6 @@
+name: NTb
+pattern: ^(NTb)$
+description: Regex for NTb
+tags:
+- Trash Guides
+tests: []

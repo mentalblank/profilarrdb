@@ -1,0 +1,6 @@
+name: MGE
+pattern: ^(MGE\b.*)$
+description: Regex for MGE
+tags:
+- Trash Guides
+tests: []

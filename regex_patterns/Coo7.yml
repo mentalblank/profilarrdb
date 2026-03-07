@@ -1,0 +1,6 @@
+name: Coo7
+pattern: ^(Coo7)$
+description: Regex for Coo7
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Kitsune (Title)
+pattern: \[Kitsune\]|-Kitsune\b
+description: Regex for Kitsune (Title)
+tags:
+- Trash Guides
+tests: []

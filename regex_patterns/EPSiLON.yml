@@ -1,0 +1,6 @@
+name: EPSiLON
+pattern: ^(EPSiLON)$
+description: Regex for EPSiLON
+tags:
+- Trash Guides
+tests: []

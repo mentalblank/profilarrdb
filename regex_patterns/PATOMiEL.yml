@@ -1,0 +1,6 @@
+name: PATOMiEL
+pattern: ^(PATOMiEL)$
+description: Regex for PATOMiEL
+tags:
+- Trash Guides
+tests: []

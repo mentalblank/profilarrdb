@@ -1,0 +1,6 @@
+name: Cleo
+pattern: \[Cleo\]|-Cleo
+description: Regex for Cleo
+tags:
+- Trash Guides
+tests: []

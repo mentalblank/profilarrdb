@@ -1,0 +1,6 @@
+name: GST
+pattern: \b(GST)\b
+description: Regex for GST
+tags:
+- Trash Guides
+tests: []

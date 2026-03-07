@@ -1,0 +1,16 @@
+trash_id: 6ba9033150e7896bdc9ec4b44f2b230f
+name: MP3
+includeCustomFormatWhenRenaming: false
+description: "MP3 (MPEG-1 Audio Layer III \u2013 lossy)\n\nMP3 (MPEG-1 and/or MPEG-2\
+  \ Audio Layer 3) is a lossy data compression format for audio."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: MP3
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: mp3
+  pattern: MP3
+tests: []

@@ -1,0 +1,6 @@
+name: Audio Description
+pattern: \b((FRENCH|MULTi|WiTH)[ .-]AD)\b
+description: Regex for Audio Description
+tags:
+- Trash Guides
+tests: []

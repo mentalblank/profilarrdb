@@ -1,0 +1,6 @@
+name: '[TGx]'
+pattern: \[TGx\]
+description: Regex for [TGx]
+tags:
+- Trash Guides
+tests: []

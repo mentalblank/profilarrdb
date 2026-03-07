@@ -1,0 +1,47 @@
+trash_id: 3cafb66171b47f226146a0770576870f
+name: TrueHD
+includeCustomFormatWhenRenaming: false
+description: "TrueHD (Dolby TrueHD \u2013 lossless)\n\nFrom Wikipedia, the free encyclopedia\
+  \ (https://en.wikipedia.org/wiki/Dolby_TrueHD)\n\nDolby TrueHD is a lossless multi-channel\
+  \ audio codec developed by Dolby Laboratories for home video, used principally in\
+  \ Blu-ray Discs and compatible hardware."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: ATMOS
+  negate: true
+  required: true
+  type: release_title
+  pattern: ATMOS (1)
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not Basic Dolby Digital
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not Dolby Digital Plus
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not DTS
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not FLAC
+- name: Not RlsGrp (TrueHD only)
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not RlsGrp (TrueHD only)
+- name: TrueHD
+  negate: false
+  required: true
+  type: release_title
+  pattern: TrueHD
+tests: []

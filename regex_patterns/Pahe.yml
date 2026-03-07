@@ -1,0 +1,6 @@
+name: Pahe
+pattern: Pahe(\.(ph|in))?\b
+description: Regex for Pahe
+tags:
+- Trash Guides
+tests: []

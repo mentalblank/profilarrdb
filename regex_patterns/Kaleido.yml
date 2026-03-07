@@ -1,0 +1,6 @@
+name: Kaleido
+pattern: \b(Kaleido)\b
+description: Regex for Kaleido
+tags:
+- Trash Guides
+tests: []

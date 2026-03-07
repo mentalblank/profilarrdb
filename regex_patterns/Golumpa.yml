@@ -1,0 +1,6 @@
+name: Golumpa
+pattern: \b(Golumpa)\b
+description: Regex for Golumpa
+tags:
+- Trash Guides
+tests: []

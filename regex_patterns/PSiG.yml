@@ -1,0 +1,6 @@
+name: PSiG
+pattern: ^(PSiG)$
+description: Regex for PSiG
+tags:
+- Trash Guides
+tests: []

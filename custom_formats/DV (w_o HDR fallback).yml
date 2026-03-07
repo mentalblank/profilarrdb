@@ -1,0 +1,53 @@
+trash_id: 923b6abef9b17f937fab56cfcf89e1f1
+name: DV (w_o HDR fallback)
+includeCustomFormatWhenRenaming: false
+description: 'DV (w/o HDR fallback)
+
+
+  If ^^NOT^^ every device accessing your media server supports Dolby Vision, add the
+  DV (w/o HDR fallback) custom format to ensure maximum compatibility with your setup.
+  This prevents playback issues on devices that don''t fully support Dolby Vision.
+
+
+  *This also applies to Dolby Vision releases without HDR10 fallback (Profile 5).*'
+tags:
+- Release Group
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Dolby Vision
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(dv|dovi|dolby[ .]?v(ision)?)\b
+  pattern: Dolby Vision
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: Not RlsGrp
+  negate: true
+  required: true
+  type: release_group
+  _raw_pattern: \b(flights)\b
+  pattern: Not RlsGrp
+- name: Not HDR
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bhdr(\b|\d)
+  pattern: Not HDR
+- name: Not Hulu
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(hulu)\b
+  pattern: Not Hulu
+tests: []

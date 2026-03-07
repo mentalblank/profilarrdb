@@ -1,0 +1,6 @@
+name: Dolby Digital Plus (1)
+pattern: \bDD[P+]|\b(e[-_. ]?ac-?3)\b
+description: Regex for Dolby Digital Plus (1)
+tags:
+- Trash Guides
+tests: []

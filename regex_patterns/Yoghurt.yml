@@ -1,0 +1,6 @@
+name: Yoghurt
+pattern: \b(Yoghurt)\b
+description: Regex for Yoghurt
+tags:
+- Trash Guides
+tests: []

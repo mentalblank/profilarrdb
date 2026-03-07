@@ -1,0 +1,6 @@
+name: _nzb
+pattern: _nzb\b
+description: Regex for _nzb
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: PRODJi
+pattern: ^(PRODJi)$
+description: Regex for PRODJi
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: TheUpscaler
+pattern: \b(The[ ._-]?Upscaler)\b
+description: Regex for TheUpscaler
+tags:
+- Trash Guides
+tests: []

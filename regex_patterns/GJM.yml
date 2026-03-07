@@ -1,0 +1,6 @@
+name: GJM
+pattern: \b(GJM)\b
+description: Regex for GJM
+tags:
+- Trash Guides
+tests: []

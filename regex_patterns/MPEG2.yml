@@ -1,0 +1,6 @@
+name: MPEG2
+pattern: MPEG[-.]?2
+description: Regex for MPEG2
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Repack_Proper_Rerip
+pattern: \b(Repack|Proper|Rerip)\b
+description: Regex for Repack/Proper/Rerip
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: FGT
+pattern: ^(FGT)$
+description: Regex for FGT
+tags:
+- Trash Guides
+tests: []

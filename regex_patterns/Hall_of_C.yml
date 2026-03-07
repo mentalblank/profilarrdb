@@ -1,0 +1,6 @@
+name: Hall_of_C
+pattern: \b(Hall_of_C)\b
+description: Regex for Hall_of_C
+tags:
+- Trash Guides
+tests: []

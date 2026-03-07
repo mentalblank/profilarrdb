@@ -1,0 +1,6 @@
+name: Stan Rename
+pattern: \[(STAN)\b|\b(STAN)\]
+description: Regex for Stan Rename
+tags:
+- Trash Guides
+tests: []

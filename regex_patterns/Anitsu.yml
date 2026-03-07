@@ -1,0 +1,6 @@
+name: Anitsu
+pattern: \b(Anitsu)\b
+description: Regex for Anitsu
+tags:
+- Trash Guides
+tests: []

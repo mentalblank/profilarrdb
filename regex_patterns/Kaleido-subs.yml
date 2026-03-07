@@ -1,0 +1,6 @@
+name: Kaleido-subs
+pattern: \b(Kaleido-subs)\b
+description: Regex for Kaleido-subs
+tags:
+- Trash Guides
+tests: []

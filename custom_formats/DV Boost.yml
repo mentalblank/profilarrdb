@@ -1,0 +1,24 @@
+trash_id: b337d6812e06c200ec9a2d3cfa9d20a7
+name: DV Boost
+includeCustomFormatWhenRenaming: false
+description: 'DV Boost
+
+
+  If you prefer Dolby Vision and have compatible equipment, add the DV Boost custom
+  format. This custom format prioritizes releases containing Dolby Vision over standard
+  HDR releases.
+
+
+  *This custom format accepts DV Profile 5 and also upgrades from DV/HDR10/HDR10+
+  to DV HDR10 or DV HDR10+.*'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: DV
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(dv|dovi|dolby[ .]?v(ision)?)\b
+  pattern: DV
+tests: []

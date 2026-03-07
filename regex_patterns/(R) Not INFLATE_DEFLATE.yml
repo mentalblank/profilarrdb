@@ -1,0 +1,6 @@
+name: (R) Not INFLATE_DEFLATE
+pattern: \b(INFLATE|DEFLATE)\b
+description: Regex for (R) Not INFLATE/DEFLATE
+tags:
+- Trash Guides
+tests: []

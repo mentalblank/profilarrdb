@@ -1,0 +1,6 @@
+name: FraMeSToR (1)
+pattern: ^(FraMeSToR)$
+description: Regex for FraMeSToR (1)
+tags:
+- Trash Guides
+tests: []

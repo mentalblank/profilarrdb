@@ -1,0 +1,6 @@
+name: y2flix (Title)
+pattern: ^(y2flix)$
+description: Regex for y2flix (Title)
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: QOQ
+pattern: ^(QOQ)$
+description: Regex for QOQ
+tags:
+- Trash Guides
+tests: []

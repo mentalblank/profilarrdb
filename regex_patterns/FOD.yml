@@ -1,0 +1,6 @@
+name: FOD
+pattern: \b(fod)\b
+description: Regex for FOD
+tags:
+- Trash Guides
+tests: []

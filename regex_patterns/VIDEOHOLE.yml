@@ -1,0 +1,6 @@
+name: VIDEOHOLE
+pattern: ^(VIDEOHOLE)$
+description: Regex for VIDEOHOLE
+tags:
+- Trash Guides
+tests: []

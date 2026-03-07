@@ -1,0 +1,6 @@
+name: AkihitoSubs
+pattern: \b(AkihitoSubs)\b
+description: Regex for AkihitoSubs
+tags:
+- Trash Guides
+tests: []

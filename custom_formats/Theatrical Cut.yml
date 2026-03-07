@@ -1,0 +1,18 @@
+trash_id: e9001909a4c88013a359d0b9920d7bea
+name: Theatrical Cut
+includeCustomFormatWhenRenaming: false
+description: 'Theatrical Cut
+
+
+  The Theatrical Cut is the film''s version shown in the cinemas.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Theatrical
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: theatrical
+  pattern: Theatrical
+tests: []

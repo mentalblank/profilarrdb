@@ -1,0 +1,6 @@
+name: JySzE
+pattern: \b(JySzE)\b
+description: Regex for JySzE
+tags:
+- Trash Guides
+tests: []

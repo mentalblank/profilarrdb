@@ -1,0 +1,6 @@
+name: Not PCM
+pattern: \b(l?)PCM(\b|\d)
+description: Regex for Not PCM
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: KRP
+pattern: \b(KRP)\b
+description: Regex for KRP
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: nHD
+pattern: ^(nHD)$
+description: Regex for nHD
+tags:
+- Trash Guides
+tests: []

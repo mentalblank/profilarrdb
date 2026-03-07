@@ -1,0 +1,20 @@
+trash_id: 02e48d30a176c91baf9e15de05e5dc6a
+name: FanSUB
+includeCustomFormatWhenRenaming: false
+description: 'FanSUB
+
+
+  Action of subtitling a video for personal and non-professional purposes. The quality
+  of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could
+  lead to so-called FastSUBs.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: FanSUB
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(fansub)\b
+  pattern: FanSUB
+tests: []

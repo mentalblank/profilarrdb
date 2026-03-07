@@ -1,0 +1,6 @@
+name: AROMA
+pattern: ^(AROMA)$
+description: Regex for AROMA
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: mdcx
+pattern: \b(mdcx)\b
+description: Regex for mdcx
+tags:
+- Trash Guides
+tests: []

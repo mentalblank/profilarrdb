@@ -1,0 +1,6 @@
+name: monkee
+pattern: ^(monkee)$
+description: Regex for monkee
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Multi
+pattern: \b(Multi)(?![ ._-]?sub(s)?)(\b|\d)
+description: Regex for Multi
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: NoobSubs
+pattern: \b(N[eo][wo]b[ ._-]?Subs)\b
+description: Regex for NoobSubs
+tags:
+- Trash Guides
+tests: []

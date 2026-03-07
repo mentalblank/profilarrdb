@@ -1,0 +1,6 @@
+name: TnP
+pattern: ^(TnP)$
+description: Regex for TnP
+tags:
+- Trash Guides
+tests: []

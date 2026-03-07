@@ -1,0 +1,6 @@
+name: Bilibili
+pattern: \b(Bili(bili)?)\b
+description: Regex for Bilibili
+tags:
+- Trash Guides
+tests: []

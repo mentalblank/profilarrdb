@@ -1,0 +1,6 @@
+name: iNTENSO
+pattern: ^(iNTENSO)$
+description: Regex for iNTENSO
+tags:
+- Trash Guides
+tests: []

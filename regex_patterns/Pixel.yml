@@ -1,0 +1,6 @@
+name: Pixel
+pattern: \[Pixel\]|-Pixel\b
+description: Regex for Pixel
+tags:
+- Trash Guides
+tests: []

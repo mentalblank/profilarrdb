@@ -1,0 +1,6 @@
+name: Not OPUS Release Group
+pattern: OPUS
+description: Regex for Not OPUS Release Group
+tags:
+- Trash Guides
+tests: []

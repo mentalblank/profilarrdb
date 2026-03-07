@@ -1,0 +1,6 @@
+name: WhiteRev
+pattern: -WhiteRev\b
+description: Regex for WhiteRev
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: EVO (no WEBDL)
+pattern: (?<=\b[12]\d{3}\b.*?)(?<!\b(web[ ._-]?(dl|rip)?).*?)\b(EVO)\b
+description: Regex for EVO (no WEBDL)
+tags:
+- Trash Guides
+tests: []

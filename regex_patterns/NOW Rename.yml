@@ -1,0 +1,6 @@
+name: NOW Rename
+pattern: \[(NOW)\b|\b(NOW)\]
+description: Regex for NOW Rename
+tags:
+- Trash Guides
+tests: []

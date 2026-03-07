@@ -1,0 +1,6 @@
+name: Rip Time
+pattern: \b(Rip[ .-]?Time)\b
+description: Regex for Rip Time
+tags:
+- Trash Guides
+tests: []

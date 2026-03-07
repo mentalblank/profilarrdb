@@ -1,0 +1,6 @@
+name: Modders Bay
+pattern: \b(Modders[ .-]?Bay)\b
+description: Regex for Modders Bay
+tags:
+- Trash Guides
+tests: []

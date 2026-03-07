@@ -1,0 +1,6 @@
+name: CRiSC
+pattern: ^(CRiSC)$
+description: Regex for CRiSC
+tags:
+- Trash Guides
+tests: []

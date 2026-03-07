@@ -1,0 +1,89 @@
+trash_id: 5608c71bcebba0a5e666223bae8c9227
+name: HD Bluray Tier 03
+includeCustomFormatWhenRenaming: false
+description: 'HD Bluray Tier 03
+
+
+  Groups that:
+
+
+  - Are new, and have released several dozen objectively good quality releases
+
+  - Have retired and their releases don''t meet current quality standards
+
+  - Pay good attention to detail and use reliable sources
+
+  - Groups that have been added in conjunction with specific quality profiles
+
+  - Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).'
+tags:
+- Quality
+- Release Group
+- Resolution
+- Source
+- Trash Guides
+conditions:
+- name: BLURAY
+  negate: false
+  required: true
+  type: source
+  source: bluray
+- name: Not REMUX
+  negate: true
+  required: true
+  type: quality_modifier
+  modifier: remux
+- name: Not 2160p
+  negate: true
+  required: true
+  type: resolution
+  resolution: 2160p
+- name: BHDStudio
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(bhdstudio)$
+  pattern: BHDStudio
+- name: hallowed
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hallowed)$
+  pattern: hallowed
+- name: HiFi
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hifi)$
+  pattern: HiFi
+- name: HONE
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hone)$
+  pattern: HONE
+- name: LoRD
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(lord)$
+  pattern: LoRD
+- name: playHD
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(playhd)$
+  pattern: playHD
+- name: SPHD
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(sphd)$
+  pattern: SPHD
+- name: W4NK3R
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(w4nk3r)$
+  pattern: W4NK3R
+tests: []

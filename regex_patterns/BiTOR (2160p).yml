@@ -1,0 +1,6 @@
+name: BiTOR (2160p)
+pattern: (?=.*?(\b2160p\b))(?=.*?(\bBiTOR\b))
+description: Regex for BiTOR (2160p)
+tags:
+- Trash Guides
+tests: []

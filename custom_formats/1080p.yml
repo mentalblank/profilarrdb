@@ -1,0 +1,18 @@
+trash_id: 820b09bb9acbfde9c35c71e0e565dad8
+name: 1080p
+includeCustomFormatWhenRenaming: false
+description: '1080p
+
+
+  This Custom Format can boost 1080p releases. It is only useful if you use Merge
+  Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.'
+tags:
+- Resolution
+- Trash Guides
+conditions:
+- name: 1080p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 1080p
+tests: []

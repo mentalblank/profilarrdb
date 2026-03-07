@@ -1,0 +1,6 @@
+name: N3G4N
+pattern: ^(N3G4N)$
+description: Regex for N3G4N
+tags:
+- Trash Guides
+tests: []

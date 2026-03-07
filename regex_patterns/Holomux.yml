@@ -1,0 +1,6 @@
+name: Holomux
+pattern: \b(Holomux)\b
+description: Regex for Holomux
+tags:
+- Trash Guides
+tests: []

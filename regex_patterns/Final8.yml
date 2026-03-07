@@ -1,0 +1,6 @@
+name: Final8
+pattern: \b(Final8)\b
+description: Regex for Final8
+tags:
+- Trash Guides
+tests: []

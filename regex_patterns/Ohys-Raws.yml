@@ -1,0 +1,6 @@
+name: Ohys-Raws
+pattern: Ohys[ ._-]?(Raws)
+description: Regex for Ohys-Raws
+tags:
+- Trash Guides
+tests: []

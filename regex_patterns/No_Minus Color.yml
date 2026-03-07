@@ -1,0 +1,6 @@
+name: No_Minus Color
+pattern: (?<=\b[12]\d{3}\b).*\b((No|Minus)[ ._-]?Colou?r)\b(?!$)
+description: Regex for No/Minus Color
+tags:
+- Trash Guides
+tests: []

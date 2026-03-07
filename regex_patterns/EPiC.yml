@@ -1,0 +1,6 @@
+name: EPiC
+pattern: ^(EPiC)$
+description: Regex for EPiC
+tags:
+- Trash Guides
+tests: []

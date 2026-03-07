@@ -1,0 +1,6 @@
+name: TRiToN
+pattern: ^(TRiToN)$
+description: Regex for TRiToN
+tags:
+- Trash Guides
+tests: []

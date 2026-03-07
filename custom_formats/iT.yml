@@ -1,0 +1,42 @@
+trash_id: e0ec9672be6cac914ffad34a6b077209
+name: iT
+includeCustomFormatWhenRenaming: true
+description: 'iTunes
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/ITunes)
+
+
+  Apple introduced iTunes 6, enabling support for purchasing and viewing video content
+  purchased from the iTunes Store. At launch, the store offered popular shows from
+  the ABC network along with Disney Channel series. In 2008, Apple and select film
+  studios introduced "iTunes Digital Copy", a feature on select DVDs and Blu-ray discs
+  allowing a digital copy in iTunes and associated media players.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: iTunes
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(it|itunes)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+  pattern: iTunes
+- name: iT Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(it)(?![+])\b|\b(?<![+])(it)\]
+  pattern: iT Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

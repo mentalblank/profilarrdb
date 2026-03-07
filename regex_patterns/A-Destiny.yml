@@ -1,0 +1,6 @@
+name: A-Destiny
+pattern: \b(A-Destiny)\b
+description: Regex for A-Destiny
+tags:
+- Trash Guides
+tests: []

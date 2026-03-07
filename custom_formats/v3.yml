@@ -1,0 +1,18 @@
+trash_id: db92c27ba606996b146b57fbe6d09186
+name: v3
+includeCustomFormatWhenRenaming: true
+description: 'v3
+
+
+  Custom Format to cover v3 releases.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: v3
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: (\b|\d)(v3)\b
+  pattern: v3
+tests: []

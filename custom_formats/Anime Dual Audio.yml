@@ -1,0 +1,42 @@
+trash_id: 4a3b087eea2ce012fcc1ce319259a3be
+name: Anime Dual Audio
+includeCustomFormatWhenRenaming: false
+description: 'Anime Dual Audio
+
+
+  This Custom Format covers releases that have Dual Audio.'
+tags:
+- Language
+- Release Title
+- Trash Guides
+conditions:
+- name: Dual Audio
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: dual[ ._-]?(audio)|[([]dual[])]|\b(ja|zh|ko)(?= ?\+ ?.*?\b(en))|\b(en)(?=
+    ?\+ ?.*?\b(ja|zh|ko))|\b(japanese|chinese|korean) ?[ ._\+&-] ?\b(english)|\b(english)
+    ?[ ._\+&-] ?\b(japanese|chinese|korean)|\b(\d{3,4}(p|i)|4k|u(ltra)?hd)\b.*\b(dual)\b(?!.*\(|\))
+  pattern: Dual Audio
+- name: Not Single Language Only
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \[(ja|zh|ko)\]
+  pattern: Not Single Language Only
+- name: Japanese Language
+  negate: false
+  required: false
+  type: language
+  language: japanese
+- name: Chinese Language
+  negate: false
+  required: false
+  type: language
+  language: chinese
+- name: Korean Language
+  negate: false
+  required: false
+  type: language
+  language: korean
+tests: []

@@ -1,0 +1,6 @@
+name: jennaortega (Title)
+pattern: (?<!-)\b(jennaortega(UHD)?)\b
+description: Regex for jennaortega (Title)
+tags:
+- Trash Guides
+tests: []

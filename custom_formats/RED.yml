@@ -1,0 +1,35 @@
+trash_id: c30d2958827d1867c73318a5a2957eb1
+name: RED
+includeCustomFormatWhenRenaming: true
+description: 'Youtube Red
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/YouTube_Premium)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: YouTube Red
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(red|youtube red)\b[ ._-]web[ ._-]?(dl|rip)?\b
+  pattern: YouTube Red
+- name: RED Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(red)\b|\b(red)\]
+  pattern: RED Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

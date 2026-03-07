@@ -1,0 +1,6 @@
+name: TM
+pattern: ^(TM\b)$
+description: Regex for TM
+tags:
+- Trash Guides
+tests: []

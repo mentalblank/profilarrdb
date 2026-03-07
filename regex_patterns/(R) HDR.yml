@@ -1,0 +1,6 @@
+name: (R) HDR
+pattern: \bHDR(\b|\d)
+description: Regex for (R) HDR
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Hybrid
+pattern: \bhybrid(\b|\d)
+description: Regex for Hybrid
+tags:
+- Trash Guides
+tests: []

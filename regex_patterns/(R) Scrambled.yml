@@ -1,0 +1,6 @@
+name: (R) Scrambled
+pattern: (?<=\b[12]\d{3}\b).*(Scrambled)\b
+description: Regex for (R) Scrambled
+tags:
+- Trash Guides
+tests: []

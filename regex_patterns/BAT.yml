@@ -1,0 +1,6 @@
+name: BAT
+pattern: ^(BAT)$
+description: Regex for BAT
+tags:
+- Trash Guides
+tests: []

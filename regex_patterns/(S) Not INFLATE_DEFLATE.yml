@@ -1,0 +1,6 @@
+name: (S) Not INFLATE_DEFLATE
+pattern: \b(INFLATE|DEFLATE[)\]]?)$
+description: Regex for (S) Not INFLATE/DEFLATE
+tags:
+- Trash Guides
+tests: []

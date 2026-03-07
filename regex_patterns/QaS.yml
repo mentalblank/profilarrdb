@@ -1,0 +1,6 @@
+name: QaS
+pattern: \b(QAS)\b
+description: Regex for QaS
+tags:
+- Trash Guides
+tests: []

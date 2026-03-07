@@ -1,0 +1,6 @@
+name: Asakura
+pattern: \[Asakura\]|-Asakura\b
+description: Regex for Asakura
+tags:
+- Trash Guides
+tests: []

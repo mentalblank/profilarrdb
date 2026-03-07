@@ -1,0 +1,6 @@
+name: ZNM
+pattern: ^(ZNM)$
+description: Regex for ZNM
+tags:
+- Trash Guides
+tests: []

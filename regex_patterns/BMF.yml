@@ -1,0 +1,6 @@
+name: BMF
+pattern: ^(BMF)$
+description: Regex for BMF
+tags:
+- Trash Guides
+tests: []

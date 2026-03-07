@@ -1,0 +1,6 @@
+name: RWP (Group)
+pattern: \b(RWP)\b
+description: Regex for RWP (Group)
+tags:
+- Trash Guides
+tests: []

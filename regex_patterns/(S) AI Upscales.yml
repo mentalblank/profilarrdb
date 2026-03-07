@@ -1,0 +1,6 @@
+name: (S) AI Upscales
+pattern: (?<=\b\d{3,4}p\b)(?=.*\b(HEVC)\b)(?=.*\b(AI)\b)
+description: Regex for (S) AI Upscales
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,55 @@
+trash_id: 240770601cc226190c367ef59aba7463
+name: AAC
+includeCustomFormatWhenRenaming: false
+description: "AAC (Advanced Audio Codec \u2013 lossy)\n\nFrom Wikipedia, the free\
+  \ encyclopedia (https://en.wikipedia.org/wiki/Advanced_Audio_Coding)\nAdvanced Audio\
+  \ Coding (AAC) is an audio coding standard for lossy digital audio compression.\
+  \ Designed to be the successor of the MP3 format, AAC generally achieves higher\
+  \ sound quality than MP3 at the same bit rate."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: AAC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: AAC
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdts(\b|\d)
+  pattern: Not DTS
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+tests: []

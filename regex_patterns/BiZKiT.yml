@@ -1,0 +1,6 @@
+name: BiZKiT
+pattern: ^(BiZKiT)$
+description: Regex for BiZKiT
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,15 @@
+trash_id: 5153ec7413d9dae44e24275589b5e944
+name: BHDStudio
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Group
+- Trash Guides
+conditions:
+- name: BHDStudio
+  negate: false
+  required: true
+  type: release_group
+  _raw_pattern: ^(bhdstudio)$
+  pattern: BHDStudio
+tests: []

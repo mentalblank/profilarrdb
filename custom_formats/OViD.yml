@@ -1,0 +1,29 @@
+trash_id: fbca986396c5e695ef7b2def3c755d01
+name: OViD
+includeCustomFormatWhenRenaming: true
+description: 'OViD
+
+
+  OViD Website (https://search.ovid.tv/other/about)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: OViD
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(ovid)\b
+  pattern: OViD
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

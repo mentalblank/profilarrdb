@@ -1,0 +1,6 @@
+name: LAMA
+pattern: ^(LAMA)$
+description: Regex for LAMA
+tags:
+- Trash Guides
+tests: []

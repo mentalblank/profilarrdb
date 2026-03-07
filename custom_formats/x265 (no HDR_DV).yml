@@ -1,0 +1,27 @@
+trash_id: 839bea857ed2c0a8e084f3cbdbd65ecb
+name: x265 (no HDR_DV)
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Resolution
+- Trash Guides
+conditions:
+- name: x265/HEVC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: '[xh][ ._-]?265|\bhevc(\b|\d)'
+  pattern: x265_HEVC
+- name: Not HDR/DV
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(dv|dovi|dolby[ .]?v(ision)?|hdr(10(p(lus)?)?)?|pq)\b
+  pattern: Not HDR_DV
+- name: Not 2160p
+  negate: true
+  required: true
+  type: resolution
+  resolution: 2160p
+tests: []

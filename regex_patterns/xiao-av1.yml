@@ -1,0 +1,6 @@
+name: xiao-av1
+pattern: \b(xiao-av1)\b
+description: Regex for xiao-av1
+tags:
+- Trash Guides
+tests: []

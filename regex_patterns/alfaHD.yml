@@ -1,0 +1,6 @@
+name: alfaHD
+pattern: ^(alfaHD.*)$
+description: Regex for alfaHD
+tags:
+- Trash Guides
+tests: []

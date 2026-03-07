@@ -1,0 +1,6 @@
+name: NoRBiT (Title)
+pattern: ^(NoRBiT)$
+description: Regex for NoRBiT (Title)
+tags:
+- Trash Guides
+tests: []

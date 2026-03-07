@@ -1,0 +1,6 @@
+name: HBO Rename
+pattern: \[(HBO)\b|\b(HBO)\]
+description: Regex for HBO Rename
+tags:
+- Trash Guides
+tests: []

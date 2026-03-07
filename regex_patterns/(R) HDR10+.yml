@@ -1,0 +1,6 @@
+name: (R) HDR10+
+pattern: \bHDR10(\+|P(lus)?\b)
+description: Regex for (R) HDR10+
+tags:
+- Trash Guides
+tests: []

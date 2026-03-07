@@ -1,0 +1,6 @@
+name: EXTREME
+pattern: ^(EXTREME)$
+description: Regex for EXTREME
+tags:
+- Trash Guides
+tests: []

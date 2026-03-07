@@ -1,0 +1,29 @@
+trash_id: 3ac5d84fce98bab1b531393e9c82f467
+name: QIBI
+includeCustomFormatWhenRenaming: true
+description: "Quibi\n\nFrom Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Quibi)\n\
+  \nQuibi (/\u02C8kw\u026Abi/ KWIB-ee) was an American short-form streaming platform,\
+  \ It launched in April 2020, but shut down in December 2020 after falling short\
+  \ of its subscriber projections."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Quibi
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(qibi|quibi)\b
+  pattern: Quibi
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

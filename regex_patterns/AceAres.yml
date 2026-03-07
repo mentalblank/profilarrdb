@@ -1,0 +1,6 @@
+name: AceAres
+pattern: \b(AceAres)\b
+description: Regex for AceAres
+tags:
+- Trash Guides
+tests: []

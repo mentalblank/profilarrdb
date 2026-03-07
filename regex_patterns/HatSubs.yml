@@ -1,0 +1,6 @@
+name: HatSubs
+pattern: \b(HatSubs)\b
+description: Regex for HatSubs
+tags:
+- Trash Guides
+tests: []

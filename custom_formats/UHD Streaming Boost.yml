@@ -1,0 +1,56 @@
+trash_id: 43b3cf48cb385cd3eac608ee6bca7f09
+name: UHD Streaming Boost
+includeCustomFormatWhenRenaming: false
+description: 'UHD Streaming Boost
+
+
+  Some streaming services have UHD releases that are generally better than their HD
+  counterparts. The UHD Streaming Boost custom format increases those streaming services''
+  scores appropriately for UHD releases. Use this in conjunction with the regular
+  streaming service custom formats.'
+tags:
+- Release Title
+- Resolution
+- Source
+- Trash Guides
+conditions:
+- name: Disney+
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(dsnp|dsny|disney|disney\+)\b
+  pattern: Disney+
+- name: HBO Max
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(hmax|hbom|hbo[ ._-]?max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+  pattern: HBO Max
+- name: HMAX Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(hmax)\b|\b(hmax)\]
+  pattern: HMAX Rename
+- name: Netflix
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(nf|netflix(u?hd)?)\b
+  pattern: Netflix
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+tests: []

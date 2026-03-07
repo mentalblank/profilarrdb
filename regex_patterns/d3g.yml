@@ -1,0 +1,6 @@
+name: d3g
+pattern: ^(d3g)$
+description: Regex for d3g
+tags:
+- Trash Guides
+tests: []

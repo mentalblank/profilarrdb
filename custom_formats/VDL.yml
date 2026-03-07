@@ -1,0 +1,33 @@
+trash_id: 996e8ce50025e8b1e8fa95fcb28c4e5a
+name: VDL
+includeCustomFormatWhenRenaming: true
+description: 'Videoland
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally
+  it was a retail chain of video rental stores. Its main competitor is Netflix.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Videoland
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(vdl|videoland)\b
+  pattern: Videoland
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

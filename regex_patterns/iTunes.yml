@@ -1,0 +1,6 @@
+name: iTunes
+pattern: \b(it|itunes)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+description: Regex for iTunes
+tags:
+- Trash Guides
+tests: []

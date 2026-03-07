@@ -1,0 +1,6 @@
+name: TeamTurquoize
+pattern: \b(TeamTurquoize)\b
+description: Regex for TeamTurquoize
+tags:
+- Trash Guides
+tests: []

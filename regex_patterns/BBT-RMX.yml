@@ -1,0 +1,6 @@
+name: BBT-RMX
+pattern: \b(BBT-RMX)\b
+description: Regex for BBT-RMX
+tags:
+- Trash Guides
+tests: []

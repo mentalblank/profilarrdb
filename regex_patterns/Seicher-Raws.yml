@@ -1,0 +1,6 @@
+name: Seicher-Raws
+pattern: Seicher[ ._-]?(Raws)
+description: Regex for Seicher-Raws
+tags:
+- Trash Guides
+tests: []

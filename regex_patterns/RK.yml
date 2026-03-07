@@ -1,0 +1,6 @@
+name: RK
+pattern: ^(RK)$
+description: Regex for RK
+tags:
+- Trash Guides
+tests: []

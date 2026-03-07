@@ -1,0 +1,6 @@
+name: HHWEB
+pattern: ^(HHWEB)$
+description: Regex for HHWEB
+tags:
+- Trash Guides
+tests: []

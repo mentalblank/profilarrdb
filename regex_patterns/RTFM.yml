@@ -1,0 +1,6 @@
+name: RTFM
+pattern: ^(RTFM)$
+description: Regex for RTFM
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: NTRX
+pattern: \b(NTRX)\b
+description: Regex for NTRX
+tags:
+- Trash Guides
+tests: []

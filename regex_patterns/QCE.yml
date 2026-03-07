@@ -1,0 +1,6 @@
+name: QCE
+pattern: \b(QCE)\b
+description: Regex for QCE
+tags:
+- Trash Guides
+tests: []

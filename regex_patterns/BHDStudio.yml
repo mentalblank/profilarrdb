@@ -1,0 +1,6 @@
+name: BHDStudio
+pattern: ^(BHDStudio)$
+description: Regex for BHDStudio
+tags:
+- Trash Guides
+tests: []

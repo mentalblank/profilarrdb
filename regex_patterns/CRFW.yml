@@ -1,0 +1,6 @@
+name: CRFW
+pattern: ^(CRFW)$
+description: Regex for CRFW
+tags:
+- Trash Guides
+tests: []

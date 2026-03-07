@@ -1,0 +1,6 @@
+name: END
+pattern: ^(END)$
+description: Regex for END
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: SoM
+pattern: \[SoM\]|-SoM\b
+description: Regex for SoM
+tags:
+- Trash Guides
+tests: []

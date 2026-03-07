@@ -1,0 +1,6 @@
+name: ABBIE
+pattern: ^(ABBIE)$
+description: Regex for ABBIE
+tags:
+- Trash Guides
+tests: []

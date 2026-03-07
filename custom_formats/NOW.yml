@@ -1,0 +1,39 @@
+trash_id: 3dce1fce9ac06d1349dfbd9186289385
+name: NOW
+includeCustomFormatWhenRenaming: true
+description: 'NOW
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  Now (formerly Now TV and often stylised as NOW) is a subscription over-the-top streaming
+  television service operated by British satellite television provider Sky Group.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: NOW
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(now)\b[ ._-]web[ ._-]?(dl|rip)?\b
+  pattern: NOW
+- name: NOW Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(now)\b|\b(now)\]
+  pattern: NOW Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

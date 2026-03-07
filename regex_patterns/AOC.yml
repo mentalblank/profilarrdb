@@ -1,0 +1,6 @@
+name: AOC
+pattern: ^(AOC)$
+description: Regex for AOC
+tags:
+- Trash Guides
+tests: []

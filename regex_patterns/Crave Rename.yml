@@ -1,0 +1,6 @@
+name: Crave Rename
+pattern: \[(CRAV)\b|\b(CRAV)\]
+description: Regex for Crave Rename
+tags:
+- Trash Guides
+tests: []

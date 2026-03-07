@@ -1,0 +1,6 @@
+name: BiRJU
+pattern: \b(BiRJU)\b
+description: Regex for BiRJU
+tags:
+- Trash Guides
+tests: []

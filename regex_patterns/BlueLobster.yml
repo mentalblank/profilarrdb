@@ -1,0 +1,6 @@
+name: BlueLobster
+pattern: \b(BlueLobster)\b
+description: Regex for BlueLobster
+tags:
+- Trash Guides
+tests: []

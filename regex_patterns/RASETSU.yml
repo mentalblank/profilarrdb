@@ -1,0 +1,6 @@
+name: RASETSU
+pattern: \b(RASETSU)\b
+description: Regex for RASETSU
+tags:
+- Trash Guides
+tests: []

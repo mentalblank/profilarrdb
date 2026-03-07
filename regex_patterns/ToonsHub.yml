@@ -1,0 +1,6 @@
+name: ToonsHub
+pattern: \b(ToonsHub)\b
+description: Regex for ToonsHub
+tags:
+- Trash Guides
+tests: []

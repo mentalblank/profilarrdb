@@ -1,0 +1,6 @@
+name: Smoke
+pattern: \[Smoke\]|-Smoke\b
+description: Regex for Smoke
+tags:
+- Trash Guides
+tests: []

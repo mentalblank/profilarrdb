@@ -1,0 +1,6 @@
+name: beAst
+pattern: ^(beAst)$
+description: Regex for beAst
+tags:
+- Trash Guides
+tests: []

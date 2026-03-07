@@ -1,0 +1,27 @@
+trash_id: bf7e73dd1d85b12cc527dc619761c840
+name: Pathe
+includeCustomFormatWhenRenaming: true
+description: "Path\xE9 Thuis\n\nFrom Wikipedia, the free encyclopedia (https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis)\n\
+  \nPath\xE9 Thuis is a Dutch streaming service for renting and purchasing films."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: "Path\xE9"
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(pathe)\b
+  pattern: "Path\xE9"
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

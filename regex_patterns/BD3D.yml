@@ -1,0 +1,6 @@
+name: BD3D
+pattern: \b(BD3D)\b
+description: Regex for BD3D
+tags:
+- Trash Guides
+tests: []

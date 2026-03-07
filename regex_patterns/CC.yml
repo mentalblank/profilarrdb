@@ -1,0 +1,6 @@
+name: CC
+pattern: \b(CC)\b
+description: Regex for CC
+tags:
+- Trash Guides
+tests: []

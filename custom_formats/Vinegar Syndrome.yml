@@ -1,0 +1,32 @@
+trash_id: db9b4c4b53d312a3ca5f1378f6440fc9
+name: Vinegar Syndrome
+includeCustomFormatWhenRenaming: true
+description: 'Vinegar Syndrome
+
+
+  Vinegar Syndrome is a US-based company founded in 2012 to preserve and distribute
+  old X-rated films. Over time, they expanded their catalog to include other types
+  of cult and exploitation films, specializing in horror and action genres.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Vinegar Syndrome
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(vinegar[ ._-]syndrome)\b
+  pattern: Vinegar Syndrome
+- name: VS
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(v-s)\b
+  pattern: VS
+- name: VinSyn
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(vinsyn)\b
+  pattern: VinSyn
+tests: []

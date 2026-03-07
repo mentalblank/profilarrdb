@@ -1,0 +1,6 @@
+name: DsunS
+pattern: \b(DsunS)\b
+description: Regex for DsunS
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: C4K
+pattern: ^(C4K)$
+description: Regex for C4K
+tags:
+- Trash Guides
+tests: []

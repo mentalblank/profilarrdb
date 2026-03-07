@@ -1,0 +1,6 @@
+name: Hotstar
+pattern: \b(HTSR|DSNPHS|HS)\b
+description: Regex for Hotstar
+tags:
+- Trash Guides
+tests: []

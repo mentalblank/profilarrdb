@@ -1,0 +1,6 @@
+name: Scryous-Raws
+pattern: Scryous[ ._-]?(Raws)
+description: Regex for Scryous-Raws
+tags:
+- Trash Guides
+tests: []

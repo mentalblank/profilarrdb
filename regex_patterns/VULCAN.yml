@@ -1,0 +1,6 @@
+name: VULCAN
+pattern: \[VULCAN\]|-VULCAN\b
+description: Regex for VULCAN
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,21 @@
+trash_id: e77382bcfeba57cb83744c9c5449b401
+name: 7.1 Surround
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: 7.1 Surround
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9][7-8][ .][0-1]\b'
+  pattern: 7.1 Surround
+- name: Not Low Channel Count
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: (?<!repac)[^0-9][1-4][ .][0-1]\b|\b(stereo|mono)\b
+  pattern: Not Low Channel Count
+tests: []

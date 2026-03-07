@@ -1,0 +1,29 @@
+trash_id: f537cf427b64c38c8e36298f657e4828
+name: (R) Scene
+includeCustomFormatWhenRenaming: false
+description: 'Scene
+
+
+  This Custom Format will try to recognize so-called "scene releases". Depending on
+  your preferences, you can give it a negative score `-10000`, a positive score, or
+  just skip adding it altogether.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Not GERMAN
+  negate: true
+  required: true
+  type: release_title
+  pattern: (R) Not GERMAN
+- name: Not INFLATE/DEFLATE
+  negate: true
+  required: true
+  type: release_title
+  pattern: (R) Not INFLATE_DEFLATE
+- name: Scene Groups + Naming
+  negate: false
+  required: true
+  type: release_title
+  pattern: Scene Groups + Naming
+tests: []

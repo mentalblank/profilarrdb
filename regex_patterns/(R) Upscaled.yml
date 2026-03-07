@@ -1,0 +1,6 @@
+name: (R) Upscaled
+pattern: (?<=\b[12]\d{3}\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b
+description: Regex for (R) Upscaled
+tags:
+- Trash Guides
+tests: []

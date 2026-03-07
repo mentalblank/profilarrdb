@@ -1,0 +1,6 @@
+name: Fish
+pattern: \b((Baked|Dead|Space)Fish)\b
+description: Regex for Fish
+tags:
+- Trash Guides
+tests: []

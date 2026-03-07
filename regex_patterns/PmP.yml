@@ -1,0 +1,6 @@
+name: PmP
+pattern: ^(PmP)$
+description: Regex for PmP
+tags:
+- Trash Guides
+tests: []

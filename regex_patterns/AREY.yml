@@ -1,0 +1,6 @@
+name: AREY
+pattern: \b(AREY)\b
+description: Regex for AREY
+tags:
+- Trash Guides
+tests: []

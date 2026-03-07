@@ -1,0 +1,21 @@
+trash_id: 6fd7b090c3f7317502ab3b63cc7f51e3
+name: 6.1 Surround
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: 6.1 Surround
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]6[ .][0-1]\b'
+  pattern: 6.1 Surround
+- name: Not 7.1 Surround
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9][7-8][ .][0-1]\b'
+  pattern: Not 7.1 Surround
+tests: []

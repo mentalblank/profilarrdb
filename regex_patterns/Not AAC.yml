@@ -1,0 +1,6 @@
+name: Not AAC
+pattern: \bAAC(\b|\d)
+description: Regex for Not AAC
+tags:
+- Trash Guides
+tests: []

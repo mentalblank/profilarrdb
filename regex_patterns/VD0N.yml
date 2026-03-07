@@ -1,0 +1,6 @@
+name: VD0N
+pattern: ^(VD0N)$
+description: Regex for VD0N
+tags:
+- Trash Guides
+tests: []

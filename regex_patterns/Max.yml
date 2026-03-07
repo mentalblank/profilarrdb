@@ -1,0 +1,6 @@
+name: Max
+pattern: \b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+description: Regex for Max
+tags:
+- Trash Guides
+tests: []

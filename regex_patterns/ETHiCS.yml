@@ -1,0 +1,6 @@
+name: ETHiCS
+pattern: ^(ETHiCS)$
+description: Regex for ETHiCS
+tags:
+- Trash Guides
+tests: []

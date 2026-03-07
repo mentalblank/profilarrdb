@@ -1,0 +1,6 @@
+name: npz
+pattern: \b(npz)\b
+description: Regex for npz
+tags:
+- Trash Guides
+tests: []

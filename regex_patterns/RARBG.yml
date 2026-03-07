@@ -1,0 +1,6 @@
+name: RARBG
+pattern: ^(RARBG)$
+description: Regex for RARBG
+tags:
+- Trash Guides
+tests: []

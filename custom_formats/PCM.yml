@@ -1,0 +1,52 @@
+trash_id: e7c2fcae07cbada050a0af3357491d7b
+name: PCM
+includeCustomFormatWhenRenaming: false
+description: "PCM (Pulse Code Modulation \u2013 lossless, uncompressed)\n\nPCM is\
+  \ the method of encoding typically used for uncompressed digital audio."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: PCM
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: PCM
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdts(\b|\d)
+  pattern: Not DTS
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+tests: []

@@ -1,0 +1,6 @@
+name: Not TrueHD_ATMOS (1)
+pattern: True[ .-]?HD|\bATMOS(\b|\d)
+description: Regex for Not TrueHD/ATMOS (1)
+tags:
+- Trash Guides
+tests: []

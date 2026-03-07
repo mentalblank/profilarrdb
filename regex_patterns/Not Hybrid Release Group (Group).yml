@@ -1,0 +1,6 @@
+name: Not Hybrid Release Group (Group)
+pattern: \b(HYBRID)\b
+description: Regex for Not Hybrid Release Group (Group)
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,49 @@
+trash_id: 957d0f44b592285f26449575e8b1167e
+name: Special Edition
+includeCustomFormatWhenRenaming: false
+description: 'Special Edition
+
+
+  Custom format that matches various special editions (non-theatrical edition)
+
+
+  - The Director''s Cut is the version edited by the Director, usually for additional
+  home media releases.
+
+  - An Extended Cut is usually any version of the film that is longer than the theatrical
+  cut (though in very rare cases, its shorter).'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Special Edition
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: (?<!^)\b(extended|uncut|directors|special|unrated|uncensored|cut|version|(?<!{)edition)(\b|\d)
+  pattern: Special Edition
+- name: Not IMAX Edition
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(imax[ ._-]edition)\b
+  pattern: Not IMAX Edition
+- name: Not Open Matte
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(open[ ._-]?matte)\b
+  pattern: Not Open Matte
+- name: Not Theatrical
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: theatrical
+  pattern: Not Theatrical
+- name: Not Extended Clip
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(extended[ ._-]clip)\b
+  pattern: Not Extended Clip
+tests: []

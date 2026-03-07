@@ -1,0 +1,6 @@
+name: XEBEC
+pattern: ^(XEBEC|4KBEC|CEBEX)$
+description: Regex for XEBEC
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Mr. Deadpool
+pattern: \b(Mr\.Deadpool)\b
+description: Regex for Mr. Deadpool
+tags:
+- Trash Guides
+tests: []

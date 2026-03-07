@@ -1,0 +1,6 @@
+name: DRACULA
+pattern: ^(DRACULA)$
+description: Regex for DRACULA
+tags:
+- Trash Guides
+tests: []

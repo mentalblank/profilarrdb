@@ -1,0 +1,6 @@
+name: FF
+pattern: ^(FF)$
+description: Regex for FF
+tags:
+- Trash Guides
+tests: []

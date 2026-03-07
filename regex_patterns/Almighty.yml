@@ -1,0 +1,6 @@
+name: Almighty
+pattern: \[Almighty\]|-Almighty\b
+description: Regex for Almighty
+tags:
+- Trash Guides
+tests: []

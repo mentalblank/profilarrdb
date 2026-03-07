@@ -1,0 +1,6 @@
+name: iPlanet
+pattern: ^(iPlanet)$
+description: Regex for iPlanet
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,34 @@
+trash_id: 570b03b3145a25011bf073274a407259
+name: HIDIVE
+includeCustomFormatWhenRenaming: true
+description: 'HIDIVE
+
+
+  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/HIDIVE)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: HIDIVE
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(hidi(ve)?)\b
+  pattern: HIDIVE
+tests: []

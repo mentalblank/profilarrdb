@@ -1,0 +1,6 @@
+name: OZR
+pattern: \b(OZR)\b
+description: Regex for OZR
+tags:
+- Trash Guides
+tests: []

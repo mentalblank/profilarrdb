@@ -1,0 +1,6 @@
+name: Wardevil
+pattern: \[Wardevil\]|-Wardevil\b
+description: Regex for Wardevil
+tags:
+- Trash Guides
+tests: []

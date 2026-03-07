@@ -1,0 +1,6 @@
+name: Non-Latin Scripts
+pattern: '[\u4E00-\u9FFF\uAC00-\uD7A3\u0600-\u06FF\u0400-\u04FF\u0370-\u03FF\u0590-\u05FF\u0900-\u097F\u0E00-\u0E7F]'
+description: Regex for Non-Latin Scripts
+tags:
+- Trash Guides
+tests: []

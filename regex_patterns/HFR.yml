@@ -1,0 +1,6 @@
+name: HFR
+pattern: \b(HFR)\b
+description: Regex for HFR
+tags:
+- Trash Guides
+tests: []

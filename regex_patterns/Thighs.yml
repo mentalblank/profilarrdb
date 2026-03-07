@@ -1,0 +1,6 @@
+name: Thighs
+pattern: \[Thighs\]|-Thighs\b
+description: Regex for Thighs
+tags:
+- Trash Guides
+tests: []

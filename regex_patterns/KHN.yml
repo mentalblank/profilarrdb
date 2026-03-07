@@ -1,0 +1,6 @@
+name: KHN
+pattern: ^(KHN)$
+description: Regex for KHN
+tags:
+- Trash Guides
+tests: []

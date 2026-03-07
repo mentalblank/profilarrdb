@@ -1,0 +1,33 @@
+trash_id: df13ed57843877b21ad969184ab6888f
+name: ATV
+includeCustomFormatWhenRenaming: true
+description: 'Apple TV
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Apple_TV%2B)
+
+
+  Apple TV is Apple Inc.''s video on demand service, offering movies and TV shows
+  that are not Apple Originals.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Apple TV
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(atv)\b
+  pattern: Apple TV
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

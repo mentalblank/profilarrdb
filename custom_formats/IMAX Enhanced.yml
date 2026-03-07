@@ -1,0 +1,27 @@
+trash_id: 9f6cbff8cfe4ebbc1bde14c7b7bec0de
+name: IMAX Enhanced
+includeCustomFormatWhenRenaming: false
+description: "IMAX Enhanced\n\nGet more picture and fewer black bars (letterboxing).\n\
+  \nFrom Wired (https://www.wired.com/story/what-is-imax-enhanced/)\n\nIMAX Enhanced\
+  \ is a standard for digital releases. It features scenes shot on IMAX cameras and\
+  \ produced in HDR10 DV. IMAX Enhanced releases often have a higher bitrate than\
+  \ other WEB options and are encoded into various formats, including SDR conversions.\n\
+  \nDue to the higher bitrate and implied picture quality improvement, it is recommended\
+  \ that the IMAX Enhanced custom format be enabled on WEB profiles, especially for\
+  \ those seeking 'The IMAX Experience'\u2014including fewer \"black bars\" or letterboxing.\n\
+  \n!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.1.png)\n\n!!Imax Enhanced\
+  \ Example (/Radarr/images/imax-e/imax-e.2.png)\n\n!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.3.png)\n\
+  \n!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.4.png)\n\n!!Imax Enhanced\
+  \ Example (/Radarr/images/imax-e/imax-e.5.png)"
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: IMAX Enhanced
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: ^(?=.*\b((dsnp|bc|b?core)\b|disney\+)(?=.*\bweb[ ._-]?(dl|rip)\b))(?=.*\b((?<!non[
+    ._-])imax)\b)|^(?=.*\b(imax[ ._-]enhanced)\b)
+  pattern: IMAX Enhanced
+tests: []

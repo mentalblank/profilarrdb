@@ -1,0 +1,6 @@
+name: Kantai
+pattern: \[Kantai\]|-Kantai\b
+description: Regex for Kantai
+tags:
+- Trash Guides
+tests: []

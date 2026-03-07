@@ -1,0 +1,6 @@
+name: NPMS
+pattern: ^(NPMS)$
+description: Regex for NPMS
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: INTERNAL
+pattern: \b(INTERNAL)\b
+description: Regex for INTERNAL
+tags:
+- Trash Guides
+tests: []

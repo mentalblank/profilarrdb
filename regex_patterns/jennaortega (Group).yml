@@ -1,0 +1,6 @@
+name: jennaortega (Group)
+pattern: ^(jennaortega(UHD)?)$
+description: Regex for jennaortega (Group)
+tags:
+- Trash Guides
+tests: []

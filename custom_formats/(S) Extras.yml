@@ -1,0 +1,18 @@
+trash_id: fbcb31d8dabd2a319072b84fc0b7249c
+name: (S) Extras
+includeCustomFormatWhenRenaming: false
+description: 'Extras
+
+
+  This Custom Format is used to prevent from grabbing releases containing only extras
+  (bonus footage, outtakes, etc).'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Extras
+  negate: false
+  required: true
+  type: release_title
+  pattern: (S) Extras
+tests: []

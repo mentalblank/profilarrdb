@@ -1,0 +1,6 @@
+name: Kirion
+pattern: \b(Kirion)\b
+description: Regex for Kirion
+tags:
+- Trash Guides
+tests: []

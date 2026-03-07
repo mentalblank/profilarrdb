@@ -1,0 +1,35 @@
+trash_id: d9058beaae2e147183870304dd526761
+name: CBC
+includeCustomFormatWhenRenaming: true
+description: "Canadian Broadcasting Corporation\n\nFrom Wikipedia, the free encyclopedia\
+  \ ()\n\nThe Canadian Broadcasting Corporation (French: Soci\xE9t\xE9 Radio-Canada),\
+  \ branded as CBC/Radio-Canada, is the Canadian public broadcaster for both radio\
+  \ and television. It is a Crown corporation that serves as the national public broadcaster,\
+  \ with its English-language and French-language service units known as CBC and Radio-Canada,\
+  \ respectively.\n\nCBC Gem\n\nFrom Wikipedia, the free encyclopedia ()\n\nCBC Gem\
+  \ is CBC Television's over-the-top streaming platform; it launched in 2018, replacing\
+  \ the existing CBC TV app. The service carries live and on-demand programming from\
+  \ CBC Television, CBC News, and CBC Sports, as well as short- and long-form original\
+  \ programming and acquisitions (including films and television series)."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: CBC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(cbc)\b
+  pattern: CBC
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

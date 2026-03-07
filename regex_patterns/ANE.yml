@@ -1,0 +1,6 @@
+name: ANE
+pattern: \[ANE\]|-ANE$
+description: Regex for ANE
+tags:
+- Trash Guides
+tests: []

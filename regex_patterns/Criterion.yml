@@ -1,0 +1,6 @@
+name: Criterion
+pattern: \b(Criterion)\b
+description: Regex for Criterion
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: WinLUNA (Group)
+pattern: \b(WinLUNA)\b
+description: Regex for WinLUNA (Group)
+tags:
+- Trash Guides
+tests: []

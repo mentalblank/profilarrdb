@@ -1,0 +1,21 @@
+trash_id: 182fa1c42a2468f8488e6dcf75a81b81
+name: INTERNAL
+includeCustomFormatWhenRenaming: false
+description: 'Internal
+
+
+  - Those who prefer scene releases may want to boost internals, as they generally
+  have higher settings that may not conform to the ruleset.
+
+  - In some rare cases, P2P use is also INTERNAL.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: INTERNAL
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(internal)\b
+  pattern: INTERNAL
+tests: []

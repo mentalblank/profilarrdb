@@ -1,0 +1,21 @@
+trash_id: 8016f2f66e751dea613e6b5b94bf633c
+name: MainFrame
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Group
+- Resolution
+- Trash Guides
+conditions:
+- name: MainFrame
+  negate: false
+  required: true
+  type: release_group
+  _raw_pattern: ^(mainframe)$
+  pattern: MainFrame
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+tests: []

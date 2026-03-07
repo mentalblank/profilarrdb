@@ -1,0 +1,6 @@
+name: CrEwSaDe
+pattern: ^(CrEwSaDe)$
+description: Regex for CrEwSaDe
+tags:
+- Trash Guides
+tests: []

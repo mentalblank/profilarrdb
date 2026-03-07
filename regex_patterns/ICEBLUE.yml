@@ -1,0 +1,6 @@
+name: ICEBLUE
+pattern: \b(ICEBLUE)\b
+description: Regex for ICEBLUE
+tags:
+- Trash Guides
+tests: []

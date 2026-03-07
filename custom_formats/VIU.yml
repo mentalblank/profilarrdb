@@ -1,0 +1,42 @@
+trash_id: 1b355ff093fd1064b75ea98c616881b1
+name: VIU
+includeCustomFormatWhenRenaming: true
+description: 'VIU
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  Viu (pronounced as view) is a Hong Kong-based over-the-top (OTT) video streaming
+  provider, Viu delivers content in different genres from Asia''s top content providers
+  with local language subtitles, as well as original production series under the Viu
+  Original initiative (similar to original programming from other services like Disney+,
+  Amazon Prime Video and Netflix).'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: VIU
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(viu)\b[ ._-]web[ ._-]?(dl|rip)?\b
+  pattern: VIU
+- name: VIU Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(viu)\b|\b(viu)\]
+  pattern: VIU Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

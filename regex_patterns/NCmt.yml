@@ -1,0 +1,6 @@
+name: NCmt
+pattern: ^(NCmt)$
+description: Regex for NCmt
+tags:
+- Trash Guides
+tests: []

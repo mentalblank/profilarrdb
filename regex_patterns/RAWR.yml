@@ -1,0 +1,6 @@
+name: RAWR
+pattern: ^(RAWR)$
+description: Regex for RAWR
+tags:
+- Trash Guides
+tests: []

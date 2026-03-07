@@ -1,0 +1,6 @@
+name: EVO
+pattern: ^(EVO)$
+description: Regex for EVO
+tags:
+- Trash Guides
+tests: []

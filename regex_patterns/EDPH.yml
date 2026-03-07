@@ -1,0 +1,6 @@
+name: EDPH
+pattern: ^(EDPH)$
+description: Regex for EDPH
+tags:
+- Trash Guides
+tests: []

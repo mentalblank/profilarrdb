@@ -1,0 +1,6 @@
+name: BUYMORE
+pattern: -BUYMORE\b
+description: Regex for BUYMORE
+tags:
+- Trash Guides
+tests: []

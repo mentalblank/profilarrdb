@@ -1,0 +1,6 @@
+name: PSA
+pattern: ^(PSA)$
+description: Regex for PSA
+tags:
+- Trash Guides
+tests: []

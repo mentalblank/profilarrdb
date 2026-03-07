@@ -1,0 +1,6 @@
+name: MTeam
+pattern: ^(MTeam|MT)$
+description: Regex for MTeam
+tags:
+- Trash Guides
+tests: []

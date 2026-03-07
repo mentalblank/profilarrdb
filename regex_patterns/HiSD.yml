@@ -1,0 +1,6 @@
+name: HiSD
+pattern: ^(HiSD)$
+description: Regex for HiSD
+tags:
+- Trash Guides
+tests: []

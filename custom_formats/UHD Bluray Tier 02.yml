@@ -1,0 +1,50 @@
+trash_id: a58f517a70193f8e578056642178419d
+name: UHD Bluray Tier 02
+includeCustomFormatWhenRenaming: false
+description: 'UHD Bluray Tier 02
+
+
+  Groups that:
+
+
+  - Have proven themselves by consistently delivering good quality releases
+
+  - Use high-quality sources
+
+  - Make releases that contain lossless audio tracks where available
+
+  - Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).'
+tags:
+- Quality
+- Release Group
+- Resolution
+- Source
+- Trash Guides
+conditions:
+- name: Not REMUX
+  negate: true
+  required: true
+  type: quality_modifier
+  modifier: remux
+- name: Not WEBDL
+  negate: true
+  required: true
+  type: source
+  source: web_dl
+- name: Not WEBRIP
+  negate: true
+  required: true
+  type: source
+  source: webrip
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+- name: HQMUX
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hqmux)$
+  pattern: HQMUX
+tests: []

@@ -1,0 +1,6 @@
+name: WRTEAM
+pattern: -WRTEAM\b
+description: Regex for WRTEAM
+tags:
+- Trash Guides
+tests: []

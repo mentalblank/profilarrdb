@@ -1,0 +1,6 @@
+name: BiTOR
+pattern: ^(BiTOR)$
+description: Regex for BiTOR
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,34 @@
+trash_id: 7dd31f3dee6d2ef8eeaa156e23c3857e
+name: B-Global
+includeCustomFormatWhenRenaming: true
+description: 'B-Global
+
+
+  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Bilibili)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: B-Global
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(b[ .-]?global)\b
+  pattern: B-Global
+tests: []

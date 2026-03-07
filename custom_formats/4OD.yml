@@ -1,0 +1,33 @@
+trash_id: bbcaf03147de0f73be2be4a9078dfa03
+name: 4OD
+includeCustomFormatWhenRenaming: true
+description: '4OD
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  4OD is a previous name for the UK''s Channel4 VOD service. Releases are usually
+  identified with either ''ALL4'' or ''4OD'', not ''Channel4''.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: 4OD
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(4od)\b
+  pattern: 4OD
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

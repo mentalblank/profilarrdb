@@ -1,0 +1,17 @@
+trash_id: 0d91270a7255a1e388fa85e959f359d8
+name: FreeLeech
+includeCustomFormatWhenRenaming: false
+description: "FreeLeech\n\nSometimes, torrent sites set a torrent to be freeleech.\
+  \ This means, that the download of this torrent will not count towards your download\
+  \ quota or ratio. This is useful if you do not have the best ratio yet.\n\n!!! warning\n\
+  \n    Keep in mind not all trackers support this option."
+tags:
+- Indexer Flag
+- Trash Guides
+conditions:
+- name: FreeLeech
+  negate: false
+  required: false
+  type: indexer_flag
+  flag: freeleech
+tests: []

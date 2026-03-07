@@ -1,0 +1,20 @@
+trash_id: 73613461ac2cea99d52c4cd6e177ab82
+name: HFR
+includeCustomFormatWhenRenaming: true
+description: 'HFR
+
+
+  HFR stands for High Frame Rate and refers to a video format that uses a higher number
+  of frames per second than traditional video, which could result in smoother and
+  more detailed motion.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: HFR
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(hfr)\b
+  pattern: HFR
+tests: []

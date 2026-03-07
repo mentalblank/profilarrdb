@@ -1,0 +1,6 @@
+name: Cyan
+pattern: \[Cyan\]|-Cyan\b
+description: Regex for Cyan
+tags:
+- Trash Guides
+tests: []

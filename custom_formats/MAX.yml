@@ -1,0 +1,32 @@
+trash_id: 6a061313d22e51e0f25b7cd4dc065233
+name: MAX
+includeCustomFormatWhenRenaming: true
+description: ''
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Max
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+  pattern: Max
+- name: MAX Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(max)\b|\b(max)\]
+  pattern: MAX Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

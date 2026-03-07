@@ -1,0 +1,6 @@
+name: 4K4U
+pattern: ^(4K4U)$
+description: Regex for 4K4U
+tags:
+- Trash Guides
+tests: []

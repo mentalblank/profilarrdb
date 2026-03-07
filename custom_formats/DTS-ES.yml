@@ -1,0 +1,65 @@
+trash_id: f9f847ac70a0af62ea4a08280b859636
+name: DTS-ES
+includeCustomFormatWhenRenaming: false
+description: "DTS-ES (DTS Extended Surround \u2013 lossy)\n\nDTS-ES (DTS Extended\
+  \ Surround) includes two variants, DTS-ES Discrete 6.1 and DTS-ES Matrix 5.1, depending\
+  \ on how the sound was originally mastered and stored."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: DTS-ES
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: dts[-. ]?es\b
+  pattern: DTS-ES
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+- name: Not Basic DTS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: dts[ .]?[1-9]
+  pattern: Not Basic DTS
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not DTS X
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '\b(dts[-_.: ]?x7?)\b(?![-_. ]?(26[456]))'
+  pattern: Not DTS X
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+tests: []

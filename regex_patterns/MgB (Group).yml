@@ -1,0 +1,6 @@
+name: MgB (Group)
+pattern: \b(MgB)\b
+description: Regex for MgB (Group)
+tags:
+- Trash Guides
+tests: []

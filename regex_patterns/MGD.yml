@@ -1,0 +1,6 @@
+name: MGD
+pattern: \b(MGD)\b
+description: Regex for MGD
+tags:
+- Trash Guides
+tests: []

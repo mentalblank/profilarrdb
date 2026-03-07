@@ -1,0 +1,6 @@
+name: UQW
+pattern: \b(UQW)\b
+description: Regex for UQW
+tags:
+- Trash Guides
+tests: []

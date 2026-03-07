@@ -1,0 +1,37 @@
+trash_id: b3b3a6ac74ecbd56bcdbefa4799fb9df
+name: AMZN
+includeCustomFormatWhenRenaming: true
+description: 'Amazon Prime Video
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Amazon_Prime_Video)
+
+
+  Amazon Prime Video, or simply Prime Video, is an American subscription video on-demand
+  over-the-top streaming and rental service of Amazon offered as a standalone service
+  or as part of Amazon''s Prime subscription. The service primarily distributes films
+  and television series produced by Amazon MGM Studios or licensed to Amazon, as Amazon
+  Originals, with the service also hosting content from other providers, content add-ons,
+  live sporting events, and video rental and purchasing services.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Amazon
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(amzn|amazon(hd)?)\b
+  pattern: Amazon
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

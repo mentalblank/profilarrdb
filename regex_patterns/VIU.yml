@@ -1,0 +1,6 @@
+name: VIU
+pattern: \b(viu)\b[ ._-]web[ ._-]?(dl|rip)?\b
+description: Regex for VIU
+tags:
+- Trash Guides
+tests: []

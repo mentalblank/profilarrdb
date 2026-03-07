@@ -1,0 +1,6 @@
+name: SumVision
+pattern: ^(SumVision)$
+description: Regex for SumVision
+tags:
+- Trash Guides
+tests: []

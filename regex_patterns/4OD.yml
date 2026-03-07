@@ -1,0 +1,6 @@
+name: 4OD
+pattern: \b(4OD)\b
+description: Regex for 4OD
+tags:
+- Trash Guides
+tests: []

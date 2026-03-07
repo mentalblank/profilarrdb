@@ -1,0 +1,6 @@
+name: Cinefeel
+pattern: ^(Cinefeel)$
+description: Regex for Cinefeel
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,15 @@
+trash_id: ff86c4326018682f817830ced463332b
+name: MPEG2
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: MPEG2
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: mpeg[-.]?2
+  pattern: MPEG2
+tests: []

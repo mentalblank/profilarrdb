@@ -1,0 +1,74 @@
+trash_id: 1c1a4c5e823891c75bc50380a6866f73
+name: DTS
+includeCustomFormatWhenRenaming: false
+description: "DTS (Original DTS format \u2013 lossy)\n\nDigital Theater Sound (DTS)\
+  \ is a digital audio technology developed by DTS, Inc, which focuses on digital\
+  \ surround sound formats for consumer and commercial applications as well as theatrical\
+  \ purposes. Compared to the Dolby Digital standard, DTS uses four times less compression\
+  \ and digitizes audio sounds at 20 bits instead of 16 bits. This makes DTS-based\
+  \ audio richer in sound and more detailed than Dolby Digital-based ones."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Basic DTS
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bdts(\b|\d)
+  pattern: Basic DTS
+- name: Not DTS-HD
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\b|\d)
+  pattern: Not DTS-HD
+- name: Not DTS-HD HRA/ES
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: dts[-. ]?(es|(hd[. ]?)?(hr|hi))
+  pattern: Not DTS-HD HRA_ES
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not DTS X
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '\b(dts[-_.: ]?x7?)\b(?![-_. ]?(26[456]))'
+  pattern: Not DTS X
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+tests: []

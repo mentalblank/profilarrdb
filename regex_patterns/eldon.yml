@@ -1,0 +1,6 @@
+name: eldon
+pattern: \b(eldon)\b
+description: Regex for eldon
+tags:
+- Trash Guides
+tests: []

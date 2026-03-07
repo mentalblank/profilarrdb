@@ -1,0 +1,33 @@
+trash_id: b124be9b146540f8e62f98fe32e49a2a
+name: 1.0 Mono
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Mono
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]1[ .]0\b|\bmono\b|\[pcm \]'
+  pattern: Mono
+- name: Not 3.0ch
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]3[ .]0\b'
+  pattern: Not 3.0ch
+- name: Not 4.0ch
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]4[ .]0\b'
+  pattern: Not 4.0ch
+- name: Not High Channel Count
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9][5-9][ .][0-1]\b'
+  pattern: Not High Channel Count
+tests: []

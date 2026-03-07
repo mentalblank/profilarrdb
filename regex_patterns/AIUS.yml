@@ -1,0 +1,6 @@
+name: AIUS
+pattern: \b(AIUS)\b
+description: Regex for AIUS
+tags:
+- Trash Guides
+tests: []

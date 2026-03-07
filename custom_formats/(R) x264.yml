@@ -1,0 +1,29 @@
+trash_id: 2899d84dc9372de3408e6d8cc18e9666
+name: (R) x264
+includeCustomFormatWhenRenaming: false
+description: 'x264
+
+
+  x264 is a *free software library* and *application* for encoding video streams into
+  the H.264/MPEG-4 AVC (https://en.wikipedia.org/wiki/H.264) compression format, and
+  is released under the terms of the GNU GPL (https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+
+  x264 is primarily used for 720p/1080p encodes and has better direct-play and compatibility
+  support.'
+tags:
+- Quality
+- Release Title
+- Trash Guides
+conditions:
+- name: Remux
+  negate: true
+  required: true
+  type: quality_modifier
+  modifier: remux
+- name: x|h264
+  negate: false
+  required: true
+  type: release_title
+  pattern: xh264
+tests: []

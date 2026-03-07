@@ -1,0 +1,6 @@
+name: Scene
+pattern: ^(Scene)$
+description: Regex for Scene
+tags:
+- Trash Guides
+tests: []

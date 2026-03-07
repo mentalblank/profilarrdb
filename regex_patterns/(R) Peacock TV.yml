@@ -1,0 +1,6 @@
+name: (R) Peacock TV
+pattern: \b(pcok|peacock)\b
+description: Regex for (R) Peacock TV
+tags:
+- Trash Guides
+tests: []

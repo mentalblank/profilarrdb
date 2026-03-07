@@ -1,0 +1,6 @@
+name: NoGroup
+pattern: NoGr(ou)?p
+description: Regex for NoGroup
+tags:
+- Trash Guides
+tests: []

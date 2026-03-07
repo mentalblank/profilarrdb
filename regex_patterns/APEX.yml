@@ -1,0 +1,6 @@
+name: APEX
+pattern: ^(APEX|PAXA|PEXA|XEPA)$
+description: Regex for APEX
+tags:
+- Trash Guides
+tests: []

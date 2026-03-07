@@ -1,0 +1,9692 @@
+[
+  {
+    "name": "$tore-Chill",
+    "pattern": "\\b(\\$tore-Chill)\\b",
+    "description": "Regex for $tore-Chill",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "$tore-Chill"
+  },
+  {
+    "name": "(R) AI Upscales",
+    "pattern": "(?<=\\b[12]\\d{3}\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b)",
+    "description": "Regex for (R) AI Upscales",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) AI Upscales"
+  },
+  {
+    "name": "(R) ATMOS",
+    "pattern": "\\b(ATMOS|CtrlHD|W4NK3R|DON)(\\b|\\d)",
+    "description": "Regex for (R) ATMOS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) ATMOS"
+  },
+  {
+    "name": "(R) Extras",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b",
+    "description": "Regex for (R) Extras",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Extras"
+  },
+  {
+    "name": "(R) HDR",
+    "pattern": "\\bHDR(\\b|\\d)",
+    "description": "Regex for (R) HDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) HDR"
+  },
+  {
+    "name": "(R) HDR10+",
+    "pattern": "\\bHDR10(\\+|P(lus)?\\b)",
+    "description": "Regex for (R) HDR10+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) HDR10+"
+  },
+  {
+    "name": "(R) Not GERMAN",
+    "pattern": "\\b(GERMAN)\\b",
+    "description": "Regex for (R) Not GERMAN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Not GERMAN"
+  },
+  {
+    "name": "(R) Not INFLATE_DEFLATE",
+    "pattern": "\\b(INFLATE|DEFLATE)\\b",
+    "description": "Regex for (R) Not INFLATE/DEFLATE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Not INFLATE_DEFLATE"
+  },
+  {
+    "name": "(R) Paramount+",
+    "pattern": "\\b(pmtp|Paramount Plus)\\b",
+    "description": "Regex for (R) Paramount+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Paramount+"
+  },
+  {
+    "name": "(R) Peacock TV",
+    "pattern": "\\b(pcok|peacock)\\b",
+    "description": "Regex for (R) Peacock TV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Peacock TV"
+  },
+  {
+    "name": "(R) Scrambled",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*(Scrambled)\\b",
+    "description": "Regex for (R) Scrambled",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Scrambled"
+  },
+  {
+    "name": "(R) Upscaled",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b",
+    "description": "Regex for (R) Upscaled",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(R) Upscaled"
+  },
+  {
+    "name": "(S) AI Upscales",
+    "pattern": "(?<=\\b\\d{3,4}p\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b)",
+    "description": "Regex for (S) AI Upscales",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) AI Upscales"
+  },
+  {
+    "name": "(S) BR-DISK",
+    "pattern": "^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|d3g|(BD)?REMUX|^(?=.*1080p)(?=.*HEVC)|[x][-_. ]?26[45]|German.*[DM]L|((?<=\\d{4}).*German.*([DM]L)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO|H[ ._-]?26[45])\\b))|^((?=.*\\b(((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*",
+    "description": "Regex for (S) BR-DISK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) BR-DISK"
+  },
+  {
+    "name": "(S) Extras",
+    "pattern": "(?<=\\bS\\d+\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b",
+    "description": "Regex for (S) Extras",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Extras"
+  },
+  {
+    "name": "(S) Not GERMAN",
+    "pattern": "\\b(GERMAN)$",
+    "description": "Regex for (S) Not GERMAN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Not GERMAN"
+  },
+  {
+    "name": "(S) Not INFLATE_DEFLATE",
+    "pattern": "\\b(INFLATE|DEFLATE[)\\]]?)$",
+    "description": "Regex for (S) Not INFLATE/DEFLATE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Not INFLATE_DEFLATE"
+  },
+  {
+    "name": "(S) Paramount+",
+    "pattern": "\\b(pmtp|Paramount\\+)\\b",
+    "description": "Regex for (S) Paramount+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Paramount+"
+  },
+  {
+    "name": "(S) Peacock TV",
+    "pattern": "\\b(pcok|Peacock TV)\\b",
+    "description": "Regex for (S) Peacock TV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Peacock TV"
+  },
+  {
+    "name": "(S) Scrambled",
+    "pattern": "(?<=\\bS\\d+\\b).*(Scrambled)\\b",
+    "description": "Regex for (S) Scrambled",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Scrambled"
+  },
+  {
+    "name": "(S) Upscaled",
+    "pattern": "(?<=\\b\\d{3,4}p\\b).*\\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b",
+    "description": "Regex for (S) Upscaled",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "(S) Upscaled"
+  },
+  {
+    "name": "0neshot",
+    "pattern": "\\b(0neshot)\\b",
+    "description": "Regex for 0neshot",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "0neshot"
+  },
+  {
+    "name": "0x539",
+    "pattern": "\\b(0x539)\\b",
+    "description": "Regex for 0x539",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "0x539"
+  },
+  {
+    "name": "10bit",
+    "pattern": "10[.-]?bit",
+    "description": "Regex for 10bit",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "10bit"
+  },
+  {
+    "name": "126811",
+    "pattern": "^(126811)$",
+    "description": "Regex for 126811",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "126811"
+  },
+  {
+    "name": "12GaugeShotgun",
+    "pattern": "^(12GaugeShotgun)$",
+    "description": "Regex for 12GaugeShotgun",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "12GaugeShotgun"
+  },
+  {
+    "name": "1XBET",
+    "pattern": "\\b(1XBET)\\b",
+    "description": "Regex for 1XBET",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "1XBET"
+  },
+  {
+    "name": "224",
+    "pattern": "\\[224\\]|-224\\b",
+    "description": "Regex for 224",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "224"
+  },
+  {
+    "name": "24xHD",
+    "pattern": "\\b(24xHD)\\b",
+    "description": "Regex for 24xHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "24xHD"
+  },
+  {
+    "name": "3.0ch",
+    "pattern": "[^0-9]3[ .]0\\b",
+    "description": "Regex for 3.0ch",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "3.0ch"
+  },
+  {
+    "name": "3D",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(3d|sbs|half[ .-]ou|half[ .-]sbs)\\b",
+    "description": "Regex for 3D",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "3D"
+  },
+  {
+    "name": "3L",
+    "pattern": "^(3L)$",
+    "description": "Regex for 3L",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "3L"
+  },
+  {
+    "name": "3Li (Group)",
+    "pattern": "\\b(3Li)\\b",
+    "description": "Regex for 3Li (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "3Li (Group)"
+  },
+  {
+    "name": "3Li (Title)",
+    "pattern": "^(3Li)$",
+    "description": "Regex for 3Li (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "3Li (Title)"
+  },
+  {
+    "name": "3cTWeB",
+    "pattern": "^(3cTWeB)$",
+    "description": "Regex for 3cTWeB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "3cTWeB"
+  },
+  {
+    "name": "4.0ch",
+    "pattern": "[^0-9]4[ .]0\\b",
+    "description": "Regex for 4.0ch",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "4.0ch"
+  },
+  {
+    "name": "41RGB",
+    "pattern": "^(41RGB)$",
+    "description": "Regex for 41RGB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "41RGB"
+  },
+  {
+    "name": "4K",
+    "pattern": "4k",
+    "description": "Regex for 4K",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "4K"
+  },
+  {
+    "name": "4K4U",
+    "pattern": "^(4K4U)$",
+    "description": "Regex for 4K4U",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "4K4U"
+  },
+  {
+    "name": "4OD",
+    "pattern": "\\b(4OD)\\b",
+    "description": "Regex for 4OD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "4OD"
+  },
+  {
+    "name": "4P",
+    "pattern": "-4P\\b",
+    "description": "Regex for 4P",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "4P"
+  },
+  {
+    "name": "4Planet",
+    "pattern": "-4Planet\\b",
+    "description": "Regex for 4Planet",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "4Planet"
+  },
+  {
+    "name": "5.1 Surround",
+    "pattern": "[^0-9]5[ .][0-1]\\b",
+    "description": "Regex for 5.1 Surround",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "5.1 Surround"
+  },
+  {
+    "name": "6.1 Surround",
+    "pattern": "[^0-9]6[ .][0-1]\\b",
+    "description": "Regex for 6.1 Surround",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "6.1 Surround"
+  },
+  {
+    "name": "7.1 Surround",
+    "pattern": "[^0-9][7-8][ .][0-1]\\b",
+    "description": "Regex for 7.1 Surround",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "7.1 Surround"
+  },
+  {
+    "name": "9volt",
+    "pattern": "\\b(9volt)\\b",
+    "description": "Regex for 9volt",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "9volt"
+  },
+  {
+    "name": "A-Destiny",
+    "pattern": "\\b(A-Destiny)\\b",
+    "description": "Regex for A-Destiny",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "A-Destiny"
+  },
+  {
+    "name": "AAC",
+    "pattern": "\\bAAC(\\b|\\d)",
+    "description": "Regex for AAC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AAC"
+  },
+  {
+    "name": "ABBIE",
+    "pattern": "^(ABBIE)$",
+    "description": "Regex for ABBIE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ABBIE"
+  },
+  {
+    "name": "ABBiE",
+    "pattern": "^(ABBiE)$",
+    "description": "Regex for ABBiE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ABBiE"
+  },
+  {
+    "name": "ABEMA",
+    "pattern": "\\b(ABEMA[ ._-]?(TV)?)\\b",
+    "description": "Regex for ABEMA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ABEMA"
+  },
+  {
+    "name": "ABdex",
+    "pattern": "\\b(ABdex)\\b",
+    "description": "Regex for ABdex",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ABdex"
+  },
+  {
+    "name": "AC",
+    "pattern": "\\[AC\\]|-AC$",
+    "description": "Regex for AC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AC"
+  },
+  {
+    "name": "AIUS",
+    "pattern": "\\b(AIUS)\\b",
+    "description": "Regex for AIUS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AIUS"
+  },
+  {
+    "name": "AJP69",
+    "pattern": "^(AJP69)$",
+    "description": "Regex for AJP69",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AJP69"
+  },
+  {
+    "name": "ALL4",
+    "pattern": "\\b(ALL4)\\b",
+    "description": "Regex for ALL4",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ALL4"
+  },
+  {
+    "name": "ANE",
+    "pattern": "\\[ANE\\]|-ANE$",
+    "description": "Regex for ANE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ANE"
+  },
+  {
+    "name": "AOC",
+    "pattern": "^(AOC)$",
+    "description": "Regex for AOC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AOC"
+  },
+  {
+    "name": "AOmundson",
+    "pattern": "\\b(AOmundson)\\b",
+    "description": "Regex for AOmundson",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AOmundson"
+  },
+  {
+    "name": "APEX",
+    "pattern": "^(APEX|PAXA|PEXA|XEPA)$",
+    "description": "Regex for APEX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "APEX"
+  },
+  {
+    "name": "ARC",
+    "pattern": "\\[ARC\\]|-ARC\\b",
+    "description": "Regex for ARC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ARC"
+  },
+  {
+    "name": "AREY",
+    "pattern": "\\b(AREY)\\b",
+    "description": "Regex for AREY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AREY"
+  },
+  {
+    "name": "AROMA",
+    "pattern": "^(AROMA)$",
+    "description": "Regex for AROMA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AROMA"
+  },
+  {
+    "name": "ASC",
+    "pattern": "\\b(ASC)\\b",
+    "description": "Regex for ASC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ASC"
+  },
+  {
+    "name": "ASW",
+    "pattern": "\\b(ASW)\\b",
+    "description": "Regex for ASW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ASW"
+  },
+  {
+    "name": "ATELiER",
+    "pattern": "^(ATELiER)$",
+    "description": "Regex for ATELiER",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ATELiER"
+  },
+  {
+    "name": "ATMOS (1)",
+    "pattern": "\\bATMOS(\\b|\\d)",
+    "description": "Regex for ATMOS (1)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ATMOS (1)"
+  },
+  {
+    "name": "ATMOS",
+    "pattern": "\\b(ATMOS|DDPA)(\\b|\\d)",
+    "description": "Regex for ATMOS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ATMOS"
+  },
+  {
+    "name": "AUBC",
+    "pattern": "\\b(AUBC)\\b",
+    "description": "Regex for AUBC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AUBC"
+  },
+  {
+    "name": "AV1",
+    "pattern": "\\bAV1\\b",
+    "description": "Regex for AV1",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AV1"
+  },
+  {
+    "name": "AZAZE",
+    "pattern": "^(AZAZE)$",
+    "description": "Regex for AZAZE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AZAZE"
+  },
+  {
+    "name": "AceAres",
+    "pattern": "\\b(AceAres)\\b",
+    "description": "Regex for AceAres",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AceAres"
+  },
+  {
+    "name": "Aergia",
+    "pattern": "\\[Aergia\\]|-Aergia(?!-raws)\\b",
+    "description": "Regex for Aergia",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Aergia"
+  },
+  {
+    "name": "Afro",
+    "pattern": "\\[Afro\\]|-Afro\\b",
+    "description": "Regex for Afro",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Afro"
+  },
+  {
+    "name": "AhmadDev",
+    "pattern": "\\b(AhmadDev)\\b",
+    "description": "Regex for AhmadDev",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AhmadDev"
+  },
+  {
+    "name": "AkihitoSubs",
+    "pattern": "\\b(AkihitoSubs)\\b",
+    "description": "Regex for AkihitoSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AkihitoSubs"
+  },
+  {
+    "name": "Almighty",
+    "pattern": "\\[Almighty\\]|-Almighty\\b",
+    "description": "Regex for Almighty",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Almighty"
+  },
+  {
+    "name": "Amazon",
+    "pattern": "\\b(amzn|amazon(hd)?)\\b",
+    "description": "Regex for Amazon",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Amazon"
+  },
+  {
+    "name": "AniVoid",
+    "pattern": "\\b(AniVoid)\\b",
+    "description": "Regex for AniVoid",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AniVoid"
+  },
+  {
+    "name": "Anime Chap",
+    "pattern": "\\b(Anime[ .-]?Chap)\\b",
+    "description": "Regex for Anime Chap",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Anime Chap"
+  },
+  {
+    "name": "Anime Land",
+    "pattern": "\\b(Anime[ .-]?Land)\\b",
+    "description": "Regex for Anime Land",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Anime Land"
+  },
+  {
+    "name": "Anime Time",
+    "pattern": "\\b(Anime[ .-]?Time)\\b",
+    "description": "Regex for Anime Time",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Anime Time"
+  },
+  {
+    "name": "AnimeDynastyEN",
+    "pattern": "\\b(AnimeDynastyEN)\\b",
+    "description": "Regex for AnimeDynastyEN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AnimeDynastyEN"
+  },
+  {
+    "name": "AnimeKuro",
+    "pattern": "\\b(AnimeKuro)\\b",
+    "description": "Regex for AnimeKuro",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AnimeKuro"
+  },
+  {
+    "name": "AnimeRG",
+    "pattern": "\\b(AnimeRG)\\b",
+    "description": "Regex for AnimeRG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AnimeRG"
+  },
+  {
+    "name": "AnimeTR",
+    "pattern": "\\b(AnimeTR)\\b",
+    "description": "Regex for AnimeTR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AnimeTR"
+  },
+  {
+    "name": "Animesubs",
+    "pattern": "\\b(Animesubs)\\b",
+    "description": "Regex for Animesubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Animesubs"
+  },
+  {
+    "name": "Animorphs",
+    "pattern": "\\b(Animorphs)\\b",
+    "description": "Regex for Animorphs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Animorphs"
+  },
+  {
+    "name": "Anitsu",
+    "pattern": "\\b(Anitsu)\\b",
+    "description": "Regex for Anitsu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Anitsu"
+  },
+  {
+    "name": "AnoZu",
+    "pattern": "\\b(AnoZu)\\b",
+    "description": "Regex for AnoZu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AnoZu"
+  },
+  {
+    "name": "Apple TV+",
+    "pattern": "\\b(atvp|aptv|Apple TV\\+)\\b",
+    "description": "Regex for Apple TV+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Apple TV+"
+  },
+  {
+    "name": "Apple TV",
+    "pattern": "\\b(ATV)\\b",
+    "description": "Regex for Apple TV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Apple TV"
+  },
+  {
+    "name": "ArataEnc",
+    "pattern": "\\b(ArataEnc)\\b",
+    "description": "Regex for ArataEnc",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ArataEnc"
+  },
+  {
+    "name": "Arg0",
+    "pattern": "\\b(Arg0)\\b",
+    "description": "Regex for Arg0",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Arg0"
+  },
+  {
+    "name": "Ari",
+    "pattern": "\\[Ari\\]|-Ari\\b",
+    "description": "Regex for Ari",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Ari"
+  },
+  {
+    "name": "Arid",
+    "pattern": "\\[Arid\\]|-Arid\\b",
+    "description": "Regex for Arid",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Arid"
+  },
+  {
+    "name": "Arukoru",
+    "pattern": "\\b(Arukoru)\\b",
+    "description": "Regex for Arukoru",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Arukoru"
+  },
+  {
+    "name": "AsRequested",
+    "pattern": "-AsRequested\\b",
+    "description": "Regex for AsRequested",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AsRequested"
+  },
+  {
+    "name": "Asakura",
+    "pattern": "\\[Asakura\\]|-Asakura\\b",
+    "description": "Regex for Asakura",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Asakura"
+  },
+  {
+    "name": "Asenshi",
+    "pattern": "\\b(Asenshi)\\b",
+    "description": "Regex for Asenshi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Asenshi"
+  },
+  {
+    "name": "AsukaRaws",
+    "pattern": "Asuka[ ._-]?(Raws)",
+    "description": "Regex for AsukaRaws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "AsukaRaws"
+  },
+  {
+    "name": "Audio Description",
+    "pattern": "\\b((FRENCH|MULTi|WiTH)[ .-]AD)\\b",
+    "description": "Regex for Audio Description",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Audio Description"
+  },
+  {
+    "name": "B-Global",
+    "pattern": "\\b(B[ .-]?Global)\\b",
+    "description": "Regex for B-Global",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "B-Global"
+  },
+  {
+    "name": "B00BA",
+    "pattern": "\\b(B00BA)\\b",
+    "description": "Regex for B00BA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "B00BA"
+  },
+  {
+    "name": "BARC0DE",
+    "pattern": "^(BARC0DE)$",
+    "description": "Regex for BARC0DE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BARC0DE"
+  },
+  {
+    "name": "BAT",
+    "pattern": "^(BAT)$",
+    "description": "Regex for BAT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BAT"
+  },
+  {
+    "name": "BAUCKLEY",
+    "pattern": "^(BAUCKLEY)$",
+    "description": "Regex for BAUCKLEY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BAUCKLEY"
+  },
+  {
+    "name": "BBC iPlayer",
+    "pattern": "\\b(ip|iplayer)\\b",
+    "description": "Regex for BBC iPlayer",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BBC iPlayer"
+  },
+  {
+    "name": "BBQ",
+    "pattern": "^(BBQ)$",
+    "description": "Regex for BBQ",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BBQ"
+  },
+  {
+    "name": "BBT-RMX",
+    "pattern": "\\b(BBT-RMX)\\b",
+    "description": "Regex for BBT-RMX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BBT-RMX"
+  },
+  {
+    "name": "BD3D",
+    "pattern": "\\b(BD3D)\\b",
+    "description": "Regex for BD3D",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BD3D"
+  },
+  {
+    "name": "BEN THE MEN",
+    "pattern": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b",
+    "description": "Regex for BEN THE MEN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BEN THE MEN"
+  },
+  {
+    "name": "BHDStudio",
+    "pattern": "^(BHDStudio)$",
+    "description": "Regex for BHDStudio",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BHDStudio"
+  },
+  {
+    "name": "BJX",
+    "pattern": "\\b(BJX)\\b",
+    "description": "Regex for BJX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BJX"
+  },
+  {
+    "name": "BKC",
+    "pattern": "\\b(BKC)\\b",
+    "description": "Regex for BKC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BKC"
+  },
+  {
+    "name": "BLOOM",
+    "pattern": "^(BLOOM)$",
+    "description": "Regex for BLOOM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BLOOM"
+  },
+  {
+    "name": "BLURANiUM",
+    "pattern": "^(BLURANiUM)$",
+    "description": "Regex for BLURANiUM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BLURANiUM"
+  },
+  {
+    "name": "BLUTONiUM",
+    "pattern": "^(BLUTONiUM)$",
+    "description": "Regex for BLUTONiUM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BLUTONiUM"
+  },
+  {
+    "name": "BMF",
+    "pattern": "^(BMF)$",
+    "description": "Regex for BMF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BMF"
+  },
+  {
+    "name": "BNd",
+    "pattern": "^(BNd)$",
+    "description": "Regex for BNd",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BNd"
+  },
+  {
+    "name": "BR-DISK",
+    "pattern": "^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|d3g|(BD)?REMUX|^(?=.*1080p)(?=.*HEVC)|[xh][-_. ]?26[45]|German.*[DM]L|((?<=\\d{4}).*German.*([DM]L)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO)\\b))|^((?=.*\\b(((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*",
+    "description": "Regex for BR-DISK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BR-DISK"
+  },
+  {
+    "name": "BRiNK",
+    "pattern": "^(BRiNK)$",
+    "description": "Regex for BRiNK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BRiNK"
+  },
+  {
+    "name": "BTM",
+    "pattern": "^(BTM)$",
+    "description": "Regex for BTM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BTM"
+  },
+  {
+    "name": "BTW",
+    "pattern": "^(BTW)$",
+    "description": "Regex for BTW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BTW"
+  },
+  {
+    "name": "BUYMORE",
+    "pattern": "-BUYMORE\\b",
+    "description": "Regex for BUYMORE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BUYMORE"
+  },
+  {
+    "name": "BYNDR",
+    "pattern": "^(BYNDR)$",
+    "description": "Regex for BYNDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BYNDR"
+  },
+  {
+    "name": "Basic DTS",
+    "pattern": "\\bDTS(\\b|\\d)",
+    "description": "Regex for Basic DTS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Basic DTS"
+  },
+  {
+    "name": "Basic Dolby Digital",
+    "pattern": "\\bDD[^a-z+]|(?<!e-)\\b(ac-?3)\\b",
+    "description": "Regex for Basic Dolby Digital",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Basic Dolby Digital"
+  },
+  {
+    "name": "Baws (1)",
+    "pattern": "\\b(Baws)\\b",
+    "description": "Regex for Baws (1)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Baws (1)"
+  },
+  {
+    "name": "Baws",
+    "pattern": "\\b(Baws|McBalls)\\b",
+    "description": "Regex for Baws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Baws"
+  },
+  {
+    "name": "BdC",
+    "pattern": "^(BdC)$",
+    "description": "Regex for BdC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BdC"
+  },
+  {
+    "name": "Beatrice-Raws",
+    "pattern": "Beatrice[ ._-]?(Raws)",
+    "description": "Regex for Beatrice-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Beatrice-Raws"
+  },
+  {
+    "name": "Beatrice",
+    "pattern": "\\[Beatrice\\]|-Beatrice(?!-raws)\\b",
+    "description": "Regex for Beatrice",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Beatrice"
+  },
+  {
+    "name": "BiOMA",
+    "pattern": "^(BiOMA)$",
+    "description": "Regex for BiOMA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BiOMA"
+  },
+  {
+    "name": "BiRJU",
+    "pattern": "\\b(BiRJU)\\b",
+    "description": "Regex for BiRJU",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BiRJU"
+  },
+  {
+    "name": "BiTOR (2160p)",
+    "pattern": "(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))",
+    "description": "Regex for BiTOR (2160p)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BiTOR (2160p)"
+  },
+  {
+    "name": "BiTOR",
+    "pattern": "^(BiTOR)$",
+    "description": "Regex for BiTOR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BiTOR"
+  },
+  {
+    "name": "BiZKiT",
+    "pattern": "^(BiZKiT)$",
+    "description": "Regex for BiZKiT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BiZKiT"
+  },
+  {
+    "name": "Bilibili",
+    "pattern": "\\b(Bili(bili)?)\\b",
+    "description": "Regex for Bilibili",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Bilibili"
+  },
+  {
+    "name": "BlackBit",
+    "pattern": "^(BlackBit)$",
+    "description": "Regex for BlackBit",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BlackBit"
+  },
+  {
+    "name": "BlackLuster",
+    "pattern": "\\b(BlackLuster)\\b",
+    "description": "Regex for BlackLuster",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BlackLuster"
+  },
+  {
+    "name": "Blackout_B&W_Black&Chrome",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome))))\\b(?!$)",
+    "description": "Regex for Blackout/B&W/Black&Chrome",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Blackout_B&W_Black&Chrome"
+  },
+  {
+    "name": "BluRay3D",
+    "pattern": "\\b(BluRay3D)\\b",
+    "description": "Regex for BluRay3D",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BluRay3D"
+  },
+  {
+    "name": "BlueLobster",
+    "pattern": "\\b(BlueLobster)\\b",
+    "description": "Regex for BlueLobster",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BlueLobster"
+  },
+  {
+    "name": "BlurayDesuYo",
+    "pattern": "\\b(BlurayDesuYo)\\b",
+    "description": "Regex for BlurayDesuYo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "BlurayDesuYo"
+  },
+  {
+    "name": "Bolshevik",
+    "pattern": "\\[Bolshevik\\]|-Bolshevik\\b",
+    "description": "Regex for Bolshevik",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Bolshevik"
+  },
+  {
+    "name": "Bravia Core",
+    "pattern": "\\b(BCORE)\\b|\\b(\\d{3,4}(p|i))\\b.*\\b(CORE)\\b",
+    "description": "Regex for Bravia Core",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Bravia Core"
+  },
+  {
+    "name": "Brrrrrrr",
+    "pattern": "\\b(Brrrrrrr)\\b",
+    "description": "Regex for Brrrrrrr",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Brrrrrrr"
+  },
+  {
+    "name": "Bunny-Apocalypse",
+    "pattern": "\\b(Bunny-Apocalypse)\\b",
+    "description": "Regex for Bunny-Apocalypse",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Bunny-Apocalypse"
+  },
+  {
+    "name": "C.A.A",
+    "pattern": "^(C\\.A\\.A)$",
+    "description": "Regex for C.A.A",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "C.A.A"
+  },
+  {
+    "name": "C1NEM4",
+    "pattern": "^(C1NEM4)$",
+    "description": "Regex for C1NEM4",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "C1NEM4"
+  },
+  {
+    "name": "C4K",
+    "pattern": "^(C4K)$",
+    "description": "Regex for C4K",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "C4K"
+  },
+  {
+    "name": "CAPTCHA",
+    "pattern": "-CAPTCHA\\b",
+    "description": "Regex for CAPTCHA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CAPTCHA"
+  },
+  {
+    "name": "CBB",
+    "pattern": "\\b(CBB)\\b",
+    "description": "Regex for CBB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CBB"
+  },
+  {
+    "name": "CBC",
+    "pattern": "\\b(CBC)\\b",
+    "description": "Regex for CBC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CBC"
+  },
+  {
+    "name": "CBT",
+    "pattern": "\\b(CBT)\\b",
+    "description": "Regex for CBT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CBT"
+  },
+  {
+    "name": "CC Rename",
+    "pattern": "\\[(CC)\\b|\\b(CC)\\]",
+    "description": "Regex for CC Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CC Rename"
+  },
+  {
+    "name": "CC",
+    "pattern": "\\b(CC)\\b",
+    "description": "Regex for CC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CC"
+  },
+  {
+    "name": "CDDHD",
+    "pattern": "^(CDDHD)$",
+    "description": "Regex for CDDHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CDDHD"
+  },
+  {
+    "name": "CHAOS",
+    "pattern": "^(CHAOS)$",
+    "description": "Regex for CHAOS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CHAOS"
+  },
+  {
+    "name": "CHD",
+    "pattern": "^(CHD)$",
+    "description": "Regex for CHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CHD"
+  },
+  {
+    "name": "CHX",
+    "pattern": "^(CHX)$",
+    "description": "Regex for CHX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CHX"
+  },
+  {
+    "name": "CMRG",
+    "pattern": "^(CMRG)$",
+    "description": "Regex for CMRG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CMRG"
+  },
+  {
+    "name": "COLLECTiVE",
+    "pattern": "^(COLLECTiVE)$",
+    "description": "Regex for COLLECTiVE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "COLLECTiVE"
+  },
+  {
+    "name": "CREATiVE24 (Group)",
+    "pattern": "^(CREATiVE24)$",
+    "description": "Regex for CREATiVE24 (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CREATiVE24 (Group)"
+  },
+  {
+    "name": "CREATiVE24 (Title)",
+    "pattern": "\\b(CREATiVE24)\\b",
+    "description": "Regex for CREATiVE24 (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CREATiVE24 (Title)"
+  },
+  {
+    "name": "CRFW",
+    "pattern": "^(CRFW)$",
+    "description": "Regex for CRFW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CRFW"
+  },
+  {
+    "name": "CRUCiBLE",
+    "pattern": "\\[CRUCiBLE\\]|-CRUCiBLE\\b",
+    "description": "Regex for CRUCiBLE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CRUCiBLE"
+  },
+  {
+    "name": "CRUD",
+    "pattern": "^(CRUD)$",
+    "description": "Regex for CRUD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CRUD"
+  },
+  {
+    "name": "CRiSC",
+    "pattern": "^(CRiSC)$",
+    "description": "Regex for CRiSC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CRiSC"
+  },
+  {
+    "name": "CRiT",
+    "pattern": "\\b(CRiT)\\b",
+    "description": "Regex for CRiT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CRiT"
+  },
+  {
+    "name": "CTFOH",
+    "pattern": "^(CTFOH)$",
+    "description": "Regex for CTFOH",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CTFOH"
+  },
+  {
+    "name": "CTR",
+    "pattern": "\\b(CTR)\\b",
+    "description": "Regex for CTR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CTR"
+  },
+  {
+    "name": "CUNNY",
+    "pattern": "\\b(CUNNY)\\b",
+    "description": "Regex for CUNNY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CUNNY"
+  },
+  {
+    "name": "Cait-Sidhe",
+    "pattern": "\\b(Cait-Sidhe)\\b",
+    "description": "Regex for Cait-Sidhe",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cait-Sidhe"
+  },
+  {
+    "name": "CameEsp",
+    "pattern": "\\b(CameEsp)\\b",
+    "description": "Regex for CameEsp",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CameEsp"
+  },
+  {
+    "name": "CasStudio",
+    "pattern": "^(CasStudio)$",
+    "description": "Regex for CasStudio",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CasStudio"
+  },
+  {
+    "name": "Cat66",
+    "pattern": "\\b(Cat66)\\b",
+    "description": "Regex for Cat66",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cat66"
+  },
+  {
+    "name": "Cerberus",
+    "pattern": "\\[Cerberus\\]|-Cerberus\\b",
+    "description": "Regex for Cerberus",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cerberus"
+  },
+  {
+    "name": "Chamele0n",
+    "pattern": "-Chamele0n\\b",
+    "description": "Regex for Chamele0n",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Chamele0n"
+  },
+  {
+    "name": "Chihiro",
+    "pattern": "\\[Chihiro\\]|-Chihiro\\b",
+    "description": "Regex for Chihiro",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Chihiro"
+  },
+  {
+    "name": "Chimera",
+    "pattern": "\\[Chimera\\]|-Chimera\\b",
+    "description": "Regex for Chimera",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Chimera"
+  },
+  {
+    "name": "Chotab",
+    "pattern": "^(Chotab)$",
+    "description": "Regex for Chotab",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Chotab"
+  },
+  {
+    "name": "ChucksMux",
+    "pattern": "\\b(ChucksMux)\\b",
+    "description": "Regex for ChucksMux",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ChucksMux"
+  },
+  {
+    "name": "CiNE",
+    "pattern": "^(CiNE)$",
+    "description": "Regex for CiNE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CiNE"
+  },
+  {
+    "name": "CiNEPHiLES",
+    "pattern": "^(CiNEPHiLES)$",
+    "description": "Regex for CiNEPHiLES",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CiNEPHiLES"
+  },
+  {
+    "name": "CiT",
+    "pattern": "^(CiT)$",
+    "description": "Regex for CiT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CiT"
+  },
+  {
+    "name": "Cinefeel",
+    "pattern": "^(Cinefeel)$",
+    "description": "Regex for Cinefeel",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cinefeel"
+  },
+  {
+    "name": "Cleo",
+    "pattern": "\\[Cleo\\]|-Cleo",
+    "description": "Regex for Cleo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cleo"
+  },
+  {
+    "name": "Comedy Central",
+    "pattern": "\\b(CC)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for Comedy Central",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Comedy Central"
+  },
+  {
+    "name": "Commie",
+    "pattern": "\\b(Commie)\\b",
+    "description": "Regex for Commie",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Commie"
+  },
+  {
+    "name": "Coo7",
+    "pattern": "^(Coo7)$",
+    "description": "Regex for Coo7",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Coo7"
+  },
+  {
+    "name": "Cory",
+    "pattern": "^(Cory)$",
+    "description": "Regex for Cory",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cory"
+  },
+  {
+    "name": "CrEwSaDe",
+    "pattern": "^(CrEwSaDe)$",
+    "description": "Regex for CrEwSaDe",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CrEwSaDe"
+  },
+  {
+    "name": "Crave Rename",
+    "pattern": "\\[(CRAV)\\b|\\b(CRAV)\\]",
+    "description": "Regex for Crave Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Crave Rename"
+  },
+  {
+    "name": "Crave",
+    "pattern": "\\b(crav(e)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for Crave",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Crave"
+  },
+  {
+    "name": "Criterion",
+    "pattern": "\\b(Criterion)\\b",
+    "description": "Regex for Criterion",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Criterion"
+  },
+  {
+    "name": "Crow",
+    "pattern": "\\[Crow\\]|-Crow\\b",
+    "description": "Regex for Crow",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Crow"
+  },
+  {
+    "name": "Crunchyroll",
+    "pattern": "\\b(C(runchy)?[ .-]?R(oll)?)\\b",
+    "description": "Regex for Crunchyroll",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Crunchyroll"
+  },
+  {
+    "name": "CsS",
+    "pattern": "\\b(CsS)\\b",
+    "description": "Regex for CsS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CsS"
+  },
+  {
+    "name": "CtrlHD",
+    "pattern": "^(CtrlHD)$",
+    "description": "Regex for CtrlHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CtrlHD"
+  },
+  {
+    "name": "CuaP",
+    "pattern": "\\b(CuaP)\\b",
+    "description": "Regex for CuaP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CuaP"
+  },
+  {
+    "name": "Cunnysseur",
+    "pattern": "\\b(Cunnysseur)\\b",
+    "description": "Regex for Cunnysseur",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cunnysseur"
+  },
+  {
+    "name": "CyC",
+    "pattern": "\\b(CyC)\\b",
+    "description": "Regex for CyC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "CyC"
+  },
+  {
+    "name": "Cyan",
+    "pattern": "\\[Cyan\\]|-Cyan\\b",
+    "description": "Regex for Cyan",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cyan"
+  },
+  {
+    "name": "Cytox",
+    "pattern": "\\b(Cytox)\\b",
+    "description": "Regex for Cytox",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Cytox"
+  },
+  {
+    "name": "D-Z0N3",
+    "pattern": "^(D-Z0N3)$",
+    "description": "Regex for D-Z0N3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "D-Z0N3"
+  },
+  {
+    "name": "D3US",
+    "pattern": "(-D3US|D3US-)",
+    "description": "Regex for D3US",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "D3US"
+  },
+  {
+    "name": "D4C",
+    "pattern": "\\b(D4C)\\b",
+    "description": "Regex for D4C",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "D4C"
+  },
+  {
+    "name": "DARKFLiX",
+    "pattern": "\\b(DARKFLiX)\\b",
+    "description": "Regex for DARKFLiX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DARKFLiX"
+  },
+  {
+    "name": "DB",
+    "pattern": "\\[DB\\]",
+    "description": "Regex for DB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DB"
+  },
+  {
+    "name": "DBArabic",
+    "pattern": "\\b(DBArabic)\\b",
+    "description": "Regex for DBArabic",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DBArabic"
+  },
+  {
+    "name": "DC Universe",
+    "pattern": "\\b(dcu|DC Universe)\\b",
+    "description": "Regex for DC Universe",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DC Universe"
+  },
+  {
+    "name": "DDR",
+    "pattern": "^(DDR)$",
+    "description": "Regex for DDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DDR"
+  },
+  {
+    "name": "DEEP",
+    "pattern": "^(DEEP)$",
+    "description": "Regex for DEEP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DEEP"
+  },
+  {
+    "name": "DEFLATE",
+    "pattern": "^(DEFLATE)$",
+    "description": "Regex for DEFLATE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DEFLATE"
+  },
+  {
+    "name": "DIY",
+    "pattern": "\\[DIY\\]|-DIY\\b",
+    "description": "Regex for DIY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DIY"
+  },
+  {
+    "name": "DKB",
+    "pattern": "\\b(DKB)\\b",
+    "description": "Regex for DKB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DKB"
+  },
+  {
+    "name": "DNL",
+    "pattern": "^(DNL)$",
+    "description": "Regex for DNL",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DNL"
+  },
+  {
+    "name": "DON",
+    "pattern": "^(DON)$",
+    "description": "Regex for DON",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DON"
+  },
+  {
+    "name": "DP",
+    "pattern": "\\b(DP)\\b",
+    "description": "Regex for DP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DP"
+  },
+  {
+    "name": "DRACULA",
+    "pattern": "^(DRACULA)$",
+    "description": "Regex for DRACULA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DRACULA"
+  },
+  {
+    "name": "DRX",
+    "pattern": "^(DRX)$",
+    "description": "Regex for DRX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DRX"
+  },
+  {
+    "name": "DSCP Rename",
+    "pattern": "\\[(DSCP)\\b|\\b(DSCP)\\]",
+    "description": "Regex for DSCP Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DSCP Rename"
+  },
+  {
+    "name": "DTS X",
+    "pattern": "\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456]))",
+    "description": "Regex for DTS X",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DTS X"
+  },
+  {
+    "name": "DTS-ES",
+    "pattern": "dts[-. ]?es\\b",
+    "description": "Regex for DTS-ES",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DTS-ES"
+  },
+  {
+    "name": "DTS-HD HRA",
+    "pattern": "dts[-. ]?(hd[. ]?)?(hra?|hi\\b)",
+    "description": "Regex for DTS-HD HRA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DTS-HD HRA"
+  },
+  {
+    "name": "DTS-HD MA",
+    "pattern": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)",
+    "description": "Regex for DTS-HD MA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DTS-HD MA"
+  },
+  {
+    "name": "DV With HDR10 fallback",
+    "pattern": "^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB[ ._-]?(DL|Rip)?)\\b)(?!.*\\b(hulu)\\b))",
+    "description": "Regex for DV With HDR10 fallback",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DV With HDR10 fallback"
+  },
+  {
+    "name": "DV",
+    "pattern": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b",
+    "description": "Regex for DV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DV"
+  },
+  {
+    "name": "Daddy-Raws",
+    "pattern": "Daddy[ ._-]?(Raws)",
+    "description": "Regex for Daddy-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Daddy-Raws"
+  },
+  {
+    "name": "DaddySubs",
+    "pattern": "\\[Daddy(Subs)?\\]|-Daddy(Subs)?\\b",
+    "description": "Regex for DaddySubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DaddySubs"
+  },
+  {
+    "name": "Dae (1)",
+    "pattern": "\\b(Dae)\\b",
+    "description": "Regex for Dae (1)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dae (1)"
+  },
+  {
+    "name": "Dae",
+    "pattern": "\\[Dae\\]|-Dae\\b",
+    "description": "Regex for Dae",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dae"
+  },
+  {
+    "name": "DameDesuYo",
+    "pattern": "\\b(DameDesuYo)\\b",
+    "description": "Regex for DameDesuYo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DameDesuYo"
+  },
+  {
+    "name": "Dariush",
+    "pattern": "^(Dariush)$",
+    "description": "Regex for Dariush",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dariush"
+  },
+  {
+    "name": "Darkness and Light",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)",
+    "description": "Regex for Darkness and Light",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Darkness and Light"
+  },
+  {
+    "name": "Datte13",
+    "pattern": "\\b(Datte13)\\b",
+    "description": "Regex for Datte13",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Datte13"
+  },
+  {
+    "name": "Deadmau- RAWS",
+    "pattern": "\\b(Deadmau[ .-]?[ .-]?RAWS)\\b",
+    "description": "Regex for Deadmau- RAWS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Deadmau- RAWS"
+  },
+  {
+    "name": "Dekinai",
+    "pattern": "\\[Dekinai\\]|-Dekinai\\b",
+    "description": "Regex for Dekinai",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dekinai"
+  },
+  {
+    "name": "DemiHuman",
+    "pattern": "\\b(DemiHuman)\\b",
+    "description": "Regex for DemiHuman",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DemiHuman"
+  },
+  {
+    "name": "DepraveD",
+    "pattern": "^(DepraveD)$",
+    "description": "Regex for DepraveD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DepraveD"
+  },
+  {
+    "name": "Discovery+",
+    "pattern": "\\b((dscp|dcp|disc)\\b|dscv\\+?)[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for Discovery+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Discovery+"
+  },
+  {
+    "name": "Disney+",
+    "pattern": "\\b(dsnp|dsny|disney|Disney\\+)\\b",
+    "description": "Regex for Disney+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Disney+"
+  },
+  {
+    "name": "Doc",
+    "pattern": "\\[Doc\\]|-Doc\\b",
+    "description": "Regex for Doc",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Doc"
+  },
+  {
+    "name": "Doki",
+    "pattern": "\\[Doki\\]|-Doki\\b",
+    "description": "Regex for Doki",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Doki"
+  },
+  {
+    "name": "Dolby Digital Plus (1)",
+    "pattern": "\\bDD[P+]|\\b(e[-_. ]?ac-?3)\\b",
+    "description": "Regex for Dolby Digital Plus (1)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dolby Digital Plus (1)"
+  },
+  {
+    "name": "Dolby Digital Plus",
+    "pattern": "\\bDD[P+](?!A)|\\b(e[-_. ]?ac-?3)\\b",
+    "description": "Regex for Dolby Digital Plus",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dolby Digital Plus"
+  },
+  {
+    "name": "Dolby Vision",
+    "pattern": "\\b(dv|dovi|dolby[ .]?V(ision)?)\\b",
+    "description": "Regex for Dolby Vision",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dolby Vision"
+  },
+  {
+    "name": "Dooky (Group)",
+    "pattern": "^(Dooky)$",
+    "description": "Regex for Dooky (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dooky (Group)"
+  },
+  {
+    "name": "Dooky (Title)",
+    "pattern": "\\b(Dooky)\\b",
+    "description": "Regex for Dooky (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dooky (Title)"
+  },
+  {
+    "name": "Drag",
+    "pattern": "\\[Drag\\]|-Drag\\b",
+    "description": "Regex for Drag",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Drag"
+  },
+  {
+    "name": "Dragon-Releases",
+    "pattern": "\\b(Dragon-Releases)\\b",
+    "description": "Regex for Dragon-Releases",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dragon-Releases"
+  },
+  {
+    "name": "DragsterPS",
+    "pattern": "\\b(DragsterPS)\\b",
+    "description": "Regex for DragsterPS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DragsterPS"
+  },
+  {
+    "name": "DsunS",
+    "pattern": "\\b(DsunS)\\b",
+    "description": "Regex for DsunS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "DsunS"
+  },
+  {
+    "name": "Dual Audio",
+    "pattern": "dual[ ._-]?(audio)|[([]dual[])]|\\b(JA|ZH|KO)(?= ?\\+ ?.*?\\b(EN))|\\b(EN)(?= ?\\+ ?.*?\\b(JA|ZH|KO))|\\b(Japanese|Chinese|Korean) ?[ ._\\+&-] ?\\b(English)|\\b(English) ?[ ._\\+&-] ?\\b(Japanese|Chinese|Korean)|\\b(\\d{3,4}(p|i)|4K|U(ltra)?HD)\\b.*\\b(DUAL)\\b(?!.*\\(|\\))",
+    "description": "Regex for Dual Audio",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dual Audio"
+  },
+  {
+    "name": "Dual-Audio",
+    "pattern": "(dual|multi|funi|eng(lish)?)[\\s._-]?(audio|dub(s|bed)?)|[([](dual|multi)[])]|\\b([a-zA-Z]{2}\\+EN|EN\\+[a-zA-Z]{2})\\b|\\b(\\d{3,4}(p|i)|4K|U(ltra)?HD)\\b.*\\b(DUAL|MULTI)\\b(?!.*\\(|\\))",
+    "description": "Regex for Dual-Audio",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dual-Audio"
+  },
+  {
+    "name": "Dubbed",
+    "pattern": "^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub)",
+    "description": "Regex for Dubbed",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dubbed"
+  },
+  {
+    "name": "Dutch Groups",
+    "pattern": "-CyTSuNee|-SHiTSoNy|-QoQ",
+    "description": "Regex for Dutch Groups",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Dutch Groups"
+  },
+  {
+    "name": "E",
+    "pattern": "^(E)$",
+    "description": "Regex for E",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "E"
+  },
+  {
+    "name": "EA",
+    "pattern": "^(EA)$",
+    "description": "Regex for EA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EA"
+  },
+  {
+    "name": "EDGE",
+    "pattern": "\\[EDGE\\]|-EDGE\\b",
+    "description": "Regex for EDGE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EDGE"
+  },
+  {
+    "name": "EDPH",
+    "pattern": "^(EDPH)$",
+    "description": "Regex for EDPH",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EDPH"
+  },
+  {
+    "name": "EJF",
+    "pattern": "\\b(EJF)\\b",
+    "description": "Regex for EJF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EJF"
+  },
+  {
+    "name": "EMBER",
+    "pattern": "\\[EMBER\\]|-EMBER\\b",
+    "description": "Regex for EMBER",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EMBER"
+  },
+  {
+    "name": "END",
+    "pattern": "^(END)$",
+    "description": "Regex for END",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "END"
+  },
+  {
+    "name": "EPSiLON",
+    "pattern": "^(EPSiLON)$",
+    "description": "Regex for EPSiLON",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EPSiLON"
+  },
+  {
+    "name": "EPiC",
+    "pattern": "^(EPiC)$",
+    "description": "Regex for EPiC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EPiC"
+  },
+  {
+    "name": "ETHiCS",
+    "pattern": "^(ETHiCS)$",
+    "description": "Regex for ETHiCS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ETHiCS"
+  },
+  {
+    "name": "EVO (no WEBDL)",
+    "pattern": "(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO)\\b",
+    "description": "Regex for EVO (no WEBDL)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EVO (no WEBDL)"
+  },
+  {
+    "name": "EVO",
+    "pattern": "^(EVO)$",
+    "description": "Regex for EVO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EVO"
+  },
+  {
+    "name": "EXP",
+    "pattern": "\\[EXP\\]|-EXP\\b",
+    "description": "Regex for EXP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EXP"
+  },
+  {
+    "name": "EXTREME",
+    "pattern": "^(EXTREME)$",
+    "description": "Regex for EXTREME",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EXTREME"
+  },
+  {
+    "name": "EbP",
+    "pattern": "^(EbP)$",
+    "description": "Regex for EbP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EbP"
+  },
+  {
+    "name": "Emmid",
+    "pattern": "\\[Emmid\\]|-Emmid\\b",
+    "description": "Regex for Emmid",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Emmid"
+  },
+  {
+    "name": "Erai-Raws",
+    "pattern": "\\b(Erai-raws)\\b",
+    "description": "Regex for Erai-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Erai-Raws"
+  },
+  {
+    "name": "EuReKA",
+    "pattern": "^(EuReKA)$",
+    "description": "Regex for EuReKA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "EuReKA"
+  },
+  {
+    "name": "ExREN",
+    "pattern": "\\b(ExREN)\\b",
+    "description": "Regex for ExREN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ExREN"
+  },
+  {
+    "name": "Exiled-Destiny",
+    "pattern": "\\b(Exiled-Destiny|E-D)\\b",
+    "description": "Regex for Exiled-Destiny",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Exiled-Destiny"
+  },
+  {
+    "name": "FAV",
+    "pattern": "\\[FAV\\]|-FAV\\b",
+    "description": "Regex for FAV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FAV"
+  },
+  {
+    "name": "FC",
+    "pattern": "^(FC)$",
+    "description": "Regex for FC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FC"
+  },
+  {
+    "name": "FF",
+    "pattern": "^(FF)$",
+    "description": "Regex for FF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FF"
+  },
+  {
+    "name": "FFF",
+    "pattern": "\\b(FFF)\\b",
+    "description": "Regex for FFF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FFF"
+  },
+  {
+    "name": "FGT",
+    "pattern": "^(FGT)$",
+    "description": "Regex for FGT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FGT"
+  },
+  {
+    "name": "FLAC",
+    "pattern": "\\bFLAC(\\b|\\d)",
+    "description": "Regex for FLAC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FLAC"
+  },
+  {
+    "name": "FLE",
+    "pattern": "\\b(FLE)\\b",
+    "description": "Regex for FLE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FLE"
+  },
+  {
+    "name": "FLUX",
+    "pattern": "^(FLUX)$",
+    "description": "Regex for FLUX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FLUX"
+  },
+  {
+    "name": "FMD",
+    "pattern": "^(FMD)$",
+    "description": "Regex for FMD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FMD"
+  },
+  {
+    "name": "FOD",
+    "pattern": "\\b(fod)\\b",
+    "description": "Regex for FOD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FOD"
+  },
+  {
+    "name": "FOXX",
+    "pattern": "^(FOXX)$",
+    "description": "Regex for FOXX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FOXX"
+  },
+  {
+    "name": "FRDS",
+    "pattern": "^(FRDS)$",
+    "description": "Regex for FRDS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FRDS"
+  },
+  {
+    "name": "FZHD",
+    "pattern": "^(FZHD)$",
+    "description": "Regex for FZHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FZHD"
+  },
+  {
+    "name": "FaNGDiNG0",
+    "pattern": "^(FaNGDiNG0)$",
+    "description": "Regex for FaNGDiNG0",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FaNGDiNG0"
+  },
+  {
+    "name": "FanSUB",
+    "pattern": "\\b(FanSUB)\\b",
+    "description": "Regex for FanSUB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FanSUB"
+  },
+  {
+    "name": "FastSUB",
+    "pattern": "\\b(FastSUB)\\b",
+    "description": "Regex for FastSUB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FastSUB"
+  },
+  {
+    "name": "FateSucks",
+    "pattern": "\\b(FateSucks)\\b",
+    "description": "Regex for FateSucks",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FateSucks"
+  },
+  {
+    "name": "Feranki1980 (Group)",
+    "pattern": "^(Feranki1980)$",
+    "description": "Regex for Feranki1980 (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Feranki1980 (Group)"
+  },
+  {
+    "name": "Feranki1980 (Title)",
+    "pattern": "\\b(Feranki1980)\\b",
+    "description": "Regex for Feranki1980 (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Feranki1980 (Title)"
+  },
+  {
+    "name": "Final8",
+    "pattern": "\\b(Final8)\\b",
+    "description": "Regex for Final8",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Final8"
+  },
+  {
+    "name": "Fish",
+    "pattern": "\\b((Baked|Dead|Space)Fish)\\b",
+    "description": "Regex for Fish",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Fish"
+  },
+  {
+    "name": "Flights",
+    "pattern": "^(Flights)$",
+    "description": "Regex for Flights",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Flights"
+  },
+  {
+    "name": "Flugel",
+    "pattern": "\\b(Flugel)\\b",
+    "description": "Regex for Flugel",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Flugel"
+  },
+  {
+    "name": "Foxtrot",
+    "pattern": "\\[Foxtrot\\]|-Foxtrot\\b",
+    "description": "Regex for Foxtrot",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Foxtrot"
+  },
+  {
+    "name": "FraMeSToR (1)",
+    "pattern": "^(FraMeSToR)$",
+    "description": "Regex for FraMeSToR (1)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FraMeSToR (1)"
+  },
+  {
+    "name": "FraMeSToR",
+    "pattern": "\\b(FraMeSToR)\\b",
+    "description": "Regex for FraMeSToR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FraMeSToR"
+  },
+  {
+    "name": "Freehold",
+    "pattern": "\\b(Freehold)\\b",
+    "description": "Regex for Freehold",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Freehold"
+  },
+  {
+    "name": "Fumi-Raws",
+    "pattern": "Fumi[ ._-]?(Raws)",
+    "description": "Regex for Fumi-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Fumi-Raws"
+  },
+  {
+    "name": "FunArts",
+    "pattern": "\\b(FunArts)\\b",
+    "description": "Regex for FunArts",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "FunArts"
+  },
+  {
+    "name": "Funimation",
+    "pattern": "\\b(FUNi(mation)?)\\b",
+    "description": "Regex for Funimation",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Funimation"
+  },
+  {
+    "name": "G4RiS",
+    "pattern": "^(G4RiS)$",
+    "description": "Regex for G4RiS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "G4RiS"
+  },
+  {
+    "name": "GERMini",
+    "pattern": "\\b(GERMini)\\b",
+    "description": "Regex for GERMini",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GERMini"
+  },
+  {
+    "name": "GEROV",
+    "pattern": "-GEROV\\b",
+    "description": "Regex for GEROV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GEROV"
+  },
+  {
+    "name": "GHD",
+    "pattern": "^(GHD)$",
+    "description": "Regex for GHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GHD"
+  },
+  {
+    "name": "GHOST",
+    "pattern": "\\[GHOST\\]|-GHOST\\b",
+    "description": "Regex for GHOST",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GHOST"
+  },
+  {
+    "name": "GHOSTS",
+    "pattern": "^(GHOSTS)$",
+    "description": "Regex for GHOSTS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GHOSTS"
+  },
+  {
+    "name": "GHS",
+    "pattern": "\\b(GHS)\\b",
+    "description": "Regex for GHS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GHS"
+  },
+  {
+    "name": "GJM",
+    "pattern": "\\b(GJM)\\b",
+    "description": "Regex for GJM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GJM"
+  },
+  {
+    "name": "GNOME",
+    "pattern": "^(GNOME)$",
+    "description": "Regex for GNOME",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GNOME"
+  },
+  {
+    "name": "GNOMiSSiON",
+    "pattern": "^(GNOMiSSiON)$",
+    "description": "Regex for GNOMiSSiON",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GNOMiSSiON"
+  },
+  {
+    "name": "GPTHD",
+    "pattern": "^(GPTHD)$",
+    "description": "Regex for GPTHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GPTHD"
+  },
+  {
+    "name": "GSK_kun",
+    "pattern": "\\b(GSK[._-]kun)\\b",
+    "description": "Regex for GSK_kun",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GSK_kun"
+  },
+  {
+    "name": "GST",
+    "pattern": "\\b(GST)\\b",
+    "description": "Regex for GST",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GST"
+  },
+  {
+    "name": "GUEIRA",
+    "pattern": "^(GUEIRA)$",
+    "description": "Regex for GUEIRA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GUEIRA"
+  },
+  {
+    "name": "GalaxyRG (Group)",
+    "pattern": "^(GalaxyRG)$",
+    "description": "Regex for GalaxyRG (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GalaxyRG (Group)"
+  },
+  {
+    "name": "GalaxyRG (Title)",
+    "pattern": "\\b(GalaxyRG)\\b",
+    "description": "Regex for GalaxyRG (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GalaxyRG (Title)"
+  },
+  {
+    "name": "Gao",
+    "pattern": "\\[Gao\\]|-Gao\\b",
+    "description": "Regex for Gao",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Gao"
+  },
+  {
+    "name": "Geek",
+    "pattern": "^(Geek)$",
+    "description": "Regex for Geek",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Geek"
+  },
+  {
+    "name": "Geonope",
+    "pattern": "\\b(Geonope)\\b",
+    "description": "Regex for Geonope",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Geonope"
+  },
+  {
+    "name": "GetItTwisted",
+    "pattern": "\\b(GetItTwisted)\\b",
+    "description": "Regex for GetItTwisted",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "GetItTwisted"
+  },
+  {
+    "name": "Golumpa",
+    "pattern": "\\b(Golumpa)\\b",
+    "description": "Regex for Golumpa",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Golumpa"
+  },
+  {
+    "name": "Grayscale",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Gr[ae]y([ ._-]?(scale))?)\\b(?!$)",
+    "description": "Regex for Grayscale",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Grayscale"
+  },
+  {
+    "name": "HAV1T",
+    "pattern": "\\b(HAV1T)\\b",
+    "description": "Regex for HAV1T",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HAV1T"
+  },
+  {
+    "name": "HBO Max",
+    "pattern": "\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)",
+    "description": "Regex for HBO Max",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HBO Max"
+  },
+  {
+    "name": "HBO Rename",
+    "pattern": "\\[(HBO)\\b|\\b(HBO)\\]",
+    "description": "Regex for HBO Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HBO Rename"
+  },
+  {
+    "name": "HBO",
+    "pattern": "\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)",
+    "description": "Regex for HBO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HBO"
+  },
+  {
+    "name": "HDHUB4U",
+    "pattern": "^(HDHUB4U)$",
+    "description": "Regex for HDHUB4U",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDHUB4U"
+  },
+  {
+    "name": "HDR Formats",
+    "pattern": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b|\\b(FraMeSToR|HQMUX|SICFoI)\\b|\\b(PQ)\\b|\\bHLG(\\b|\\d)",
+    "description": "Regex for HDR Formats",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDR Formats"
+  },
+  {
+    "name": "HDR",
+    "pattern": "\\b(HDR)\\b",
+    "description": "Regex for HDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDR"
+  },
+  {
+    "name": "HDR10+",
+    "pattern": "\\b(HDR10(?=[+]|P(lus)?))",
+    "description": "Regex for HDR10+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDR10+"
+  },
+  {
+    "name": "HDR10",
+    "pattern": "\\b(HDR10(?![+]|P(lus)?))",
+    "description": "Regex for HDR10",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDR10"
+  },
+  {
+    "name": "HDS",
+    "pattern": "^(HDS)$",
+    "description": "Regex for HDS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDS"
+  },
+  {
+    "name": "HDT",
+    "pattern": "^(HDT)$",
+    "description": "Regex for HDT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDT"
+  },
+  {
+    "name": "HDTime",
+    "pattern": "^(HDTime)$",
+    "description": "Regex for HDTime",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDTime"
+  },
+  {
+    "name": "HDWinG",
+    "pattern": "^(HDWinG)$",
+    "description": "Regex for HDWinG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HDWinG"
+  },
+  {
+    "name": "HENiL",
+    "pattern": "\\b(HENiL)\\b",
+    "description": "Regex for HENiL",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HENiL"
+  },
+  {
+    "name": "HFR",
+    "pattern": "\\b(HFR)\\b",
+    "description": "Regex for HFR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HFR"
+  },
+  {
+    "name": "HHWEB",
+    "pattern": "^(HHWEB)$",
+    "description": "Regex for HHWEB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HHWEB"
+  },
+  {
+    "name": "HIDIVE",
+    "pattern": "\\b(HIDI(VE)?)\\b",
+    "description": "Regex for HIDIVE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HIDIVE"
+  },
+  {
+    "name": "HLG",
+    "pattern": "\\b(HLG)\\b",
+    "description": "Regex for HLG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HLG"
+  },
+  {
+    "name": "HMAX Rename",
+    "pattern": "\\[(HMAX)\\b|\\b(HMAX)\\]",
+    "description": "Regex for HMAX Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HMAX Rename"
+  },
+  {
+    "name": "HONE",
+    "pattern": "^(HONE)$",
+    "description": "Regex for HONE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HONE"
+  },
+  {
+    "name": "HQMUX",
+    "pattern": "^(HQMUX)$",
+    "description": "Regex for HQMUX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HQMUX"
+  },
+  {
+    "name": "HR",
+    "pattern": "\\[HR\\]|-HR\\b",
+    "description": "Regex for HR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HR"
+  },
+  {
+    "name": "Hakata Ramen",
+    "pattern": "\\b(Hakata[ .-]?Ramen)\\b",
+    "description": "Regex for Hakata Ramen",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hakata Ramen"
+  },
+  {
+    "name": "Half-Baked",
+    "pattern": "\\b(Half-Baked)\\b",
+    "description": "Regex for Half-Baked",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Half-Baked"
+  },
+  {
+    "name": "Hall_of_C",
+    "pattern": "\\b(Hall_of_C)\\b",
+    "description": "Regex for Hall_of_C",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hall_of_C"
+  },
+  {
+    "name": "Hark0N",
+    "pattern": "\\b(Hark0N)\\b",
+    "description": "Regex for Hark0N",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hark0N"
+  },
+  {
+    "name": "HatSubs",
+    "pattern": "\\b(HatSubs)\\b",
+    "description": "Regex for HatSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HatSubs"
+  },
+  {
+    "name": "Hatsuyuki",
+    "pattern": "\\[Hatsuyuki\\]|-Hatsuyuki\\b",
+    "description": "Regex for Hatsuyuki",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hatsuyuki"
+  },
+  {
+    "name": "Headpatter",
+    "pattern": "\\[Headpatter\\]|-Headpatter\\b",
+    "description": "Regex for Headpatter",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Headpatter"
+  },
+  {
+    "name": "HiDt",
+    "pattern": "^(HiDt)$",
+    "description": "Regex for HiDt",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HiDt"
+  },
+  {
+    "name": "HiFi",
+    "pattern": "^(HiFi)$",
+    "description": "Regex for HiFi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HiFi"
+  },
+  {
+    "name": "HiQVE",
+    "pattern": "^(HiQVE)$",
+    "description": "Regex for HiQVE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HiQVE"
+  },
+  {
+    "name": "HiSD",
+    "pattern": "^(HiSD)$",
+    "description": "Regex for HiSD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HiSD"
+  },
+  {
+    "name": "Hitoku",
+    "pattern": "\\[Hitoku\\]|-Hitoku\\b",
+    "description": "Regex for Hitoku",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hitoku"
+  },
+  {
+    "name": "HollowRoxas",
+    "pattern": "\\b(HollowRoxas)\\b",
+    "description": "Regex for HollowRoxas",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HollowRoxas"
+  },
+  {
+    "name": "Holomux",
+    "pattern": "\\b(Holomux)\\b",
+    "description": "Regex for Holomux",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Holomux"
+  },
+  {
+    "name": "HorribleRips",
+    "pattern": "\\b(HorribleRips)\\b",
+    "description": "Regex for HorribleRips",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HorribleRips"
+  },
+  {
+    "name": "HorribleSubs",
+    "pattern": "\\b(HorribleSubs)\\b",
+    "description": "Regex for HorribleSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "HorribleSubs"
+  },
+  {
+    "name": "Hotstar",
+    "pattern": "\\b(HTSR|DSNPHS|HS)\\b",
+    "description": "Regex for Hotstar",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hotstar"
+  },
+  {
+    "name": "Hulu",
+    "pattern": "\\b(hulu)\\b",
+    "description": "Regex for Hulu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hulu"
+  },
+  {
+    "name": "Hybrid",
+    "pattern": "\\bhybrid(\\b|\\d)",
+    "description": "Regex for Hybrid",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Hybrid"
+  },
+  {
+    "name": "ICEBLUE",
+    "pattern": "\\b(ICEBLUE)\\b",
+    "description": "Regex for ICEBLUE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ICEBLUE"
+  },
+  {
+    "name": "IK",
+    "pattern": "\\b(IK)\\b",
+    "description": "Regex for IK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "IK"
+  },
+  {
+    "name": "IMAX Enhanced",
+    "pattern": "^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)",
+    "description": "Regex for IMAX Enhanced",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "IMAX Enhanced"
+  },
+  {
+    "name": "IMAX",
+    "pattern": "\\b((?<!NON[ ._-])IMAX)\\b",
+    "description": "Regex for IMAX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "IMAX"
+  },
+  {
+    "name": "INFLATE",
+    "pattern": "^(INFLATE)$",
+    "description": "Regex for INFLATE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "INFLATE"
+  },
+  {
+    "name": "INTERNAL",
+    "pattern": "\\b(INTERNAL)\\b",
+    "description": "Regex for INTERNAL",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "INTERNAL"
+  },
+  {
+    "name": "ITVX Rename",
+    "pattern": "\\[(ITVX)\\b|\\b(ITVX)\\]",
+    "description": "Regex for ITVX Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ITVX Rename"
+  },
+  {
+    "name": "ITVX",
+    "pattern": "\\b(ITVX?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for ITVX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ITVX"
+  },
+  {
+    "name": "Inka-Subs",
+    "pattern": "\\b(Inka-Subs)\\b",
+    "description": "Regex for Inka-Subs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Inka-Subs"
+  },
+  {
+    "name": "IrizaRaws",
+    "pattern": "Iriza[ ._-]?(Raws)",
+    "description": "Regex for IrizaRaws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "IrizaRaws"
+  },
+  {
+    "name": "Iznjie Biznjie",
+    "pattern": "\\b(Iznjie[ .-]Biznjie)\\b",
+    "description": "Regex for Iznjie Biznjie",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Iznjie Biznjie"
+  },
+  {
+    "name": "JETIX",
+    "pattern": "^(JETIX)$",
+    "description": "Regex for JETIX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "JETIX"
+  },
+  {
+    "name": "JFF",
+    "pattern": "^(JFF)$",
+    "description": "Regex for JFF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "JFF"
+  },
+  {
+    "name": "JOHNTiTOR",
+    "pattern": "\\b(JOHNTiTOR)\\b",
+    "description": "Regex for JOHNTiTOR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "JOHNTiTOR"
+  },
+  {
+    "name": "JacobSwaggedUp",
+    "pattern": "\\b(JacobSwaggedUp)\\b",
+    "description": "Regex for JacobSwaggedUp",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "JacobSwaggedUp"
+  },
+  {
+    "name": "Japhson (Group)",
+    "pattern": "\\b(Japhson)\\b",
+    "description": "Regex for Japhson (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Japhson (Group)"
+  },
+  {
+    "name": "Japhson (Title)",
+    "pattern": "^(Japhson)$",
+    "description": "Regex for Japhson (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Japhson (Title)"
+  },
+  {
+    "name": "Johnny-englishsubs",
+    "pattern": "\\b(Johnny-englishsubs)\\b",
+    "description": "Regex for Johnny-englishsubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Johnny-englishsubs"
+  },
+  {
+    "name": "Judas",
+    "pattern": "\\[Judas\\]|-Judas",
+    "description": "Regex for Judas",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Judas"
+  },
+  {
+    "name": "Judgement",
+    "pattern": "\\[Judgment\\]|-Judgment\\b",
+    "description": "Regex for Judgement",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Judgement"
+  },
+  {
+    "name": "JySzE",
+    "pattern": "\\b(JySzE)\\b",
+    "description": "Regex for JySzE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "JySzE"
+  },
+  {
+    "name": "KAN3D2M",
+    "pattern": "\\b(KAN3D2M)\\b",
+    "description": "Regex for KAN3D2M",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KAN3D2M"
+  },
+  {
+    "name": "KC",
+    "pattern": "^(KC)$",
+    "description": "Regex for KC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KC"
+  },
+  {
+    "name": "KEKMASTERS",
+    "pattern": "\\b(KEKMASTERS)\\b",
+    "description": "Regex for KEKMASTERS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KEKMASTERS"
+  },
+  {
+    "name": "KH",
+    "pattern": "\\b(KH)\\b",
+    "description": "Regex for KH",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KH"
+  },
+  {
+    "name": "KHN",
+    "pattern": "^(KHN)$",
+    "description": "Regex for KHN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KHN"
+  },
+  {
+    "name": "KIRA",
+    "pattern": "^(KIRA)$",
+    "description": "Regex for KIRA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KIRA"
+  },
+  {
+    "name": "KQRM",
+    "pattern": "\\b(KQRM)\\b",
+    "description": "Regex for KQRM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KQRM"
+  },
+  {
+    "name": "KRP",
+    "pattern": "\\b(KRP)\\b",
+    "description": "Regex for KRP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KRP"
+  },
+  {
+    "name": "KRaLiMaRKo",
+    "pattern": "^(KRaLiMaRKo)$",
+    "description": "Regex for KRaLiMaRKo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KRaLiMaRKo"
+  },
+  {
+    "name": "KS (Not Dual Audio)",
+    "pattern": "^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\bKS\\b",
+    "description": "Regex for KS (Not Dual Audio)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KS (Not Dual Audio)"
+  },
+  {
+    "name": "KaiDubs (Not Dual Audio)",
+    "pattern": "^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\b(KaiDubs)\\b",
+    "description": "Regex for KaiDubs (Not Dual Audio)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KaiDubs (Not Dual Audio)"
+  },
+  {
+    "name": "Kaleido-subs",
+    "pattern": "\\b(Kaleido-subs)\\b",
+    "description": "Regex for Kaleido-subs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kaleido-subs"
+  },
+  {
+    "name": "Kaleido",
+    "pattern": "\\b(Kaleido)\\b",
+    "description": "Regex for Kaleido",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kaleido"
+  },
+  {
+    "name": "Kallango",
+    "pattern": "\\[Kallango\\]|-Kallango\\b",
+    "description": "Regex for Kallango",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kallango"
+  },
+  {
+    "name": "Kametsu",
+    "pattern": "\\b(Kametsu)\\b",
+    "description": "Regex for Kametsu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kametsu"
+  },
+  {
+    "name": "KamiFS",
+    "pattern": "\\b(KamiFS)\\b",
+    "description": "Regex for KamiFS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KamiFS"
+  },
+  {
+    "name": "Kanjouteki",
+    "pattern": "\\b(Kanjouteki)\\b",
+    "description": "Regex for Kanjouteki",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kanjouteki"
+  },
+  {
+    "name": "Kantai",
+    "pattern": "\\[Kantai\\]|-Kantai\\b",
+    "description": "Regex for Kantai",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kantai"
+  },
+  {
+    "name": "KawaSubs",
+    "pattern": "\\b(KawaSubs)\\b",
+    "description": "Regex for KawaSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KawaSubs"
+  },
+  {
+    "name": "Kawaiika-Raws",
+    "pattern": "Kawaiika[ ._-]?(Raws)",
+    "description": "Regex for Kawaiika-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kawaiika-Raws"
+  },
+  {
+    "name": "Kawatare",
+    "pattern": "\\[Kawatare\\]|-Kawatare\\b",
+    "description": "Regex for Kawatare",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kawatare"
+  },
+  {
+    "name": "KiMCHI",
+    "pattern": "^(KiMCHI)$",
+    "description": "Regex for KiMCHI",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KiMCHI"
+  },
+  {
+    "name": "KiNGDOM",
+    "pattern": "^(KiNGDOM)$",
+    "description": "Regex for KiNGDOM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KiNGDOM"
+  },
+  {
+    "name": "KiNGS",
+    "pattern": "^(KiNGS)$",
+    "description": "Regex for KiNGS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KiNGS"
+  },
+  {
+    "name": "Kirion",
+    "pattern": "\\b(Kirion)\\b",
+    "description": "Regex for Kirion",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kirion"
+  },
+  {
+    "name": "Kitsune (Group)",
+    "pattern": "^(Kitsune)$",
+    "description": "Regex for Kitsune (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kitsune (Group)"
+  },
+  {
+    "name": "Kitsune (Title)",
+    "pattern": "\\[Kitsune\\]|-Kitsune\\b",
+    "description": "Regex for Kitsune (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kitsune (Title)"
+  },
+  {
+    "name": "KiyoshiStar",
+    "pattern": "\\b(KS|KiyoshiStar)\\b",
+    "description": "Regex for KiyoshiStar",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "KiyoshiStar"
+  },
+  {
+    "name": "Koi-Raws",
+    "pattern": "Koi[ ._-]?(Raws)",
+    "description": "Regex for Koi-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Koi-Raws"
+  },
+  {
+    "name": "Koten_Gars",
+    "pattern": "\\b(Koten[ ._-]Gars)\\b",
+    "description": "Regex for Koten_Gars",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Koten_Gars"
+  },
+  {
+    "name": "Kulot",
+    "pattern": "\\b(Kulot)\\b",
+    "description": "Regex for Kulot",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Kulot"
+  },
+  {
+    "name": "L0SERNIGHT",
+    "pattern": "^(L0SERNIGHT)$",
+    "description": "Regex for L0SERNIGHT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "L0SERNIGHT"
+  },
+  {
+    "name": "LAMA",
+    "pattern": "^(LAMA)$",
+    "description": "Regex for LAMA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LAMA"
+  },
+  {
+    "name": "LAZY",
+    "pattern": "^(LAZY)$",
+    "description": "Regex for LAZY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LAZY"
+  },
+  {
+    "name": "LCD",
+    "pattern": "^(LCD)$",
+    "description": "Regex for LCD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LCD"
+  },
+  {
+    "name": "LCE",
+    "pattern": "\\b(LCE)\\b",
+    "description": "Regex for LCE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LCE"
+  },
+  {
+    "name": "LUCY",
+    "pattern": "^(LUCY)$",
+    "description": "Regex for LUCY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LUCY"
+  },
+  {
+    "name": "LYS1TH3A",
+    "pattern": "\\b(LYS1TH3A)\\b",
+    "description": "Regex for LYS1TH3A",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LYS1TH3A"
+  },
+  {
+    "name": "LaCroiX",
+    "pattern": "\\b(LaCroiX)\\b",
+    "description": "Regex for LaCroiX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LaCroiX"
+  },
+  {
+    "name": "LazyRemux",
+    "pattern": "\\b(LazyRemux)\\b",
+    "description": "Regex for LazyRemux",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LazyRemux"
+  },
+  {
+    "name": "Leffe",
+    "pattern": "^(Leffe)$",
+    "description": "Regex for Leffe",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Leffe"
+  },
+  {
+    "name": "Legion",
+    "pattern": "\\[Legion\\]|-Legion\\b",
+    "description": "Regex for Legion",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Legion"
+  },
+  {
+    "name": "LiGaS",
+    "pattern": "^(LiGaS)$",
+    "description": "Regex for LiGaS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LiGaS"
+  },
+  {
+    "name": "Lia",
+    "pattern": "\\[Lia\\]|-Lia\\b",
+    "description": "Regex for Lia",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Lia"
+  },
+  {
+    "name": "Liber8",
+    "pattern": "^(Liber8)$",
+    "description": "Regex for Liber8",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Liber8"
+  },
+  {
+    "name": "Lilith-Raws",
+    "pattern": "Lilith[ ._-]?(Raws)",
+    "description": "Regex for Lilith-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Lilith-Raws"
+  },
+  {
+    "name": "Line Dubbed",
+    "pattern": "\\b(LD|AC3LD|Line[ .-]?Dubbed)\\b",
+    "description": "Regex for Line Dubbed",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Line Dubbed"
+  },
+  {
+    "name": "LoRD",
+    "pattern": "^(LoRD)$",
+    "description": "Regex for LoRD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LoRD"
+  },
+  {
+    "name": "LolHD",
+    "pattern": "^(LolHD)$",
+    "description": "Regex for LolHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LolHD"
+  },
+  {
+    "name": "LoliHouse",
+    "pattern": "\\b(LoliHouse)\\b",
+    "description": "Regex for LoliHouse",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LoliHouse"
+  },
+  {
+    "name": "LostYears",
+    "pattern": "\\b(LostYears)\\b",
+    "description": "Regex for LostYears",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LostYears"
+  },
+  {
+    "name": "LowPower-Raws",
+    "pattern": "LowPower[ ._-]?(Raws)",
+    "description": "Regex for LowPower-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "LowPower-Raws"
+  },
+  {
+    "name": "Lulu",
+    "pattern": "\\[Lulu\\]|-Lulu\\b",
+    "description": "Regex for Lulu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Lulu"
+  },
+  {
+    "name": "M@nI",
+    "pattern": "\\b(M@nI)\\b",
+    "description": "Regex for M@nI",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "M@nI"
+  },
+  {
+    "name": "MALD",
+    "pattern": "\\b(MALD)\\b",
+    "description": "Regex for MALD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MALD"
+  },
+  {
+    "name": "MAX Rename",
+    "pattern": "\\[(MAX)\\b|\\b(MAX)\\]",
+    "description": "Regex for MAX Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MAX Rename"
+  },
+  {
+    "name": "MC",
+    "pattern": "\\b(MC)\\b",
+    "description": "Regex for MC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MC"
+  },
+  {
+    "name": "MD",
+    "pattern": "\\[MD\\]|-MD\\b",
+    "description": "Regex for MD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MD"
+  },
+  {
+    "name": "MGD",
+    "pattern": "\\b(MGD)\\b",
+    "description": "Regex for MGD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MGD"
+  },
+  {
+    "name": "MGE",
+    "pattern": "^(MGE\\b.*)$",
+    "description": "Regex for MGE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MGE"
+  },
+  {
+    "name": "MK",
+    "pattern": "\\b(MK)\\b",
+    "description": "Regex for MK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MK"
+  },
+  {
+    "name": "MP3",
+    "pattern": "mp3",
+    "description": "Regex for MP3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MP3"
+  },
+  {
+    "name": "MPEG2",
+    "pattern": "MPEG[-.]?2",
+    "description": "Regex for MPEG2",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MPEG2"
+  },
+  {
+    "name": "MTBB",
+    "pattern": "\\b(MTBB)\\b",
+    "description": "Regex for MTBB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MTBB"
+  },
+  {
+    "name": "MTeam",
+    "pattern": "^(MTeam|MT)$",
+    "description": "Regex for MTeam",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MTeam"
+  },
+  {
+    "name": "MZABI",
+    "pattern": "^(MZABI)$",
+    "description": "Regex for MZABI",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MZABI"
+  },
+  {
+    "name": "MainFrame",
+    "pattern": "^(MainFrame)$",
+    "description": "Regex for MainFrame",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MainFrame"
+  },
+  {
+    "name": "Man.K",
+    "pattern": "\\b(Man\\.K)\\b",
+    "description": "Regex for Man.K",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Man.K"
+  },
+  {
+    "name": "MarkII",
+    "pattern": "^(MarkII)$",
+    "description": "Regex for MarkII",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MarkII"
+  },
+  {
+    "name": "Masters of Cinema",
+    "pattern": "\\b(Masters[ .-]?Of[ .-]?Cinema)(\\b|\\d)",
+    "description": "Regex for Masters of Cinema",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Masters of Cinema"
+  },
+  {
+    "name": "Max",
+    "pattern": "\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)",
+    "description": "Regex for Max",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Max"
+  },
+  {
+    "name": "Maximus",
+    "pattern": "\\[Maximus\\]|-Maximus\\b",
+    "description": "Regex for Maximus",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Maximus"
+  },
+  {
+    "name": "McBalls",
+    "pattern": "\\b(McBalls)\\b",
+    "description": "Regex for McBalls",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "McBalls"
+  },
+  {
+    "name": "MeGusta",
+    "pattern": "^(MeGusta)$",
+    "description": "Regex for MeGusta",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MeGusta"
+  },
+  {
+    "name": "Meakes",
+    "pattern": "\\b(Meakes)\\b",
+    "description": "Regex for Meakes",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Meakes"
+  },
+  {
+    "name": "Mehul",
+    "pattern": "\\[Mehul\\]|-Mehul\\b",
+    "description": "Regex for Mehul",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mehul"
+  },
+  {
+    "name": "Mesc",
+    "pattern": "^(Mesc)$",
+    "description": "Regex for Mesc",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mesc"
+  },
+  {
+    "name": "Metal",
+    "pattern": "\\[Metal\\]|-Metal\\b",
+    "description": "Regex for Metal",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Metal"
+  },
+  {
+    "name": "Metaljerk",
+    "pattern": "\\b(Metaljerk)\\b",
+    "description": "Regex for Metaljerk",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Metaljerk"
+  },
+  {
+    "name": "MgB (Group)",
+    "pattern": "\\b(MgB)\\b",
+    "description": "Regex for MgB (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MgB (Group)"
+  },
+  {
+    "name": "MgB (Title)",
+    "pattern": "^(MgB)$",
+    "description": "Regex for MgB (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MgB (Title)"
+  },
+  {
+    "name": "MiU",
+    "pattern": "^(MiU)$",
+    "description": "Regex for MiU",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MiU"
+  },
+  {
+    "name": "Mic Dubbed",
+    "pattern": "\\b(MD|AC3MD|Mic[ .-]?Dubbed)\\b",
+    "description": "Regex for Mic Dubbed",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mic Dubbed"
+  },
+  {
+    "name": "MiniFreeza",
+    "pattern": "\\b(MiniFreeza)\\b",
+    "description": "Regex for MiniFreeza",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MiniFreeza"
+  },
+  {
+    "name": "MiniMTBB",
+    "pattern": "\\b(MiniMTBB)\\b",
+    "description": "Regex for MiniMTBB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MiniMTBB"
+  },
+  {
+    "name": "MiniTheatre",
+    "pattern": "\\b(MiniTheatre)\\b",
+    "description": "Regex for MiniTheatre",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MiniTheatre"
+  },
+  {
+    "name": "MinisCuba",
+    "pattern": "\\b(MinisCuba)\\b",
+    "description": "Regex for MinisCuba",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MinisCuba"
+  },
+  {
+    "name": "Mites",
+    "pattern": "\\b(Mites)\\b",
+    "description": "Regex for Mites",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mites"
+  },
+  {
+    "name": "MoC",
+    "pattern": "\\b(MoC)\\b",
+    "description": "Regex for MoC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MoC"
+  },
+  {
+    "name": "Modders Bay",
+    "pattern": "\\b(Modders[ .-]?Bay)\\b",
+    "description": "Regex for Modders Bay",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Modders Bay"
+  },
+  {
+    "name": "Mono",
+    "pattern": "[^0-9]1[ .]0\\b|\\bMono\\b|\\[PCM \\]",
+    "description": "Regex for Mono",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mono"
+  },
+  {
+    "name": "Monochrome",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Monochrome)\\b(?!$)",
+    "description": "Regex for Monochrome",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Monochrome"
+  },
+  {
+    "name": "Moozzi2",
+    "pattern": "\\b(Moozzi2)\\b",
+    "description": "Regex for Moozzi2",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Moozzi2"
+  },
+  {
+    "name": "Movies Anywhere",
+    "pattern": "(?<!dts[ .-]?hd[ .-]?)\\b(ma|ykw)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)",
+    "description": "Regex for Movies Anywhere",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Movies Anywhere"
+  },
+  {
+    "name": "Moxie",
+    "pattern": "\\[Moxie\\]|-Moxie\\b",
+    "description": "Regex for Moxie",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Moxie"
+  },
+  {
+    "name": "Mr. Deadpool",
+    "pattern": "\\b(Mr\\.Deadpool)\\b",
+    "description": "Regex for Mr. Deadpool",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mr. Deadpool"
+  },
+  {
+    "name": "Multi",
+    "pattern": "\\b(Multi)(?![ ._-]?sub(s)?)(\\b|\\d)",
+    "description": "Regex for Multi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Multi"
+  },
+  {
+    "name": "My5",
+    "pattern": "\\b(MY5)\\b",
+    "description": "Regex for My5",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "My5"
+  },
+  {
+    "name": "MySiLU",
+    "pattern": "^(MySiLU)$",
+    "description": "Regex for MySiLU",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "MySiLU"
+  },
+  {
+    "name": "Mysteria",
+    "pattern": "\\[Mysteria\\]|-Mysteria\\b",
+    "description": "Regex for Mysteria",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Mysteria"
+  },
+  {
+    "name": "N3G4N",
+    "pattern": "^(N3G4N)$",
+    "description": "Regex for N3G4N",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "N3G4N"
+  },
+  {
+    "name": "NAN0",
+    "pattern": "(?<=remux).*\\b(NAN0)\\b",
+    "description": "Regex for NAN0",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NAN0"
+  },
+  {
+    "name": "NC-Raws",
+    "pattern": "NC[ ._-]?(Raws)",
+    "description": "Regex for NC-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NC-Raws"
+  },
+  {
+    "name": "NCmt",
+    "pattern": "^(NCmt)$",
+    "description": "Regex for NCmt",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NCmt"
+  },
+  {
+    "name": "NH",
+    "pattern": "\\b(NH)\\b",
+    "description": "Regex for NH",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NH"
+  },
+  {
+    "name": "NINJACENTRAL",
+    "pattern": "^(NINJACENTRAL)$",
+    "description": "Regex for NINJACENTRAL",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NINJACENTRAL"
+  },
+  {
+    "name": "NLZiet",
+    "pattern": "\\b(nlz|NLZiet)\\b",
+    "description": "Regex for NLZiet",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NLZiet"
+  },
+  {
+    "name": "NOSiViD",
+    "pattern": "^(NOSiViD)$",
+    "description": "Regex for NOSiViD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NOSiViD"
+  },
+  {
+    "name": "NOT - IMAX Enhanced",
+    "pattern": "^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)",
+    "description": "Regex for NOT: IMAX Enhanced",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NOT - IMAX Enhanced"
+  },
+  {
+    "name": "NOW Rename",
+    "pattern": "\\[(NOW)\\b|\\b(NOW)\\]",
+    "description": "Regex for NOW Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NOW Rename"
+  },
+  {
+    "name": "NOW",
+    "pattern": "\\b(now)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for NOW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NOW"
+  },
+  {
+    "name": "NPMS",
+    "pattern": "^(NPMS)$",
+    "description": "Regex for NPMS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NPMS"
+  },
+  {
+    "name": "NS",
+    "pattern": "\\b(NS)\\b",
+    "description": "Regex for NS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NS"
+  },
+  {
+    "name": "NTG",
+    "pattern": "^(NTG)$",
+    "description": "Regex for NTG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NTG"
+  },
+  {
+    "name": "NTRM",
+    "pattern": "\\b(NTRM)\\b",
+    "description": "Regex for NTRM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NTRM"
+  },
+  {
+    "name": "NTRX",
+    "pattern": "\\b(NTRX)\\b",
+    "description": "Regex for NTRX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NTRX"
+  },
+  {
+    "name": "NTW",
+    "pattern": "\\b(NTW)\\b",
+    "description": "Regex for NTW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NTW"
+  },
+  {
+    "name": "NTb",
+    "pattern": "^(NTb)$",
+    "description": "Regex for NTb",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NTb"
+  },
+  {
+    "name": "NYH",
+    "pattern": "^(NYH)$",
+    "description": "Regex for NYH",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NYH"
+  },
+  {
+    "name": "NZBGeek",
+    "pattern": "-NZBGeek\\b",
+    "description": "Regex for NZBGeek",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NZBGeek"
+  },
+  {
+    "name": "NanDesuKa",
+    "pattern": "\\b(NanDesuKa)\\b",
+    "description": "Regex for NanDesuKa",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NanDesuKa"
+  },
+  {
+    "name": "NanakoRaws",
+    "pattern": "Nanako[ ._-]?(Raws)",
+    "description": "Regex for NanakoRaws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NanakoRaws"
+  },
+  {
+    "name": "NemDiggers",
+    "pattern": "\\b(NemDiggers)\\b",
+    "description": "Regex for NemDiggers",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NemDiggers"
+  },
+  {
+    "name": "Nep_Blanc",
+    "pattern": "\\b(Nep[ ._-]Blanc)\\b",
+    "description": "Regex for Nep_Blanc",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Nep_Blanc"
+  },
+  {
+    "name": "Netaro",
+    "pattern": "\\b(Netaro)\\b",
+    "description": "Regex for Netaro",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Netaro"
+  },
+  {
+    "name": "Netflix",
+    "pattern": "\\b(nf|netflix(u?hd)?)\\b",
+    "description": "Regex for Netflix",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Netflix"
+  },
+  {
+    "name": "New-raws",
+    "pattern": "New[ ._-]?(raws)",
+    "description": "Regex for New-raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "New-raws"
+  },
+  {
+    "name": "NhaNc3",
+    "pattern": "^(NhaNc3)$",
+    "description": "Regex for NhaNc3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NhaNc3"
+  },
+  {
+    "name": "NiXON (Group)",
+    "pattern": "\\b(NiXON)\\b",
+    "description": "Regex for NiXON (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NiXON (Group)"
+  },
+  {
+    "name": "NiXON (Title)",
+    "pattern": "^(NiXON)$",
+    "description": "Regex for NiXON (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NiXON (Title)"
+  },
+  {
+    "name": "No FANRES",
+    "pattern": "\\b(FANRES)\\b",
+    "description": "Regex for No FANRES",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "No FANRES"
+  },
+  {
+    "name": "No Parsed Group",
+    "pattern": ".",
+    "description": "Regex for No Parsed Group",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "No Parsed Group"
+  },
+  {
+    "name": "NoGroup",
+    "pattern": "NoGr(ou)?p",
+    "description": "Regex for NoGroup",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NoGroup"
+  },
+  {
+    "name": "NoRBiT (Group)",
+    "pattern": "\\b(NoRBiT)\\b",
+    "description": "Regex for NoRBiT (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NoRBiT (Group)"
+  },
+  {
+    "name": "NoRBiT (Title)",
+    "pattern": "^(NoRBiT)$",
+    "description": "Regex for NoRBiT (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NoRBiT (Title)"
+  },
+  {
+    "name": "No_Minus Color",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b((No|Minus)[ ._-]?Colou?r)\\b(?!$)",
+    "description": "Regex for No/Minus Color",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "No_Minus Color"
+  },
+  {
+    "name": "Noir",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Noir)\\b(?!$)",
+    "description": "Regex for Noir",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Noir"
+  },
+  {
+    "name": "Noiy",
+    "pattern": "\\b(Noiy)\\b",
+    "description": "Regex for Noiy",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Noiy"
+  },
+  {
+    "name": "Nokou",
+    "pattern": "\\b(Nokou)\\b",
+    "description": "Regex for Nokou",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Nokou"
+  },
+  {
+    "name": "Non-Latin Scripts",
+    "pattern": "[\\u4E00-\\u9FFF\\uAC00-\\uD7A3\\u0600-\\u06FF\\u0400-\\u04FF\\u0370-\\u03FF\\u0590-\\u05FF\\u0900-\\u097F\\u0E00-\\u0E7F]",
+    "description": "Regex for Non-Latin Scripts",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Non-Latin Scripts"
+  },
+  {
+    "name": "NoobSubs",
+    "pattern": "\\b(N[eo][wo]b[ ._-]?Subs)\\b",
+    "description": "Regex for NoobSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "NoobSubs"
+  },
+  {
+    "name": "Not 3.0ch",
+    "pattern": "[^0-9]3[ .]0\\b",
+    "description": "Regex for Not 3.0ch",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not 3.0ch"
+  },
+  {
+    "name": "Not 4.0ch",
+    "pattern": "[^0-9]4[ .]0\\b",
+    "description": "Regex for Not 4.0ch",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not 4.0ch"
+  },
+  {
+    "name": "Not 4K Remaster",
+    "pattern": "4K",
+    "description": "Regex for Not 4K Remaster",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not 4K Remaster"
+  },
+  {
+    "name": "Not 6.1 Surround",
+    "pattern": "[^0-9]6[ .][0-1]\\b",
+    "description": "Regex for Not 6.1 Surround",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not 6.1 Surround"
+  },
+  {
+    "name": "Not 7.1 Surround",
+    "pattern": "[^0-9][7-8][ .][0-1]\\b",
+    "description": "Regex for Not 7.1 Surround",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not 7.1 Surround"
+  },
+  {
+    "name": "Not AAC",
+    "pattern": "\\bAAC(\\b|\\d)",
+    "description": "Regex for Not AAC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not AAC"
+  },
+  {
+    "name": "Not Basic DTS",
+    "pattern": "DTS[ .]?[1-9]",
+    "description": "Regex for Not Basic DTS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Basic DTS"
+  },
+  {
+    "name": "Not Basic Dolby Digital",
+    "pattern": "\\bDD[^a-z+]|(?<!e-)\\b(ac-?3)\\b",
+    "description": "Regex for Not Basic Dolby Digital",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Basic Dolby Digital"
+  },
+  {
+    "name": "Not Criterion RlsGrp",
+    "pattern": "^(Criterion)$",
+    "description": "Regex for Not Criterion RlsGrp",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Criterion RlsGrp"
+  },
+  {
+    "name": "Not DTS X",
+    "pattern": "\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456]))",
+    "description": "Regex for Not DTS X",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not DTS X"
+  },
+  {
+    "name": "Not DTS-ES",
+    "pattern": "dts.?es",
+    "description": "Regex for Not DTS-ES",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not DTS-ES"
+  },
+  {
+    "name": "Not DTS-HD HRA_ES",
+    "pattern": "dts[-. ]?(es|(hd[. ]?)?(hr|hi))",
+    "description": "Regex for Not DTS-HD HRA/ES",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not DTS-HD HRA_ES"
+  },
+  {
+    "name": "Not DTS-HD",
+    "pattern": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)",
+    "description": "Regex for Not DTS-HD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not DTS-HD"
+  },
+  {
+    "name": "Not DTS",
+    "pattern": "\\bDTS(\\b|\\d)",
+    "description": "Regex for Not DTS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not DTS"
+  },
+  {
+    "name": "Not Dolby Digital Plus",
+    "pattern": "\\bDD[P+]|\\b(e[-_. ]?ac-?3)\\b",
+    "description": "Regex for Not Dolby Digital Plus",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Dolby Digital Plus"
+  },
+  {
+    "name": "Not Extended Clip",
+    "pattern": "\\b(Extended[ ._-]Clip)\\b",
+    "description": "Regex for Not Extended Clip",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Extended Clip"
+  },
+  {
+    "name": "Not FLAC",
+    "pattern": "\\bFLAC(\\b|\\d)",
+    "description": "Regex for Not FLAC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not FLAC"
+  },
+  {
+    "name": "Not HDR",
+    "pattern": "\\bHDR(\\b|\\d)",
+    "description": "Regex for Not HDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not HDR"
+  },
+  {
+    "name": "Not HDR_DV",
+    "pattern": "\\b(dv|dovi|dolby[ .]?v(ision)?|hdr(10(P(lus)?)?)?|pq)\\b",
+    "description": "Regex for Not HDR/DV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not HDR_DV"
+  },
+  {
+    "name": "Not High Channel Count",
+    "pattern": "[^0-9][5-9][ .][0-1]\\b",
+    "description": "Regex for Not High Channel Count",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not High Channel Count"
+  },
+  {
+    "name": "Not Higher Version Repack_Proper",
+    "pattern": "\\b((repack|proper)[23])\\b|\\bREAL\\.(REAL\\.)?(PROPER|REPACK)\\b",
+    "description": "Regex for Not Higher Version Repack/Proper",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Higher Version Repack_Proper"
+  },
+  {
+    "name": "Not Hulu",
+    "pattern": "\\b(hulu)\\b",
+    "description": "Regex for Not Hulu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Hulu"
+  },
+  {
+    "name": "Not Hybrid Release Group (Group)",
+    "pattern": "\\b(HYBRID)\\b",
+    "description": "Regex for Not Hybrid Release Group (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Hybrid Release Group (Group)"
+  },
+  {
+    "name": "Not Hybrid Release Group (Title)",
+    "pattern": "-HYBRID",
+    "description": "Regex for Not Hybrid Release Group (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Hybrid Release Group (Title)"
+  },
+  {
+    "name": "Not Hybrid",
+    "pattern": "\\bhybrid(\\b|\\d)",
+    "description": "Regex for Not Hybrid",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Hybrid"
+  },
+  {
+    "name": "Not IMAX Edition",
+    "pattern": "\\b(IMAX[ ._-]Edition)\\b",
+    "description": "Regex for Not IMAX Edition",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not IMAX Edition"
+  },
+  {
+    "name": "Not Low Channel Count",
+    "pattern": "(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\b(Stereo|Mono)\\b",
+    "description": "Regex for Not Low Channel Count",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Low Channel Count"
+  },
+  {
+    "name": "Not Mono",
+    "pattern": "[^0-9]1[ .]0\\b|\\bMono\\b|\\[PCM \\]",
+    "description": "Regex for Not Mono",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Mono"
+  },
+  {
+    "name": "Not OPUS Release Group",
+    "pattern": "OPUS",
+    "description": "Regex for Not OPUS Release Group",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not OPUS Release Group"
+  },
+  {
+    "name": "Not Open Matte",
+    "pattern": "\\b(Open[ ._-]?Matte)\\b",
+    "description": "Regex for Not Open Matte",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Open Matte"
+  },
+  {
+    "name": "Not PCM",
+    "pattern": "\\b(l?)PCM(\\b|\\d)",
+    "description": "Regex for Not PCM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not PCM"
+  },
+  {
+    "name": "Not Repack_Proper 3",
+    "pattern": "\\b((repack|proper)3)\\b|\\bREAL\\.(REAL\\.)(PROPER|REPACK)\\b",
+    "description": "Regex for Not Repack/Proper 3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Repack_Proper 3"
+  },
+  {
+    "name": "Not RlsGrp (Atmos Only)",
+    "pattern": "\\b(W4NK3R|HQMUX)\\b",
+    "description": "Regex for Not RlsGrp (Atmos Only)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not RlsGrp (Atmos Only)"
+  },
+  {
+    "name": "Not RlsGrp (TrueHD only)",
+    "pattern": "\\b(CtrlHD|W4NK3R|DON)\\b",
+    "description": "Regex for Not RlsGrp (TrueHD only)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not RlsGrp (TrueHD only)"
+  },
+  {
+    "name": "Not RlsGrp",
+    "pattern": "\\b(Flights)\\b",
+    "description": "Regex for Not RlsGrp",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not RlsGrp"
+  },
+  {
+    "name": "Not Single Language Only",
+    "pattern": "\\[(JA|ZH|KO)\\]",
+    "description": "Regex for Not Single Language Only",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Single Language Only"
+  },
+  {
+    "name": "Not Stereo",
+    "pattern": "(?<!repac)[^0-9]2[ .]0\\b|\\bStereo\\b",
+    "description": "Regex for Not Stereo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Stereo"
+  },
+  {
+    "name": "Not Theatrical",
+    "pattern": "Theatrical",
+    "description": "Regex for Not Theatrical",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not Theatrical"
+  },
+  {
+    "name": "Not TrueHD",
+    "pattern": "True[ .-]?HD",
+    "description": "Regex for Not TrueHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not TrueHD"
+  },
+  {
+    "name": "Not TrueHD_ATMOS (1)",
+    "pattern": "True[ .-]?HD|\\bATMOS(\\b|\\d)",
+    "description": "Regex for Not TrueHD/ATMOS (1)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not TrueHD_ATMOS (1)"
+  },
+  {
+    "name": "Not TrueHD_ATMOS",
+    "pattern": "\\b(True[ .-]?HD|ATMOS|DDPA)(\\b|\\d)",
+    "description": "Regex for Not TrueHD/ATMOS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not TrueHD_ATMOS"
+  },
+  {
+    "name": "Not-Vodes",
+    "pattern": "\\[Not-Vodes\\]|-Not-Vodes\\b",
+    "description": "Regex for Not-Vodes",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Not-Vodes"
+  },
+  {
+    "name": "Nyanpasu",
+    "pattern": "\\b(Nyanpasu)\\b",
+    "description": "Regex for Nyanpasu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Nyanpasu"
+  },
+  {
+    "name": "OFT",
+    "pattern": "^(OFT)$",
+    "description": "Regex for OFT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "OFT"
+  },
+  {
+    "name": "ONLYMOViE",
+    "pattern": "^(ONLYMOViE)$",
+    "description": "Regex for ONLYMOViE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ONLYMOViE"
+  },
+  {
+    "name": "ORARBG",
+    "pattern": "\\b(ORARBG)\\b",
+    "description": "Regex for ORARBG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ORARBG"
+  },
+  {
+    "name": "OViD",
+    "pattern": "\\b(ovid)\\b",
+    "description": "Regex for OViD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "OViD"
+  },
+  {
+    "name": "OZR",
+    "pattern": "\\b(OZR)\\b",
+    "description": "Regex for OZR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "OZR"
+  },
+  {
+    "name": "Obfuscated",
+    "pattern": "-Obfuscated\\b",
+    "description": "Regex for Obfuscated",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Obfuscated"
+  },
+  {
+    "name": "Ohys-Raws",
+    "pattern": "Ohys[ ._-]?(Raws)",
+    "description": "Regex for Ohys-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Ohys-Raws"
+  },
+  {
+    "name": "Okay-Subs",
+    "pattern": "\\b(Okay-Subs)\\b",
+    "description": "Regex for Okay-Subs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Okay-Subs"
+  },
+  {
+    "name": "OldCastle",
+    "pattern": "\\b(OldCastle)\\b",
+    "description": "Regex for OldCastle",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "OldCastle"
+  },
+  {
+    "name": "Open Matte",
+    "pattern": "\\b(Open[ ._-]?Matte)\\b",
+    "description": "Regex for Open Matte",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Open Matte"
+  },
+  {
+    "name": "Opus",
+    "pattern": "\\bOPUS(\\b|\\d)(?!.*[ ._-](\\d{3,4}p))",
+    "description": "Regex for Opus",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Opus"
+  },
+  {
+    "name": "Orphan",
+    "pattern": "\\[Orphan\\]|-Orphan\\b",
+    "description": "Regex for Orphan",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Orphan"
+  },
+  {
+    "name": "P9",
+    "pattern": "\\b(P9)\\b",
+    "description": "Regex for P9",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "P9"
+  },
+  {
+    "name": "PATOMiEL",
+    "pattern": "^(PATOMiEL)$",
+    "description": "Regex for PATOMiEL",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PATOMiEL"
+  },
+  {
+    "name": "PCM",
+    "pattern": "\\b(l?)PCM(\\b|\\d)",
+    "description": "Regex for PCM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PCM"
+  },
+  {
+    "name": "PD",
+    "pattern": "^(PD)$",
+    "description": "Regex for PD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PD"
+  },
+  {
+    "name": "PHOENiX",
+    "pattern": "^(PHOENiX)$",
+    "description": "Regex for PHOENiX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PHOENiX"
+  },
+  {
+    "name": "PLAY Rename",
+    "pattern": "\\[(Play)\\b|\\b(Play)\\]",
+    "description": "Regex for PLAY Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PLAY Rename"
+  },
+  {
+    "name": "PLAY",
+    "pattern": "\\b(Play)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)",
+    "description": "Regex for PLAY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PLAY"
+  },
+  {
+    "name": "PMR",
+    "pattern": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)",
+    "description": "Regex for PMR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PMR"
+  },
+  {
+    "name": "PQ",
+    "pattern": "\\b(PQ)\\b",
+    "description": "Regex for PQ",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PQ"
+  },
+  {
+    "name": "PRODJi",
+    "pattern": "^(PRODJi)$",
+    "description": "Regex for PRODJi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PRODJi"
+  },
+  {
+    "name": "PS3-TEAM (Group)",
+    "pattern": "\\b(PS3-TEAM)\\b",
+    "description": "Regex for PS3-TEAM (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PS3-TEAM (Group)"
+  },
+  {
+    "name": "PS3-TEAM (Title)",
+    "pattern": "^(PS3-TEAM)$",
+    "description": "Regex for PS3-TEAM (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PS3-TEAM (Title)"
+  },
+  {
+    "name": "PSA",
+    "pattern": "^(PSA)$",
+    "description": "Regex for PSA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PSA"
+  },
+  {
+    "name": "PSiG",
+    "pattern": "^(PSiG)$",
+    "description": "Regex for PSiG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PSiG"
+  },
+  {
+    "name": "PTHome",
+    "pattern": "^(PTHome)$",
+    "description": "Regex for PTHome",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PTHome"
+  },
+  {
+    "name": "PTNK",
+    "pattern": "^(PTNK)$",
+    "description": "Regex for PTNK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PTNK"
+  },
+  {
+    "name": "PTP",
+    "pattern": "^(PTP)$",
+    "description": "Regex for PTP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PTP"
+  },
+  {
+    "name": "PTer",
+    "pattern": "^(PTer)$",
+    "description": "Regex for PTer",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PTer"
+  },
+  {
+    "name": "Pahe",
+    "pattern": "Pahe(\\.(ph|in))?\\b",
+    "description": "Regex for Pahe",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pahe"
+  },
+  {
+    "name": "Pandoratv-Raws",
+    "pattern": "Pandoratv[ ._-]?(Raws)",
+    "description": "Regex for Pandoratv-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pandoratv-Raws"
+  },
+  {
+    "name": "Pantsu",
+    "pattern": "\\[Pantsu\\]|-Pantsu\\b",
+    "description": "Regex for Pantsu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pantsu"
+  },
+  {
+    "name": "Pao",
+    "pattern": "\\[Pao\\]|-Pao\\b",
+    "description": "Regex for Pao",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pao"
+  },
+  {
+    "name": "Path\u00e9",
+    "pattern": "\\b(Pathe)\\b",
+    "description": "Regex for Path\u00e9",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Path\u00e9"
+  },
+  {
+    "name": "PeruGuy (Group)",
+    "pattern": "\\b(PeruGuy)\\b",
+    "description": "Regex for PeruGuy (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PeruGuy (Group)"
+  },
+  {
+    "name": "PeruGuy (Title)",
+    "pattern": "^(PeruGuy)$",
+    "description": "Regex for PeruGuy (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PeruGuy (Title)"
+  },
+  {
+    "name": "PiRAMiDHEAD",
+    "pattern": "^(PiRAMiDHEAD)$",
+    "description": "Regex for PiRAMiDHEAD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PiRAMiDHEAD"
+  },
+  {
+    "name": "PiRaTeS (no WEBDL)",
+    "pattern": "(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b",
+    "description": "Regex for PiRaTeS (no WEBDL)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PiRaTeS (no WEBDL)"
+  },
+  {
+    "name": "Pixel",
+    "pattern": "\\[Pixel\\]|-Pixel\\b",
+    "description": "Regex for Pixel",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pixel"
+  },
+  {
+    "name": "Pizza",
+    "pattern": "\\[Pizza\\]|-Pizza\\b",
+    "description": "Regex for Pizza",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pizza"
+  },
+  {
+    "name": "PlayWeb",
+    "pattern": "\\b(PlayWeb)\\b",
+    "description": "Regex for PlayWeb",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PlayWeb"
+  },
+  {
+    "name": "Plex Friendly",
+    "pattern": "\\b(Plex[ .-]?Friendly)\\b",
+    "description": "Regex for Plex Friendly",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Plex Friendly"
+  },
+  {
+    "name": "PmP",
+    "pattern": "^(PmP)$",
+    "description": "Regex for PmP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PmP"
+  },
+  {
+    "name": "PnPSubs",
+    "pattern": "\\b(PnPSubs)\\b",
+    "description": "Regex for PnPSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PnPSubs"
+  },
+  {
+    "name": "Polarwindz",
+    "pattern": "\\b(Polarwindz)\\b",
+    "description": "Regex for Polarwindz",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Polarwindz"
+  },
+  {
+    "name": "Pookie",
+    "pattern": "\\b(Pookie)\\b",
+    "description": "Regex for Pookie",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Pookie"
+  },
+  {
+    "name": "PortalGoods (Group)",
+    "pattern": "\\b(PortalGoods)\\b",
+    "description": "Regex for PortalGoods (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PortalGoods (Group)"
+  },
+  {
+    "name": "PortalGoods (Title)",
+    "pattern": "^(PortalGoods)$",
+    "description": "Regex for PortalGoods (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PortalGoods (Title)"
+  },
+  {
+    "name": "Prof",
+    "pattern": "\\[Prof\\]|-Prof\\b",
+    "description": "Regex for Prof",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Prof"
+  },
+  {
+    "name": "Project-gxs",
+    "pattern": "\\b(Project-gxs)\\b",
+    "description": "Regex for Project-gxs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Project-gxs"
+  },
+  {
+    "name": "PuyaSubs",
+    "pattern": "\\b(PuyaSubs)\\b",
+    "description": "Regex for PuyaSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "PuyaSubs"
+  },
+  {
+    "name": "QCE",
+    "pattern": "\\b(QCE)\\b",
+    "description": "Regex for QCE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "QCE"
+  },
+  {
+    "name": "QM",
+    "pattern": "\\b(QM)\\b",
+    "description": "Regex for QM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "QM"
+  },
+  {
+    "name": "QOQ",
+    "pattern": "^(QOQ)$",
+    "description": "Regex for QOQ",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "QOQ"
+  },
+  {
+    "name": "QaS",
+    "pattern": "\\b(QAS)\\b",
+    "description": "Regex for QaS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "QaS"
+  },
+  {
+    "name": "Quetzal",
+    "pattern": "\\b(Quetzal)\\b",
+    "description": "Regex for Quetzal",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Quetzal"
+  },
+  {
+    "name": "Quibi",
+    "pattern": "\\b(qibi|quibi)\\b",
+    "description": "Regex for Quibi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Quibi"
+  },
+  {
+    "name": "RAI",
+    "pattern": "\\b(RAI)\\b",
+    "description": "Regex for RAI",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RAI"
+  },
+  {
+    "name": "RARBG",
+    "pattern": "^(RARBG)$",
+    "description": "Regex for RARBG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RARBG"
+  },
+  {
+    "name": "RASETSU",
+    "pattern": "\\b(RASETSU)\\b",
+    "description": "Regex for RASETSU",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RASETSU"
+  },
+  {
+    "name": "RAWR",
+    "pattern": "^(RAWR)$",
+    "description": "Regex for RAWR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RAWR"
+  },
+  {
+    "name": "RDN",
+    "pattern": "^(RDN)$",
+    "description": "Regex for RDN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RDN"
+  },
+  {
+    "name": "READ NOTE",
+    "pattern": "\\b(READ(\\s|\\.)+NOTE)\\b",
+    "description": "Regex for READ NOTE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "READ NOTE"
+  },
+  {
+    "name": "RED Rename",
+    "pattern": "\\[(RED)\\b|\\b(RED)\\]",
+    "description": "Regex for RED Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RED Rename"
+  },
+  {
+    "name": "REVO",
+    "pattern": "\\b(REVO)\\b",
+    "description": "Regex for REVO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "REVO"
+  },
+  {
+    "name": "RIPRARBG (Group)",
+    "pattern": "\\b(RIPRARBG)\\b",
+    "description": "Regex for RIPRARBG (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RIPRARBG (Group)"
+  },
+  {
+    "name": "RIPRARBG (Title)",
+    "pattern": "^(RIPRARBG)$",
+    "description": "Regex for RIPRARBG (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RIPRARBG (Title)"
+  },
+  {
+    "name": "RK",
+    "pattern": "^(RK)$",
+    "description": "Regex for RK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RK"
+  },
+  {
+    "name": "RMX",
+    "pattern": "\\b(RMX)\\b",
+    "description": "Regex for RMX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RMX"
+  },
+  {
+    "name": "ROCCaT",
+    "pattern": "^(ROCCaT)$",
+    "description": "Regex for ROCCaT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ROCCaT"
+  },
+  {
+    "name": "ROKU",
+    "pattern": "\\b(ROKU)\\b",
+    "description": "Regex for ROKU",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ROKU"
+  },
+  {
+    "name": "RTFM",
+    "pattern": "^(RTFM)$",
+    "description": "Regex for RTFM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RTFM"
+  },
+  {
+    "name": "RTN",
+    "pattern": "^(RTN)$",
+    "description": "Regex for RTN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RTN"
+  },
+  {
+    "name": "RU4HD",
+    "pattern": "^(RU4HD)$",
+    "description": "Regex for RU4HD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RU4HD"
+  },
+  {
+    "name": "RUDY",
+    "pattern": "\\[RUDY\\]|-RUDY\\b",
+    "description": "Regex for RUDY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RUDY"
+  },
+  {
+    "name": "RW",
+    "pattern": "\\b(RW)\\b",
+    "description": "Regex for RW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RW"
+  },
+  {
+    "name": "RWP (Group)",
+    "pattern": "\\b(RWP)\\b",
+    "description": "Regex for RWP (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RWP (Group)"
+  },
+  {
+    "name": "RWP (Title)",
+    "pattern": "^(RWP)$",
+    "description": "Regex for RWP (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RWP (Title)"
+  },
+  {
+    "name": "RaiN",
+    "pattern": "\\[RaiN\\]|-RaiN\\b",
+    "description": "Regex for RaiN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RaiN"
+  },
+  {
+    "name": "Rakuv",
+    "pattern": "-Rakuv\\b",
+    "description": "Regex for Rakuv",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Rakuv"
+  },
+  {
+    "name": "Rando235",
+    "pattern": "\\b(Rando235)\\b",
+    "description": "Regex for Rando235",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Rando235"
+  },
+  {
+    "name": "Ranger",
+    "pattern": "\\[Ranger\\]|-Ranger\\b",
+    "description": "Regex for Ranger",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Ranger"
+  },
+  {
+    "name": "Rapta",
+    "pattern": "\\[Rapta\\]|-Rapta\\b",
+    "description": "Regex for Rapta",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Rapta"
+  },
+  {
+    "name": "Raw Files",
+    "pattern": "\\b(M2TS|BDMV|BDVD)\\b",
+    "description": "Regex for Raw Files",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Raw Files"
+  },
+  {
+    "name": "Raws-Maji",
+    "pattern": "\\b(Raws-Maji)\\b",
+    "description": "Regex for Raws-Maji",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Raws-Maji"
+  },
+  {
+    "name": "Raze",
+    "pattern": "\\[Raze\\]|-Raze\\b",
+    "description": "Regex for Raze",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Raze"
+  },
+  {
+    "name": "Reaktor",
+    "pattern": "\\b(Reaktor)\\b",
+    "description": "Regex for Reaktor",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Reaktor"
+  },
+  {
+    "name": "Regrade",
+    "pattern": "\\b((Upscale)?Re-?graded?)\\b",
+    "description": "Regex for Regrade",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Regrade"
+  },
+  {
+    "name": "ReinForce",
+    "pattern": "\\b(ReinForce)\\b",
+    "description": "Regex for ReinForce",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ReinForce"
+  },
+  {
+    "name": "Remaster",
+    "pattern": "Remaster",
+    "description": "Regex for Remaster",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Remaster"
+  },
+  {
+    "name": "Repack_Proper 2 or REAL.PROPER_REPACK",
+    "pattern": "\\b((repack|proper)2)\\b|\\b(REAL\\.(PROPER|REPACK))\\b",
+    "description": "Regex for Repack/Proper 2 or REAL.PROPER/REPACK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Repack_Proper 2 or REAL.PROPER_REPACK"
+  },
+  {
+    "name": "Repack_Proper 3 or REAL.REAL.PROPER_REPACK",
+    "pattern": "\\b((repack|proper)3)\\b|\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b",
+    "description": "Regex for Repack/Proper 3 or REAL.REAL.PROPER/REPACK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Repack_Proper 3 or REAL.REAL.PROPER_REPACK"
+  },
+  {
+    "name": "Repack_Proper_Rerip",
+    "pattern": "\\b(Repack|Proper|Rerip)\\b",
+    "description": "Regex for Repack/Proper/Rerip",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Repack_Proper_Rerip"
+  },
+  {
+    "name": "Reza",
+    "pattern": "\\b(Reza)\\b",
+    "description": "Regex for Reza",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Reza"
+  },
+  {
+    "name": "RiPER",
+    "pattern": "^(RiPER)$",
+    "description": "Regex for RiPER",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RiPER"
+  },
+  {
+    "name": "RiffTrax",
+    "pattern": "^(Rifftrax)$",
+    "description": "Regex for RiffTrax",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RiffTrax"
+  },
+  {
+    "name": "RightShiftBy2",
+    "pattern": "\\b(RightShiftBy2)\\b",
+    "description": "Regex for RightShiftBy2",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RightShiftBy2"
+  },
+  {
+    "name": "Rip Time",
+    "pattern": "\\b(Rip[ .-]?Time)\\b",
+    "description": "Regex for Rip Time",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Rip Time"
+  },
+  {
+    "name": "RlsGrp (Missing HDR)",
+    "pattern": "^(?=.*\\b(FraMeSToR|HQMUX|SiCFoI)\\b)(?=.*\\b(2160p)\\b)(?!.*\\b(HDR10([+]|P(lus)?)))(?!.*\\b(SDR)\\b).*",
+    "description": "Regex for RlsGrp (Missing HDR)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "RlsGrp (Missing HDR)"
+  },
+  {
+    "name": "SA89",
+    "pattern": "^(SA89)$",
+    "description": "Regex for SA89",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SA89"
+  },
+  {
+    "name": "SAD",
+    "pattern": "\\[SAD\\]|-SAD\\b",
+    "description": "Regex for SAD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SAD"
+  },
+  {
+    "name": "SADPANDA (Group)",
+    "pattern": "\\b(SADPANDA)\\b",
+    "description": "Regex for SADPANDA (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SADPANDA (Group)"
+  },
+  {
+    "name": "SADPANDA (Title)",
+    "pattern": "^(SADPANDA)$",
+    "description": "Regex for SADPANDA (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SADPANDA (Title)"
+  },
+  {
+    "name": "SANTi",
+    "pattern": "^(SANTi)$",
+    "description": "Regex for SANTi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SANTi"
+  },
+  {
+    "name": "SCP-2223",
+    "pattern": "\\b(SCP-2223)\\b",
+    "description": "Regex for SCP-2223",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SCP-2223"
+  },
+  {
+    "name": "SCY",
+    "pattern": "\\b(SCY)\\b",
+    "description": "Regex for SCY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SCY"
+  },
+  {
+    "name": "SDCC",
+    "pattern": "^(SDCC)$",
+    "description": "Regex for SDCC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SDCC"
+  },
+  {
+    "name": "SDR",
+    "pattern": "\\bSDR\\b",
+    "description": "Regex for SDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SDR"
+  },
+  {
+    "name": "SEV",
+    "pattern": "\\b(SEV)\\b",
+    "description": "Regex for SEV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SEV"
+  },
+  {
+    "name": "SEiN",
+    "pattern": "\\[SEiN\\]|-SEiN\\b",
+    "description": "Regex for SEiN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SEiN"
+  },
+  {
+    "name": "SHD",
+    "pattern": "^(SHD)$",
+    "description": "Regex for SHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SHD"
+  },
+  {
+    "name": "SHFS",
+    "pattern": "\\b(SHFS)\\b",
+    "description": "Regex for SHFS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SHFS"
+  },
+  {
+    "name": "SHO Rename",
+    "pattern": "\\[(SHO)\\b|\\b(SHO)\\]",
+    "description": "Regex for SHO Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SHO Rename"
+  },
+  {
+    "name": "SHOWTIME",
+    "pattern": "\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for SHOWTIME",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SHOWTIME"
+  },
+  {
+    "name": "SIGMA",
+    "pattern": "^(SIGMA)$",
+    "description": "Regex for SIGMA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SIGMA"
+  },
+  {
+    "name": "SLAX",
+    "pattern": "\\b(SLAX)\\b",
+    "description": "Regex for SLAX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SLAX"
+  },
+  {
+    "name": "SLiGNOME",
+    "pattern": "^(SLiGNOME)$",
+    "description": "Regex for SLiGNOME",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SLiGNOME"
+  },
+  {
+    "name": "SMURF",
+    "pattern": "^(SMURF)$",
+    "description": "Regex for SMURF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SMURF"
+  },
+  {
+    "name": "SPHD",
+    "pattern": "^(SPHD)$",
+    "description": "Regex for SPHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SPHD"
+  },
+  {
+    "name": "SPiRiT",
+    "pattern": "^(SPiRiT)$",
+    "description": "Regex for SPiRiT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SPiRiT"
+  },
+  {
+    "name": "SRW",
+    "pattern": "\\b(SRW)\\b",
+    "description": "Regex for SRW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SRW"
+  },
+  {
+    "name": "SSA",
+    "pattern": "\\b(SSA)\\b",
+    "description": "Regex for SSA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SSA"
+  },
+  {
+    "name": "STUTTERSHIT",
+    "pattern": "^(STUTTERSHIT)$",
+    "description": "Regex for STUTTERSHIT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "STUTTERSHIT"
+  },
+  {
+    "name": "SUNSCREEN",
+    "pattern": "^(SUNSCREEN)$",
+    "description": "Regex for SUNSCREEN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SUNSCREEN"
+  },
+  {
+    "name": "SURFINBIRD",
+    "pattern": "^(SURFINBIRD)$",
+    "description": "Regex for SURFINBIRD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SURFINBIRD"
+  },
+  {
+    "name": "SWTYBLZ",
+    "pattern": "\\b(SWTYBLZ)\\b",
+    "description": "Regex for SWTYBLZ",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SWTYBLZ"
+  },
+  {
+    "name": "SYFY",
+    "pattern": "\\b(SYFY)\\b",
+    "description": "Regex for SYFY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SYFY"
+  },
+  {
+    "name": "Salieri",
+    "pattern": "\\b(Salieri)\\b",
+    "description": "Regex for Salieri",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Salieri"
+  },
+  {
+    "name": "Samir755",
+    "pattern": "\\b(Samir755)\\b",
+    "description": "Regex for Samir755",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Samir755"
+  },
+  {
+    "name": "SanKyuu",
+    "pattern": "\\b(SanKyuu)\\b",
+    "description": "Regex for SanKyuu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SanKyuu"
+  },
+  {
+    "name": "SasukeducK",
+    "pattern": "^(SasukeducK)$",
+    "description": "Regex for SasukeducK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SasukeducK"
+  },
+  {
+    "name": "SbR",
+    "pattern": "^(SbR)$",
+    "description": "Regex for SbR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SbR"
+  },
+  {
+    "name": "Scene Groups + Naming",
+    "pattern": "^(?=.*(\\b\\d{3,4}p\\b).*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS|-SURCODE|-B0MBARDIERS|-D3US|-BROTHERHOOD|-W4K|-STRiKES)",
+    "description": "Regex for Scene Groups + Naming",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Scene Groups + Naming"
+  },
+  {
+    "name": "Scene",
+    "pattern": "^(Scene)$",
+    "description": "Regex for Scene",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Scene"
+  },
+  {
+    "name": "Scryous-Raws",
+    "pattern": "Scryous[ ._-]?(Raws)",
+    "description": "Regex for Scryous-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Scryous-Raws"
+  },
+  {
+    "name": "Seicher-Raws",
+    "pattern": "Seicher[ ._-]?(Raws)",
+    "description": "Regex for Seicher-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Seicher-Raws"
+  },
+  {
+    "name": "Sekkon",
+    "pattern": "\\b(Sekkon)\\b",
+    "description": "Regex for Sekkon",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Sekkon"
+  },
+  {
+    "name": "Senjou",
+    "pattern": "\\[Senjou\\]|-Senjou\\b",
+    "description": "Regex for Senjou",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Senjou"
+  },
+  {
+    "name": "Serendipity",
+    "pattern": "\\[Serendipity\\]|-Serendipity\\b",
+    "description": "Regex for Serendipity",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Serendipity"
+  },
+  {
+    "name": "Setsugen",
+    "pattern": "\\b(Setsugen)\\b",
+    "description": "Regex for Setsugen",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Setsugen"
+  },
+  {
+    "name": "ShieldBearer",
+    "pattern": "^(ShieldBearer)$",
+    "description": "Regex for ShieldBearer",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ShieldBearer"
+  },
+  {
+    "name": "Shimatta",
+    "pattern": "\\b(Shimatta)\\b",
+    "description": "Regex for Shimatta",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Shimatta"
+  },
+  {
+    "name": "Shiniori-Raws",
+    "pattern": "Shiniori[ ._-]?(Raws)",
+    "description": "Regex for Shiniori-Raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Shiniori-Raws"
+  },
+  {
+    "name": "Shir\u03c3",
+    "pattern": "\\b(Shir\u03c3)\\b",
+    "description": "Regex for Shir\u03c3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Shir\u03c3"
+  },
+  {
+    "name": "Shush Cut",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Shush[ ._-]?Cut)\\b(?!$)",
+    "description": "Regex for Shush Cut",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Shush Cut"
+  },
+  {
+    "name": "SiC (Group)",
+    "pattern": "^(SiC)$",
+    "description": "Regex for SiC (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SiC (Group)"
+  },
+  {
+    "name": "SiC (Title)",
+    "pattern": "\\bSiC\\b",
+    "description": "Regex for SiC (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SiC (Title)"
+  },
+  {
+    "name": "SiCFoI",
+    "pattern": "^(SiCFoI)$",
+    "description": "Regex for SiCFoI",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SiCFoI"
+  },
+  {
+    "name": "SiGLA",
+    "pattern": "^(SiGLA)$",
+    "description": "Regex for SiGLA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SiGLA"
+  },
+  {
+    "name": "SiGMA",
+    "pattern": "^(SiGMA)$",
+    "description": "Regex for SiGMA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SiGMA"
+  },
+  {
+    "name": "Sing-Along",
+    "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b",
+    "description": "Regex for Sing-Along",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Sing-Along"
+  },
+  {
+    "name": "Slyfox",
+    "pattern": "\\b(Slyfox)\\b",
+    "description": "Regex for Slyfox",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Slyfox"
+  },
+  {
+    "name": "Smoke",
+    "pattern": "\\[Smoke\\]|-Smoke\\b",
+    "description": "Regex for Smoke",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Smoke"
+  },
+  {
+    "name": "SoLCE",
+    "pattern": "\\b(SoLCE)\\b",
+    "description": "Regex for SoLCE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SoLCE"
+  },
+  {
+    "name": "SoM",
+    "pattern": "\\[SoM\\]|-SoM\\b",
+    "description": "Regex for SoM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SoM"
+  },
+  {
+    "name": "SobsPlease",
+    "pattern": "\\b(SobsPlease)\\b",
+    "description": "Regex for SobsPlease",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SobsPlease"
+  },
+  {
+    "name": "Sokudo",
+    "pattern": "\\[Sokudo\\]|-Sokudo\\b",
+    "description": "Regex for Sokudo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Sokudo"
+  },
+  {
+    "name": "Some-Stuffs",
+    "pattern": "\\b(Some-Stuffs)\\b",
+    "description": "Regex for Some-Stuffs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Some-Stuffs"
+  },
+  {
+    "name": "Special Edition",
+    "pattern": "(?<!^)\\b(extended|uncut|directors|special|unrated|uncensored|cut|version|(?<!{)edition)(\\b|\\d)",
+    "description": "Regex for Special Edition",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Special Edition"
+  },
+  {
+    "name": "Spirale",
+    "pattern": "\\b(Spirale)\\b",
+    "description": "Regex for Spirale",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Spirale"
+  },
+  {
+    "name": "Stan Rename",
+    "pattern": "\\[(STAN)\\b|\\b(STAN)\\]",
+    "description": "Regex for Stan Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Stan Rename"
+  },
+  {
+    "name": "Stan",
+    "pattern": "\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for Stan",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Stan"
+  },
+  {
+    "name": "Star+",
+    "pattern": "\\b(STRP)\\b",
+    "description": "Regex for Star+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Star+"
+  },
+  {
+    "name": "Starbez",
+    "pattern": "\\b(Starbez)\\b",
+    "description": "Regex for Starbez",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Starbez"
+  },
+  {
+    "name": "Stereo",
+    "pattern": "(?<!repac)[^0-9]2[ .]0\\b|\\bStereo\\b",
+    "description": "Regex for Stereo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Stereo"
+  },
+  {
+    "name": "StrayGods",
+    "pattern": "\\b(StrayGods)\\b",
+    "description": "Regex for StrayGods",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "StrayGods"
+  },
+  {
+    "name": "SubsMix",
+    "pattern": "\\b(SubsMix)\\b",
+    "description": "Regex for SubsMix",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SubsMix"
+  },
+  {
+    "name": "SubsPlease",
+    "pattern": "\\b(SubsPlease)\\b",
+    "description": "Regex for SubsPlease",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SubsPlease"
+  },
+  {
+    "name": "SubsPlus+",
+    "pattern": "\\b(SubsPlus\\+?)\\b",
+    "description": "Regex for SubsPlus+",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SubsPlus+"
+  },
+  {
+    "name": "Suki Desu",
+    "pattern": "\\[Suki[ .-]?Desu\\]|-Suki[ .-]?Desu\\b",
+    "description": "Regex for Suki Desu",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Suki Desu"
+  },
+  {
+    "name": "SumVision",
+    "pattern": "^(SumVision)$",
+    "description": "Regex for SumVision",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SumVision"
+  },
+  {
+    "name": "SwAgLaNdEr",
+    "pattern": "^(SwAgLaNdEr)$",
+    "description": "Regex for SwAgLaNdEr",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "SwAgLaNdEr"
+  },
+  {
+    "name": "T4H",
+    "pattern": "^(T4H)$",
+    "description": "Regex for T4H",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "T4H"
+  },
+  {
+    "name": "T6D",
+    "pattern": "^(T6D)$",
+    "description": "Regex for T6D",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "T6D"
+  },
+  {
+    "name": "TBS",
+    "pattern": "^(TBS)$",
+    "description": "Regex for TBS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TBS"
+  },
+  {
+    "name": "TDD",
+    "pattern": "^(TDD)$",
+    "description": "Regex for TDD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TDD"
+  },
+  {
+    "name": "TEKNO3D (Group)",
+    "pattern": "^(TEKNO3D)$",
+    "description": "Regex for TEKNO3D (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TEKNO3D (Group)"
+  },
+  {
+    "name": "TEKNO3D (Title)",
+    "pattern": "\\b(TEKNO3D)\\b",
+    "description": "Regex for TEKNO3D (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TEKNO3D (Title)"
+  },
+  {
+    "name": "TEPES",
+    "pattern": "^(TEPES)$",
+    "description": "Regex for TEPES",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TEPES"
+  },
+  {
+    "name": "TG",
+    "pattern": "^(TG)$",
+    "description": "Regex for TG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TG"
+  },
+  {
+    "name": "THORA",
+    "pattern": "\\b(THORA)\\b",
+    "description": "Regex for THORA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "THORA"
+  },
+  {
+    "name": "TIKO",
+    "pattern": "^(TIKO)$",
+    "description": "Regex for TIKO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TIKO"
+  },
+  {
+    "name": "TM",
+    "pattern": "^(TM\\b)$",
+    "description": "Regex for TM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TM"
+  },
+  {
+    "name": "TOA",
+    "pattern": "^(TOA)$",
+    "description": "Regex for TOA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TOA"
+  },
+  {
+    "name": "TOMMY",
+    "pattern": "^(TOMMY)$",
+    "description": "Regex for TOMMY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TOMMY"
+  },
+  {
+    "name": "TOPKEK",
+    "pattern": "\\b(TOPKEK)\\b",
+    "description": "Regex for TOPKEK",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TOPKEK"
+  },
+  {
+    "name": "TRiToN",
+    "pattern": "^(TRiToN)$",
+    "description": "Regex for TRiToN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TRiToN"
+  },
+  {
+    "name": "TTGA",
+    "pattern": "\\b(TTGA)\\b",
+    "description": "Regex for TTGA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TTGA"
+  },
+  {
+    "name": "TURG",
+    "pattern": "^(TURG)$",
+    "description": "Regex for TURG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TURG"
+  },
+  {
+    "name": "TVING Rename",
+    "pattern": "\\[(TVING)\\b|\\b(TVING)\\]",
+    "description": "Regex for TVING Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TVING Rename"
+  },
+  {
+    "name": "TVING",
+    "pattern": "\\b(tving)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for TVING",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TVING"
+  },
+  {
+    "name": "TVSmash",
+    "pattern": "^(TVSmash)$",
+    "description": "Regex for TVSmash",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TVSmash"
+  },
+  {
+    "name": "TVer",
+    "pattern": "\\b(tver)\\b",
+    "description": "Regex for TVer",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TVer"
+  },
+  {
+    "name": "Tars",
+    "pattern": "^(Tars)$",
+    "description": "Regex for Tars",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Tars"
+  },
+  {
+    "name": "TayTO",
+    "pattern": "^(TayTO)$",
+    "description": "Regex for TayTO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TayTO"
+  },
+  {
+    "name": "TeamTurquoize",
+    "pattern": "\\b(TeamTurquoize)\\b",
+    "description": "Regex for TeamTurquoize",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TeamTurquoize"
+  },
+  {
+    "name": "TeeWee",
+    "pattern": "\\b(TeeWee)\\b",
+    "description": "Regex for TeeWee",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TeeWee"
+  },
+  {
+    "name": "Tenrai Sensei",
+    "pattern": "\\b(Tenrai[ .-]?Sensei)\\b",
+    "description": "Regex for Tenrai Sensei",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Tenrai Sensei"
+  },
+  {
+    "name": "Tenshi",
+    "pattern": "\\[tenshi\\]|-tenshi$",
+    "description": "Regex for Tenshi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Tenshi"
+  },
+  {
+    "name": "TheFarm",
+    "pattern": "^(TheFarm)$",
+    "description": "Regex for TheFarm",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TheFarm"
+  },
+  {
+    "name": "TheUpscaler",
+    "pattern": "\\b(The[ ._-]?Upscaler)\\b",
+    "description": "Regex for TheUpscaler",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TheUpscaler"
+  },
+  {
+    "name": "Theatrical",
+    "pattern": "Theatrical",
+    "description": "Regex for Theatrical",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Theatrical"
+  },
+  {
+    "name": "Thighs",
+    "pattern": "\\[Thighs\\]|-Thighs\\b",
+    "description": "Regex for Thighs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Thighs"
+  },
+  {
+    "name": "Tigole",
+    "pattern": "^(Tigole)$",
+    "description": "Regex for Tigole",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Tigole"
+  },
+  {
+    "name": "TnF",
+    "pattern": "\\b(TnF)\\b",
+    "description": "Regex for TnF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TnF"
+  },
+  {
+    "name": "TnP",
+    "pattern": "^(TnP)$",
+    "description": "Regex for TnP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TnP"
+  },
+  {
+    "name": "ToonsHub",
+    "pattern": "\\b(ToonsHub)\\b",
+    "description": "Regex for ToonsHub",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ToonsHub"
+  },
+  {
+    "name": "Trix",
+    "pattern": "\\[Trix\\]|-Trix\\b",
+    "description": "Regex for Trix",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Trix"
+  },
+  {
+    "name": "TrueHD",
+    "pattern": "True[ .-]?HD|W4NK3R|HQMUX",
+    "description": "Regex for TrueHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TrueHD"
+  },
+  {
+    "name": "Tsundere",
+    "pattern": "\\[Tsundere\\]|-Tsundere(?!-)\\b",
+    "description": "Regex for Tsundere",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Tsundere"
+  },
+  {
+    "name": "TvR",
+    "pattern": "^(TvR)$",
+    "description": "Regex for TvR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "TvR"
+  },
+  {
+    "name": "U-NEXT",
+    "pattern": "\\b(u-next)\\b",
+    "description": "Regex for U-NEXT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "U-NEXT"
+  },
+  {
+    "name": "U3-Web",
+    "pattern": "\\b(U3-Web)\\b",
+    "description": "Regex for U3-Web",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "U3-Web"
+  },
+  {
+    "name": "UDF",
+    "pattern": "\\b(UDF)\\b",
+    "description": "Regex for UDF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "UDF"
+  },
+  {
+    "name": "UNBIASED",
+    "pattern": "\\[UNBIASED\\]|-UNBIASED\\b",
+    "description": "Regex for UNBIASED",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "UNBIASED"
+  },
+  {
+    "name": "UQW",
+    "pattern": "\\b(UQW)\\b",
+    "description": "Regex for UQW",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "UQW"
+  },
+  {
+    "name": "URANIME",
+    "pattern": "\\b(URANIME)\\b",
+    "description": "Regex for URANIME",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "URANIME"
+  },
+  {
+    "name": "USD",
+    "pattern": "\\[USD\\]|-USD\\b",
+    "description": "Regex for USD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "USD"
+  },
+  {
+    "name": "UltraRemux",
+    "pattern": "\\b(UltraRemux)\\b",
+    "description": "Regex for UltraRemux",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "UltraRemux"
+  },
+  {
+    "name": "Uncensored",
+    "pattern": "\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b",
+    "description": "Regex for Uncensored",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Uncensored"
+  },
+  {
+    "name": "VARYG",
+    "pattern": "\\b(VARYG)\\b",
+    "description": "Regex for VARYG",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VARYG"
+  },
+  {
+    "name": "VAV",
+    "pattern": "[.]VAV\\b",
+    "description": "Regex for .VAV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VAV"
+  },
+  {
+    "name": "VC-1",
+    "pattern": "\\bVC[-_. ]?1\\b",
+    "description": "Regex for VC-1",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VC-1"
+  },
+  {
+    "name": "VD0N",
+    "pattern": "^(VD0N)$",
+    "description": "Regex for VD0N",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VD0N"
+  },
+  {
+    "name": "VECTOR",
+    "pattern": "^(VECTOR)$",
+    "description": "Regex for VECTOR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VECTOR"
+  },
+  {
+    "name": "VIDEOHOLE",
+    "pattern": "^(VIDEOHOLE)$",
+    "description": "Regex for VIDEOHOLE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VIDEOHOLE"
+  },
+  {
+    "name": "VISIONPLUSHDR",
+    "pattern": "^(VISIONPLUSHDR(-X|1000)?)$",
+    "description": "Regex for VISIONPLUSHDR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VISIONPLUSHDR"
+  },
+  {
+    "name": "VIU Rename",
+    "pattern": "\\[(VIU)\\b|\\b(VIU)\\]",
+    "description": "Regex for VIU Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VIU Rename"
+  },
+  {
+    "name": "VIU",
+    "pattern": "\\b(viu)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for VIU",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VIU"
+  },
+  {
+    "name": "VP9",
+    "pattern": "\\bVP9\\b",
+    "description": "Regex for VP9",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VP9"
+  },
+  {
+    "name": "VRV",
+    "pattern": "\\b(vrv)\\b",
+    "description": "Regex for VRV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VRV"
+  },
+  {
+    "name": "VS",
+    "pattern": "\\b(V-S)\\b",
+    "description": "Regex for VS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VS"
+  },
+  {
+    "name": "VULCAN",
+    "pattern": "\\[VULCAN\\]|-VULCAN\\b",
+    "description": "Regex for VULCAN",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VULCAN"
+  },
+  {
+    "name": "Valenciano",
+    "pattern": "\\b(Valenciano)\\b",
+    "description": "Regex for Valenciano",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Valenciano"
+  },
+  {
+    "name": "Vanilla",
+    "pattern": "\\[Vanilla\\]|-Vanilla\\b",
+    "description": "Regex for Vanilla",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Vanilla"
+  },
+  {
+    "name": "ViSUM",
+    "pattern": "^(ViSUM)$",
+    "description": "Regex for ViSUM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ViSUM"
+  },
+  {
+    "name": "ViSiON",
+    "pattern": "^(ViSiON)$",
+    "description": "Regex for ViSiON",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ViSiON"
+  },
+  {
+    "name": "Videoland",
+    "pattern": "\\b(vdl|Videoland)\\b",
+    "description": "Regex for Videoland",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Videoland"
+  },
+  {
+    "name": "VietHD",
+    "pattern": "^(VietHD)$",
+    "description": "Regex for VietHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VietHD"
+  },
+  {
+    "name": "VinSyn",
+    "pattern": "\\b(VinSyn)\\b",
+    "description": "Regex for VinSyn",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VinSyn"
+  },
+  {
+    "name": "Vinegar Syndrome",
+    "pattern": "\\b(Vinegar[ ._-]Syndrome)\\b",
+    "description": "Regex for Vinegar Syndrome",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Vinegar Syndrome"
+  },
+  {
+    "name": "VipapkStudios",
+    "pattern": "\\b(VipapkStudios)\\b",
+    "description": "Regex for VipapkStudios",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VipapkStudios"
+  },
+  {
+    "name": "Virtuality",
+    "pattern": "\\b(Virtuality)\\b",
+    "description": "Regex for Virtuality",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Virtuality"
+  },
+  {
+    "name": "VisionXpert",
+    "pattern": "^(VisionXpert)$",
+    "description": "Regex for VisionXpert",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "VisionXpert"
+  },
+  {
+    "name": "Vivid",
+    "pattern": "\\[Vivid\\]|-Vivid\\b",
+    "description": "Regex for Vivid",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Vivid"
+  },
+  {
+    "name": "Vodes",
+    "pattern": "\\[Vodes\\]|(?<!Not)-Vodes\\b",
+    "description": "Regex for Vodes",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Vodes"
+  },
+  {
+    "name": "W4NK3R",
+    "pattern": "^(W4NK3R)$",
+    "description": "Regex for W4NK3R",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "W4NK3R"
+  },
+  {
+    "name": "WAF",
+    "pattern": "^(WAF)$",
+    "description": "Regex for WAF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WAF"
+  },
+  {
+    "name": "WAP",
+    "pattern": "\\b(WAP)\\b",
+    "description": "Regex for WAP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WAP"
+  },
+  {
+    "name": "WBDP",
+    "pattern": "\\b(WBDP)\\b",
+    "description": "Regex for WBDP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WBDP"
+  },
+  {
+    "name": "WEBDV",
+    "pattern": "^(WEBDV)$",
+    "description": "Regex for WEBDV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WEBDV"
+  },
+  {
+    "name": "WELP",
+    "pattern": "^(WELP)$",
+    "description": "Regex for WELP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WELP"
+  },
+  {
+    "name": "WRTEAM",
+    "pattern": "-WRTEAM\\b",
+    "description": "Regex for WRTEAM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WRTEAM"
+  },
+  {
+    "name": "WSE",
+    "pattern": "\\b(WSE)\\b",
+    "description": "Regex for WSE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WSE"
+  },
+  {
+    "name": "WTV",
+    "pattern": "^(WTV)$",
+    "description": "Regex for WTV",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WTV"
+  },
+  {
+    "name": "Wardevil",
+    "pattern": "\\[Wardevil\\]|-Wardevil\\b",
+    "description": "Regex for Wardevil",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Wardevil"
+  },
+  {
+    "name": "WhiteRev",
+    "pattern": "-WhiteRev\\b",
+    "description": "Regex for WhiteRev",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WhiteRev"
+  },
+  {
+    "name": "WiKi",
+    "pattern": "^(WiKi)$",
+    "description": "Regex for WiKi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WiKi"
+  },
+  {
+    "name": "WiLDCAT",
+    "pattern": "^(WiLDCAT)$",
+    "description": "Regex for WiLDCAT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WiLDCAT"
+  },
+  {
+    "name": "Will1869",
+    "pattern": "\\b(Will1869)\\b",
+    "description": "Regex for Will1869",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Will1869"
+  },
+  {
+    "name": "WinLUNA (Group)",
+    "pattern": "\\b(WinLUNA)\\b",
+    "description": "Regex for WinLUNA (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WinLUNA (Group)"
+  },
+  {
+    "name": "WinLUNA (Title)",
+    "pattern": "^(WinLUNA)$",
+    "description": "Regex for WinLUNA (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WinLUNA (Title)"
+  },
+  {
+    "name": "WtF Anime",
+    "pattern": "\\b(WtF[ ._-]?Anime)\\b",
+    "description": "Regex for WtF Anime",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "WtF Anime"
+  },
+  {
+    "name": "XEBEC",
+    "pattern": "^(XEBEC|4KBEC|CEBEX)$",
+    "description": "Regex for XEBEC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "XEBEC"
+  },
+  {
+    "name": "XLF",
+    "pattern": "^(XLF)$",
+    "description": "Regex for XLF",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "XLF"
+  },
+  {
+    "name": "YIFY",
+    "pattern": "^(YIFY)$",
+    "description": "Regex for YIFY",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YIFY"
+  },
+  {
+    "name": "YTS",
+    "pattern": "^(YTS(.(MX|LT|AG))?)$",
+    "description": "Regex for YTS",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YTS"
+  },
+  {
+    "name": "YURASUKA",
+    "pattern": "\\[YURASUKA\\]|-YURASUKA\\b",
+    "description": "Regex for YURASUKA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YURASUKA"
+  },
+  {
+    "name": "YURI",
+    "pattern": "\\[YURI\\]|-YURI\\b",
+    "description": "Regex for YURI",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YURI"
+  },
+  {
+    "name": "Yabai_Desu_NeRandomRemux",
+    "pattern": "\\b(Yabai_Desu_NeRandomRemux)\\b",
+    "description": "Regex for Yabai_Desu_NeRandomRemux",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Yabai_Desu_NeRandomRemux"
+  },
+  {
+    "name": "YakuboEncodes",
+    "pattern": "\\b(YakuboEncodes)\\b",
+    "description": "Regex for YakuboEncodes",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YakuboEncodes"
+  },
+  {
+    "name": "Yameii",
+    "pattern": "\\[Yameii\\]|-Yameii\\b",
+    "description": "Regex for Yameii",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Yameii"
+  },
+  {
+    "name": "Yatogam1",
+    "pattern": "^(Yatogam1)$",
+    "description": "Regex for Yatogam1",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Yatogam1"
+  },
+  {
+    "name": "Yoghurt",
+    "pattern": "\\b(Yoghurt)\\b",
+    "description": "Regex for Yoghurt",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Yoghurt"
+  },
+  {
+    "name": "YouTube Red",
+    "pattern": "\\b(red|youtube red)\\b[ ._-]web[ ._-]?(dl|rip)?\\b",
+    "description": "Regex for YouTube Red",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YouTube Red"
+  },
+  {
+    "name": "YuiSubs",
+    "pattern": "\\b(YuiSubs)\\b",
+    "description": "Regex for YuiSubs",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YuiSubs"
+  },
+  {
+    "name": "Yuki",
+    "pattern": "\\[Yuki\\]|-Yuki\\b",
+    "description": "Regex for Yuki",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Yuki"
+  },
+  {
+    "name": "Yun",
+    "pattern": "\\[Yun\\]|-Yun\\b",
+    "description": "Regex for Yun",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Yun"
+  },
+  {
+    "name": "YusukeFLA",
+    "pattern": "^(YusukeFLA)$",
+    "description": "Regex for YusukeFLA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "YusukeFLA"
+  },
+  {
+    "name": "Z4ST1N",
+    "pattern": "\\b(Z4ST1N)\\b",
+    "description": "Regex for Z4ST1N",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Z4ST1N"
+  },
+  {
+    "name": "ZNM",
+    "pattern": "^(ZNM)$",
+    "description": "Regex for ZNM",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZNM"
+  },
+  {
+    "name": "ZQ",
+    "pattern": "^(ZQ)$",
+    "description": "Regex for ZQ",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZQ"
+  },
+  {
+    "name": "ZR",
+    "pattern": "\\b(ZR)\\b|-ZR-",
+    "description": "Regex for ZR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZR"
+  },
+  {
+    "name": "Zero00",
+    "pattern": "^(Zero00)$",
+    "description": "Regex for Zero00",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Zero00"
+  },
+  {
+    "name": "ZeroBuild",
+    "pattern": "\\b(ZeroBuild)\\b",
+    "description": "Regex for ZeroBuild",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZeroBuild"
+  },
+  {
+    "name": "Zeus",
+    "pattern": "^(Zeus)$",
+    "description": "Regex for Zeus",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "Zeus"
+  },
+  {
+    "name": "ZigZag (Group)",
+    "pattern": "^(ZigZag)$",
+    "description": "Regex for ZigZag (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZigZag (Group)"
+  },
+  {
+    "name": "ZigZag (Title)",
+    "pattern": "\\[ZigZag\\]|-ZigZab\b",
+    "description": "Regex for ZigZag (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZigZag (Title)"
+  },
+  {
+    "name": "ZoroSenpai",
+    "pattern": "^(ZoroSenpai)$",
+    "description": "Regex for ZoroSenpai",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "ZoroSenpai"
+  },
+  {
+    "name": "[TGx]",
+    "pattern": "\\[TGx\\]",
+    "description": "Regex for [TGx]",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "[TGx]"
+  },
+  {
+    "name": "[eztv]",
+    "pattern": "\\[eztvx?[ ._-]?(io|re|to)?\\]",
+    "description": "Regex for [eztv]",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "[eztv]"
+  },
+  {
+    "name": "[rarbg]",
+    "pattern": "\\[rarbg\\]",
+    "description": "Regex for [rarbg]",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "[rarbg]"
+  },
+  {
+    "name": "[rartv]",
+    "pattern": "\\[rartv\\]",
+    "description": "Regex for [rartv]",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "[rartv]"
+  },
+  {
+    "name": "_nzb",
+    "pattern": "_nzb\\b",
+    "description": "Regex for _nzb",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "_nzb"
+  },
+  {
+    "name": "aRMX",
+    "pattern": "\\b(aRMX)\\b",
+    "description": "Regex for aRMX",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "aRMX"
+  },
+  {
+    "name": "aXXo",
+    "pattern": "^(aXXo)$",
+    "description": "Regex for aXXo",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "aXXo"
+  },
+  {
+    "name": "alfaHD",
+    "pattern": "^(alfaHD.*)$",
+    "description": "Regex for alfaHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "alfaHD"
+  },
+  {
+    "name": "beAst",
+    "pattern": "^(beAst)$",
+    "description": "Regex for beAst",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "beAst"
+  },
+  {
+    "name": "bonkai77",
+    "pattern": "\\b(bonkai77)\\b",
+    "description": "Regex for bonkai77",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "bonkai77"
+  },
+  {
+    "name": "c0kE",
+    "pattern": "^(c0kE)$",
+    "description": "Regex for c0kE",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "c0kE"
+  },
+  {
+    "name": "cappybara",
+    "pattern": "\\[cappybara\\]|-cappybara\\b",
+    "description": "Regex for cappybara",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "cappybara"
+  },
+  {
+    "name": "d3g",
+    "pattern": "^(d3g)$",
+    "description": "Regex for d3g",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "d3g"
+  },
+  {
+    "name": "dB",
+    "pattern": "^(dB)$",
+    "description": "Regex for dB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "dB"
+  },
+  {
+    "name": "deanzel",
+    "pattern": "\\b(deanzel)\\b",
+    "description": "Regex for deanzel",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "deanzel"
+  },
+  {
+    "name": "decibeL",
+    "pattern": "^(decibeL)$",
+    "description": "Regex for decibeL",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "decibeL"
+  },
+  {
+    "name": "derp",
+    "pattern": "\\[derp\\]|-derp\\b",
+    "description": "Regex for derp",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "derp"
+  },
+  {
+    "name": "eldon",
+    "pattern": "\\b(eldon)\\b",
+    "description": "Regex for eldon",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "eldon"
+  },
+  {
+    "name": "fig",
+    "pattern": "\\[fig\\]|-fig\\b",
+    "description": "Regex for fig",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "fig"
+  },
+  {
+    "name": "grimf",
+    "pattern": "\\b(grimf)\\b",
+    "description": "Regex for grimf",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "grimf"
+  },
+  {
+    "name": "hallowed",
+    "pattern": "^(hallowed)$",
+    "description": "Regex for hallowed",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "hallowed"
+  },
+  {
+    "name": "hchcsen",
+    "pattern": "\\b(hchcsen)\\b",
+    "description": "Regex for hchcsen",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "hchcsen"
+  },
+  {
+    "name": "heb",
+    "pattern": "[.]heb\\b",
+    "description": "Regex for .heb",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "heb"
+  },
+  {
+    "name": "hi10p",
+    "pattern": "hi10p",
+    "description": "Regex for hi10p",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "hi10p"
+  },
+  {
+    "name": "hydes",
+    "pattern": "\\b(hydes)\\b",
+    "description": "Regex for hydes",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "hydes"
+  },
+  {
+    "name": "iAHD",
+    "pattern": "\\b(iAHD)\\b",
+    "description": "Regex for iAHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iAHD"
+  },
+  {
+    "name": "iFT",
+    "pattern": "^(iFT)$",
+    "description": "Regex for iFT",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iFT"
+  },
+  {
+    "name": "iJP",
+    "pattern": "^(iJP)$",
+    "description": "Regex for iJP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iJP"
+  },
+  {
+    "name": "iKA",
+    "pattern": "^(iKA)$",
+    "description": "Regex for iKA",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iKA"
+  },
+  {
+    "name": "iKaos",
+    "pattern": "\\b(iKaos)\\b",
+    "description": "Regex for iKaos",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iKaos"
+  },
+  {
+    "name": "iNC0GNiTO",
+    "pattern": "-iNC0GNiTO\\b",
+    "description": "Regex for iNC0GNiTO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iNC0GNiTO"
+  },
+  {
+    "name": "iNTENSO",
+    "pattern": "^(iNTENSO)$",
+    "description": "Regex for iNTENSO",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iNTENSO"
+  },
+  {
+    "name": "iPUNISHER",
+    "pattern": "\\b(iPUNISHER)\\b",
+    "description": "Regex for iPUNISHER",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iPUNISHER"
+  },
+  {
+    "name": "iPlanet",
+    "pattern": "^(iPlanet)$",
+    "description": "Regex for iPlanet",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iPlanet"
+  },
+  {
+    "name": "iT Rename",
+    "pattern": "\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]",
+    "description": "Regex for iT Rename",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iT Rename"
+  },
+  {
+    "name": "iT00NZ",
+    "pattern": "^(iT00NZ)$",
+    "description": "Regex for iT00NZ",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iT00NZ"
+  },
+  {
+    "name": "iTunes",
+    "pattern": "\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)",
+    "description": "Regex for iTunes",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iTunes"
+  },
+  {
+    "name": "iVy",
+    "pattern": "^(iVy)$",
+    "description": "Regex for iVy",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "iVy"
+  },
+  {
+    "name": "inid4c",
+    "pattern": "\\b(inid4c)\\b",
+    "description": "Regex for inid4c",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "inid4c"
+  },
+  {
+    "name": "jeddak (Group)",
+    "pattern": "\\b(jeddak)\\b",
+    "description": "Regex for jeddak (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "jeddak (Group)"
+  },
+  {
+    "name": "jeddak (Title)",
+    "pattern": "^(jeddak)$",
+    "description": "Regex for jeddak (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "jeddak (Title)"
+  },
+  {
+    "name": "jennaortega (Group)",
+    "pattern": "^(jennaortega(UHD)?)$",
+    "description": "Regex for jennaortega (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "jennaortega (Group)"
+  },
+  {
+    "name": "jennaortega (Title)",
+    "pattern": "(?<!-)\\b(jennaortega(UHD)?)\\b",
+    "description": "Regex for jennaortega (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "jennaortega (Title)"
+  },
+  {
+    "name": "karios",
+    "pattern": "\\b(karios)\\b",
+    "description": "Regex for karios",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "karios"
+  },
+  {
+    "name": "km",
+    "pattern": "\\[km\\]|-km\\b",
+    "description": "Regex for km",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "km"
+  },
+  {
+    "name": "koala",
+    "pattern": "\\[koala\\]|-koala\\b",
+    "description": "Regex for koala",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "koala"
+  },
+  {
+    "name": "kuchikirukia",
+    "pattern": "\\b(kuchikirukia)\\b",
+    "description": "Regex for kuchikirukia",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "kuchikirukia"
+  },
+  {
+    "name": "mHD",
+    "pattern": "^(mHD)$",
+    "description": "Regex for mHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "mHD"
+  },
+  {
+    "name": "mSD",
+    "pattern": "^(mSD)$",
+    "description": "Regex for mSD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "mSD"
+  },
+  {
+    "name": "mal lu zen",
+    "pattern": "\\b(mal[ .-]lu[ .-]zen)\\b",
+    "description": "Regex for mal lu zen",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "mal lu zen"
+  },
+  {
+    "name": "mdcx",
+    "pattern": "\\b(mdcx)\\b",
+    "description": "Regex for mdcx",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "mdcx"
+  },
+  {
+    "name": "monkee",
+    "pattern": "^(monkee)$",
+    "description": "Regex for monkee",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "monkee"
+  },
+  {
+    "name": "mottoj",
+    "pattern": "\\b(mottoj)\\b",
+    "description": "Regex for mottoj",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "mottoj"
+  },
+  {
+    "name": "moviesbyrizzo (Group)",
+    "pattern": "\\b(moviesbyrizzo)\\b",
+    "description": "Regex for moviesbyrizzo (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "moviesbyrizzo (Group)"
+  },
+  {
+    "name": "moviesbyrizzo (Title)",
+    "pattern": "^(moviesbyrizzo)$",
+    "description": "Regex for moviesbyrizzo (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "moviesbyrizzo (Title)"
+  },
+  {
+    "name": "nHD",
+    "pattern": "^(nHD)$",
+    "description": "Regex for nHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "nHD"
+  },
+  {
+    "name": "nSD",
+    "pattern": "^(nSD)$",
+    "description": "Regex for nSD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "nSD"
+  },
+  {
+    "name": "naiyas",
+    "pattern": "\\[naiyas\\]|-naiyas\\b",
+    "description": "Regex for naiyas",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "naiyas"
+  },
+  {
+    "name": "neko-kBaraka",
+    "pattern": "\\b(neko-kBaraka)\\b",
+    "description": "Regex for neko-kBaraka",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "neko-kBaraka"
+  },
+  {
+    "name": "neko-raws",
+    "pattern": "neko[ ._-]?(raws)",
+    "description": "Regex for neko-raws",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "neko-raws"
+  },
+  {
+    "name": "neoHEVC",
+    "pattern": "\\b(neoHEVC)\\b",
+    "description": "Regex for neoHEVC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "neoHEVC"
+  },
+  {
+    "name": "nhanc3",
+    "pattern": "^(nhanc3)$",
+    "description": "Regex for nhanc3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "nhanc3"
+  },
+  {
+    "name": "nikt0",
+    "pattern": "^(nikt0)$",
+    "description": "Regex for nikt0",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "nikt0"
+  },
+  {
+    "name": "npz",
+    "pattern": "\\b(npz)\\b",
+    "description": "Regex for npz",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "npz"
+  },
+  {
+    "name": "o7",
+    "pattern": "\\b(o7)\\b",
+    "description": "Regex for o7",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "o7"
+  },
+  {
+    "name": "orbitron",
+    "pattern": "^(orbitron)$",
+    "description": "Regex for orbitron",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "orbitron"
+  },
+  {
+    "name": "orz",
+    "pattern": "\\b(orz)\\b",
+    "description": "Regex for orz",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "orz"
+  },
+  {
+    "name": "phazer11",
+    "pattern": "\\b(phazer11)\\b",
+    "description": "Regex for phazer11",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "phazer11"
+  },
+  {
+    "name": "playBD",
+    "pattern": "^(playBD)$",
+    "description": "Regex for playBD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "playBD"
+  },
+  {
+    "name": "playHD",
+    "pattern": "^(playHD)$",
+    "description": "Regex for playHD",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "playHD"
+  },
+  {
+    "name": "playWEB",
+    "pattern": "^(playWEB)$",
+    "description": "Regex for playWEB",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "playWEB"
+  },
+  {
+    "name": "pog42",
+    "pattern": "\\b(pog42)\\b",
+    "description": "Regex for pog42",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "pog42"
+  },
+  {
+    "name": "postbot",
+    "pattern": "-postbot\\b",
+    "description": "Regex for postbot",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "postbot"
+  },
+  {
+    "name": "sam",
+    "pattern": "\\[sam\\]|-sam\\b",
+    "description": "Regex for sam",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "sam"
+  },
+  {
+    "name": "sbR",
+    "pattern": "^(sbR)$",
+    "description": "Regex for sbR",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "sbR"
+  },
+  {
+    "name": "sekkusu&ok",
+    "pattern": "\\b(sekkusu&ok)\\b",
+    "description": "Regex for sekkusu&ok",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "sekkusu&ok"
+  },
+  {
+    "name": "sgt",
+    "pattern": "\\[sgt\\]|-sgt\\b",
+    "description": "Regex for sgt",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "sgt"
+  },
+  {
+    "name": "shincaps",
+    "pattern": "\\b(shincaps)\\b",
+    "description": "Regex for shincaps",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "shincaps"
+  },
+  {
+    "name": "smol",
+    "pattern": "\\[smol\\]|-smol\\b",
+    "description": "Regex for smol",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "smol"
+  },
+  {
+    "name": "tarunk9c",
+    "pattern": "^(tarunk9c)$",
+    "description": "Regex for tarunk9c",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "tarunk9c"
+  },
+  {
+    "name": "tokar86a",
+    "pattern": "^(tokar86a)$",
+    "description": "Regex for tokar86a",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "tokar86a"
+  },
+  {
+    "name": "torenter69",
+    "pattern": "\\b(torenter69)\\b",
+    "description": "Regex for torenter69",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "torenter69"
+  },
+  {
+    "name": "uP",
+    "pattern": "\\[uP\\]",
+    "description": "Regex for uP",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "uP"
+  },
+  {
+    "name": "uba",
+    "pattern": "\\[uba\\]|-uba\\b",
+    "description": "Regex for uba",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "uba"
+  },
+  {
+    "name": "v0",
+    "pattern": "(\\b|\\d)(v0)\\b",
+    "description": "Regex for v0",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "v0"
+  },
+  {
+    "name": "v1",
+    "pattern": "(\\b|\\d)(v1)\\b",
+    "description": "Regex for v1",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "v1"
+  },
+  {
+    "name": "v2",
+    "pattern": "(\\b|\\d)(v2)\\b",
+    "description": "Regex for v2",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "v2"
+  },
+  {
+    "name": "v3",
+    "pattern": "(\\b|\\d)(v3)\\b",
+    "description": "Regex for v3",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "v3"
+  },
+  {
+    "name": "v4",
+    "pattern": "(\\b|\\d)(v4)\\b",
+    "description": "Regex for v4",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "v4"
+  },
+  {
+    "name": "vnlls",
+    "pattern": "^(vnlls)$",
+    "description": "Regex for vnlls",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "vnlls"
+  },
+  {
+    "name": "worldmkv",
+    "pattern": "^(worldmkv)$",
+    "description": "Regex for worldmkv",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "worldmkv"
+  },
+  {
+    "name": "x0r",
+    "pattern": "^(x0r)$",
+    "description": "Regex for x0r",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "x0r"
+  },
+  {
+    "name": "x265_HEVC",
+    "pattern": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)",
+    "description": "Regex for x265/HEVC",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "x265_HEVC"
+  },
+  {
+    "name": "xh264",
+    "pattern": "[xh][ ._-]?264|\\bAVC(\\b|\\d)",
+    "description": "Regex for x|h264",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "xh264"
+  },
+  {
+    "name": "xh265",
+    "pattern": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)",
+    "description": "Regex for x|h265",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "xh265"
+  },
+  {
+    "name": "xh266",
+    "pattern": "[xh][ ._-]?266|\\bVVC(\\b|\\d)",
+    "description": "Regex for x|h266",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "xh266"
+  },
+  {
+    "name": "xiao-av1",
+    "pattern": "\\b(xiao-av1)\\b",
+    "description": "Regex for xiao-av1",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "xiao-av1"
+  },
+  {
+    "name": "xpost",
+    "pattern": "-xpost\\b",
+    "description": "Regex for xpost",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "xpost"
+  },
+  {
+    "name": "y2flix (Group)",
+    "pattern": "\\b(y2flix)\\b",
+    "description": "Regex for y2flix (Group)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "y2flix (Group)"
+  },
+  {
+    "name": "y2flix (Title)",
+    "pattern": "^(y2flix)$",
+    "description": "Regex for y2flix (Title)",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "y2flix (Title)"
+  },
+  {
+    "name": "youshikibi",
+    "pattern": "\\b(youshikibi)\\b",
+    "description": "Regex for youshikibi",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "youshikibi"
+  },
+  {
+    "name": "zza",
+    "pattern": "\\[zza\\]|-zza\\b",
+    "description": "Regex for zza",
+    "tags": [
+      "Trash Guides"
+    ],
+    "tests": [],
+    "_id": "zza"
+  }
+]

@@ -1,0 +1,6 @@
+name: GetItTwisted
+pattern: \b(GetItTwisted)\b
+description: Regex for GetItTwisted
+tags:
+- Trash Guides
+tests: []

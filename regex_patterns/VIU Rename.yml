@@ -1,0 +1,6 @@
+name: VIU Rename
+pattern: \[(VIU)\b|\b(VIU)\]
+description: Regex for VIU Rename
+tags:
+- Trash Guides
+tests: []

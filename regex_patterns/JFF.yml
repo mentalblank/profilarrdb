@@ -1,0 +1,6 @@
+name: JFF
+pattern: ^(JFF)$
+description: Regex for JFF
+tags:
+- Trash Guides
+tests: []

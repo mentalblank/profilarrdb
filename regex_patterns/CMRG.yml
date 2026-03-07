@@ -1,0 +1,6 @@
+name: CMRG
+pattern: ^(CMRG)$
+description: Regex for CMRG
+tags:
+- Trash Guides
+tests: []

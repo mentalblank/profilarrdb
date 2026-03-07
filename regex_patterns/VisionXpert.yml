@@ -1,0 +1,6 @@
+name: VisionXpert
+pattern: ^(VisionXpert)$
+description: Regex for VisionXpert
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: playBD
+pattern: ^(playBD)$
+description: Regex for playBD
+tags:
+- Trash Guides
+tests: []

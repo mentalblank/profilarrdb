@@ -1,0 +1,6 @@
+name: o7
+pattern: \b(o7)\b
+description: Regex for o7
+tags:
+- Trash Guides
+tests: []

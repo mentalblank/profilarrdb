@@ -1,0 +1,6 @@
+name: SubsMix
+pattern: \b(SubsMix)\b
+description: Regex for SubsMix
+tags:
+- Trash Guides
+tests: []

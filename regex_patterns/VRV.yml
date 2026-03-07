@@ -1,0 +1,6 @@
+name: VRV
+pattern: \b(vrv)\b
+description: Regex for VRV
+tags:
+- Trash Guides
+tests: []

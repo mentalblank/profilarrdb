@@ -1,0 +1,59 @@
+trash_id: 1af239278386be2919e1bcee0bde047e
+name: DD+ ATMOS
+includeCustomFormatWhenRenaming: false
+description: "DD+ ATMOS (Dolby Digital Plus with Atmos \u2013 lossy)\n\nAtmos via\
+  \ UHD Blu-ray will be lossless, or lossy via streaming services so in this case\
+  \ it will be lossy + Atmos"
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Dolby Digital Plus
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Dolby Digital Plus (1)
+- name: ATMOS
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(atmos|ddpa)(\b|\d)
+  pattern: ATMOS
+- name: Not TrueHD
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd
+  pattern: Not TrueHD
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdts(\b|\d)
+  pattern: Not DTS
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+tests: []

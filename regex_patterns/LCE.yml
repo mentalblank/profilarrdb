@@ -1,0 +1,6 @@
+name: LCE
+pattern: \b(LCE)\b
+description: Regex for LCE
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: DTS-HD HRA
+pattern: dts[-. ]?(hd[. ]?)?(hra?|hi\b)
+description: Regex for DTS-HD HRA
+tags:
+- Trash Guides
+tests: []

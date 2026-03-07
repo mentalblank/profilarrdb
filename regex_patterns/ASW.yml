@@ -1,0 +1,6 @@
+name: ASW
+pattern: \b(ASW)\b
+description: Regex for ASW
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: NiXON (Group)
+pattern: \b(NiXON)\b
+description: Regex for NiXON (Group)
+tags:
+- Trash Guides
+tests: []

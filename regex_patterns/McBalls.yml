@@ -1,0 +1,6 @@
+name: McBalls
+pattern: \b(McBalls)\b
+description: Regex for McBalls
+tags:
+- Trash Guides
+tests: []

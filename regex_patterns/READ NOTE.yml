@@ -1,0 +1,6 @@
+name: READ NOTE
+pattern: \b(READ(\s|\.)+NOTE)\b
+description: Regex for READ NOTE
+tags:
+- Trash Guides
+tests: []

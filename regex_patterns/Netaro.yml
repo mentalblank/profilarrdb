@@ -1,0 +1,6 @@
+name: Netaro
+pattern: \b(Netaro)\b
+description: Regex for Netaro
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,21 @@
+trash_id: e7718d7a3ce595f289bfee26adc178f5
+name: Repack_Proper
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Repack/Proper/Rerip
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(repack|proper|rerip)\b
+  pattern: Repack_Proper_Rerip
+- name: Not Higher Version Repack/Proper
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b((repack|proper)[23])\b|\breal\.(real\.)?(proper|repack)\b
+  pattern: Not Higher Version Repack_Proper
+tests: []

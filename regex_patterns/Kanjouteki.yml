@@ -1,0 +1,6 @@
+name: Kanjouteki
+pattern: \b(Kanjouteki)\b
+description: Regex for Kanjouteki
+tags:
+- Trash Guides
+tests: []

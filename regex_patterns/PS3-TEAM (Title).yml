@@ -1,0 +1,6 @@
+name: PS3-TEAM (Title)
+pattern: ^(PS3-TEAM)$
+description: Regex for PS3-TEAM (Title)
+tags:
+- Trash Guides
+tests: []

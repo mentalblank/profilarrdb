@@ -1,0 +1,6 @@
+name: Dolby Vision
+pattern: \b(dv|dovi|dolby[ .]?V(ision)?)\b
+description: Regex for Dolby Vision
+tags:
+- Trash Guides
+tests: []

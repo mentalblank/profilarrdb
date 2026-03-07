@@ -1,0 +1,6 @@
+name: Shiniori-Raws
+pattern: Shiniori[ ._-]?(Raws)
+description: Regex for Shiniori-Raws
+tags:
+- Trash Guides
+tests: []

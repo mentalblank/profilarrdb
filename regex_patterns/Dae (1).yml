@@ -1,0 +1,6 @@
+name: Dae (1)
+pattern: \b(Dae)\b
+description: Regex for Dae (1)
+tags:
+- Trash Guides
+tests: []

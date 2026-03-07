@@ -1,0 +1,6 @@
+name: FRDS
+pattern: ^(FRDS)$
+description: Regex for FRDS
+tags:
+- Trash Guides
+tests: []

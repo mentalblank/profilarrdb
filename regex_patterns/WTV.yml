@@ -1,0 +1,6 @@
+name: WTV
+pattern: ^(WTV)$
+description: Regex for WTV
+tags:
+- Trash Guides
+tests: []

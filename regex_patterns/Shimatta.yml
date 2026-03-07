@@ -1,0 +1,6 @@
+name: Shimatta
+pattern: \b(Shimatta)\b
+description: Regex for Shimatta
+tags:
+- Trash Guides
+tests: []

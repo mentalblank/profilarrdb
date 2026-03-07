@@ -1,0 +1,6 @@
+name: ArataEnc
+pattern: \b(ArataEnc)\b
+description: Regex for ArataEnc
+tags:
+- Trash Guides
+tests: []

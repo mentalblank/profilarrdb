@@ -1,0 +1,6 @@
+name: iAHD
+pattern: \b(iAHD)\b
+description: Regex for iAHD
+tags:
+- Trash Guides
+tests: []

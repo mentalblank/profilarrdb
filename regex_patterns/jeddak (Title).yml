@@ -1,0 +1,6 @@
+name: jeddak (Title)
+pattern: ^(jeddak)$
+description: Regex for jeddak (Title)
+tags:
+- Trash Guides
+tests: []

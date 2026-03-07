@@ -1,0 +1,18 @@
+trash_id: c259005cbaeb5ab44c06eddb4751e70c
+name: v0
+includeCustomFormatWhenRenaming: true
+description: 'v0
+
+
+  Custom Format to cover releases named with v0 which we don''t want.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: v0
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: (\b|\d)(v0)\b
+  pattern: v0
+tests: []

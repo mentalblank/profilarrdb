@@ -1,0 +1,6 @@
+name: BlackLuster
+pattern: \b(BlackLuster)\b
+description: Regex for BlackLuster
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: MP3
+pattern: mp3
+description: Regex for MP3
+tags:
+- Trash Guides
+tests: []

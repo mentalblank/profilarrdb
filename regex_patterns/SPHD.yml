@@ -1,0 +1,6 @@
+name: SPHD
+pattern: ^(SPHD)$
+description: Regex for SPHD
+tags:
+- Trash Guides
+tests: []

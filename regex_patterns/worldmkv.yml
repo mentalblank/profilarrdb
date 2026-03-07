@@ -1,0 +1,6 @@
+name: worldmkv
+pattern: ^(worldmkv)$
+description: Regex for worldmkv
+tags:
+- Trash Guides
+tests: []

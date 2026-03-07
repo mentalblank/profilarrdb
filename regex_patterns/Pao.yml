@@ -1,0 +1,6 @@
+name: Pao
+pattern: \[Pao\]|-Pao\b
+description: Regex for Pao
+tags:
+- Trash Guides
+tests: []

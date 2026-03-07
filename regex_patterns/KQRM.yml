@@ -1,0 +1,6 @@
+name: KQRM
+pattern: \b(KQRM)\b
+description: Regex for KQRM
+tags:
+- Trash Guides
+tests: []

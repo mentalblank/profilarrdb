@@ -1,0 +1,6 @@
+name: Chotab
+pattern: ^(Chotab)$
+description: Regex for Chotab
+tags:
+- Trash Guides
+tests: []

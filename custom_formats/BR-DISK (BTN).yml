@@ -1,0 +1,20 @@
+trash_id: 6f808933a71bd9666531610cb8c059cc
+name: BR-DISK (BTN)
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: BR-DISK
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: ^(?!.*\b((?<!hd[._ -]|hd)dvd|bdrip|720p|mkv|xvid|wmv|d3g|(bd)?remux|^(?=.*1080p)(?=.*hevc)|[x][-_.
+    ]?26[45]|german.*[dm]l|((?<=\d{4}).*german.*([dm]l)?)(?=.*\b(avc|hevc|vc[-_. ]?1|mvc|mpeg[-_.
+    ]?2)\b))\b)(((?=.*\b(blu[-_. ]?ray|bd|hd[-_. ]?dvd)\b)(?=.*\b(avc|hevc|vc[-_.
+    ]?1|mvc|mpeg[-_. ]?2|bdmv|iso|h[ ._-]?26[45])\b))|^((?=.*\b(((?=.*\b((.*_)?complete.*|dis[ck])\b)(?=.*(blu[-_.
+    ]?ray|hd[-_. ]?dvd)))|3d[-_. ]?bd|br[-_. ]?disk|full[-_. ]?blu[-_. ]?ray|^((?=.*((bd|uhd)[-_.
+    ]?(25|50|66|100|iso)))))))).*
+  pattern: (S) BR-DISK
+tests: []

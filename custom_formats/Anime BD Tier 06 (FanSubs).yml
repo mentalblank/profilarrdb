@@ -1,0 +1,103 @@
+trash_id: 9dce189b960fddf47891b7484ee886ca
+name: Anime BD Tier 06 (FanSubs)
+includeCustomFormatWhenRenaming: false
+description: 'Anime BD Tier 06
+
+
+  FanSub groups that are consistent.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: ANE
+  negate: false
+  required: false
+  type: release_title
+  pattern: ANE
+- name: Bunny-Apocalypse
+  negate: false
+  required: false
+  type: release_title
+  pattern: Bunny-Apocalypse
+- name: CyC
+  negate: false
+  required: false
+  type: release_title
+  pattern: CyC
+- name: Datte13
+  negate: false
+  required: false
+  type: release_title
+  pattern: Datte13
+- name: EJF
+  negate: false
+  required: false
+  type: release_title
+  pattern: EJF
+- name: GetItTwisted
+  negate: false
+  required: false
+  type: release_title
+  pattern: GetItTwisted
+- name: GSK_kun
+  negate: false
+  required: false
+  type: release_title
+  pattern: GSK_kun
+- name: iKaos
+  negate: false
+  required: false
+  type: release_title
+  pattern: iKaos
+- name: karios
+  negate: false
+  required: false
+  type: release_title
+  pattern: karios
+- name: Pookie
+  negate: false
+  required: false
+  type: release_title
+  pattern: Pookie
+- name: RASETSU
+  negate: false
+  required: false
+  type: release_title
+  pattern: RASETSU
+- name: Starbez
+  negate: false
+  required: false
+  type: release_title
+  pattern: Starbez
+- name: Tsundere
+  negate: false
+  required: false
+  type: release_title
+  pattern: Tsundere
+- name: Yoghurt
+  negate: false
+  required: false
+  type: release_title
+  pattern: Yoghurt
+- name: YURASUKA
+  negate: false
+  required: false
+  type: release_title
+  pattern: YURASUKA
+- name: Bluray
+  negate: false
+  required: false
+  type: source
+  source: bluray
+- name: Bluray Remux
+  negate: false
+  required: false
+  type: source
+  source: bluray_raw
+- name: DVD
+  negate: false
+  required: false
+  type: source
+  source: dvd
+tests: []

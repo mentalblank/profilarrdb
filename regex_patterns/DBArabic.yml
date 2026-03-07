@@ -1,0 +1,6 @@
+name: DBArabic
+pattern: \b(DBArabic)\b
+description: Regex for DBArabic
+tags:
+- Trash Guides
+tests: []

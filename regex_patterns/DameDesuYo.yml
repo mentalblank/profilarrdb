@@ -1,0 +1,6 @@
+name: DameDesuYo
+pattern: \b(DameDesuYo)\b
+description: Regex for DameDesuYo
+tags:
+- Trash Guides
+tests: []

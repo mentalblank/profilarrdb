@@ -1,0 +1,6 @@
+name: 41RGB
+pattern: ^(41RGB)$
+description: Regex for 41RGB
+tags:
+- Trash Guides
+tests: []

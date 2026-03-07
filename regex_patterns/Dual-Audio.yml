@@ -1,0 +1,6 @@
+name: Dual-Audio
+pattern: (dual|multi|funi|eng(lish)?)[\s._-]?(audio|dub(s|bed)?)|[([](dual|multi)[])]|\b([a-zA-Z]{2}\+EN|EN\+[a-zA-Z]{2})\b|\b(\d{3,4}(p|i)|4K|U(ltra)?HD)\b.*\b(DUAL|MULTI)\b(?!.*\(|\))
+description: Regex for Dual-Audio
+tags:
+- Trash Guides
+tests: []

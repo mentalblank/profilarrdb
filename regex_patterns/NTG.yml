@@ -1,0 +1,6 @@
+name: NTG
+pattern: ^(NTG)$
+description: Regex for NTG
+tags:
+- Trash Guides
+tests: []

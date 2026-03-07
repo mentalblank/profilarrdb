@@ -1,0 +1,6 @@
+name: WAF
+pattern: ^(WAF)$
+description: Regex for WAF
+tags:
+- Trash Guides
+tests: []

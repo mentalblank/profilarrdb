@@ -1,0 +1,6 @@
+name: PS3-TEAM (Group)
+pattern: \b(PS3-TEAM)\b
+description: Regex for PS3-TEAM (Group)
+tags:
+- Trash Guides
+tests: []

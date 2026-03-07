@@ -1,0 +1,15 @@
+trash_id: 9681750c690210f0936faed781bb7f06
+name: '126811'
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Group
+- Trash Guides
+conditions:
+- name: '126811'
+  negate: false
+  required: true
+  type: release_group
+  _raw_pattern: ^(126811)$
+  pattern: '126811'
+tests: []

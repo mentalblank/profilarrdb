@@ -1,0 +1,6 @@
+name: SIGMA
+pattern: ^(SIGMA)$
+description: Regex for SIGMA
+tags:
+- Trash Guides
+tests: []

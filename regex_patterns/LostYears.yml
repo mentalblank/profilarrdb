@@ -1,0 +1,6 @@
+name: LostYears
+pattern: \b(LostYears)\b
+description: Regex for LostYears
+tags:
+- Trash Guides
+tests: []

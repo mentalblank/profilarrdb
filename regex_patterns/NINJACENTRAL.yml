@@ -1,0 +1,6 @@
+name: NINJACENTRAL
+pattern: ^(NINJACENTRAL)$
+description: Regex for NINJACENTRAL
+tags:
+- Trash Guides
+tests: []

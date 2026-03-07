@@ -1,0 +1,6 @@
+name: Hatsuyuki
+pattern: \[Hatsuyuki\]|-Hatsuyuki\b
+description: Regex for Hatsuyuki
+tags:
+- Trash Guides
+tests: []

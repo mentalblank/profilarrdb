@@ -1,0 +1,6 @@
+name: MeGusta
+pattern: ^(MeGusta)$
+description: Regex for MeGusta
+tags:
+- Trash Guides
+tests: []

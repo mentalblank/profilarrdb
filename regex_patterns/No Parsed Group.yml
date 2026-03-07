@@ -1,0 +1,6 @@
+name: No Parsed Group
+pattern: .
+description: Regex for No Parsed Group
+tags:
+- Trash Guides
+tests: []

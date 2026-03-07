@@ -1,0 +1,23 @@
+trash_id: caa37d0df9c348912df1fb1d88f9273a
+name: HDR10+ Boost
+includeCustomFormatWhenRenaming: false
+description: 'HDR10+ Boost
+
+
+  If you prefer HDR10+ releases and have compatible equipment, add the HDR10+ Boost
+  custom format. This custom format prioritizes releases containing HDR10+ over standard
+  HDR releases.
+
+
+  *This custom format also boosts DV HDR10+ releases if you prefer them over DV HDR10.*'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: HDR10+
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(hdr10(?=[+]|p(lus)?))
+  pattern: HDR10+
+tests: []

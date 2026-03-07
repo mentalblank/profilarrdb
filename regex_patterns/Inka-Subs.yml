@@ -1,0 +1,6 @@
+name: Inka-Subs
+pattern: \b(Inka-Subs)\b
+description: Regex for Inka-Subs
+tags:
+- Trash Guides
+tests: []

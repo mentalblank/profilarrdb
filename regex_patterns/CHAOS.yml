@@ -1,0 +1,6 @@
+name: CHAOS
+pattern: ^(CHAOS)$
+description: Regex for CHAOS
+tags:
+- Trash Guides
+tests: []

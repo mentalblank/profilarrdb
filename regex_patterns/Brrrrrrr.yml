@@ -1,0 +1,6 @@
+name: Brrrrrrr
+pattern: \b(Brrrrrrr)\b
+description: Regex for Brrrrrrr
+tags:
+- Trash Guides
+tests: []

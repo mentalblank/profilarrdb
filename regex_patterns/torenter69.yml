@@ -1,0 +1,6 @@
+name: torenter69
+pattern: \b(torenter69)\b
+description: Regex for torenter69
+tags:
+- Trash Guides
+tests: []

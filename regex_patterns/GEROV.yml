@@ -1,0 +1,6 @@
+name: GEROV
+pattern: -GEROV\b
+description: Regex for GEROV
+tags:
+- Trash Guides
+tests: []

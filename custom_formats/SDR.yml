@@ -1,0 +1,30 @@
+trash_id: 9c38ebb7384dada637be8899efa68e6f
+name: SDR
+includeCustomFormatWhenRenaming: false
+description: 'SDR
+
+
+  This will prevent grabbing UHD/4k releases without HDR Formats.'
+tags:
+- Release Title
+- Resolution
+- Trash Guides
+conditions:
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+- name: HDR Formats
+  negate: true
+  required: false
+  type: release_title
+  _raw_pattern: \bhdr(\b|\d)|\b(dv|dovi|dolby[ .]?v(ision)?)\b|\b(framestor|hqmux|sicfoi)\b|\b(pq)\b|\bhlg(\b|\d)
+  pattern: HDR Formats
+- name: SDR
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \bsdr\b
+  pattern: SDR
+tests: []

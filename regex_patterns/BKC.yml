@@ -1,0 +1,6 @@
+name: BKC
+pattern: \b(BKC)\b
+description: Regex for BKC
+tags:
+- Trash Guides
+tests: []

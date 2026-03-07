@@ -1,0 +1,6 @@
+name: Cat66
+pattern: \b(Cat66)\b
+description: Regex for Cat66
+tags:
+- Trash Guides
+tests: []

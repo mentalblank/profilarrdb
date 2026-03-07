@@ -1,0 +1,6 @@
+name: Kulot
+pattern: \b(Kulot)\b
+description: Regex for Kulot
+tags:
+- Trash Guides
+tests: []

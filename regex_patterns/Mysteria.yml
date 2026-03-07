@@ -1,0 +1,6 @@
+name: Mysteria
+pattern: \[Mysteria\]|-Mysteria\b
+description: Regex for Mysteria
+tags:
+- Trash Guides
+tests: []

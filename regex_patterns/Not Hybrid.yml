@@ -1,0 +1,6 @@
+name: Not Hybrid
+pattern: \bhybrid(\b|\d)
+description: Regex for Not Hybrid
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: JETIX
+pattern: ^(JETIX)$
+description: Regex for JETIX
+tags:
+- Trash Guides
+tests: []

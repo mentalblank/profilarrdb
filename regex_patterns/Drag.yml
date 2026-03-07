@@ -1,0 +1,6 @@
+name: Drag
+pattern: \[Drag\]|-Drag\b
+description: Regex for Drag
+tags:
+- Trash Guides
+tests: []

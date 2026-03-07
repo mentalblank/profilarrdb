@@ -1,0 +1,6 @@
+name: Chihiro
+pattern: \[Chihiro\]|-Chihiro\b
+description: Regex for Chihiro
+tags:
+- Trash Guides
+tests: []

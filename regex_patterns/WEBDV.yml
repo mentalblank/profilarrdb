@@ -1,0 +1,6 @@
+name: WEBDV
+pattern: ^(WEBDV)$
+description: Regex for WEBDV
+tags:
+- Trash Guides
+tests: []

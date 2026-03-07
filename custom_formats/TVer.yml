@@ -1,0 +1,31 @@
+trash_id: f1b0bae9bc222dab32c1b38b5a7a1088
+name: TVer
+includeCustomFormatWhenRenaming: true
+description: 'TVer
+
+
+  From Wikipedia, the free encyclopedia ()
+
+  TVer Website (https://tver.jp)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: TVer
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(tver)\b
+  pattern: TVer
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

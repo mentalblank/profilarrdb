@@ -1,0 +1,6 @@
+name: ROCCaT
+pattern: ^(ROCCaT)$
+description: Regex for ROCCaT
+tags:
+- Trash Guides
+tests: []

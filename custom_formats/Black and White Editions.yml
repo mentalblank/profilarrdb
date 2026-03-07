@@ -1,0 +1,55 @@
+trash_id: cc444569854e9de0b084ab2b8b1532b2
+name: Black and White Editions
+includeCustomFormatWhenRenaming: false
+description: 'Black and White Editions
+
+
+  Some movies get an additional release version in monochrome/black and white. This
+  custom format matches some of the more common occurrences of these.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Blackout/B&W/Black&Chrome
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b((b(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(w(hite)?|chrome))))\b(?!$)
+  pattern: Blackout_B&W_Black&Chrome
+- name: Monochrome
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b(monochrome)\b(?!$)
+  pattern: Monochrome
+- name: Noir
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b(noir)\b(?!$)
+  pattern: Noir
+- name: Shush Cut
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b(shush[ ._-]?cut)\b(?!$)
+  pattern: Shush Cut
+- name: No/Minus Color
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b((no|minus)[ ._-]?colou?r)\b(?!$)
+  pattern: No_Minus Color
+- name: Grayscale
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b(gr[ae]y([ ._-]?(scale))?)\b(?!$)
+  pattern: Grayscale
+- name: Darkness and Light
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b(darkness?[ ._-]?(and|&)[ ._-]?(light))\b(?!$)
+  pattern: Darkness and Light
+tests: []

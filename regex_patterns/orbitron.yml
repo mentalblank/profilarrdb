@@ -1,0 +1,6 @@
+name: orbitron
+pattern: ^(orbitron)$
+description: Regex for orbitron
+tags:
+- Trash Guides
+tests: []

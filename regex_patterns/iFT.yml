@@ -1,0 +1,6 @@
+name: iFT
+pattern: ^(iFT)$
+description: Regex for iFT
+tags:
+- Trash Guides
+tests: []

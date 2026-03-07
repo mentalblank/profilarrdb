@@ -1,0 +1,6 @@
+name: TheFarm
+pattern: ^(TheFarm)$
+description: Regex for TheFarm
+tags:
+- Trash Guides
+tests: []

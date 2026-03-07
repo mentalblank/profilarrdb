@@ -1,0 +1,18 @@
+trash_id: b2be17d608fc88818940cd1833b0b24c
+name: 720p
+includeCustomFormatWhenRenaming: false
+description: '720p
+
+
+  This Custom Format can boost 720p releases. It is only useful if you use Merge Qualities
+  (/Radarr/Tips/Merge-quality/) in your Quality Profile.'
+tags:
+- Resolution
+- Trash Guides
+conditions:
+- name: 720p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 720p
+tests: []

@@ -1,0 +1,6 @@
+name: UNBIASED
+pattern: \[UNBIASED\]|-UNBIASED\b
+description: Regex for UNBIASED
+tags:
+- Trash Guides
+tests: []

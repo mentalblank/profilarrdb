@@ -1,0 +1,6 @@
+name: SLiGNOME
+pattern: ^(SLiGNOME)$
+description: Regex for SLiGNOME
+tags:
+- Trash Guides
+tests: []

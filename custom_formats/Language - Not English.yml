@@ -1,0 +1,18 @@
+trash_id: 0dc8aec3bd1c47cd6c40c46ecd27e846
+name: Language - Not English
+includeCustomFormatWhenRenaming: false
+description: 'Language: Not English (English Only)
+
+
+  Because it uses reverse scoring, and if you use the default scores, it will assign
+  all releases without the English audio a score of `-10000`.'
+tags:
+- Language
+- Trash Guides
+conditions:
+- name: Not English Language
+  negate: true
+  required: false
+  type: language
+  language: english
+tests: []

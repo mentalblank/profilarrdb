@@ -1,0 +1,6 @@
+name: DRX
+pattern: ^(DRX)$
+description: Regex for DRX
+tags:
+- Trash Guides
+tests: []

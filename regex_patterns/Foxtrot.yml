@@ -1,0 +1,6 @@
+name: Foxtrot
+pattern: \[Foxtrot\]|-Foxtrot\b
+description: Regex for Foxtrot
+tags:
+- Trash Guides
+tests: []

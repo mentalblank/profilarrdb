@@ -1,0 +1,6 @@
+name: Koi-Raws
+pattern: Koi[ ._-]?(Raws)
+description: Regex for Koi-Raws
+tags:
+- Trash Guides
+tests: []

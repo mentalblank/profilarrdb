@@ -1,0 +1,6 @@
+name: T6D
+pattern: ^(T6D)$
+description: Regex for T6D
+tags:
+- Trash Guides
+tests: []

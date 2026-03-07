@@ -1,0 +1,6 @@
+name: SWTYBLZ
+pattern: \b(SWTYBLZ)\b
+description: Regex for SWTYBLZ
+tags:
+- Trash Guides
+tests: []

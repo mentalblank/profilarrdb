@@ -1,0 +1,6 @@
+name: Half-Baked
+pattern: \b(Half-Baked)\b
+description: Regex for Half-Baked
+tags:
+- Trash Guides
+tests: []

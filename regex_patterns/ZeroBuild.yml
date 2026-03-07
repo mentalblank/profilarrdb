@@ -1,0 +1,6 @@
+name: ZeroBuild
+pattern: \b(ZeroBuild)\b
+description: Regex for ZeroBuild
+tags:
+- Trash Guides
+tests: []

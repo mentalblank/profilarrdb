@@ -1,0 +1,6 @@
+name: MC
+pattern: \b(MC)\b
+description: Regex for MC
+tags:
+- Trash Guides
+tests: []

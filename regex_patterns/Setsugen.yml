@@ -1,0 +1,6 @@
+name: Setsugen
+pattern: \b(Setsugen)\b
+description: Regex for Setsugen
+tags:
+- Trash Guides
+tests: []

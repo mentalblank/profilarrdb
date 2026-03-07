@@ -1,0 +1,6 @@
+name: SURFINBIRD
+pattern: ^(SURFINBIRD)$
+description: Regex for SURFINBIRD
+tags:
+- Trash Guides
+tests: []

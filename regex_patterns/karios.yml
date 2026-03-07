@@ -1,0 +1,6 @@
+name: karios
+pattern: \b(karios)\b
+description: Regex for karios
+tags:
+- Trash Guides
+tests: []

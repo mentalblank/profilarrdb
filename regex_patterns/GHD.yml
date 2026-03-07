@@ -1,0 +1,6 @@
+name: GHD
+pattern: ^(GHD)$
+description: Regex for GHD
+tags:
+- Trash Guides
+tests: []

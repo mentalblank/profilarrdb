@@ -1,0 +1,6 @@
+name: Not Basic DTS
+pattern: DTS[ .]?[1-9]
+description: Regex for Not Basic DTS
+tags:
+- Trash Guides
+tests: []

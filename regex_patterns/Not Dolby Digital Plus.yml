@@ -1,0 +1,6 @@
+name: Not Dolby Digital Plus
+pattern: \bDD[P+]|\b(e[-_. ]?ac-?3)\b
+description: Regex for Not Dolby Digital Plus
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: PortalGoods (Group)
+pattern: \b(PortalGoods)\b
+description: Regex for PortalGoods (Group)
+tags:
+- Trash Guides
+tests: []

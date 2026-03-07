@@ -1,0 +1,6 @@
+name: VinSyn
+pattern: \b(VinSyn)\b
+description: Regex for VinSyn
+tags:
+- Trash Guides
+tests: []

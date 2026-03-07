@@ -1,0 +1,6 @@
+name: CHX
+pattern: ^(CHX)$
+description: Regex for CHX
+tags:
+- Trash Guides
+tests: []

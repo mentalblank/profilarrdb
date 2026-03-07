@@ -1,0 +1,6 @@
+name: Repack_Proper 2 or REAL.PROPER_REPACK
+pattern: \b((repack|proper)2)\b|\b(REAL\.(PROPER|REPACK))\b
+description: Regex for Repack/Proper 2 or REAL.PROPER/REPACK
+tags:
+- Trash Guides
+tests: []

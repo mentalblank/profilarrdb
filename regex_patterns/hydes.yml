@@ -1,0 +1,6 @@
+name: hydes
+pattern: \b(hydes)\b
+description: Regex for hydes
+tags:
+- Trash Guides
+tests: []

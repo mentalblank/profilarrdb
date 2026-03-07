@@ -1,0 +1,6 @@
+name: Okay-Subs
+pattern: \b(Okay-Subs)\b
+description: Regex for Okay-Subs
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: playWEB
+pattern: ^(playWEB)$
+description: Regex for playWEB
+tags:
+- Trash Guides
+tests: []

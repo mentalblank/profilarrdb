@@ -1,0 +1,6 @@
+name: (S) Upscaled
+pattern: (?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b
+description: Regex for (S) Upscaled
+tags:
+- Trash Guides
+tests: []

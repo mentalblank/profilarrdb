@@ -1,0 +1,6 @@
+name: CREATiVE24 (Title)
+pattern: \b(CREATiVE24)\b
+description: Regex for CREATiVE24 (Title)
+tags:
+- Trash Guides
+tests: []

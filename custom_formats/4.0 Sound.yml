@@ -1,0 +1,39 @@
+trash_id: 373b58bd188fc00c817bd8c7470ea285
+name: 4.0 Sound
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: 4.0ch
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]4[ .]0\b'
+  pattern: 4.0ch
+- name: Not Mono
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]1[ .]0\b|\bmono\b|\[pcm \]'
+  pattern: Not Mono
+- name: Not Stereo
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: (?<!repac)[^0-9]2[ .]0\b|\bstereo\b
+  pattern: Not Stereo
+- name: Not 3.0ch
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]3[ .]0\b'
+  pattern: Not 3.0ch
+- name: Not High Channel Count
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9][5-9][ .][0-1]\b'
+  pattern: Not High Channel Count
+tests: []

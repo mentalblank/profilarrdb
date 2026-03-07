@@ -1,0 +1,6 @@
+name: 1XBET
+pattern: \b(1XBET)\b
+description: Regex for 1XBET
+tags:
+- Trash Guides
+tests: []

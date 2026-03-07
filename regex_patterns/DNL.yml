@@ -1,0 +1,6 @@
+name: DNL
+pattern: ^(DNL)$
+description: Regex for DNL
+tags:
+- Trash Guides
+tests: []

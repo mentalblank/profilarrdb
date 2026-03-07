@@ -1,0 +1,33 @@
+trash_id: eacd2cb6c6d4a93e459df2cec6d7b97a
+name: MY5
+includeCustomFormatWhenRenaming: true
+description: 'MY5
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  My5 (previously Five Download and later Demand 5) is the brand name of video-on-demand
+  services offered by Channel 5 in the United Kingdom.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: My5
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(my5)\b
+  pattern: My5
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

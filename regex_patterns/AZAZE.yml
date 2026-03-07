@@ -1,0 +1,6 @@
+name: AZAZE
+pattern: ^(AZAZE)$
+description: Regex for AZAZE
+tags:
+- Trash Guides
+tests: []

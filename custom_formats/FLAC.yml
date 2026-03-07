@@ -1,0 +1,55 @@
+trash_id: a570d4a0e56a2874b64e5bfa55202a1b
+name: FLAC
+includeCustomFormatWhenRenaming: false
+description: "FLAC (Free Lossless Audio Codec \u2013 lossless)\n\nFLAC stands for\
+  \ Free Lossless Audio Codec, an audio format similar to MP3 - but lossless, meaning\
+  \ that the audio compressed with FLAC does not receive any loss in quality. This\
+  \ is similar to how Zip works, except with FLAC you will get much better compression\
+  \ because it is designed specifically for audio."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: FLAC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: FLAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdts(\b|\d)
+  pattern: Not DTS
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+tests: []

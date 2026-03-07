@@ -1,0 +1,6 @@
+name: MinisCuba
+pattern: \b(MinisCuba)\b
+description: Regex for MinisCuba
+tags:
+- Trash Guides
+tests: []

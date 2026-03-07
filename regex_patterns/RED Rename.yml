@@ -1,0 +1,6 @@
+name: RED Rename
+pattern: \[(RED)\b|\b(RED)\]
+description: Regex for RED Rename
+tags:
+- Trash Guides
+tests: []

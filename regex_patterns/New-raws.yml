@@ -1,0 +1,6 @@
+name: New-raws
+pattern: New[ ._-]?(raws)
+description: Regex for New-raws
+tags:
+- Trash Guides
+tests: []

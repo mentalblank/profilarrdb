@@ -1,0 +1,6 @@
+name: PeruGuy (Group)
+pattern: \b(PeruGuy)\b
+description: Regex for PeruGuy (Group)
+tags:
+- Trash Guides
+tests: []

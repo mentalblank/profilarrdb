@@ -1,0 +1,6 @@
+name: TrueHD
+pattern: True[ .-]?HD|W4NK3R|HQMUX
+description: Regex for TrueHD
+tags:
+- Trash Guides
+tests: []

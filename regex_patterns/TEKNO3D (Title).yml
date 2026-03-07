@@ -1,0 +1,6 @@
+name: TEKNO3D (Title)
+pattern: \b(TEKNO3D)\b
+description: Regex for TEKNO3D (Title)
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: AhmadDev
+pattern: \b(AhmadDev)\b
+description: Regex for AhmadDev
+tags:
+- Trash Guides
+tests: []

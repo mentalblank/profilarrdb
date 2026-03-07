@@ -1,0 +1,6 @@
+name: Moxie
+pattern: \[Moxie\]|-Moxie\b
+description: Regex for Moxie
+tags:
+- Trash Guides
+tests: []

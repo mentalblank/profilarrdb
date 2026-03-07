@@ -1,0 +1,6 @@
+name: LaCroiX
+pattern: \b(LaCroiX)\b
+description: Regex for LaCroiX
+tags:
+- Trash Guides
+tests: []

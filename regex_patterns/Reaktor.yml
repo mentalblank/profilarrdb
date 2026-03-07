@@ -1,0 +1,6 @@
+name: Reaktor
+pattern: \b(Reaktor)\b
+description: Regex for Reaktor
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: SiC (Title)
+pattern: \bSiC\b
+description: Regex for SiC (Title)
+tags:
+- Trash Guides
+tests: []

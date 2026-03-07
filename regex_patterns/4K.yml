@@ -1,0 +1,6 @@
+name: 4K
+pattern: 4k
+description: Regex for 4K
+tags:
+- Trash Guides
+tests: []

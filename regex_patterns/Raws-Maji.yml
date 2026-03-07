@@ -1,0 +1,6 @@
+name: Raws-Maji
+pattern: \b(Raws-Maji)\b
+description: Regex for Raws-Maji
+tags:
+- Trash Guides
+tests: []

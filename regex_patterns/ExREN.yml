@@ -1,0 +1,6 @@
+name: ExREN
+pattern: \b(ExREN)\b
+description: Regex for ExREN
+tags:
+- Trash Guides
+tests: []

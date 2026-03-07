@@ -1,0 +1,6 @@
+name: OldCastle
+pattern: \b(OldCastle)\b
+description: Regex for OldCastle
+tags:
+- Trash Guides
+tests: []

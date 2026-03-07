@@ -1,0 +1,6 @@
+name: HAV1T
+pattern: \b(HAV1T)\b
+description: Regex for HAV1T
+tags:
+- Trash Guides
+tests: []

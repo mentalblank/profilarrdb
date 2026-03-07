@@ -1,0 +1,6 @@
+name: HIDIVE
+pattern: \b(HIDI(VE)?)\b
+description: Regex for HIDIVE
+tags:
+- Trash Guides
+tests: []

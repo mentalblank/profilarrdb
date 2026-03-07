@@ -1,0 +1,6 @@
+name: Not Repack_Proper 3
+pattern: \b((repack|proper)3)\b|\bREAL\.(REAL\.)(PROPER|REPACK)\b
+description: Regex for Not Repack/Proper 3
+tags:
+- Trash Guides
+tests: []

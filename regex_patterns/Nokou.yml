@@ -1,0 +1,6 @@
+name: Nokou
+pattern: \b(Nokou)\b
+description: Regex for Nokou
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Animorphs
+pattern: \b(Animorphs)\b
+description: Regex for Animorphs
+tags:
+- Trash Guides
+tests: []

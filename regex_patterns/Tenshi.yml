@@ -1,0 +1,6 @@
+name: Tenshi
+pattern: \[tenshi\]|-tenshi$
+description: Regex for Tenshi
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Cerberus
+pattern: \[Cerberus\]|-Cerberus\b
+description: Regex for Cerberus
+tags:
+- Trash Guides
+tests: []

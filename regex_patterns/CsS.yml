@@ -1,0 +1,6 @@
+name: CsS
+pattern: \b(CsS)\b
+description: Regex for CsS
+tags:
+- Trash Guides
+tests: []

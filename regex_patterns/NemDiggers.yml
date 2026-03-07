@@ -1,0 +1,6 @@
+name: NemDiggers
+pattern: \b(NemDiggers)\b
+description: Regex for NemDiggers
+tags:
+- Trash Guides
+tests: []

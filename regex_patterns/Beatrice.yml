@@ -1,0 +1,6 @@
+name: Beatrice
+pattern: \[Beatrice\]|-Beatrice(?!-raws)\b
+description: Regex for Beatrice
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,75 @@
+trash_id: 9965a052eb87b0d10313b1cea89eb451
+name: (S) Remux Tier 01
+includeCustomFormatWhenRenaming: false
+description: 'Remux Tier 01
+
+
+  Groups that:
+
+
+  - Have built a strong reputation for consistently delivering excellent quality releases
+
+  - Pay exceptional attention to detail and carefully analyze all available sources
+
+  - Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).'
+tags:
+- Release Group
+- Source
+- Trash Guides
+conditions:
+- name: 3L
+  negate: false
+  required: false
+  type: release_group
+  pattern: 3L
+- name: BiZKiT
+  negate: false
+  required: false
+  type: release_group
+  pattern: BiZKiT
+- name: BLURANiUM
+  negate: false
+  required: false
+  type: release_group
+  pattern: BLURANiUM
+- name: BMF
+  negate: false
+  required: false
+  type: release_group
+  pattern: BMF
+- name: CiNEPHiLES
+  negate: false
+  required: false
+  type: release_group
+  pattern: CiNEPHiLES
+- name: FraMeSToR
+  negate: false
+  required: false
+  type: release_group
+  pattern: FraMeSToR (1)
+- name: PiRAMiDHEAD
+  negate: false
+  required: false
+  type: release_group
+  pattern: PiRAMiDHEAD
+- name: PmP
+  negate: false
+  required: false
+  type: release_group
+  pattern: PmP
+- name: WiLDCAT
+  negate: false
+  required: false
+  type: release_group
+  pattern: WiLDCAT
+- name: ZQ
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZQ
+- name: Remux
+  negate: false
+  required: true
+  type: source
+  source: bluray_raw
+tests: []

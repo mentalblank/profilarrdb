@@ -1,0 +1,6 @@
+name: VipapkStudios
+pattern: \b(VipapkStudios)\b
+description: Regex for VipapkStudios
+tags:
+- Trash Guides
+tests: []

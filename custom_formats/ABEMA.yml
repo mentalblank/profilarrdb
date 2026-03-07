@@ -1,0 +1,34 @@
+trash_id: a370d974bc7b80374de1d9ba7519760b
+name: ABEMA
+includeCustomFormatWhenRenaming: true
+description: 'Abema
+
+
+  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Abema)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: ABEMA
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(abema[ ._-]?(tv)?)\b
+  pattern: ABEMA
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+tests: []

@@ -1,0 +1,6 @@
+name: HENiL
+pattern: \b(HENiL)\b
+description: Regex for HENiL
+tags:
+- Trash Guides
+tests: []

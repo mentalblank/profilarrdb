@@ -1,0 +1,6 @@
+name: nSD
+pattern: ^(nSD)$
+description: Regex for nSD
+tags:
+- Trash Guides
+tests: []

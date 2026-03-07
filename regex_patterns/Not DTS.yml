@@ -1,0 +1,6 @@
+name: Not DTS
+pattern: \bDTS(\b|\d)
+description: Regex for Not DTS
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: VP9
+pattern: \bVP9\b
+description: Regex for VP9
+tags:
+- Trash Guides
+tests: []

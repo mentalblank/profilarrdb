@@ -1,0 +1,6 @@
+name: ATMOS (1)
+pattern: \bATMOS(\b|\d)
+description: Regex for ATMOS (1)
+tags:
+- Trash Guides
+tests: []

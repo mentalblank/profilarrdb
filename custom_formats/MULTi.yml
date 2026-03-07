@@ -1,0 +1,15 @@
+trash_id: 4b900e171accbfb172729b63323ea8ca
+name: MULTi
+includeCustomFormatWhenRenaming: true
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Multi
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(multi)(?![ ._-]?sub(s)?)(\b|\d)
+  pattern: Multi
+tests: []

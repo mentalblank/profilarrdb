@@ -1,0 +1,6 @@
+name: Open Matte
+pattern: \b(Open[ ._-]?Matte)\b
+description: Regex for Open Matte
+tags:
+- Trash Guides
+tests: []

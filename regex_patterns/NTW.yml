@@ -1,0 +1,6 @@
+name: NTW
+pattern: \b(NTW)\b
+description: Regex for NTW
+tags:
+- Trash Guides
+tests: []

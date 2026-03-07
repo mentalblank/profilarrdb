@@ -1,0 +1,6 @@
+name: shincaps
+pattern: \b(shincaps)\b
+description: Regex for shincaps
+tags:
+- Trash Guides
+tests: []

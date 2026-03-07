@@ -1,0 +1,6 @@
+name: TIKO
+pattern: ^(TIKO)$
+description: Regex for TIKO
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Hulu
+pattern: \b(hulu)\b
+description: Regex for Hulu
+tags:
+- Trash Guides
+tests: []

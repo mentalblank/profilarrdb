@@ -1,0 +1,6 @@
+name: GHOST
+pattern: \[GHOST\]|-GHOST\b
+description: Regex for GHOST
+tags:
+- Trash Guides
+tests: []

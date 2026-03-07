@@ -1,0 +1,18 @@
+trash_id: 5f400539421b8fcf71d51e6384434573
+name: v1
+includeCustomFormatWhenRenaming: true
+description: 'v1
+
+
+  Custom Format to cover v1 releases.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: v1
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: (\b|\d)(v1)\b
+  pattern: v1
+tests: []

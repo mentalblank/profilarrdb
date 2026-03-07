@@ -1,0 +1,6 @@
+name: TOMMY
+pattern: ^(TOMMY)$
+description: Regex for TOMMY
+tags:
+- Trash Guides
+tests: []

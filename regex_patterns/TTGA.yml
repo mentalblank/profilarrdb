@@ -1,0 +1,6 @@
+name: TTGA
+pattern: \b(TTGA)\b
+description: Regex for TTGA
+tags:
+- Trash Guides
+tests: []

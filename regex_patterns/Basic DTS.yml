@@ -1,0 +1,6 @@
+name: Basic DTS
+pattern: \bDTS(\b|\d)
+description: Regex for Basic DTS
+tags:
+- Trash Guides
+tests: []

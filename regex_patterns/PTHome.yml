@@ -1,0 +1,6 @@
+name: PTHome
+pattern: ^(PTHome)$
+description: Regex for PTHome
+tags:
+- Trash Guides
+tests: []

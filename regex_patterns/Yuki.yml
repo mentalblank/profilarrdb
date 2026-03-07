@@ -1,0 +1,6 @@
+name: Yuki
+pattern: \[Yuki\]|-Yuki\b
+description: Regex for Yuki
+tags:
+- Trash Guides
+tests: []

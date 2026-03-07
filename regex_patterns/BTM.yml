@@ -1,0 +1,6 @@
+name: BTM
+pattern: ^(BTM)$
+description: Regex for BTM
+tags:
+- Trash Guides
+tests: []

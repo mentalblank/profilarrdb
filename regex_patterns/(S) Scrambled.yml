@@ -1,0 +1,6 @@
+name: (S) Scrambled
+pattern: (?<=\bS\d+\b).*(Scrambled)\b
+description: Regex for (S) Scrambled
+tags:
+- Trash Guides
+tests: []

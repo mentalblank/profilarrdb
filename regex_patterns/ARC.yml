@@ -1,0 +1,6 @@
+name: ARC
+pattern: \[ARC\]|-ARC\b
+description: Regex for ARC
+tags:
+- Trash Guides
+tests: []

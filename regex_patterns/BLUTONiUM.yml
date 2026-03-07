@@ -1,0 +1,6 @@
+name: BLUTONiUM
+pattern: ^(BLUTONiUM)$
+description: Regex for BLUTONiUM
+tags:
+- Trash Guides
+tests: []

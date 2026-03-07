@@ -1,0 +1,6 @@
+name: Japhson (Group)
+pattern: \b(Japhson)\b
+description: Regex for Japhson (Group)
+tags:
+- Trash Guides
+tests: []

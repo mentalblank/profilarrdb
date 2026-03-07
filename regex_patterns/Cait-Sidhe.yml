@@ -1,0 +1,6 @@
+name: Cait-Sidhe
+pattern: \b(Cait-Sidhe)\b
+description: Regex for Cait-Sidhe
+tags:
+- Trash Guides
+tests: []

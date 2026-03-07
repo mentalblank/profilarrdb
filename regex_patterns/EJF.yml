@@ -1,0 +1,6 @@
+name: EJF
+pattern: \b(EJF)\b
+description: Regex for EJF
+tags:
+- Trash Guides
+tests: []

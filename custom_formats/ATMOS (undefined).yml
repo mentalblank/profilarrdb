@@ -1,0 +1,59 @@
+trash_id: 417804f7f2c4308c1f4c5d380d4c4475
+name: ATMOS (undefined)
+includeCustomFormatWhenRenaming: false
+description: "ATMOS (undefined) (Atmos is an object-based audio format that can be\
+  \ paired with lossless TrueHD or lossy DD+.)\n\nThis custom format covers cases\
+  \ where _ONLY_ \"Atmos\" is specified in the release title, without noting DD+ (Lossy)\
+  \ or TrueHD (Lossless).\n\n!!! note\n\n    Apply the same score as Lossy (DD+) Atmos.\
+  \ On import, it will be updated to reflect either lossy or lossless based on the\
+  \ media's info using ffprobe."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: ATMOS
+  negate: false
+  required: true
+  type: release_title
+  pattern: ATMOS (1)
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not AAC
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not Basic Dolby Digital
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not Dolby Digital Plus
+- name: Not DTS
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not DTS
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not FLAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not PCM
+- name: Not RlsGrp (Atmos Only)
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not RlsGrp (Atmos Only)
+- name: Not TrueHD
+  negate: true
+  required: true
+  type: release_title
+  pattern: Not TrueHD
+tests: []

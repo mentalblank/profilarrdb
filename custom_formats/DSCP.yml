@@ -1,0 +1,42 @@
+trash_id: dc5f2bb0e0262155b5fedd0f6c5d2b55
+name: DSCP
+includeCustomFormatWhenRenaming: true
+description: 'Discovery+
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Discovery%2B)
+
+
+  Discovery+ (pronounced "Discovery Plus"; stylized as discovery+) is an American
+  subscription video on-demand over-the-top streaming service owned by Warner Bros.
+  Discovery (WBD). The service focuses on factual programming drawn from the libraries
+  of Discovery''s main channel brands, as well as original series (including spin-offs
+  of programs from Discovery''s television networks), and other acquired content.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Discovery+
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b((dscp|dcp|disc)\b|dscv\+?)[ ._-]web[ ._-]?(dl|rip)?\b
+  pattern: Discovery+
+- name: DSCP Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(dscp)\b|\b(dscp)\]
+  pattern: DSCP Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

@@ -1,0 +1,6 @@
+name: FraMeSToR
+pattern: \b(FraMeSToR)\b
+description: Regex for FraMeSToR
+tags:
+- Trash Guides
+tests: []

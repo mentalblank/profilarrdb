@@ -1,0 +1,6 @@
+name: CBC
+pattern: \b(CBC)\b
+description: Regex for CBC
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: ViSUM
+pattern: ^(ViSUM)$
+description: Regex for ViSUM
+tags:
+- Trash Guides
+tests: []

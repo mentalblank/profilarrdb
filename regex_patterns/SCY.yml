@@ -1,0 +1,6 @@
+name: SCY
+pattern: \b(SCY)\b
+description: Regex for SCY
+tags:
+- Trash Guides
+tests: []

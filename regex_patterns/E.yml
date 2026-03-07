@@ -1,0 +1,6 @@
+name: E
+pattern: ^(E)$
+description: Regex for E
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: ViSiON
+pattern: ^(ViSiON)$
+description: Regex for ViSiON
+tags:
+- Trash Guides
+tests: []

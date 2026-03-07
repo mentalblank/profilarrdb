@@ -1,0 +1,6 @@
+name: EbP
+pattern: ^(EbP)$
+description: Regex for EbP
+tags:
+- Trash Guides
+tests: []

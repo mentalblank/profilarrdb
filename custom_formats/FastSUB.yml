@@ -1,0 +1,18 @@
+trash_id: 7f9b93f82b7e996391525f2be1d891e0
+name: FastSUB
+includeCustomFormatWhenRenaming: false
+description: 'FastSUB
+
+
+  FanSUB, but made as quickly as possible, at the expense of quality.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: FastSUB
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(fastsub)\b
+  pattern: FastSUB
+tests: []

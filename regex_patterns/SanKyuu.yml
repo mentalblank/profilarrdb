@@ -1,0 +1,6 @@
+name: SanKyuu
+pattern: \b(SanKyuu)\b
+description: Regex for SanKyuu
+tags:
+- Trash Guides
+tests: []

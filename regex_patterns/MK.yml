@@ -1,0 +1,6 @@
+name: MK
+pattern: \b(MK)\b
+description: Regex for MK
+tags:
+- Trash Guides
+tests: []

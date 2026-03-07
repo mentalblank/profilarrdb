@@ -1,0 +1,84 @@
+trash_id: 8e109e50e0a0b83a5098b056e13bf6db
+name: DTS-HD HRA
+includeCustomFormatWhenRenaming: false
+description: "DTS-HD HRA (DTS-HD High-Resolution Audio \u2013 lossy)\n\nTechnical\
+  \ Whitepaper (https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf)\n\n| Codec\
+  \      | Page   | Paragraph |\n| ---------- | ------ | --------- |\n| DTS-HD MA\
+  \  | Page 6 | 5.1.1     |\n| DTS-HD HRA | Page 7 | 5.1.2     |\n\nDTS-HD HRA is\
+  \ the lossy version of DTS-HD MA.\n\n| Codec          | DTS-HRA          | DTS-MA\
+  \            |\n| -------------- | ---------------- | ----------------- |\n| Lossy/lossless\
+  \ | Lossy            | Lossless          |\n| Data rate      | 1.5 - 6.0 Mbit/s\
+  \ | VBR - 24.5 Mbit/s |\n| Channels       | Up to 7.1 ch     | Up to 7.1 ch    \
+  \  |\n| Sampling Freq. | 96 kHz           | 192 kHz           |\n| Resolution  \
+  \   | -                | Up to 24-bit      |"
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: DTS-HD HRA
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: dts[-. ]?(hd[. ]?)?(hra?|hi\b)
+  pattern: DTS-HD HRA
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+- name: Not Basic DTS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: dts[ .]?[1-9]
+  pattern: Not Basic DTS
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not DTS X
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '\b(dts[-_.: ]?x7?)\b(?![-_. ]?(26[456]))'
+  pattern: Not DTS X
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+- name: Not DTS-ES
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: dts.?es
+  pattern: Not DTS-ES
+- name: Not 6.1 Surround
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '[^0-9]6[ .][0-1]'
+  pattern: Not 6.1 Surround
+tests: []

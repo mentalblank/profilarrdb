@@ -1,0 +1,6 @@
+name: WSE
+pattern: \b(WSE)\b
+description: Regex for WSE
+tags:
+- Trash Guides
+tests: []

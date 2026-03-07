@@ -1,0 +1,6 @@
+name: CTR
+pattern: \b(CTR)\b
+description: Regex for CTR
+tags:
+- Trash Guides
+tests: []

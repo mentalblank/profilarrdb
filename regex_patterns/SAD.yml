@@ -1,0 +1,6 @@
+name: SAD
+pattern: \[SAD\]|-SAD\b
+description: Regex for SAD
+tags:
+- Trash Guides
+tests: []

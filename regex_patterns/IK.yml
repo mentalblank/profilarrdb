@@ -1,0 +1,6 @@
+name: IK
+pattern: \b(IK)\b
+description: Regex for IK
+tags:
+- Trash Guides
+tests: []

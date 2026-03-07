@@ -1,0 +1,6 @@
+name: YURI
+pattern: \[YURI\]|-YURI\b
+description: Regex for YURI
+tags:
+- Trash Guides
+tests: []

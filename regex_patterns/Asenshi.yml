@@ -1,0 +1,6 @@
+name: Asenshi
+pattern: \b(Asenshi)\b
+description: Regex for Asenshi
+tags:
+- Trash Guides
+tests: []

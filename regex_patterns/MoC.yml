@@ -1,0 +1,6 @@
+name: MoC
+pattern: \b(MoC)\b
+description: Regex for MoC
+tags:
+- Trash Guides
+tests: []

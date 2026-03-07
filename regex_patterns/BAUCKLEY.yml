@@ -1,0 +1,6 @@
+name: BAUCKLEY
+pattern: ^(BAUCKLEY)$
+description: Regex for BAUCKLEY
+tags:
+- Trash Guides
+tests: []

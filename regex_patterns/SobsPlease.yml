@@ -1,0 +1,6 @@
+name: SobsPlease
+pattern: \b(SobsPlease)\b
+description: Regex for SobsPlease
+tags:
+- Trash Guides
+tests: []

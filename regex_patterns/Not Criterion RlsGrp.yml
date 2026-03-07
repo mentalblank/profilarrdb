@@ -1,0 +1,6 @@
+name: Not Criterion RlsGrp
+pattern: ^(Criterion)$
+description: Regex for Not Criterion RlsGrp
+tags:
+- Trash Guides
+tests: []

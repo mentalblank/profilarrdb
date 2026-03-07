@@ -1,0 +1,18 @@
+trash_id: 712d74cd88bceb883ee32f773656b1f5
+name: Sing-Along Versions
+includeCustomFormatWhenRenaming: false
+description: 'Sing-Along Versions
+
+
+  Versions of musical films that have sing-along lyrics hardcoded into the video stream.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Sing-Along
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: (?<=\b[12]\d{3}\b).*\b(sing[-_. ]along)\b
+  pattern: Sing-Along
+tests: []

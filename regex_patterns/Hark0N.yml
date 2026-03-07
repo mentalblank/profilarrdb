@@ -1,0 +1,6 @@
+name: Hark0N
+pattern: \b(Hark0N)\b
+description: Regex for Hark0N
+tags:
+- Trash Guides
+tests: []

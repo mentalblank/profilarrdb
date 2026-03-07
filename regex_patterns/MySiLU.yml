@@ -1,0 +1,6 @@
+name: MySiLU
+pattern: ^(MySiLU)$
+description: Regex for MySiLU
+tags:
+- Trash Guides
+tests: []

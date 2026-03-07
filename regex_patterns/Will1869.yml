@@ -1,0 +1,6 @@
+name: Will1869
+pattern: \b(Will1869)\b
+description: Regex for Will1869
+tags:
+- Trash Guides
+tests: []

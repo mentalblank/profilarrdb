@@ -1,0 +1,6 @@
+name: ShieldBearer
+pattern: ^(ShieldBearer)$
+description: Regex for ShieldBearer
+tags:
+- Trash Guides
+tests: []

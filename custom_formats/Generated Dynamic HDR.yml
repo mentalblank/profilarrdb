@@ -1,0 +1,75 @@
+trash_id: e6886871085226c3da1830830146846c
+name: Generated Dynamic HDR
+includeCustomFormatWhenRenaming: false
+description: "Generated Dynamic HDR\n\n- A collection of groups known for generating\
+  \ their own dynamic HDR metadata\u2014Dolby Vision and/or HDR10+.\n- This generated\
+  \ dynamic HDR metadata does not come from official retail sources (discs or streaming\
+  \ services), so it is usually undesirable. Because of the substantial effort needed\
+  \ and the almost impossible task of reliably ensuring quality without reviewing\
+  \ each movie manually."
+tags:
+- Release Group
+- Release Title
+- Trash Guides
+conditions:
+- name: BiTOR
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(bitor)$
+  pattern: BiTOR
+- name: DepraveD
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(depraved)$
+  pattern: DepraveD
+- name: Flights
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(flights)$
+  pattern: Flights
+- name: SasukeducK
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(sasukeduck)$
+  pattern: SasukeducK
+- name: tarunk9c
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(tarunk9c)$
+  pattern: tarunk9c
+- name: VD0N
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(vd0n)$
+  pattern: VD0N
+- name: VECTOR
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(vector)$
+  pattern: VECTOR
+- name: VisionXpert
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(visionxpert)$
+  pattern: VisionXpert
+- name: HDR10+
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \bhdr10(\+|p(lus)?\b)
+  pattern: (R) HDR10+
+- name: DV
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(dv|dovi|dolby[ .]?v(ision)?)\b
+  pattern: DV
+tests: []

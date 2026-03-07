@@ -1,0 +1,6 @@
+name: NOSiViD
+pattern: ^(NOSiViD)$
+description: Regex for NOSiViD
+tags:
+- Trash Guides
+tests: []

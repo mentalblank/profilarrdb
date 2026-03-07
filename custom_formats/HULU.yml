@@ -1,0 +1,28 @@
+trash_id: 526d445d4c16214309f0fd2b3be18a89
+name: HULU
+includeCustomFormatWhenRenaming: true
+description: "Hulu\n\nFrom Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Hulu)\n\
+  \nHulu (/\u02C8hu\u02D0lu\u02D0/) is an American subscription streaming service\
+  \ owned by The Walt Disney Company. It was launched on October 29, 2007."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Hulu
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(hulu)\b
+  pattern: Hulu
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

@@ -1,0 +1,6 @@
+name: Pookie
+pattern: \b(Pookie)\b
+description: Regex for Pookie
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Pizza
+pattern: \[Pizza\]|-Pizza\b
+description: Regex for Pizza
+tags:
+- Trash Guides
+tests: []

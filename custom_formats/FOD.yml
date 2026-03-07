@@ -1,0 +1,31 @@
+trash_id: 917d1f2c845b2b466036b0cc2d7c72a3
+name: FOD
+includeCustomFormatWhenRenaming: true
+description: 'Fuji Television On Demand
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Fuji_Television)
+
+  FOD Website (https://fod-sp.fujitv.co.jp)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: FOD
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(fod)\b
+  pattern: FOD
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

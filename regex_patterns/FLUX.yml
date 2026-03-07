@@ -1,0 +1,6 @@
+name: FLUX
+pattern: ^(FLUX)$
+description: Regex for FLUX
+tags:
+- Trash Guides
+tests: []

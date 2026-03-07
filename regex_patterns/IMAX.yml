@@ -1,0 +1,6 @@
+name: IMAX
+pattern: \b((?<!NON[ ._-])IMAX)\b
+description: Regex for IMAX
+tags:
+- Trash Guides
+tests: []

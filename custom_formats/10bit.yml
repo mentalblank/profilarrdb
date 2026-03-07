@@ -1,0 +1,24 @@
+trash_id: a5d148168c4506b55cf53984107c396e
+name: 10bit
+includeCustomFormatWhenRenaming: false
+description: '10bit
+
+
+  This Custom Format covers releases that are 10bit.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: 10bit
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: 10[.-]?bit
+  pattern: 10bit
+- name: hi10p
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: hi10p
+  pattern: hi10p
+tests: []

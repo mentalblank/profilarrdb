@@ -1,0 +1,6 @@
+name: INFLATE
+pattern: ^(INFLATE)$
+description: Regex for INFLATE
+tags:
+- Trash Guides
+tests: []

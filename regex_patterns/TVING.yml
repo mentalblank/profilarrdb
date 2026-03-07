@@ -1,0 +1,6 @@
+name: TVING
+pattern: \b(tving)\b[ ._-]web[ ._-]?(dl|rip)?\b
+description: Regex for TVING
+tags:
+- Trash Guides
+tests: []

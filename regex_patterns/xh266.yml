@@ -1,0 +1,6 @@
+name: xh266
+pattern: '[xh][ ._-]?266|\bVVC(\b|\d)'
+description: Regex for x|h266
+tags:
+- Trash Guides
+tests: []

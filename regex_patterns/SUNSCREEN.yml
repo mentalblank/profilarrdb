@@ -1,0 +1,6 @@
+name: SUNSCREEN
+pattern: ^(SUNSCREEN)$
+description: Regex for SUNSCREEN
+tags:
+- Trash Guides
+tests: []

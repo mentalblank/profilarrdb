@@ -1,0 +1,6 @@
+name: PLAY
+pattern: \b(Play)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+description: Regex for PLAY
+tags:
+- Trash Guides
+tests: []

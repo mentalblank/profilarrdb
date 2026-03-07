@@ -1,0 +1,24 @@
+trash_id: ae4cfaa9283a4f2150ac3da08e388723
+name: VP9
+includeCustomFormatWhenRenaming: false
+description: 'VP9
+
+
+  - This is a new codec and you need modern devices that support it.
+
+  - We also had reports of playback/transcoding issues.
+
+  - No respectable release group is using it (yet).
+
+  - It''s better to ignore this new codec to prevent compatibility issues.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: VP9
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bvp9\b
+  pattern: VP9
+tests: []

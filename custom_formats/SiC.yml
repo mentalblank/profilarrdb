@@ -1,0 +1,39 @@
+trash_id: 8cd3ac70db7ac318cf9a0e01333940a4
+name: SiC
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Resolution
+- Source
+- Trash Guides
+conditions:
+- name: SiC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bsic\b
+  pattern: SiC (Title)
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+- name: WEBDL
+  negate: false
+  required: true
+  type: source
+  source: web_dl
+- name: HDR
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \bhdr(\b|\d)
+  pattern: (R) HDR
+- name: DV
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(dv|dovi|dolby[ .]?v(ision)?)\b
+  pattern: DV
+tests: []

@@ -1,0 +1,6 @@
+name: iVy
+pattern: ^(iVy)$
+description: Regex for iVy
+tags:
+- Trash Guides
+tests: []

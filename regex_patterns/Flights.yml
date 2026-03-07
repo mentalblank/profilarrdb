@@ -1,0 +1,6 @@
+name: Flights
+pattern: ^(Flights)$
+description: Regex for Flights
+tags:
+- Trash Guides
+tests: []

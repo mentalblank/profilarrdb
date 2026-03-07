@@ -1,0 +1,21 @@
+trash_id: dc98083864ea246d05a42df0d05f81cc
+name: x265 (HD)
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Resolution
+- Trash Guides
+conditions:
+- name: x265/HEVC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: '[xh][ ._-]?265|\bhevc(\b|\d)'
+  pattern: x265_HEVC
+- name: Not 2160p
+  negate: true
+  required: true
+  type: resolution
+  resolution: 2160p
+tests: []

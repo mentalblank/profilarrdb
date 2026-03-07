@@ -1,0 +1,6 @@
+name: B00BA
+pattern: \b(B00BA)\b
+description: Regex for B00BA
+tags:
+- Trash Guides
+tests: []

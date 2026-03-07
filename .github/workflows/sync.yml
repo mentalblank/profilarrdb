@@ -1,0 +1,43 @@
+name: Sync Trash Guides
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Profilarr
+        uses: actions/checkout@v4
+
+      - name: Checkout Trash Guides
+        uses: actions/checkout@v4
+        with:
+          repository: TRaSH-Guides/Guides
+          path: Guides-master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install .
+
+      - name: Run conversion script
+        run: PYTHONPATH=./scripts python3 scripts/generate.py
+
+      - name: Cleanup Trash Guides source
+        run: rm -rf Guides-master
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: sync with TRaSH Guides $(date +'%Y-%m-%d')" && git push)

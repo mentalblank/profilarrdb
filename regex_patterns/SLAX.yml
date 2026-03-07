@@ -1,0 +1,6 @@
+name: SLAX
+pattern: \b(SLAX)\b
+description: Regex for SLAX
+tags:
+- Trash Guides
+tests: []

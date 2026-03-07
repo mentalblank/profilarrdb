@@ -1,0 +1,6 @@
+name: Lilith-Raws
+pattern: Lilith[ ._-]?(Raws)
+description: Regex for Lilith-Raws
+tags:
+- Trash Guides
+tests: []

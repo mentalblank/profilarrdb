@@ -1,0 +1,38 @@
+trash_id: 834b2c0ba0a8596029b4479a29e1a032
+name: HTSR
+includeCustomFormatWhenRenaming: true
+description: 'Disney+ Hotstar
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Disney%2B_Hotstar)
+
+
+  Disney+ Hotstar is an Indian subscription-based video-on-demand streaming service
+  owned by JioStar, a joint venture between Reliance Industries, Viacom18, and Disney
+  India. It offers a diverse array of content from Disney Star (formerly Star India)
+  local networks, including films, television series, live sports, and original programming,
+  as well as licensed content from third parties such as Showtime and Southeast Asian
+  countries (Indonesia, Malaysia, and Thailand.) Although it primarily caters to audiences
+  in India and those of Indian origin living abroad, its catalog has broad appeal.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Hotstar
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(htsr|dsnphs|hs)\b
+  pattern: Hotstar
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

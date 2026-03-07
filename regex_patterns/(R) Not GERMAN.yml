@@ -1,0 +1,6 @@
+name: (R) Not GERMAN
+pattern: \b(GERMAN)\b
+description: Regex for (R) Not GERMAN
+tags:
+- Trash Guides
+tests: []

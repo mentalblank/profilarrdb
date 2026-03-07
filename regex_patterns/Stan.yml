@@ -1,0 +1,6 @@
+name: Stan
+pattern: \b(stan)\b[ ._-]web[ ._-]?(dl|rip)?\b
+description: Regex for Stan
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,21 @@
+trash_id: 09d9dd29a0fc958f9796e65c2a8864b4
+name: Open Matte
+includeCustomFormatWhenRenaming: false
+description: 'Open Matte
+
+
+  Open matte is a filming technique that involves matting out the top and bottom of
+  the film frame in the movie projector (known as a soft matte) for the widescreen
+  theatrical release and then scanning the film without a matte (at an Academy ratio)
+  for a full-screen home video release.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Open Matte
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(open[ ._-]?matte)\b
+  pattern: Open Matte
+tests: []

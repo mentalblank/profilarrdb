@@ -1,0 +1,28 @@
+trash_id: ed38b889b31be83fda192888e2286d83
+name: BR-DISK
+includeCustomFormatWhenRenaming: false
+description: "BR-DISK\n\nThis is a custom format to help Radarr/Sonarr recognize and\
+  \ ignore BR-DISK (ISOs and Blu-ray folder structure) in addition to the standard\
+  \ BR-DISK quality.\n\n!!! note\n\n    Depending on your renaming scheme, it could\
+  \ happen that Radarr will match renamed files after they are downloaded and imported\
+  \ as `BR-DISK`,\n    This is a cosmetic annoyance until we come up with another\
+  \ way to solve this,\n    Since this Custom Format is used not to download BR-DISK,\
+  \ it fulfills its purpose as intended.\n    There are several reasons why this is\
+  \ happening:\n\n    - Blame the often incorrectly used naming of x265 encodes.\n\
+  \    - Radarr/Sonarr uses dynamic custom formats.\n\n--8<-- \"includes/cf-descriptions/apply-10000.md\""
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: BR-DISK
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: ^(?!.*\b((?<!hd[._ -]|hd)dvd|bdrip|720p|mkv|xvid|wmv|d3g|(bd)?remux|^(?=.*1080p)(?=.*hevc)|[xh][-_.
+    ]?26[45]|german.*[dm]l|((?<=\d{4}).*german.*([dm]l)?)(?=.*\b(avc|hevc|vc[-_. ]?1|mvc|mpeg[-_.
+    ]?2)\b))\b)(((?=.*\b(blu[-_. ]?ray|bd|hd[-_. ]?dvd)\b)(?=.*\b(avc|hevc|vc[-_.
+    ]?1|mvc|mpeg[-_. ]?2|bdmv|iso)\b))|^((?=.*\b(((?=.*\b((.*_)?complete.*|dis[ck])\b)(?=.*(blu[-_.
+    ]?ray|hd[-_. ]?dvd)))|3d[-_. ]?bd|br[-_. ]?disk|full[-_. ]?blu[-_. ]?ray|^((?=.*((bd|uhd)[-_.
+    ]?(25|50|66|100|iso)))))))).*
+  pattern: BR-DISK
+tests: []

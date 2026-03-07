@@ -1,0 +1,6 @@
+name: SHO Rename
+pattern: \[(SHO)\b|\b(SHO)\]
+description: Regex for SHO Rename
+tags:
+- Trash Guides
+tests: []

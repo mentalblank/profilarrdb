@@ -1,0 +1,287 @@
+name: (S) WEB-2160p
+description: 'Quality Profile that covers:
+
+  - WEBDL: 2160p'
+tags:
+- Sonarr
+- Trash Guides
+upgradesAllowed: true
+minCustomFormatScore: 0
+upgradeUntilScore: 10000
+minScoreIncrement: 1
+custom_formats_sonarr:
+- name: (S) TrueHD ATMOS
+  score: 5000
+- name: DTS X
+  score: 4500
+- name: ATMOS (undefined)
+  score: 3000
+- name: DD+ ATMOS
+  score: 3000
+- name: TrueHD
+  score: 2750
+- name: DTS-HD MA
+  score: 2500
+- name: FLAC
+  score: 2250
+- name: PCM
+  score: 2250
+- name: DTS-HD HRA
+  score: 2000
+- name: (S) Remux Tier 01
+  score: 1900
+- name: (S) Remux Tier 02
+  score: 1850
+- name: (S) HD Bluray Tier 01
+  score: 1800
+- name: (S) HD Bluray Tier 02
+  score: 1750
+- name: DD+
+  score: 1750
+- name: WEB Tier 01
+  score: 1700
+- name: WEB Tier 02
+  score: 1650
+- name: WEB Scene
+  score: 1600
+- name: WEB Tier 03
+  score: 1600
+- name: DTS-ES
+  score: 1500
+- name: Anime BD Tier 01 (Top SeaDex Muxers)
+  score: 1400
+- name: Anime BD Tier 02 (SeaDex Muxers)
+  score: 1300
+- name: DTS
+  score: 1250
+- name: Anime BD Tier 03 (SeaDex Muxers)
+  score: 1200
+- name: Anime BD Tier 04 (SeaDex Muxers)
+  score: 1100
+- name: AAC
+  score: 1000
+- name: Anime BD Tier 05 (Remuxes)
+  score: 1000
+- name: DV Boost
+  score: 1000
+- name: Anime BD Tier 06 (FanSubs)
+  score: 900
+- name: Anime BD Tier 07 (P2P_Scene)
+  score: 800
+- name: DD
+  score: 750
+- name: Anime BD Tier 08 (Mini Encodes)
+  score: 700
+- name: Anime Web Tier 01 (Muxers)
+  score: 600
+- name: Anime Web Tier 02 (Top FanSubs)
+  score: 500
+- name: HDR
+  score: 500
+- name: MP3
+  score: 500
+- name: Anime Web Tier 03 (Official Subs)
+  score: 400
+- name: Anime Web Tier 04 (Official Subs)
+  score: 300
+- name: Opus
+  score: 250
+- name: Anime Web Tier 05 (FanSubs)
+  score: 200
+- name: DV (Disk)
+  score: 101
+- name: 2160p
+  score: 100
+- name: Anime Web Tier 06 (FanSubs)
+  score: 100
+- name: HDR10+ Boost
+  score: 100
+- name: Hybrid
+  score: 100
+- name: (S) PCOK
+  score: 75
+- name: (S) PMTP
+  score: 75
+- name: 4OD
+  score: 75
+- name: ALL4
+  score: 75
+- name: AMZN
+  score: 75
+- name: ATV
+  score: 75
+- name: ATVP
+  score: 75
+- name: AUBC
+  score: 75
+- name: CBC
+  score: 75
+- name: CC
+  score: 75
+- name: CRAV
+  score: 75
+- name: DCU
+  score: 75
+- name: DSCP
+  score: 75
+- name: DSNP
+  score: 75
+- name: FOD
+  score: 75
+- name: HBO
+  score: 75
+- name: HD Streaming Boost
+  score: 75
+- name: HMAX
+  score: 75
+- name: HTSR
+  score: 75
+- name: HULU
+  score: 75
+- name: IP
+  score: 75
+- name: iT
+  score: 75
+- name: ITVX
+  score: 75
+- name: MAX
+  score: 75
+- name: MY5
+  score: 75
+- name: NF
+  score: 75
+- name: NLZ
+  score: 75
+- name: NOW
+  score: 75
+- name: OViD
+  score: 75
+- name: PLAY
+  score: 75
+- name: QIBI
+  score: 75
+- name: RED
+  score: 75
+- name: ROKU
+  score: 75
+- name: SHO
+  score: 75
+- name: STAN
+  score: 75
+- name: STRP
+  score: 75
+- name: SYFY
+  score: 75
+- name: TVer
+  score: 75
+- name: TVING
+  score: 75
+- name: U-NEXT
+  score: 75
+- name: UHD Streaming Boost
+  score: 75
+- name: VDL
+  score: 75
+- name: VIU
+  score: 75
+- name: FLUX
+  score: 51
+- name: 1080p
+  score: 50
+- name: Remaster
+  score: 25
+- name: INTERNAL
+  score: 10
+- name: Season Pack
+  score: 10
+- name: Repack3
+  score: 7
+- name: CR
+  score: 6
+- name: HIDIVE
+  score: 6
+- name: Repack2
+  score: 6
+- name: 720p
+  score: 5
+- name: Repack_Proper
+  score: 5
+- name: v4
+  score: 4
+- name: v3
+  score: 3
+- name: VRV
+  score: 3
+- name: FUNi
+  score: 2
+- name: v2
+  score: 2
+- name: ABEMA
+  score: 1
+- name: FreeLeech
+  score: 1
+- name: v1
+  score: 1
+- name: (S) Obfuscated
+  score: 0
+- name: Retags
+  score: 0
+- name: v0
+  score: -51
+- name: (S) Extras
+  score: -10000
+- name: (S) Scene
+  score: -10000
+- name: (S) Upscaled
+  score: -10000
+- name: (S) x266
+  score: -10000
+- name: Anime LQ Groups
+  score: -10000
+- name: Anime Raws
+  score: -10000
+- name: AV1
+  score: -10000
+- name: Bad Dual Groups
+  score: -10000
+- name: BR-DISK
+  score: -10000
+- name: BR-DISK (BTN)
+  score: -10000
+- name: Dubs Only
+  score: -10000
+- name: DV (w_o HDR fallback)
+  score: -10000
+- name: FastSUB
+  score: -10000
+- name: Language - Not English
+  score: -10000
+- name: Language - Not Original
+  score: -10000
+- name: LQ
+  score: -10000
+- name: LQ (Release Title)
+  score: -10000
+- name: No-RlsGroup
+  score: -10000
+- name: SDR
+  score: -10000
+- name: SDR (no WEBDL)
+  score: -10000
+- name: x265 (HD)
+  score: -10000
+- name: x265 (no HDR_DV)
+  score: -10000
+qualities:
+- name: WEB 2160p
+  id: -1
+  description: ''
+  qualities:
+  - id: 6
+    name: WEBRip-2160p
+  - id: 5
+    name: WEBDL-2160p
+language: must_original
+upgrade_until:
+  id: -1
+  name: WEB 2160p

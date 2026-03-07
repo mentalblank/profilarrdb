@@ -1,0 +1,15 @@
+trash_id: 5caaaa1c08c1742aa4342d8c4cc463f2
+name: Repack3
+includeCustomFormatWhenRenaming: true
+description: ''
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Repack/Proper 3 or REAL.REAL.PROPER/REPACK
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b((repack|proper)3)\b|\b(real\.real\.(proper|repack))\b
+  pattern: Repack_Proper 3 or REAL.REAL.PROPER_REPACK
+tests: []

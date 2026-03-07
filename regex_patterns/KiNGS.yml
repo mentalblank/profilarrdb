@@ -1,0 +1,6 @@
+name: KiNGS
+pattern: ^(KiNGS)$
+description: Regex for KiNGS
+tags:
+- Trash Guides
+tests: []

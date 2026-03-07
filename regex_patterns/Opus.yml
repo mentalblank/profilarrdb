@@ -1,0 +1,6 @@
+name: Opus
+pattern: \bOPUS(\b|\d)(?!.*[ ._-](\d{3,4}p))
+description: Regex for Opus
+tags:
+- Trash Guides
+tests: []

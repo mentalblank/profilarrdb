@@ -1,0 +1,6 @@
+name: (S) Extras
+pattern: (?<=\bS\d+\b).*\b(Extras|Bonus|Extended[ ._-]Clip)\b
+description: Regex for (S) Extras
+tags:
+- Trash Guides
+tests: []

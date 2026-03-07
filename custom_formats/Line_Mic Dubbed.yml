@@ -1,0 +1,29 @@
+trash_id: c465ccc73923871b3eb1802042331306
+name: Line_Mic Dubbed
+includeCustomFormatWhenRenaming: false
+description: 'Line/Mic Dubbed
+
+
+  - This seems to be often used with German releases, and this will block the low-quality
+  audio.
+
+  - Line Dubbed = Sound extracted in the cinema by cable.
+
+  - Mic Dubbed = Sound extracted in the cinema by a microphone.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Line Dubbed
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(ld|ac3ld|line[ .-]?dubbed)\b
+  pattern: Line Dubbed
+- name: Mic Dubbed
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(md|ac3md|mic[ .-]?dubbed)\b
+  pattern: Mic Dubbed
+tests: []

@@ -1,0 +1,6 @@
+name: Nyanpasu
+pattern: \b(Nyanpasu)\b
+description: Regex for Nyanpasu
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Trix
+pattern: \[Trix\]|-Trix\b
+description: Regex for Trix
+tags:
+- Trash Guides
+tests: []

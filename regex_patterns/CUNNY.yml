@@ -1,0 +1,6 @@
+name: CUNNY
+pattern: \b(CUNNY)\b
+description: Regex for CUNNY
+tags:
+- Trash Guides
+tests: []

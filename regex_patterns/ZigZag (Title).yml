@@ -1,0 +1,6 @@
+name: ZigZag (Title)
+pattern: "\\[ZigZag\\]|-ZigZab\b"
+description: Regex for ZigZag (Title)
+tags:
+- Trash Guides
+tests: []

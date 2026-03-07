@@ -1,0 +1,24 @@
+trash_id: d0c516558625b04b363fa6c5c2c7cfd4
+name: WEB Scene
+includeCustomFormatWhenRenaming: false
+description: 'WEB Scene
+
+
+  One of the few scene groups that released quality releases.'
+tags:
+- Release Group
+- Trash Guides
+conditions:
+- name: DEFLATE
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(deflate)$
+  pattern: DEFLATE
+- name: INFLATE
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(inflate)$
+  pattern: INFLATE
+tests: []

@@ -1,0 +1,32 @@
+trash_id: b2b980877494b560443631eb1f473867
+name: NLZ
+includeCustomFormatWhenRenaming: true
+description: 'NLZiet
+
+
+  NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free.
+  The streaming service brings the best of all channels straight to your preferred
+  device and lets you see your favorite tv content in high quality on all available
+  platforms; anytime and anywhere.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: NLZiet
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(nlz|nlziet)\b
+  pattern: NLZiet
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

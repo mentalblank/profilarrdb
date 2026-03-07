@@ -1,0 +1,6 @@
+name: ReinForce
+pattern: \b(ReinForce)\b
+description: Regex for ReinForce
+tags:
+- Trash Guides
+tests: []

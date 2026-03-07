@@ -1,0 +1,20 @@
+trash_id: ae9b7c9ebde1f3bd336a8cbd1ec4c5e5
+name: No-RlsGroup
+includeCustomFormatWhenRenaming: false
+description: "No-RlsGroup\n\nSome indexers stripped out the release group, which could\
+  \ result in LQ groups receiving higher scores.\nFor example, many EVO releases are\
+  \ stripped of the group name, so they appear as \"upgrades\" and receive a decent\
+  \ score if other factors match.\n\n!!! warning\n\n    If you DO NOT use decent filenames\
+  \ (like not adding release groups), DO NOT add this Custom Format unless you want\
+  \ to upgrade them."
+tags:
+- Release Group
+- Trash Guides
+conditions:
+- name: No Parsed Group
+  negate: true
+  required: false
+  type: release_group
+  _raw_pattern: .
+  pattern: No Parsed Group
+tests: []

@@ -1,0 +1,182 @@
+trash_id: c20f169ef63c5f40c2def54abaf4438e
+name: WEB Tier 01
+includeCustomFormatWhenRenaming: false
+description: 'WEB Tier 01
+
+
+  Groups that:
+
+
+  - Have built a strong reputation for consistently delivering excellent quality releases
+
+  - Create hybrids using multiple high-quality sources
+
+  - Sign up for the gentleman list on a certain private tracker (TV releases)
+
+  - Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).'
+tags:
+- Release Group
+- Source
+- Trash Guides
+conditions:
+- name: ABBIE
+  negate: false
+  required: false
+  type: release_group
+  pattern: ABBIE
+- name: ABBiE
+  negate: false
+  required: false
+  type: release_group
+  pattern: ABBiE
+- name: AJP69
+  negate: false
+  required: false
+  type: release_group
+  pattern: AJP69
+- name: APEX
+  negate: false
+  required: false
+  type: release_group
+  pattern: APEX
+- name: BLUTONiUM
+  negate: false
+  required: false
+  type: release_group
+  pattern: BLUTONiUM
+- name: BYNDR
+  negate: false
+  required: false
+  type: release_group
+  pattern: BYNDR
+- name: CasStudio
+  negate: false
+  required: false
+  type: release_group
+  pattern: CasStudio
+- name: CMRG
+  negate: false
+  required: false
+  type: release_group
+  pattern: CMRG
+- name: CRFW
+  negate: false
+  required: false
+  type: release_group
+  pattern: CRFW
+- name: CRUD
+  negate: false
+  required: false
+  type: release_group
+  pattern: CRUD
+- name: CtrlHD
+  negate: false
+  required: false
+  type: release_group
+  pattern: CtrlHD
+- name: FLUX
+  negate: false
+  required: false
+  type: release_group
+  pattern: FLUX
+- name: GNOME
+  negate: false
+  required: false
+  type: release_group
+  pattern: GNOME
+- name: HONE
+  negate: false
+  required: false
+  type: release_group
+  pattern: HONE
+- name: KiNGS
+  negate: false
+  required: false
+  type: release_group
+  pattern: KiNGS
+- name: Kitsune
+  negate: false
+  required: false
+  type: release_group
+  pattern: Kitsune (Group)
+- name: monkee
+  negate: false
+  required: false
+  type: release_group
+  pattern: monkee
+- name: NOSiViD
+  negate: false
+  required: false
+  type: release_group
+  pattern: NOSiViD
+- name: NTb
+  negate: false
+  required: false
+  type: release_group
+  pattern: NTb
+- name: NTG
+  negate: false
+  required: false
+  type: release_group
+  pattern: NTG
+- name: QOQ
+  negate: false
+  required: false
+  type: release_group
+  pattern: QOQ
+- name: RAWR
+  negate: false
+  required: false
+  type: release_group
+  pattern: RAWR
+- name: RTN
+  negate: false
+  required: false
+  type: release_group
+  pattern: RTN
+- name: SiC
+  negate: false
+  required: false
+  type: release_group
+  pattern: SiC (Group)
+- name: T6D
+  negate: false
+  required: false
+  type: release_group
+  pattern: T6D
+- name: TEPES
+  negate: false
+  required: false
+  type: release_group
+  pattern: TEPES
+- name: TheFarm
+  negate: false
+  required: false
+  type: release_group
+  pattern: TheFarm
+- name: TOMMY
+  negate: false
+  required: false
+  type: release_group
+  pattern: TOMMY
+- name: ViSUM
+  negate: false
+  required: false
+  type: release_group
+  pattern: ViSUM
+- name: ZoroSenpai
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZoroSenpai
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

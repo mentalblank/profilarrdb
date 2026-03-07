@@ -1,0 +1,6 @@
+name: Dae
+pattern: \[Dae\]|-Dae\b
+description: Regex for Dae
+tags:
+- Trash Guides
+tests: []

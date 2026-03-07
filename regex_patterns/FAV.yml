@@ -1,0 +1,6 @@
+name: FAV
+pattern: \[FAV\]|-FAV\b
+description: Regex for FAV
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: Kitsune (Group)
+pattern: ^(Kitsune)$
+description: Regex for Kitsune (Group)
+tags:
+- Trash Guides
+tests: []

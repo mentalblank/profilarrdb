@@ -1,0 +1,6 @@
+name: SiGLA
+pattern: ^(SiGLA)$
+description: Regex for SiGLA
+tags:
+- Trash Guides
+tests: []

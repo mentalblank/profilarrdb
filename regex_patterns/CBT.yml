@@ -1,0 +1,6 @@
+name: CBT
+pattern: \b(CBT)\b
+description: Regex for CBT
+tags:
+- Trash Guides
+tests: []

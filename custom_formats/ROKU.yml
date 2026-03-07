@@ -1,0 +1,36 @@
+trash_id: 44c2b54d7c81c1a442a8b2cabeaef54f
+name: ROKU
+includeCustomFormatWhenRenaming: true
+description: 'ROKU
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/The_Roku_Channel)
+
+
+  The Roku Channel is an over-the-top streaming television service available in the
+  United States, Canada, Mexico and the United Kingdom. The service was launched in
+  2017, and is owned and operated by Roku, Inc. It is the most popular free ad-supported
+  streaming television (FAST) service in the United States, reportedly reaching 145
+  million people, as of 2024.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: ROKU
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(roku)\b
+  pattern: ROKU
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

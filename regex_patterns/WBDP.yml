@@ -1,0 +1,6 @@
+name: WBDP
+pattern: \b(WBDP)\b
+description: Regex for WBDP
+tags:
+- Trash Guides
+tests: []

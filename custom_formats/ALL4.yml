@@ -1,0 +1,33 @@
+trash_id: fcc09418f67ccaddcf3b641a22c5cfd7
+name: ALL4
+includeCustomFormatWhenRenaming: true
+description: 'ALL4
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  ALL4 is a previous name for the UK''s Channel4 VOD service. Releases are usually
+  identified with either ''ALL4'' or ''4OD'', not ''Channel4''.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: ALL4
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(all4)\b
+  pattern: ALL4
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

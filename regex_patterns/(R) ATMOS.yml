@@ -1,0 +1,6 @@
+name: (R) ATMOS
+pattern: \b(ATMOS|CtrlHD|W4NK3R|DON)(\b|\d)
+description: Regex for (R) ATMOS
+tags:
+- Trash Guides
+tests: []

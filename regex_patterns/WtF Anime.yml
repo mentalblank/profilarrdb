@@ -1,0 +1,6 @@
+name: WtF Anime
+pattern: \b(WtF[ ._-]?Anime)\b
+description: Regex for WtF Anime
+tags:
+- Trash Guides
+tests: []

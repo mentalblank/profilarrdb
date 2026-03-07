@@ -1,0 +1,6 @@
+name: SRW
+pattern: \b(SRW)\b
+description: Regex for SRW
+tags:
+- Trash Guides
+tests: []

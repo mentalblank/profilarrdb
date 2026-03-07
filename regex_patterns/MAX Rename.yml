@@ -1,0 +1,6 @@
+name: MAX Rename
+pattern: \[(MAX)\b|\b(MAX)\]
+description: Regex for MAX Rename
+tags:
+- Trash Guides
+tests: []

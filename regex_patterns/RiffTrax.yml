@@ -1,0 +1,6 @@
+name: RiffTrax
+pattern: ^(Rifftrax)$
+description: Regex for RiffTrax
+tags:
+- Trash Guides
+tests: []

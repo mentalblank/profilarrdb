@@ -1,0 +1,6 @@
+name: HDWinG
+pattern: ^(HDWinG)$
+description: Regex for HDWinG
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: BlurayDesuYo
+pattern: \b(BlurayDesuYo)\b
+description: Regex for BlurayDesuYo
+tags:
+- Trash Guides
+tests: []

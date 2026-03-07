@@ -1,0 +1,6 @@
+name: TURG
+pattern: ^(TURG)$
+description: Regex for TURG
+tags:
+- Trash Guides
+tests: []

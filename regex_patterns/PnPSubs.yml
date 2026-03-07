@@ -1,0 +1,6 @@
+name: PnPSubs
+pattern: \b(PnPSubs)\b
+description: Regex for PnPSubs
+tags:
+- Trash Guides
+tests: []

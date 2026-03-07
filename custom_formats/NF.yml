@@ -1,0 +1,34 @@
+trash_id: 170b1d363bd8516fbf3a3eb05d4faff6
+name: NF
+includeCustomFormatWhenRenaming: true
+description: 'Netflix
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Netflix)
+
+
+  Netflix is an American subscription video on-demand over-the-top streaming service.
+  The service primarily distributes original and acquired films and television shows
+  from various genres, and it is available internationally in multiple languages.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Netflix
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(nf|netflix(u?hd)?)\b
+  pattern: Netflix
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

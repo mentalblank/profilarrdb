@@ -1,0 +1,15 @@
+trash_id: 7a0d1ad358fee9f5b074af3ef3f9d9ef
+name: hallowed
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Group
+- Trash Guides
+conditions:
+- name: hallowed
+  negate: false
+  required: true
+  type: release_group
+  _raw_pattern: ^(hallowed)$
+  pattern: hallowed
+tests: []

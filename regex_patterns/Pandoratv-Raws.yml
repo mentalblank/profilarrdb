@@ -1,0 +1,6 @@
+name: Pandoratv-Raws
+pattern: Pandoratv[ ._-]?(Raws)
+description: Regex for Pandoratv-Raws
+tags:
+- Trash Guides
+tests: []

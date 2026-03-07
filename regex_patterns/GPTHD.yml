@@ -1,0 +1,6 @@
+name: GPTHD
+pattern: ^(GPTHD)$
+description: Regex for GPTHD
+tags:
+- Trash Guides
+tests: []

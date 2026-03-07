@@ -1,0 +1,6 @@
+name: Datte13
+pattern: \b(Datte13)\b
+description: Regex for Datte13
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: WinLUNA (Title)
+pattern: ^(WinLUNA)$
+description: Regex for WinLUNA (Title)
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,19 @@
+name: Dual-Audio
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Custom
+- Audio
+conditions:
+- name: Dual-Audio
+  type: release_title
+  required: true
+  negate: false
+  pattern: Dual-Audio
+- name: English Language
+  type: language
+  required: true
+  negate: false
+  language: english
+  exceptLanguage: false
+tests: []

@@ -1,0 +1,6 @@
+name: GERMini
+pattern: \b(GERMini)\b
+description: Regex for GERMini
+tags:
+- Trash Guides
+tests: []

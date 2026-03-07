@@ -1,0 +1,6 @@
+name: Beatrice-Raws
+pattern: Beatrice[ ._-]?(Raws)
+description: Regex for Beatrice-Raws
+tags:
+- Trash Guides
+tests: []

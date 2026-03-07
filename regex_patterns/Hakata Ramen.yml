@@ -1,0 +1,6 @@
+name: Hakata Ramen
+pattern: \b(Hakata[ .-]?Ramen)\b
+description: Regex for Hakata Ramen
+tags:
+- Trash Guides
+tests: []

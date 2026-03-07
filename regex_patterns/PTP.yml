@@ -1,0 +1,6 @@
+name: PTP
+pattern: ^(PTP)$
+description: Regex for PTP
+tags:
+- Trash Guides
+tests: []

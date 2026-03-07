@@ -1,0 +1,38 @@
+trash_id: 84272245b2988854bfb76a16e60baea5
+name: DSNP
+includeCustomFormatWhenRenaming: true
+description: 'Disney+
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Disney%2B)
+
+
+  Disney+ is an American subscription video on-demand over-the-top streaming media
+  service owned and operated by Disney Streaming, the streaming division of Disney
+  Entertainment, a major business segment of the Walt Disney Company.The service primarily
+  distributes films and television shows produced by Walt Disney Studios and Disney
+  Television Studios, with dedicated content hubs for Disney''s flagship brands; Disney,
+  Pixar, Marvel, Star Wars, National Geographic, and Hulu as well as showcasing original
+  and exclusive films and television shows.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Disney+
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(dsnp|dsny|disney|disney\+)\b
+  pattern: Disney+
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

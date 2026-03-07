@@ -1,0 +1,6 @@
+name: Tars
+pattern: ^(Tars)$
+description: Regex for Tars
+tags:
+- Trash Guides
+tests: []

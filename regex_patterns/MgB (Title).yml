@@ -1,0 +1,6 @@
+name: MgB (Title)
+pattern: ^(MgB)$
+description: Regex for MgB (Title)
+tags:
+- Trash Guides
+tests: []

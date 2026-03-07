@@ -1,0 +1,6 @@
+name: GalaxyRG (Group)
+pattern: ^(GalaxyRG)$
+description: Regex for GalaxyRG (Group)
+tags:
+- Trash Guides
+tests: []

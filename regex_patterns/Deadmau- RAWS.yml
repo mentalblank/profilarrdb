@@ -1,0 +1,6 @@
+name: Deadmau- RAWS
+pattern: \b(Deadmau[ .-]?[ .-]?RAWS)\b
+description: Regex for Deadmau- RAWS
+tags:
+- Trash Guides
+tests: []

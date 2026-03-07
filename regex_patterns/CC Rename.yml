@@ -1,0 +1,6 @@
+name: CC Rename
+pattern: \[(CC)\b|\b(CC)\]
+description: Regex for CC Rename
+tags:
+- Trash Guides
+tests: []

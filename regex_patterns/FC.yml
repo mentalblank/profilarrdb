@@ -1,0 +1,6 @@
+name: FC
+pattern: ^(FC)$
+description: Regex for FC
+tags:
+- Trash Guides
+tests: []

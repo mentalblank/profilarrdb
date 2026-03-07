@@ -1,0 +1,6 @@
+name: D3US
+pattern: (-D3US|D3US-)
+description: Regex for D3US
+tags:
+- Trash Guides
+tests: []

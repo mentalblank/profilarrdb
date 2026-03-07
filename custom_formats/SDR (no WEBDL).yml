@@ -1,0 +1,41 @@
+trash_id: 25c12f78430a3a23413652cbd1d48d77
+name: SDR (no WEBDL)
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Title
+- Resolution
+- Source
+- Trash Guides
+conditions:
+- name: HDR Formats
+  negate: true
+  required: false
+  type: release_title
+  pattern: HDR Formats
+- name: SDR
+  negate: false
+  required: false
+  type: release_title
+  pattern: SDR
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+- name: Not WEBDL
+  negate: true
+  required: true
+  type: source
+  source: web_dl
+- name: Not WEBRIP
+  negate: true
+  required: true
+  type: source
+  source: webrip
+- name: Not WEBRip
+  negate: true
+  required: true
+  type: source
+  source: webrip
+tests: []

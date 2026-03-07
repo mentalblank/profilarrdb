@@ -1,0 +1,6 @@
+name: (R) Paramount+
+pattern: \b(pmtp|Paramount Plus)\b
+description: Regex for (R) Paramount+
+tags:
+- Trash Guides
+tests: []

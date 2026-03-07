@@ -1,0 +1,6 @@
+name: C1NEM4
+pattern: ^(C1NEM4)$
+description: Regex for C1NEM4
+tags:
+- Trash Guides
+tests: []

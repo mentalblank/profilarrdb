@@ -1,0 +1,10 @@
+name: Notify
+on:
+  push:
+    branches:
+      - "stable"
+jobs:
+  call-notify-commit:
+    uses: Dictionarry-Hub/parrot/.github/workflows/notify-commit.yml@v1
+    secrets:
+      PARROT_URL: ${{ secrets.PARROT_URL }}

@@ -1,0 +1,6 @@
+name: RDN
+pattern: ^(RDN)$
+description: Regex for RDN
+tags:
+- Trash Guides
+tests: []

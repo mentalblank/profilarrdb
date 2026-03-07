@@ -1,0 +1,6 @@
+name: LoRD
+pattern: ^(LoRD)$
+description: Regex for LoRD
+tags:
+- Trash Guides
+tests: []

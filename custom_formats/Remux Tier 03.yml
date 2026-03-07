@@ -1,0 +1,93 @@
+trash_id: 8baaf0b3142bf4d94c42a724f034e27a
+name: Remux Tier 03
+includeCustomFormatWhenRenaming: false
+description: 'Remux Tier 03
+
+
+  Groups that:
+
+
+  - Are new and haven''t released many titles yet
+
+  - Have retired and their releases don''t meet current quality standards
+
+  - Pay good attention to detail and use reliable sources
+
+  - Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).'
+tags:
+- Quality
+- Release Group
+- Trash Guides
+conditions:
+- name: Remux
+  negate: false
+  required: true
+  type: quality_modifier
+  modifier: remux
+- name: 12GaugeShotgun
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(12gaugeshotgun)$
+  pattern: 12GaugeShotgun
+- name: decibeL
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(decibel)$
+  pattern: decibeL
+- name: EPSiLON
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(epsilon)$
+  pattern: EPSiLON
+- name: HiFi
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hifi)$
+  pattern: HiFi
+- name: iFT
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(ift)$
+  pattern: iFT
+- name: KRaLiMaRKo
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(kralimarko)$
+  pattern: KRaLiMaRKo
+- name: NTb
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(ntb)$
+  pattern: NTb
+- name: PTP
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(ptp)$
+  pattern: PTP
+- name: SumVision
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(sumvision)$
+  pattern: SumVision
+- name: TOA
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(toa)$
+  pattern: TOA
+- name: TRiToN
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(triton)$
+  pattern: TRiToN
+tests: []

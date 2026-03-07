@@ -1,0 +1,33 @@
+trash_id: 60f6d50cbd3cfc3e9a8c00e3a30c3114
+name: VRV
+includeCustomFormatWhenRenaming: true
+description: 'VRV
+
+
+  From Wikipedia, the free encyclopedia ()'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: VRV
+  negate: false
+  required: true
+  type: release_title
+  pattern: VRV
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

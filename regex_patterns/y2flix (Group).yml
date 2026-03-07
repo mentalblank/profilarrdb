@@ -1,0 +1,6 @@
+name: y2flix (Group)
+pattern: \b(y2flix)\b
+description: Regex for y2flix (Group)
+tags:
+- Trash Guides
+tests: []

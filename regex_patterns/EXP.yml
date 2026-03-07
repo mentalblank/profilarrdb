@@ -1,0 +1,6 @@
+name: EXP
+pattern: \[EXP\]|-EXP\b
+description: Regex for EXP
+tags:
+- Trash Guides
+tests: []

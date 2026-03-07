@@ -1,0 +1,6 @@
+name: Not RlsGrp
+pattern: \b(Flights)\b
+description: Regex for Not RlsGrp
+tags:
+- Trash Guides
+tests: []

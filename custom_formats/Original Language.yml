@@ -1,0 +1,25 @@
+name: Original Language
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Custom
+- Language
+conditions:
+- name: Language Original
+  negate: false
+  required: true
+  type: language
+  language: original
+  exceptLanguage: false
+- name: Dual-Audio
+  negate: true
+  required: false
+  type: release_title
+  pattern: Dual-Audio
+- name: Is English
+  negate: true
+  required: true
+  type: language
+  language: english
+  exceptLanguage: false
+tests: []

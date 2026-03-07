@@ -1,0 +1,6 @@
+name: KAN3D2M
+pattern: \b(KAN3D2M)\b
+description: Regex for KAN3D2M
+tags:
+- Trash Guides
+tests: []

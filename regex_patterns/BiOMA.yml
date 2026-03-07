@@ -1,0 +1,6 @@
+name: BiOMA
+pattern: ^(BiOMA)$
+description: Regex for BiOMA
+tags:
+- Trash Guides
+tests: []

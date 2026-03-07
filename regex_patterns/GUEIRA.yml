@@ -1,0 +1,6 @@
+name: GUEIRA
+pattern: ^(GUEIRA)$
+description: Regex for GUEIRA
+tags:
+- Trash Guides
+tests: []

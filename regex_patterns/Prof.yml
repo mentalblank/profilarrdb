@@ -1,0 +1,6 @@
+name: Prof
+pattern: \[Prof\]|-Prof\b
+description: Regex for Prof
+tags:
+- Trash Guides
+tests: []

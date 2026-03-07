@@ -1,0 +1,6 @@
+name: ASC
+pattern: \b(ASC)\b
+description: Regex for ASC
+tags:
+- Trash Guides
+tests: []

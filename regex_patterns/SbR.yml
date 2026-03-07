@@ -1,0 +1,6 @@
+name: SbR
+pattern: ^(SbR)$
+description: Regex for SbR
+tags:
+- Trash Guides
+tests: []

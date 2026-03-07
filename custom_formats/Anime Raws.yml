@@ -1,0 +1,144 @@
+trash_id: 06b6542a47037d1e33b15aa3677c2365
+name: Anime Raws
+includeCustomFormatWhenRenaming: false
+description: 'Anime Raws
+
+
+  A collection of known groups that release raws.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: AsukaRaws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: asuka[ ._-]?(raws)
+  pattern: AsukaRaws
+- name: Beatrice-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: beatrice[ ._-]?(raws)
+  pattern: Beatrice-Raws
+- name: Daddy-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: daddy[ ._-]?(raws)
+  pattern: Daddy-Raws
+- name: Fumi-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: fumi[ ._-]?(raws)
+  pattern: Fumi-Raws
+- name: IrizaRaws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: iriza[ ._-]?(raws)
+  pattern: IrizaRaws
+- name: Kawaiika-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: kawaiika[ ._-]?(raws)
+  pattern: Kawaiika-Raws
+- name: km
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[km\]|-km\b
+  pattern: km
+- name: Koi-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: koi[ ._-]?(raws)
+  pattern: Koi-Raws
+- name: Lilith-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: lilith[ ._-]?(raws)
+  pattern: Lilith-Raws
+- name: LowPower-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: lowpower[ ._-]?(raws)
+  pattern: LowPower-Raws
+- name: Moozzi2
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(moozzi2)\b
+  pattern: Moozzi2
+- name: NanakoRaws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: nanako[ ._-]?(raws)
+  pattern: NanakoRaws
+- name: NC-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: nc[ ._-]?(raws)
+  pattern: NC-Raws
+- name: neko-raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: neko[ ._-]?(raws)
+  pattern: neko-raws
+- name: New-raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: new[ ._-]?(raws)
+  pattern: New-raws
+- name: Ohys-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: ohys[ ._-]?(raws)
+  pattern: Ohys-Raws
+- name: Pandoratv-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: pandoratv[ ._-]?(raws)
+  pattern: Pandoratv-Raws
+- name: Raws-Maji
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(raws-maji)\b
+  pattern: Raws-Maji
+- name: ReinForce
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(reinforce)\b
+  pattern: ReinForce
+- name: Scryous-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: scryous[ ._-]?(raws)
+  pattern: Scryous-Raws
+- name: Seicher-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: seicher[ ._-]?(raws)
+  pattern: Seicher-Raws
+- name: Shiniori-Raws
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: shiniori[ ._-]?(raws)
+  pattern: Shiniori-Raws
+tests: []

@@ -1,0 +1,6 @@
+name: Star+
+pattern: \b(STRP)\b
+description: Regex for Star+
+tags:
+- Trash Guides
+tests: []

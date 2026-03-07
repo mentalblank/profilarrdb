@@ -1,0 +1,31 @@
+trash_id: 279bda7434fd9075786de274e6c3c202
+name: U-NEXT
+includeCustomFormatWhenRenaming: true
+description: 'U-NEXT
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/U-Next)
+
+  U-NEXT Website (https://video.unext.jp)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: U-NEXT
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(u-next)\b
+  pattern: U-NEXT
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

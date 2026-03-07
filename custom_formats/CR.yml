@@ -1,0 +1,34 @@
+trash_id: 3e0b26604165f463f3e8e192261e7284
+name: CR
+includeCustomFormatWhenRenaming: true
+description: 'Crunchyroll
+
+
+  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Crunchyroll)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: Crunchyroll
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(c(runchy)?[ .-]?r(oll)?)\b
+  pattern: Crunchyroll
+tests: []

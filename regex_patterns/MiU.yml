@@ -1,0 +1,6 @@
+name: MiU
+pattern: ^(MiU)$
+description: Regex for MiU
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: NhaNc3
+pattern: ^(NhaNc3)$
+description: Regex for NhaNc3
+tags:
+- Trash Guides
+tests: []

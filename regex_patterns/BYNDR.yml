@@ -1,0 +1,6 @@
+name: BYNDR
+pattern: ^(BYNDR)$
+description: Regex for BYNDR
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: FMD
+pattern: ^(FMD)$
+description: Regex for FMD
+tags:
+- Trash Guides
+tests: []

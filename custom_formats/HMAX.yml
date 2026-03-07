@@ -1,0 +1,44 @@
+trash_id: 5763d1b0ce84aff3b21038eea8e9b8ad
+name: HMAX
+includeCustomFormatWhenRenaming: true
+description: 'Max (streaming service) aka HBO Max
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/HBO_Max)
+
+
+  Max, formerly and in some markets still HBO Max, is an American subscription video
+  on-demand over-the-top streaming service. It is a proprietary unit of Warner Bros.
+  Discovery Global Streaming & Interactive Entertainment, which is itself a division
+  of Warner Bros. Discovery (WBD). First launched (as HBO Max) in the United States
+  on May 27, 2020, the service offers content from the libraries of Warner Bros.,
+  Discovery Channel, HBO, CNN, Cartoon Network, Adult Swim, Animal Planet, Eurosport,
+  and their related brands.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: HBO Max
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(hmax|hbom|hbo[ ._-]?max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+  pattern: HBO Max
+- name: HMAX Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(hmax)\b|\b(hmax)\]
+  pattern: HMAX Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

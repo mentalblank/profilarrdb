@@ -1,0 +1,19 @@
+trash_id: 8df7fe4569063d39319f07e69707285a
+name: WEBDL Boost
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

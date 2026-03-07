@@ -1,0 +1,6 @@
+name: Geek
+pattern: ^(Geek)$
+description: Regex for Geek
+tags:
+- Trash Guides
+tests: []

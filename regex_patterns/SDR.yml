@@ -1,0 +1,6 @@
+name: SDR
+pattern: \bSDR\b
+description: Regex for SDR
+tags:
+- Trash Guides
+tests: []

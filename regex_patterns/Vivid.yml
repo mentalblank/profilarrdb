@@ -1,0 +1,6 @@
+name: Vivid
+pattern: \[Vivid\]|-Vivid\b
+description: Regex for Vivid
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,40 @@
+trash_id: c3492a26af412e385404eade438ec51c
+name: ITVX
+includeCustomFormatWhenRenaming: true
+description: 'ITVX aka ITV
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/ITVX)
+
+
+  ITVX (formerly ITV Hub) is a British ad-supported video-on-demand streaming service
+  operated by ITV. The service offers original content from the broadcaster, as well
+  as some exclusive and licensed programming.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: ITVX
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(itvx?)\b[ ._-]web[ ._-]?(dl|rip)?\b
+  pattern: ITVX
+- name: ITVX Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(itvx)\b|\b(itvx)\]
+  pattern: ITVX Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

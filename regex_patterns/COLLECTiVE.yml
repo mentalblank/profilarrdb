@@ -1,0 +1,6 @@
+name: COLLECTiVE
+pattern: ^(COLLECTiVE)$
+description: Regex for COLLECTiVE
+tags:
+- Trash Guides
+tests: []

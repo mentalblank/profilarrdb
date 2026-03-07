@@ -1,0 +1,6 @@
+name: LowPower-Raws
+pattern: LowPower[ ._-]?(Raws)
+description: Regex for LowPower-Raws
+tags:
+- Trash Guides
+tests: []

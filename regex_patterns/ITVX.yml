@@ -1,0 +1,6 @@
+name: ITVX
+pattern: \b(ITVX?)\b[ ._-]web[ ._-]?(dl|rip)?\b
+description: Regex for ITVX
+tags:
+- Trash Guides
+tests: []

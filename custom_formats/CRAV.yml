@@ -1,0 +1,46 @@
+trash_id: f6ff65b3f4b464a79dcc75950fe20382
+name: CRAV
+includeCustomFormatWhenRenaming: true
+description: 'CRAVE
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  Crave (originally CraveTV) is a Canadian subscription video on demand service. The
+  service competes directly with other subscription-based over-the-top streaming services
+  operating in Canada, primarily against American-based services.
+
+  The service features Bell Media original programming, exclusive Canadian access
+  to programming acquired from several U.S. television and streaming services, and
+  various theatrically-released films. Crave''s major programming supplier is Warner
+  Bros. Discovery (HBO / Max and Warner Bros. films). Starz, offered in partnership
+  with Lionsgate.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Crave
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(crav(e)?)\b[ ._-]web[ ._-]?(dl|rip)?\b
+  pattern: Crave
+- name: Crave Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(crav)\b|\b(crav)\]
+  pattern: Crave Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

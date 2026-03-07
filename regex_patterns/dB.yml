@@ -1,0 +1,6 @@
+name: dB
+pattern: ^(dB)$
+description: Regex for dB
+tags:
+- Trash Guides
+tests: []

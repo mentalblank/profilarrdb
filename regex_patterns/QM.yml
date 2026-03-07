@@ -1,0 +1,6 @@
+name: QM
+pattern: \b(QM)\b
+description: Regex for QM
+tags:
+- Trash Guides
+tests: []

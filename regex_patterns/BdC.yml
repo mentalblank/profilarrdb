@@ -1,0 +1,6 @@
+name: BdC
+pattern: ^(BdC)$
+description: Regex for BdC
+tags:
+- Trash Guides
+tests: []

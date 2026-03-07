@@ -1,0 +1,79 @@
+trash_id: fb3ccc5d5cc8f77c9055d4cb4561dded
+name: Anime BD Tier 01 (Top SeaDex Muxers)
+includeCustomFormatWhenRenaming: false
+description: 'Anime BD Tier 01
+
+
+  Groups that do the best releases as per SeaDex. They are more consistent and trump
+  others.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: DemiHuman
+  negate: false
+  required: false
+  type: release_title
+  pattern: DemiHuman
+- name: FLE
+  negate: false
+  required: false
+  type: release_title
+  pattern: FLE
+- name: Flugel
+  negate: false
+  required: false
+  type: release_title
+  pattern: Flugel
+- name: LYS1TH3A
+  negate: false
+  required: false
+  type: release_title
+  pattern: LYS1TH3A
+- name: Moxie
+  negate: false
+  required: false
+  type: release_title
+  pattern: Moxie
+- name: NAN0
+  negate: false
+  required: false
+  type: release_title
+  pattern: NAN0
+- name: sam
+  negate: false
+  required: false
+  type: release_title
+  pattern: sam
+- name: smol
+  negate: false
+  required: false
+  type: release_title
+  pattern: smol
+- name: SoM
+  negate: false
+  required: false
+  type: release_title
+  pattern: SoM
+- name: ZR
+  negate: false
+  required: false
+  type: release_title
+  pattern: ZR
+- name: Bluray
+  negate: false
+  required: false
+  type: source
+  source: bluray
+- name: Bluray Remux
+  negate: false
+  required: false
+  type: source
+  source: bluray_raw
+- name: DVD
+  negate: false
+  required: false
+  type: source
+  source: dvd
+tests: []

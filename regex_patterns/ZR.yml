@@ -1,0 +1,6 @@
+name: ZR
+pattern: \b(ZR)\b|-ZR-
+description: Regex for ZR
+tags:
+- Trash Guides
+tests: []

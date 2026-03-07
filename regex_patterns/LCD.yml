@@ -1,0 +1,6 @@
+name: LCD
+pattern: ^(LCD)$
+description: Regex for LCD
+tags:
+- Trash Guides
+tests: []

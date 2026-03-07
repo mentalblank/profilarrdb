@@ -1,0 +1,6 @@
+name: 3Li (Group)
+pattern: \b(3Li)\b
+description: Regex for 3Li (Group)
+tags:
+- Trash Guides
+tests: []

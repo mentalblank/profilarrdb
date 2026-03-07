@@ -1,0 +1,166 @@
+trash_id: e204b80c87be9497a8a6eaff48f72905
+name: LQ (Release Title)
+includeCustomFormatWhenRenaming: false
+description: 'LQ (Release Title)
+
+
+  A collection of terms seen in the titles of Low-Quality releases that are not captured
+  by using a release group name.
+
+
+  --8<-- "includes/cf-descriptions/apply-10000.md"'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: 1XBET
+  negate: false
+  required: false
+  type: release_title
+  pattern: 1XBET
+- name: 3Li
+  negate: false
+  required: false
+  type: release_title
+  pattern: 3Li (Title)
+- name: BEN THE MEN
+  negate: false
+  required: false
+  type: release_title
+  pattern: BEN THE MEN
+- name: BiTOR (2160p)
+  negate: false
+  required: false
+  type: release_title
+  pattern: BiTOR (2160p)
+- name: CREATiVE24
+  negate: false
+  required: false
+  type: release_title
+  pattern: CREATiVE24 (Title)
+- name: D3US
+  negate: false
+  required: false
+  type: release_title
+  pattern: D3US
+- name: EVO (no WEBDL)
+  negate: false
+  required: false
+  type: release_title
+  pattern: EVO (no WEBDL)
+- name: Feranki1980
+  negate: false
+  required: false
+  type: release_title
+  pattern: Feranki1980 (Title)
+- name: GalaxyRG
+  negate: false
+  required: false
+  type: release_title
+  pattern: GalaxyRG (Title)
+- name: Japhson
+  negate: false
+  required: false
+  type: release_title
+  pattern: Japhson (Title)
+- name: jeddak
+  negate: false
+  required: false
+  type: release_title
+  pattern: jeddak (Title)
+- name: jennaortega
+  negate: false
+  required: false
+  type: release_title
+  pattern: jennaortega (Title)
+- name: MgB
+  negate: false
+  required: false
+  type: release_title
+  pattern: MgB (Title)
+- name: moviesbyrizzo
+  negate: false
+  required: false
+  type: release_title
+  pattern: moviesbyrizzo (Title)
+- name: NiXON
+  negate: false
+  required: false
+  type: release_title
+  pattern: NiXON (Title)
+- name: NoRBiT
+  negate: false
+  required: false
+  type: release_title
+  pattern: NoRBiT (Title)
+- name: PeruGuy
+  negate: false
+  required: false
+  type: release_title
+  pattern: PeruGuy (Title)
+- name: PiRaTeS (no WEBDL)
+  negate: false
+  required: false
+  type: release_title
+  pattern: PiRaTeS (no WEBDL)
+- name: PortalGoods
+  negate: false
+  required: false
+  type: release_title
+  pattern: PortalGoods (Title)
+- name: PS3-TEAM
+  negate: false
+  required: false
+  type: release_title
+  pattern: PS3-TEAM (Title)
+- name: READ NOTE
+  negate: false
+  required: false
+  type: release_title
+  pattern: READ NOTE
+- name: RIPRARBG
+  negate: false
+  required: false
+  type: release_title
+  pattern: RIPRARBG (Title)
+- name: RWP
+  negate: false
+  required: false
+  type: release_title
+  pattern: RWP (Title)
+- name: SADPANDA
+  negate: false
+  required: false
+  type: release_title
+  pattern: SADPANDA (Title)
+- name: SWTYBLZ
+  negate: false
+  required: false
+  type: release_title
+  pattern: SWTYBLZ
+- name: TeeWee
+  negate: false
+  required: false
+  type: release_title
+  pattern: TeeWee
+- name: TEKNO3D
+  negate: false
+  required: false
+  type: release_title
+  pattern: TEKNO3D (Title)
+- name: Will1869
+  negate: false
+  required: false
+  type: release_title
+  pattern: Will1869
+- name: WinLUNA
+  negate: false
+  required: false
+  type: release_title
+  pattern: WinLUNA (Title)
+- name: y2flix
+  negate: false
+  required: false
+  type: release_title
+  pattern: y2flix (Title)
+tests: []

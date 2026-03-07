@@ -1,0 +1,6 @@
+name: UDF
+pattern: \b(UDF)\b
+description: Regex for UDF
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,34 @@
+trash_id: 9623c5c9cac8e939c1b9aedd32f640bf
+name: SYFY
+includeCustomFormatWhenRenaming: true
+description: 'Syfy
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  Syfy is an American basic cable television channel. Launched on September 24, 1992,
+  the channel broadcasts programming relating to the science fiction, horror, and
+  fantasy genres.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: SYFY
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(syfy)\b
+  pattern: SYFY
+tests: []

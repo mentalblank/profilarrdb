@@ -1,0 +1,6 @@
+name: Mites
+pattern: \b(Mites)\b
+description: Regex for Mites
+tags:
+- Trash Guides
+tests: []

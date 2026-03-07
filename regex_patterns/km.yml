@@ -1,0 +1,6 @@
+name: km
+pattern: \[km\]|-km\b
+description: Regex for km
+tags:
+- Trash Guides
+tests: []

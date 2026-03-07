@@ -1,0 +1,6 @@
+name: Starbez
+pattern: \b(Starbez)\b
+description: Regex for Starbez
+tags:
+- Trash Guides
+tests: []

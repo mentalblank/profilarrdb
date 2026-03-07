@@ -1,0 +1,6 @@
+name: TEKNO3D (Group)
+pattern: ^(TEKNO3D)$
+description: Regex for TEKNO3D (Group)
+tags:
+- Trash Guides
+tests: []

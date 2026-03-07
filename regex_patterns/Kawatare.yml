@@ -1,0 +1,6 @@
+name: Kawatare
+pattern: \[Kawatare\]|-Kawatare\b
+description: Regex for Kawatare
+tags:
+- Trash Guides
+tests: []

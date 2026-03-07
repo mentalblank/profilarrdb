@@ -1,0 +1,6 @@
+name: CAPTCHA
+pattern: -CAPTCHA\b
+description: Regex for CAPTCHA
+tags:
+- Trash Guides
+tests: []

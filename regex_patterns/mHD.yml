@@ -1,0 +1,6 @@
+name: mHD
+pattern: ^(mHD)$
+description: Regex for mHD
+tags:
+- Trash Guides
+tests: []

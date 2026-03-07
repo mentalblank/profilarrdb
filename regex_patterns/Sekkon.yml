@@ -1,0 +1,6 @@
+name: Sekkon
+pattern: \b(Sekkon)\b
+description: Regex for Sekkon
+tags:
+- Trash Guides
+tests: []

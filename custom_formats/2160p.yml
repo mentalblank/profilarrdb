@@ -1,0 +1,18 @@
+trash_id: fb392fb0d61a010ae38e49ceaa24a1ef
+name: 2160p
+includeCustomFormatWhenRenaming: false
+description: '2160p
+
+
+  This Custom Format can boost 2160p releases. It is only useful if you use Merge
+  Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.'
+tags:
+- Resolution
+- Trash Guides
+conditions:
+- name: 2160p
+  negate: false
+  required: true
+  type: resolution
+  resolution: 2160p
+tests: []

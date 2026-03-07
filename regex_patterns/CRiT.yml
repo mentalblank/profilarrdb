@@ -1,0 +1,6 @@
+name: CRiT
+pattern: \b(CRiT)\b
+description: Regex for CRiT
+tags:
+- Trash Guides
+tests: []

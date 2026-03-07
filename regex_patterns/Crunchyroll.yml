@@ -1,0 +1,6 @@
+name: Crunchyroll
+pattern: \b(C(runchy)?[ .-]?R(oll)?)\b
+description: Regex for Crunchyroll
+tags:
+- Trash Guides
+tests: []

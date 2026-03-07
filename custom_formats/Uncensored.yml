@@ -1,0 +1,18 @@
+trash_id: 064af5f084a0a24458cc8ecd3220f93f
+name: Uncensored
+includeCustomFormatWhenRenaming: true
+description: 'Uncensored
+
+
+  This Custom Format covers releases that are uncensored.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Uncensored
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(uncut|unrated|uncensored|at[-_. ]?x)\b
+  pattern: Uncensored
+tests: []

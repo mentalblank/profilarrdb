@@ -1,0 +1,6 @@
+name: ZQ
+pattern: ^(ZQ)$
+description: Regex for ZQ
+tags:
+- Trash Guides
+tests: []

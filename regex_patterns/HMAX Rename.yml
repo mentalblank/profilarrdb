@@ -1,0 +1,6 @@
+name: HMAX Rename
+pattern: \[(HMAX)\b|\b(HMAX)\]
+description: Regex for HMAX Rename
+tags:
+- Trash Guides
+tests: []

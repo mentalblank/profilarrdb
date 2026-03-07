@@ -1,0 +1,53 @@
+trash_id: de41e72708d2c856fa261094c85e965d
+name: Anime Web Tier 03 (Official Subs)
+includeCustomFormatWhenRenaming: false
+description: 'Anime Web Tier 03
+
+
+  Official sub groups that tend to be more consistent and release fast.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: AnoZu
+  negate: false
+  required: false
+  type: release_title
+  pattern: AnoZu
+- name: Dooky
+  negate: false
+  required: false
+  type: release_title
+  pattern: Dooky (Title)
+- name: Kitsune
+  negate: false
+  required: false
+  type: release_title
+  pattern: Kitsune (Title)
+- name: SubsPlus+
+  negate: false
+  required: false
+  type: release_title
+  pattern: SubsPlus+
+- name: ZR
+  negate: false
+  required: false
+  type: release_title
+  pattern: ZR
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

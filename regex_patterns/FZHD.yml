@@ -1,0 +1,6 @@
+name: FZHD
+pattern: ^(FZHD)$
+description: Regex for FZHD
+tags:
+- Trash Guides
+tests: []

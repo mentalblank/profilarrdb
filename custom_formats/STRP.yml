@@ -1,0 +1,32 @@
+trash_id: ab56ccdc473a1f2897c76187ea365be2
+name: STRP
+includeCustomFormatWhenRenaming: true
+description: "Star+\n\nFrom Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Star%2B)\n\
+  \nStar+ (Star Plus; stylized as ST\u2605R+) is a subscription video on-demand over-the-top\
+  \ streaming service available in almost all Ibero-American states. The service is\
+  \ owned by The Walt Disney Company through the Disney Entertainment division and\
+  \ business segment.\n\nIn December 2023, it was confirmed that Star+ will be merged\
+  \ into Disney+ in the second quarter of 2024 with all of its content, including\
+  \ live sports from ESPN, migrating to Disney+ and its standalone app being discontinued."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Star+
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(strp)\b
+  pattern: Star+
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

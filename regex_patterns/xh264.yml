@@ -1,0 +1,6 @@
+name: xh264
+pattern: '[xh][ ._-]?264|\bAVC(\b|\d)'
+description: Regex for x|h264
+tags:
+- Trash Guides
+tests: []

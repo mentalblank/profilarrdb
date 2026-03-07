@@ -1,0 +1,6 @@
+name: Vodes
+pattern: \[Vodes\]|(?<!Not)-Vodes\b
+description: Regex for Vodes
+tags:
+- Trash Guides
+tests: []

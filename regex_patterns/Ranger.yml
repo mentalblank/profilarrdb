@@ -1,0 +1,6 @@
+name: Ranger
+pattern: \[Ranger\]|-Ranger\b
+description: Regex for Ranger
+tags:
+- Trash Guides
+tests: []

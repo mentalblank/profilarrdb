@@ -1,0 +1,6 @@
+name: CBB
+pattern: \b(CBB)\b
+description: Regex for CBB
+tags:
+- Trash Guides
+tests: []

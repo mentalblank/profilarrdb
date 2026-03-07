@@ -1,0 +1,31 @@
+trash_id: 570bc9ebecd92723d2d21500f4be314c
+name: Remaster
+includeCustomFormatWhenRenaming: false
+description: 'Remaster
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Remaster)
+
+
+  For the software term, see Software remastering.
+
+  Remaster (also digital remastering and digitally remastered) refers to changing
+  the quality of the sound or of the image, or both, of previously created recordings,
+  either audiophonic, cinematic, or videographic.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Remaster
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: remaster
+  pattern: Remaster
+- name: Not 4K Remaster
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: 4k
+  pattern: Not 4K Remaster
+tests: []

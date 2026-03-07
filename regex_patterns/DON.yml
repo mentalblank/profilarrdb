@@ -1,0 +1,6 @@
+name: DON
+pattern: ^(DON)$
+description: Regex for DON
+tags:
+- Trash Guides
+tests: []

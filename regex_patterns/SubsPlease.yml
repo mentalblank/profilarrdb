@@ -1,0 +1,6 @@
+name: SubsPlease
+pattern: \b(SubsPlease)\b
+description: Regex for SubsPlease
+tags:
+- Trash Guides
+tests: []

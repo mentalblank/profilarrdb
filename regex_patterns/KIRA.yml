@@ -1,0 +1,6 @@
+name: KIRA
+pattern: ^(KIRA)$
+description: Regex for KIRA
+tags:
+- Trash Guides
+tests: []

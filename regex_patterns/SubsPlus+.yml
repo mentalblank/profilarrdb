@@ -1,0 +1,6 @@
+name: SubsPlus+
+pattern: \b(SubsPlus\+?)\b
+description: Regex for SubsPlus+
+tags:
+- Trash Guides
+tests: []

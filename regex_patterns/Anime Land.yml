@@ -1,0 +1,6 @@
+name: Anime Land
+pattern: \b(Anime[ .-]?Land)\b
+description: Regex for Anime Land
+tags:
+- Trash Guides
+tests: []

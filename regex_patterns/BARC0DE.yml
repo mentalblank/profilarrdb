@@ -1,0 +1,6 @@
+name: BARC0DE
+pattern: ^(BARC0DE)$
+description: Regex for BARC0DE
+tags:
+- Trash Guides
+tests: []

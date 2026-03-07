@@ -1,0 +1,6 @@
+name: youshikibi
+pattern: \b(youshikibi)\b
+description: Regex for youshikibi
+tags:
+- Trash Guides
+tests: []

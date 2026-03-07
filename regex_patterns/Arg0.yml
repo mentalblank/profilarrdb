@@ -1,0 +1,6 @@
+name: Arg0
+pattern: \b(Arg0)\b
+description: Regex for Arg0
+tags:
+- Trash Guides
+tests: []

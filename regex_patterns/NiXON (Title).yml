@@ -1,0 +1,6 @@
+name: NiXON (Title)
+pattern: ^(NiXON)$
+description: Regex for NiXON (Title)
+tags:
+- Trash Guides
+tests: []

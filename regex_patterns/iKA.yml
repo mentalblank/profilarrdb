@@ -1,0 +1,6 @@
+name: iKA
+pattern: ^(iKA)$
+description: Regex for iKA
+tags:
+- Trash Guides
+tests: []

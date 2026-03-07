@@ -1,0 +1,6 @@
+name: LolHD
+pattern: ^(LolHD)$
+description: Regex for LolHD
+tags:
+- Trash Guides
+tests: []

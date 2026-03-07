@@ -1,0 +1,6 @@
+name: AUBC
+pattern: \b(AUBC)\b
+description: Regex for AUBC
+tags:
+- Trash Guides
+tests: []

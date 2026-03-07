@@ -1,0 +1,6 @@
+name: RU4HD
+pattern: ^(RU4HD)$
+description: Regex for RU4HD
+tags:
+- Trash Guides
+tests: []

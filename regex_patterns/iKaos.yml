@@ -1,0 +1,6 @@
+name: iKaos
+pattern: \b(iKaos)\b
+description: Regex for iKaos
+tags:
+- Trash Guides
+tests: []

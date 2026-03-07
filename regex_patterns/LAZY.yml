@@ -1,0 +1,6 @@
+name: LAZY
+pattern: ^(LAZY)$
+description: Regex for LAZY
+tags:
+- Trash Guides
+tests: []

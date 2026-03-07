@@ -1,0 +1,54 @@
+trash_id: b23eae459cc960816f2d6ba84af45055
+name: Dubs Only
+includeCustomFormatWhenRenaming: false
+description: 'Dubs Only
+
+
+  This Custom Format covers releases that only have Dubs.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Dubbed
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: ^(?!.*(dual|multi)[-_. ]?audio).*((?<!multi-)\b(dub(bed)?)\b|(funi|eng(lish)?)_?dub)
+  pattern: Dubbed
+- name: Golumpa
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(golumpa)\b
+  pattern: Golumpa
+- name: KaiDubs (Not Dual Audio)
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: ^(?!.*(dual[ ._-]?audio|[([]dual[])]|(ja|zh|ko)\+en|en\+(ja|zh|ko))).*\b(kaidubs)\b
+  pattern: KaiDubs (Not Dual Audio)
+- name: KamiFS
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(kamifs)\b
+  pattern: KamiFS
+- name: KS (Not Dual Audio)
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: ^(?!.*(dual[ ._-]?audio|[([]dual[])]|(ja|zh|ko)\+en|en\+(ja|zh|ko))).*\bks\b
+  pattern: KS (Not Dual Audio)
+- name: torenter69
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(torenter69)\b
+  pattern: torenter69
+- name: Yameii
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[yameii\]|-yameii\b
+  pattern: Yameii
+tests: []

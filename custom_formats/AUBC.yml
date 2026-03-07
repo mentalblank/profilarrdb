@@ -1,0 +1,32 @@
+trash_id: 3bf143ecd06f66ed88da4c704350af1d
+name: AUBC
+includeCustomFormatWhenRenaming: true
+description: 'AUBC
+
+
+  From Wikipedia, the free encyclopedia ()
+
+
+  The Australian Broadcasting Corporation (ABC) is the national broadcaster of Australia'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: AUBC
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(aubc)\b
+  pattern: AUBC
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

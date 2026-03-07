@@ -1,0 +1,6 @@
+name: jeddak (Group)
+pattern: \b(jeddak)\b
+description: Regex for jeddak (Group)
+tags:
+- Trash Guides
+tests: []

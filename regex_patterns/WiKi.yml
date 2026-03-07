@@ -1,0 +1,6 @@
+name: WiKi
+pattern: ^(WiKi)$
+description: Regex for WiKi
+tags:
+- Trash Guides
+tests: []

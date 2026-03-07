@@ -1,0 +1,72 @@
+trash_id: dcf3ec6938fa32445f590a4da84256cd
+name: DTS-HD MA
+includeCustomFormatWhenRenaming: false
+description: "DTS-HD MA (DTS-HD Master Audio \u2013 lossless)\n\nFrom Wikipedia, the\
+  \ free encyclopedia (https://en.wikipedia.org/wiki/DTS-HD_Master_Audio)\n\nDTS-HD\
+  \ Master Audio is a multi-channel lossless audio codec developed by DTS that extends\
+  \ the lossy DTS Coherent Acoustics codec (DTS CA; usually referred to as simply\
+  \ \"DTS\"). Rather than being an entirely new coding mechanism, DTS-HD MA encodes\
+  \ an audio master in lossy DTS first, then stores a concurrent stream of supplementary\
+  \ data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy\
+  \ \"core\" able to be played back by devices that cannot decode the more complex\
+  \ lossless audio. DTS-HD MA's primary application is audio storage and playback\
+  \ for Blu-ray Disc media."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: DTS-HD MA
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\b|\d)
+  pattern: DTS-HD MA
+- name: Not TrueHD/ATMOS
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: true[ .-]?hd|\batmos(\b|\d)
+  pattern: Not TrueHD_ATMOS (1)
+- name: Not Dolby Digital Plus
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[p+]|\b(e[-_. ]?ac-?3)\b
+  pattern: Not Dolby Digital Plus
+- name: Not Basic Dolby Digital
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bdd[^a-z+]|(?<!e-)\b(ac-?3)\b
+  pattern: Not Basic Dolby Digital
+- name: Not DTS X
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: '\b(dts[-_.: ]?x7?)\b(?![-_. ]?(26[456]))'
+  pattern: Not DTS X
+- name: Not FLAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \bflac(\b|\d)
+  pattern: Not FLAC
+- name: Not AAC
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \baac(\b|\d)
+  pattern: Not AAC
+- name: Not PCM
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \b(l?)pcm(\b|\d)
+  pattern: Not PCM
+- name: Not DTS-HD HRA/ES
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: dts[-. ]?(es|(hd[. ]?)?(hr|hi))
+  pattern: Not DTS-HD HRA_ES
+tests: []

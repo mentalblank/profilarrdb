@@ -1,0 +1,6 @@
+name: deanzel
+pattern: \b(deanzel)\b
+description: Regex for deanzel
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,15 @@
+name: Non-Latin Scripts
+includeCustomFormatWhenRenaming: false
+description: Matches releases containing non-Latin scripts (Chinese, Korean, Arabic,
+  Cyrillic, etc.) in the title.
+tags:
+- Custom
+- Release Title
+- Language
+conditions:
+- name: Non-Latin Scripts
+  negate: false
+  required: true
+  type: release_title
+  pattern: Non-Latin Scripts
+tests: []

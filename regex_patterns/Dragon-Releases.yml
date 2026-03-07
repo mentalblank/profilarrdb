@@ -1,0 +1,6 @@
+name: Dragon-Releases
+pattern: \b(Dragon-Releases)\b
+description: Regex for Dragon-Releases
+tags:
+- Trash Guides
+tests: []

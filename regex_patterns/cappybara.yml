@@ -1,0 +1,6 @@
+name: cappybara
+pattern: \[cappybara\]|-cappybara\b
+description: Regex for cappybara
+tags:
+- Trash Guides
+tests: []

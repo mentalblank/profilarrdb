@@ -1,0 +1,6 @@
+name: ATMOS
+pattern: \b(ATMOS|DDPA)(\b|\d)
+description: Regex for ATMOS
+tags:
+- Trash Guides
+tests: []

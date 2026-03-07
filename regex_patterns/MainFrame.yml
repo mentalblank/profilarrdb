@@ -1,0 +1,6 @@
+name: MainFrame
+pattern: ^(MainFrame)$
+description: Regex for MainFrame
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: RTN
+pattern: ^(RTN)$
+description: Regex for RTN
+tags:
+- Trash Guides
+tests: []

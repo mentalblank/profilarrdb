@@ -1,0 +1,34 @@
+trash_id: 1284d18e693de8efe0fe7d6b3e0b9170
+name: FUNi
+includeCustomFormatWhenRenaming: true
+description: 'Funimation
+
+
+  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Funimation)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: Funimation
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(funi(mation)?)\b
+  pattern: Funimation
+tests: []

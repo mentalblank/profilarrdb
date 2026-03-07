@@ -1,0 +1,6 @@
+name: Not 3.0ch
+pattern: '[^0-9]3[ .]0\b'
+description: Regex for Not 3.0ch
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: TDD
+pattern: ^(TDD)$
+description: Regex for TDD
+tags:
+- Trash Guides
+tests: []

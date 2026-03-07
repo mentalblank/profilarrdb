@@ -1,0 +1,34 @@
+trash_id: 4c67ff059210182b59cdd41697b8cb08
+name: Bilibili
+includeCustomFormatWhenRenaming: true
+description: 'Bilibili
+
+
+  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Bilibili)'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: Bilibili
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(bili(bili)?)\b
+  pattern: Bilibili
+tests: []

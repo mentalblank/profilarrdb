@@ -1,0 +1,6 @@
+name: FLAC
+pattern: \bFLAC(\b|\d)
+description: Regex for FLAC
+tags:
+- Trash Guides
+tests: []

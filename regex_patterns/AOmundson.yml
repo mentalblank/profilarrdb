@@ -1,0 +1,6 @@
+name: AOmundson
+pattern: \b(AOmundson)\b
+description: Regex for AOmundson
+tags:
+- Trash Guides
+tests: []

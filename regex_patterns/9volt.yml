@@ -1,0 +1,6 @@
+name: 9volt
+pattern: \b(9volt)\b
+description: Regex for 9volt
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,42 @@
+trash_id: 350e9170619683a55cb9191d0b1ababa
+name: PLAY
+includeCustomFormatWhenRenaming: true
+description: 'PLAY
+
+
+  From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Google_TV_(service))
+
+
+  Google TV, formerly known as Google Play Movies & TV, is a digital distribution
+  service for movies and television series developed by Google. Launched in 2011 as
+  part of the Google Play product line, the service offers search and discovery of
+  video titles across multiple streaming services, including rental or purchase options,
+  alongside watchlist features for accessing titles from eligible devices and platforms.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: PLAY
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \b(play)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+  pattern: PLAY
+- name: PLAY Rename
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: \[(play)\b|\b(play)\]
+  pattern: PLAY Rename
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

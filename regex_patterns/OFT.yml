@@ -1,0 +1,6 @@
+name: OFT
+pattern: ^(OFT)$
+description: Regex for OFT
+tags:
+- Trash Guides
+tests: []

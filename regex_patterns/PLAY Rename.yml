@@ -1,0 +1,6 @@
+name: PLAY Rename
+pattern: \[(Play)\b|\b(Play)\]
+description: Regex for PLAY Rename
+tags:
+- Trash Guides
+tests: []

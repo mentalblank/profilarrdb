@@ -1,0 +1,6 @@
+name: Not Extended Clip
+pattern: \b(Extended[ ._-]Clip)\b
+description: Regex for Not Extended Clip
+tags:
+- Trash Guides
+tests: []

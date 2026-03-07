@@ -1,0 +1,6 @@
+name: JacobSwaggedUp
+pattern: \b(JacobSwaggedUp)\b
+description: Regex for JacobSwaggedUp
+tags:
+- Trash Guides
+tests: []

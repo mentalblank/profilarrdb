@@ -1,0 +1,6 @@
+name: mottoj
+pattern: \b(mottoj)\b
+description: Regex for mottoj
+tags:
+- Trash Guides
+tests: []

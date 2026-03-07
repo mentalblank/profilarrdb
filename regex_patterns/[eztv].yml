@@ -1,0 +1,6 @@
+name: '[eztv]'
+pattern: \[eztvx?[ ._-]?(io|re|to)?\]
+description: Regex for [eztv]
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,81 @@
+trash_id: c2216b7b8aa545dc1ce8388c618f8d57
+name: (S) HD Bluray Tier 02
+includeCustomFormatWhenRenaming: false
+description: 'HD Bluray Tier 02
+
+
+  Groups that:
+
+
+  - Have proven themselves by consistently delivering good quality releases
+
+  - Use high-quality sources
+
+  - Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).'
+tags:
+- Release Group
+- Resolution
+- Source
+- Trash Guides
+conditions:
+- name: ATELiER
+  negate: false
+  required: false
+  type: release_group
+  pattern: ATELiER
+- name: EA
+  negate: false
+  required: false
+  type: release_group
+  pattern: EA
+- name: HiDt
+  negate: false
+  required: false
+  type: release_group
+  pattern: HiDt
+- name: HiSD
+  negate: false
+  required: false
+  type: release_group
+  pattern: HiSD
+- name: iFT
+  negate: false
+  required: false
+  type: release_group
+  pattern: iFT
+- name: NTb
+  negate: false
+  required: false
+  type: release_group
+  pattern: NTb
+- name: QOQ
+  negate: false
+  required: false
+  type: release_group
+  pattern: QOQ
+- name: SA89
+  negate: false
+  required: false
+  type: release_group
+  pattern: SA89
+- name: sbR
+  negate: false
+  required: false
+  type: release_group
+  pattern: sbR
+- name: Not 2160p
+  negate: true
+  required: true
+  type: resolution
+  resolution: 2160p
+- name: BLURAY
+  negate: false
+  required: true
+  type: source
+  source: bluray
+- name: Not REMUX
+  negate: true
+  required: true
+  type: source
+  source: bluray_raw
+tests: []

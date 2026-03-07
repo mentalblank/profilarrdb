@@ -1,0 +1,6 @@
+name: Afro
+pattern: \[Afro\]|-Afro\b
+description: Regex for Afro
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: MALD
+pattern: \b(MALD)\b
+description: Regex for MALD
+tags:
+- Trash Guides
+tests: []
