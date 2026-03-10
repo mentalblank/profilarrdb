@@ -1,0 +1,5 @@
+pyyaml
+
+[dev]
+pytest>=7.0
+pylint>=3.0
