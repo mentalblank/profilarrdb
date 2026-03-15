@@ -313,22 +313,6 @@ qualities:
   id: 13
 - name: HDTV-720p
   id: 16
-- name: Bluray-576p
-  id: 17
-- name: WEB 480p
-  id: -3
-  description: ''
-  qualities:
-  - id: 20
-    name: WEBRip-480p
-  - id: 19
-    name: WEBDL-480p
-- name: Bluray-480p
-  id: 18
-- name: DVD
-  id: 22
-- name: SDTV
-  id: 24
 language: must_original
 upgrade_until:
   id: -1
