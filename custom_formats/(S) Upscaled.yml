@@ -19,6 +19,11 @@ conditions:
   required: false
   type: release_title
   pattern: AIUS
+- name: GuyZo
+  negate: false
+  required: false
+  type: release_title
+  pattern: GuyZo (Title)
 - name: Regrade
   negate: false
   required: false

@@ -30,6 +30,12 @@ conditions:
   type: release_group
   _raw_pattern: ^(flights)$
   pattern: Flights
+- name: GuyZo
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(guyzo|br-guyzo)$
+  pattern: GuyZo (Group)
 - name: SasukeducK
   negate: false
   required: false
