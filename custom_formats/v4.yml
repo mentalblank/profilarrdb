@@ -13,6 +13,6 @@ conditions:
   negate: false
   required: true
   type: release_title
-  _raw_pattern: (\b|\d)(v4)\b
+  _raw_pattern: (\b|\d)(v4)\b|\b((repack|proper)3)\b|\b(real\.real\.(proper|repack))\b
   pattern: v4
 tests: []

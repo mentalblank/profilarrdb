@@ -13,6 +13,12 @@ conditions:
   negate: false
   required: true
   type: release_title
-  _raw_pattern: (\b|\d)(v3)\b
+  _raw_pattern: (\b|\d)(v3)\b|\b((repack|proper)2)\b|\b(real\.(proper|repack))\b
   pattern: v3
+- name: Not Higher Versions
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: (\b|\d)(v[4])\b|\b((repack|proper)3)\b|\breal\.(real\.)(proper|repack)\b
+  pattern: Not Higher Versions (1)
 tests: []
