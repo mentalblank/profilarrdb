@@ -224,6 +224,8 @@ custom_formats_sonarr:
   score: 2
 - name: v2
   score: 2
+- name: (S) P2P Internal
+  score: 1
 - name: ABEMA
   score: 1
 - name: FreeLeech

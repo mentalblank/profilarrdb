@@ -1,0 +1,22 @@
+trash_id: 80f51de4636a294e31552e90d2e1decb
+name: (R) P2P Internal
+includeCustomFormatWhenRenaming: false
+description: 'P2P Internal
+
+
+  This Custom Format matches on the Internal Indexer flag that some trackers use to
+  promote their own internal releases. You can use this Custom Format to favor their
+  internal releases, or, when the same release exists on multiple trackers, it will
+  prefer the release from the home tracker.
+
+  For this to work, the tracker must support the Internal Indexer flag!'
+tags:
+- Indexer Flag
+- Trash Guides
+conditions:
+- name: Internal
+  negate: false
+  required: false
+  type: indexer_flag
+  flag: '32'
+tests: []

@@ -172,6 +172,8 @@ custom_formats_radarr:
   score: 3
 - name: v2
   score: 2
+- name: (R) P2P Internal
+  score: 1
 - name: FreeLeech
   score: 1
 - name: v1
