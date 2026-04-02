@@ -58,6 +58,11 @@ conditions:
   required: false
   type: release_title
   pattern: GalaxyRG (Title)
+- name: HHWEB (No MA)
+  negate: false
+  required: false
+  type: release_title
+  pattern: HHWEB (No MA)
 - name: Japhson
   negate: false
   required: false
