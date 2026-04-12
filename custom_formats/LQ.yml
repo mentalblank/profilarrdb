@@ -478,6 +478,11 @@ conditions:
   required: false
   type: release_group
   pattern: PTNK
+- name: R&H
+  negate: false
+  required: false
+  type: release_group
+  pattern: R&H
 - name: RARBG
   negate: false
   required: false

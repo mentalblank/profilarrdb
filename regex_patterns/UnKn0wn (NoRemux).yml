@@ -1,0 +1,6 @@
+name: UnKn0wn (NoRemux)
+pattern: (?<!\b(remux).*?)\b(unkn0wn)\b
+description: Regex for UnKn0wn (NoRemux)
+tags:
+- Trash Guides
+tests: []

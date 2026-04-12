@@ -1,0 +1,6 @@
+name: R&H
+pattern: ^(R&H)$
+description: Regex for R&H
+tags:
+- Trash Guides
+tests: []
