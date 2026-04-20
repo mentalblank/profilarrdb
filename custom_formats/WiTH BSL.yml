@@ -1,0 +1,27 @@
+trash_id: e205c5ba6be76b472903f4aec97fdb4b
+name: WiTH BSL
+includeCustomFormatWhenRenaming: true
+description: 'BSL (British Sign Language)
+
+
+  - Region: Used in the United Kingdom (England, Scotland, Wales, and Northern Ireland).
+
+  - Alphabet: Primarily a two-handed system.
+
+  - Origins: Developed independently in the UK; part of the BANZSL language family
+  (with Australian and New Zealand sign languages).
+
+  - Grammar: Often follows a topic-comment structure.
+
+  - Features: Heavily relies on body movement and hand shapes for nuance.'
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: British Sign Language
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b((with)[ ._-](bsl))\b
+  pattern: British Sign Language
+tests: []

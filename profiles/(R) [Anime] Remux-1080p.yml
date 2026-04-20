@@ -238,6 +238,12 @@ custom_formats_radarr:
   score: -10000
 - name: Sing-Along Versions
   score: -10000
+- name: WiTH ASL
+  score: -10000
+- name: WiTH BASL
+  score: -10000
+- name: WiTH BSL
+  score: -10000
 - name: Wrong Language
   score: -10000
 - name: x265 (HD)

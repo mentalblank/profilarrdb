@@ -1,0 +1,6 @@
+name: Black American Sign Language
+pattern: \b(BASL)\b
+description: Regex for Black American Sign Language
+tags:
+- Trash Guides
+tests: []

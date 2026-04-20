@@ -1,0 +1,6 @@
+name: American Sign Language
+pattern: \b((WiTH)[ ._-](ASL))\b
+description: Regex for American Sign Language
+tags:
+- Trash Guides
+tests: []
