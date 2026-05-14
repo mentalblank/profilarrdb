@@ -1,7 +1,11 @@
 trash_id: 6f808933a71bd9666531610cb8c059cc
 name: BR-DISK (BTN)
 includeCustomFormatWhenRenaming: false
-description: ''
+description: 'BR-DISK (BTN)
+
+
+  This Custom Format works the same as the BR-DISK Custom Format, but is specific
+  to a tracker called BTN.'
 tags:
 - Release Title
 - Trash Guides
