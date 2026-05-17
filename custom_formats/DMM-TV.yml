@@ -1,0 +1,34 @@
+trash_id: 940e98773ac068f2088688f95a88ea66
+name: DMM-TV
+includeCustomFormatWhenRenaming: true
+description: 'DMM TV
+
+
+  DMM TV is a Japanese streaming service by DMM.com, offering anime, movies, dramas,
+  and variety shows. It is especially popular for its large anime library. Content
+  is primarily aimed at viewers in Japan.
+
+
+  For more information, visit the DMM TV Wikipedia page (https://en.wikipedia.org/wiki/DMM.com).'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: DMM-TV
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(dmm-tv)\b
+  pattern: DMM-TV
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

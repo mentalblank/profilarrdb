@@ -1,0 +1,55 @@
+trash_id: 55dba64d34ccc522c69f5d143bd7d42c
+name: Asian LQ
+includeCustomFormatWhenRenaming: false
+description: 'Asian LQ
+
+
+  A collection of Asian release groups that either do not provide subtitles or are
+  groups that cause issues during importing.'
+tags:
+- Release Group
+- Trash Guides
+conditions:
+- name: AppleTor
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(appletor)$
+  pattern: AppleTor
+- name: Luvmichelle
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(luvmichelle)$
+  pattern: Luvmichelle
+- name: MagicStar
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(magicstar)$
+  pattern: MagicStar
+- name: NEXT
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(next)$
+  pattern: NEXT
+- name: Taengoo
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(taengoo)$
+  pattern: Taengoo
+- name: unco
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(unco)$
+  pattern: unco
+- name: unco@AvistaZ
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(unco@avistaz)$
+  pattern: unco@AvistaZ
+tests: []

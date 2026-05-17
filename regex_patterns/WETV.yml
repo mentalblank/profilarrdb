@@ -1,0 +1,6 @@
+name: WETV
+pattern: \b(WETV)\b
+description: Regex for WETV
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,31 @@
+trash_id: cb114293d1ab229ca9d52b9f92f93e9b
+name: WAVVE
+includeCustomFormatWhenRenaming: true
+description: "Wavve\n\nWavve is a South Korean subscription streaming service operated\
+  \ by SK Telecom, offering TV dramas, variety shows, films, documentaries, animations,\
+  \ and sports. It was launched in September 2019 as a joint venture between SK Telecom\
+  \ and South Korea's three major broadcasters \u2014 KBS, MBC, and SBS. Wavve has\
+  \ received approval to merge with fellow Korean streaming service TVING.\n\nFor\
+  \ more information, visit the Wavve Wikipedia page (https://en.wikipedia.org/wiki/Wavve)."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: WAVVE
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(wavve)\b
+  pattern: WAVVE
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

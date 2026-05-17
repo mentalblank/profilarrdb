@@ -1,0 +1,6 @@
+name: ADWeb
+pattern: ^(ADWeb)$
+description: Regex for ADWeb
+tags:
+- Trash Guides
+tests: []

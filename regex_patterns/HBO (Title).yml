@@ -1,6 +1,6 @@
-name: HBO
+name: HBO (Title)
 pattern: \b(hbo)(?![ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
-description: Regex for HBO
+description: Regex for HBO (Title)
 tags:
 - Trash Guides
 tests: []

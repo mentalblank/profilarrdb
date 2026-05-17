@@ -1,0 +1,6 @@
+name: KCW
+pattern: \b(KCW|KOCOWA)\b
+description: Regex for KCW
+tags:
+- Trash Guides
+tests: []

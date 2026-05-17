@@ -1,0 +1,6 @@
+name: Taengoo
+pattern: ^(Taengoo)$
+description: Regex for Taengoo
+tags:
+- Trash Guides
+tests: []

@@ -1,0 +1,6 @@
+name: CHDWEB
+pattern: ^(CHDWEB)$
+description: Regex for CHDWEB
+tags:
+- Trash Guides
+tests: []

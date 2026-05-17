@@ -1,0 +1,30 @@
+trash_id: 017fadff92b872622448dae34a4de0c0
+name: CPNG
+includeCustomFormatWhenRenaming: true
+description: "Coupang Play\n\nCoupang Play is a South Korean streaming service launched\
+  \ by Coupang in December 2020. It offers movies, dramas, variety shows, and live\
+  \ sports \u2014 including the Premier League, NBA, and more. It is included with\
+  \ Coupang's Rocket Wow membership.\n\nFor more information, visit the Coupang Play\
+  \ Wikipedia page (https://en.wikipedia.org/wiki/Coupang_Play)."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: CPNG
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(cpng)\b
+  pattern: CPNG
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

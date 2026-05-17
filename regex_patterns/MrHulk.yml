@@ -1,0 +1,6 @@
+name: MrHulk
+pattern: ^(MrHulk)$
+description: Regex for MrHulk
+tags:
+- Trash Guides
+tests: []

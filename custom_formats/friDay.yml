@@ -1,0 +1,32 @@
+trash_id: d9e2c70e855131799525cab2a80d4414
+name: friDay
+includeCustomFormatWhenRenaming: true
+description: 'friDay Video
+
+
+  friDay Video is a Taiwanese streaming service owned by Far EasTone, one of Taiwan''s
+  major telecom providers. It is Taiwan''s number one domestic streaming platform,
+  offering movies, dramas, variety shows, live news, and anime. It is especially popular
+  for Korean, Japanese, and local Taiwanese content.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: friDay
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(friday)\b
+  pattern: friDay
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

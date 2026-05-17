@@ -1,0 +1,40 @@
+trash_id: 67084559197ea10b6022e2650c594866
+name: Dual Audio Asian
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Language
+- Release Title
+- Trash Guides
+conditions:
+- name: Dual Audio
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: dual[ ._-]?audio|[([]dual[])]|(ja|zh|ko)\+en|en\+(ja|zh|ko)
+  pattern: Dual Audio (1)
+- name: Not Single Language Only
+  negate: true
+  required: true
+  type: release_title
+  _raw_pattern: \[(ja|zh|ko)\]
+  pattern: Not Single Language Only
+- name: Japanese Language
+  negate: false
+  required: false
+  type: language
+  language: japanese
+  exceptLanguage: false
+- name: Chinese Language
+  negate: false
+  required: false
+  type: language
+  language: chinese
+  exceptLanguage: false
+- name: Korean Language
+  negate: false
+  required: false
+  type: language
+  language: korean
+  exceptLanguage: false
+tests: []

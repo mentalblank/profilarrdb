@@ -1,0 +1,6 @@
+name: Phanteam
+pattern: ^(Phanteam)$
+description: Regex for Phanteam
+tags:
+- Trash Guides
+tests: []

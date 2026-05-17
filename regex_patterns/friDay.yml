@@ -1,0 +1,6 @@
+name: friDay
+pattern: \b(friDay)\b
+description: Regex for friDay
+tags:
+- Trash Guides
+tests: []

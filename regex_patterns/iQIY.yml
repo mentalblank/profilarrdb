@@ -1,0 +1,6 @@
+name: iQIY
+pattern: \b(IQIY|IQ|iQIYI)\b
+description: Regex for iQIY
+tags:
+- Trash Guides
+tests: []

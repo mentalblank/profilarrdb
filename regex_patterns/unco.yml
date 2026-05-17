@@ -1,0 +1,6 @@
+name: unco
+pattern: ^(unco)$
+description: Regex for unco
+tags:
+- Trash Guides
+tests: []

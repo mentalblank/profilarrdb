@@ -1,0 +1,6 @@
+name: LoveBug
+pattern: ^(LoveBug)$
+description: Regex for LoveBug
+tags:
+- Trash Guides
+tests: []

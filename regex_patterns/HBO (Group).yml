@@ -1,0 +1,6 @@
+name: HBO (Group)
+pattern: ^(HBO)$
+description: Regex for HBO (Group)
+tags:
+- Trash Guides
+tests: []

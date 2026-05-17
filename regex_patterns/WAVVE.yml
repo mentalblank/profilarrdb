@@ -1,0 +1,6 @@
+name: WAVVE
+pattern: \b(WAVVE)\b
+description: Regex for WAVVE
+tags:
+- Trash Guides
+tests: []

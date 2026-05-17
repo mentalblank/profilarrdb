@@ -1,0 +1,6 @@
+name: SHiNE
+pattern: ^(SHiNE)$
+description: Regex for SHiNE
+tags:
+- Trash Guides
+tests: []

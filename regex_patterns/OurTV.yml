@@ -1,0 +1,6 @@
+name: OurTV
+pattern: ^(OurTV)$
+description: Regex for OurTV
+tags:
+- Trash Guides
+tests: []

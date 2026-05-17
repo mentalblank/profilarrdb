@@ -1,0 +1,6 @@
+name: YOUKU
+pattern: \b(YOUKU)\b
+description: Regex for YOUKU
+tags:
+- Trash Guides
+tests: []

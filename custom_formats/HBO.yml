@@ -24,7 +24,7 @@ conditions:
   required: false
   type: release_title
   _raw_pattern: \b(hbo)(?![ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
-  pattern: HBO
+  pattern: HBO (Title)
 - name: HBO Rename
   negate: false
   required: false

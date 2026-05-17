@@ -1,0 +1,6 @@
+name: Viki
+pattern: \b(Viki)\b
+description: Regex for Viki
+tags:
+- Trash Guides
+tests: []

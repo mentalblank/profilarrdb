@@ -1,15 +1,32 @@
-trash_id: 1284d18e693de8efe0fe7d6b3e0b9170
+trash_id: 88c93b568b6079fa087077a788b1b7a3
 name: FUNi
 includeCustomFormatWhenRenaming: true
 description: 'Funimation
 
 
-  From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Funimation)'
+  Funimation was an American anime streaming service launched in 2016, known for popular
+  titles such as Dragon Ball, One Piece, Attack on Titan, and My Hero Academia. It
+  was one of the leading distributors of anime in North America and was owned by Sony.
+  On April 2, 2024, Funimation shut down and merged into Crunchyroll, where most of
+  its content library is now available.
+
+
+  For more information, visit the Funimation Wikipedia page (https://en.wikipedia.org/wiki/Funimation).'
 tags:
 - Release Title
 - Source
 - Trash Guides
 conditions:
+- name: Funimation
+  negate: false
+  required: true
+  type: release_title
+  pattern: Funimation
+- name: WEB
+  negate: false
+  required: false
+  type: source
+  source: web_dl
 - name: WEBDL
   negate: false
   required: false
@@ -20,15 +37,4 @@ conditions:
   required: false
   type: source
   source: webrip
-- name: WEB
-  negate: false
-  required: false
-  type: source
-  source: web_dl
-- name: Funimation
-  negate: false
-  required: true
-  type: release_title
-  _raw_pattern: \b(funi(mation)?)\b
-  pattern: Funimation
 tests: []

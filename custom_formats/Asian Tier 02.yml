@@ -1,0 +1,26 @@
+trash_id: 3873e64f7ff1df7805598c15821e011b
+name: Asian Tier 02
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Group
+- Source
+- Trash Guides
+conditions:
+- name: PandaMoon
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(pandamoon)$
+  pattern: PandaMoon
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

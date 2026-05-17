@@ -1,0 +1,6 @@
+name: Archie
+pattern: ^(Archie)$
+description: Regex for Archie
+tags:
+- Trash Guides
+tests: []

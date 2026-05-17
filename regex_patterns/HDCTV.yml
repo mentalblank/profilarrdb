@@ -1,0 +1,6 @@
+name: HDCTV
+pattern: ^(HDCTV)$
+description: Regex for HDCTV
+tags:
+- Trash Guides
+tests: []

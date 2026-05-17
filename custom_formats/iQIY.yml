@@ -1,0 +1,35 @@
+trash_id: 203a756cc50e67ee050f646eb15a1da0
+name: iQIY
+includeCustomFormatWhenRenaming: true
+description: 'iQIYI
+
+
+  iQIYI is a Chinese streaming service offering a wide range of Asian content, including
+  Chinese dramas, anime, variety shows, and original movies. Initially available only
+  in China, it has since expanded to international viewers. It is owned by Baidu and
+  is one of the largest online video platforms in the world.
+
+
+  For more information, visit the iQIYI Wikipedia page (https://en.wikipedia.org/wiki/IQIYI).'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: iQIY
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(iqiy|iq|iqiyi)\b
+  pattern: iQIY
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

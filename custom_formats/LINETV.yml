@@ -1,0 +1,37 @@
+trash_id: 89e533a9c418b22dc993d9695f0e38bd
+name: LINETV
+includeCustomFormatWhenRenaming: true
+description: 'LINE TV
+
+
+  LINE TV is a free, ad-supported streaming service owned by Japan-based LINE Corporation,
+  operating mainly in Taiwan. It offers dramas, variety shows, movies, anime, and
+  original content. It is especially popular for Taiwanese, Korean, and Chinese content.
+  In November 2025, LINE TV announced a full merger with KKTV, combining both platforms''
+  content libraries to offer a wider range of Asian dramas and new features such as
+  offline viewing and dual subtitles.
+
+
+  For more information, visit the LINE TV Wikipedia page (https://en.wikipedia.org/wiki/Line_TV).'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: LINETV
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(linetv)\b
+  pattern: LINETV
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

@@ -1,0 +1,6 @@
+name: JKCT
+pattern: ^(JKCT)$
+description: Regex for JKCT
+tags:
+- Trash Guides
+tests: []

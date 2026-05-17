@@ -1,0 +1,31 @@
+trash_id: 7102f809eb01bd66352573805a74731a
+name: Hami
+includeCustomFormatWhenRenaming: true
+description: 'Hami Video
+
+
+  Hami Video is a Taiwanese streaming service owned by Chunghwa Telecom, Taiwan''s
+  largest telecom provider. It offers live TV channels, dramas, anime, and major sporting
+  events, including the Olympics.'
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: Hami
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(hami|hamivideo)\b
+  pattern: Hami
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

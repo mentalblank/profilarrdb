@@ -1,0 +1,56 @@
+trash_id: a5c447e62bf5172c6b199ae7fce2e133
+name: Asian Tier 03
+includeCustomFormatWhenRenaming: false
+description: ''
+tags:
+- Release Group
+- Source
+- Trash Guides
+conditions:
+- name: ADWeb
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(adweb)$
+  pattern: ADWeb
+- name: CHDWEB
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(chdweb)$
+  pattern: CHDWEB
+- name: HDCTV
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hdctv)$
+  pattern: HDCTV
+- name: HHWEB
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(hhweb)$
+  pattern: HHWEB
+- name: OurTV
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(ourtv)$
+  pattern: OurTV
+- name: SHiNE
+  negate: false
+  required: false
+  type: release_group
+  _raw_pattern: ^(shine)$
+  pattern: SHiNE
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

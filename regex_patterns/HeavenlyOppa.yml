@@ -1,0 +1,6 @@
+name: HeavenlyOppa
+pattern: ^(HeavenlyOppa)$
+description: Regex for HeavenlyOppa
+tags:
+- Trash Guides
+tests: []

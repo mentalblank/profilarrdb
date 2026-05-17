@@ -52,8 +52,12 @@ custom_formats_radarr:
   score: 1700
 - name: WEB Tier 01
   score: 1700
+- name: Asian Tier 01
+  score: 1650
 - name: WEB Tier 02
   score: 1650
+- name: Asian Tier 02
+  score: 1600
 - name: WEB Tier 03
   score: 1600
 - name: DTS-ES
@@ -124,6 +128,8 @@ custom_formats_radarr:
   score: 100
 - name: Anime Web Tier 06 (FanSubs)
   score: 100
+- name: Asian Tier 03
+  score: 100
 - name: HDR10+ Boost
   score: 100
 - name: Hybrid
@@ -136,6 +142,22 @@ custom_formats_radarr:
   score: 51
 - name: 1080p
   score: 50
+- name: CPNG
+  score: 50
+- name: Hami
+  score: 50
+- name: iQIY
+  score: 50
+- name: Viki
+  score: 49
+- name: MyTVSuper
+  score: 40
+- name: KCW
+  score: 30
+- name: WETV
+  score: 30
+- name: YOUKU
+  score: 30
 - name: 4K Remaster
   score: 25
 - name: Criterion Collection
@@ -150,11 +172,21 @@ custom_formats_radarr:
   score: 25
 - name: CRiT
   score: 20
+- name: LINETV
+  score: 20
 - name: MA
+  score: 20
+- name: WAVVE
   score: 20
 - name: BCORE
   score: 15
+- name: Dual Audio Asian
+  score: 10
+- name: friDay
+  score: 10
 - name: INTERNAL
+  score: 10
+- name: KKTV
   score: 10
 - name: VRV
   score: 10
@@ -203,6 +235,8 @@ custom_formats_radarr:
 - name: Anime LQ Groups
   score: -10000
 - name: Anime Raws
+  score: -10000
+- name: Asian LQ
   score: -10000
 - name: AV1
   score: -10000

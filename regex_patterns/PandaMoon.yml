@@ -1,0 +1,6 @@
+name: PandaMoon
+pattern: ^(PandaMoon)$
+description: Regex for PandaMoon
+tags:
+- Trash Guides
+tests: []
