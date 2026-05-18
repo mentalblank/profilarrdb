@@ -17,7 +17,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  _raw_pattern: \b(friday)\b
+  _raw_pattern: \b(friday)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
   pattern: friDay
 - name: WEBDL
   negate: false

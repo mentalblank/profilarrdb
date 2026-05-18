@@ -20,7 +20,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  _raw_pattern: \b(iqiy|iq|iqiyi)\b
+  _raw_pattern: \b(iqiy|iq|iqiyi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
   pattern: iQIY
 - name: WEBDL
   negate: false
