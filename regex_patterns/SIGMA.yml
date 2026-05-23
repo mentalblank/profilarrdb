@@ -1,6 +1,6 @@
-name: SIGMA
-pattern: ^(SIGMA)$
-description: Regex for SIGMA
+name: SiGMA
+pattern: ^(SiGMA)$
+description: Regex for SiGMA
 tags:
 - Trash Guides
 tests: []

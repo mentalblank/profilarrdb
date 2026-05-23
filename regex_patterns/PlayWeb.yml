@@ -1,6 +1,6 @@
-name: PlayWeb
-pattern: \b(PlayWeb)\b
-description: Regex for PlayWeb
+name: playWEB
+pattern: ^(playWEB)$
+description: Regex for playWEB
 tags:
 - Trash Guides
 tests: []
