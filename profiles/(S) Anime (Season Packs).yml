@@ -318,6 +318,8 @@ custom_formats_sonarr:
   score: -10000
 - name: FastSUB
   score: -10000
+- name: HLG
+  score: -10000
 - name: LQ
   score: -10000
 - name: LQ (Release Title)
@@ -335,6 +337,8 @@ custom_formats_sonarr:
 - name: SDR (no WEBDL)
   score: -10000
 - name: Single Episode
+  score: -10000
+- name: WiTH AD
   score: -10000
 - name: WiTH ASL
   score: -10000

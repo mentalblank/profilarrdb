@@ -262,6 +262,8 @@ custom_formats_radarr:
   score: -10000
 - name: Generated Dynamic HDR
   score: -10000
+- name: HLG
+  score: -10000
 - name: Line_Mic Dubbed
   score: -10000
 - name: LQ
@@ -279,6 +281,8 @@ custom_formats_radarr:
 - name: SDR (no WEBDL)
   score: -10000
 - name: Sing-Along Versions
+  score: -10000
+- name: WiTH AD
   score: -10000
 - name: WiTH ASL
   score: -10000
