@@ -4,12 +4,12 @@ includeCustomFormatWhenRenaming: false
 description: 'Bad Dual/Multi groups
 
 
-  These release groups do not use the original language of the media as the first
-  audio track. Since ffprobe relies on the first audio track to determine the primary
-  language of the release, incorrect ordering can lead to parsing issues. This may
-  result in failed imports, misidentified files, or even download loops. To ensure
-  proper handling, the original language should always be the first audio track in
-  the release.'
+  These release groups often do not set the original language of the media as the
+  first audio track. Since ffprobe relies on the first audio track to determine the
+  release''s primary language, incorrect ordering can cause parsing errors. This may
+  lead to failed imports, misidentified files, or download loops. To ensure proper
+  processing, the original language should always be the first audio track in the
+  release.'
 tags:
 - Release Group
 - Trash Guides
@@ -49,6 +49,11 @@ conditions:
   required: false
   type: release_group
   pattern: Cory
+- name: CYPHER
+  negate: false
+  required: false
+  type: release_group
+  pattern: CYPHER
 - name: EniaHD
   negate: false
   required: false
@@ -89,6 +94,11 @@ conditions:
   required: false
   type: release_group
   pattern: MGE
+- name: MLH
+  negate: false
+  required: false
+  type: release_group
+  pattern: MLH
 - name: N3G4N
   negate: false
   required: false
@@ -159,6 +169,11 @@ conditions:
   required: false
   type: release_group
   pattern: WTV
+- name: XiQUEXiQUE
+  negate: false
+  required: false
+  type: release_group
+  pattern: XiQUEXiQUE
 - name: Yatogam1
   negate: false
   required: false

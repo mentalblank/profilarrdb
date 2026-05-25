@@ -1,0 +1,6 @@
+name: CYPHER
+pattern: ^(CYPHER)$
+description: Regex for CYPHER
+tags:
+- Trash Guides
+tests: []
