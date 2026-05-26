@@ -99,6 +99,11 @@ conditions:
   required: false
   type: release_group
   pattern: Kitsune (Group)
+- name: MADSKY
+  negate: false
+  required: false
+  type: release_group
+  pattern: MADSKY
 - name: monkee
   negate: false
   required: false

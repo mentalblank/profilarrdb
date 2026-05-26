@@ -1,0 +1,6 @@
+name: MADSKY
+pattern: ^(MADSKY)$
+description: Regex for MADSKY
+tags:
+- Trash Guides
+tests: []
