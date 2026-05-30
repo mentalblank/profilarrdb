@@ -222,6 +222,8 @@ custom_formats_sonarr:
   score: 20
 - name: WAVVE
   score: 20
+- name: CNLP
+  score: 10
 - name: DMM-TV
   score: 10
 - name: Dual Audio Asian

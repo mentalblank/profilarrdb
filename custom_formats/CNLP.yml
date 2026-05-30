@@ -1,0 +1,32 @@
+trash_id: 1f9dfb4b8d9cae1f6dc0099547d53513
+name: CNLP
+includeCustomFormatWhenRenaming: true
+description: "Canal+\n\nCanal+ is a French subscription streaming service and pay\
+  \ TV provider, launched as a satellite service in 1992 and relaunched as a streaming\
+  \ platform in 2013. It is a subsidiary of Canal+ S.A. It offers movies, dramas,\
+  \ original series, and live sports \u2014 including top football leagues. The service\
+  \ is available across Europe, Africa, Oceania, Myanmar, and Vietnam, with over 26.8\
+  \ million subscribers.\n\nFor more information, visit the Canal+ Wikipedia page\
+  \ (https://en.wikipedia.org/wiki/Canal%2B_(streaming_service))."
+tags:
+- Release Title
+- Source
+- Trash Guides
+conditions:
+- name: CNLP
+  negate: false
+  required: true
+  type: release_title
+  _raw_pattern: \b(cnlp)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+  pattern: CNLP
+- name: WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
+tests: []

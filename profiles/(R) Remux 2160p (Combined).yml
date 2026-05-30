@@ -176,6 +176,8 @@ custom_formats_radarr:
   score: 20
 - name: BCORE
   score: 15
+- name: CNLP
+  score: 10
 - name: Dual Audio Asian
   score: 10
 - name: friDay
