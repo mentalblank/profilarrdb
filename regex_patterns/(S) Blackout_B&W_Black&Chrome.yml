@@ -1,0 +1,6 @@
+name: (S) Blackout_B&W_Black&Chrome
+pattern: (?<=\bS\d+(E\d+)?\b).*\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\b(?!$)
+description: Regex for (S) Blackout/B&W/Black&Chrome
+tags:
+- Trash Guides
+tests: []

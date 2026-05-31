@@ -1,0 +1,20 @@
+trash_id: 21d9d08e39b05523ec36811ab06b8308
+name: BW
+includeCustomFormatWhenRenaming: true
+description: "Black & White Versions\n\nSome shows are released in both Color and\
+  \ Black & White versions. Users who prefer the color version should keep the default\
+  \ negative score of -10000. Since Sonarr doesn\u2019t support editions, if you prefer\
+  \ the Black & White version, assign a positive score (1-5 should be enough) to this\
+  \ Custom Format. Sonarr will then prefer the Black & White releases, and the Custom\
+  \ Format will also be used in your naming scheme."
+tags:
+- Release Title
+- Trash Guides
+conditions:
+- name: Blackout/B&W/Black&Chrome
+  negate: false
+  required: false
+  type: release_title
+  _raw_pattern: (?<=\bs\d+(e\d+)?\b).*\b((b(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(w(hite)?|chrome))))\b(?!$)
+  pattern: (S) Blackout_B&W_Black&Chrome
+tests: []

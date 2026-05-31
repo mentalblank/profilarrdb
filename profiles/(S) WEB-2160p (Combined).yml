@@ -288,6 +288,8 @@ custom_formats_sonarr:
   score: -10000
 - name: BR-DISK (BTN)
   score: -10000
+- name: BW
+  score: -10000
 - name: Dubs Only
   score: -10000
 - name: DV (w_o HDR fallback)

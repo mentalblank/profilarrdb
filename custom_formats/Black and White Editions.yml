@@ -15,7 +15,7 @@ conditions:
   required: false
   type: release_title
   _raw_pattern: (?<=\b[12]\d{3}\b).*\b((b(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(w(hite)?|chrome))))\b(?!$)
-  pattern: Blackout_B&W_Black&Chrome
+  pattern: (R) Blackout_B&W_Black&Chrome
 - name: Monochrome
   negate: false
   required: false
