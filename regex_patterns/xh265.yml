@@ -1,6 +1,0 @@
-name: xh265
-pattern: '[xh][ ._-]?265|\bHEVC(\b|\d)'
-description: Regex for x|h265
-tags:
-- Trash Guides
-tests: []

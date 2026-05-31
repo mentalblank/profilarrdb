@@ -1,6 +1,0 @@
-name: Raze
-pattern: \[Raze\]|-Raze\b
-description: Regex for Raze
-tags:
-- Trash Guides
-tests: []

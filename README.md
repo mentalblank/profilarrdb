@@ -1,26 +1,27 @@
 # Profilarr Database (TRaSH Guides Synced)
 
-This database is automatically synchronized with the official [TRaSH Guides](https://trash-guides.info/) to ensure the most up-to-date and accurate media sourcing configurations for Radarr and Sonarr.
+A [Profilarr](https://dictionarry.dev/)-compliant database, automatically generated from the official [TRaSH Guides](https://trash-guides.info/) for Radarr and Sonarr. Link it in Profilarr v2 to import custom formats, regular expressions, quality profiles, and media-management settings.
 
 ## Features
 
-- **Automated Sync**: Updated daily via GitHub Actions to pull the latest JSON definitions from the TRaSH Guides repository.
-- **English-Centric**: Filters out all French and German language custom formats and profiles.
-- **Unified Custom Formats**: Identical Sonarr and Radarr custom formats are merged into single files to reduce redundancy.
-- **Organized Structure**: All custom format conditions are grouped by type and sorted alphabetically (case-insensitive) for better readability.
-- **Standardized Naming**: Automatically syncs naming conventions for Movies, Series, Daily, and Anime releases.
-- **Dynamic Quality Sizes**: Pulls real-time quality size definitions from the guides.
+- **Automated Sync**: Rebuilt daily via GitHub Actions from the latest TRaSH Guides JSON.
+- **English-Centric**: French, German and SQP custom formats / profiles are excluded.
+- **Semantic Tags + Dynamic Quality Sizes**: Heuristic CF tagging and real quality size
+  definitions pulled from the guides.
 
 ## Repository Structure
 
-- `custom_formats/`: Merged YAML definitions for Radarr and Sonarr.
-- `regex_patterns/`: Individual regex definitions extracted from the guides.
-- `profiles/`: Radarr and Sonarr quality profiles.
-- `media_management/`: Naming and quality size configurations.
+- `pcd.json` — PCD manifest (declares the schema dependency + Profilarr min version).
+- `ops/0.base.sql` — the generated database (numbered SQL operations).
+- `scripts/` — the generator:
+  - `generate_v2.py` — entry point (TRaSH Guides → `ops/0.base.sql`).
+  - `generate.py` — builds the in-memory model (custom formats, regex, profiles).
+  - `utils/` — emitter (`ops_writer.py`), tag rules, and the arr/Profilarr mappings.
+- `tools_v2/` — validation tooling (not published as part of the database).
 
 ## Automation
 
-The synchronization is handled by the `convert_trash_to_profilarr.py` script and automated via the GitHub Workflow `.github/workflows/sync.yml`. It performs a full clean of the existing directories before regenerating the YAML files from the source JSON.
+`.github/workflows/sync.yml` runs daily (and on manual dispatch): checks out TRaSH Guides, runs `scripts/generate_v2.py`, and commits `ops/` + `pcd.json`.
 
 ---
 *Note: This database is in active development. Syncing occurs daily at midnight UTC.*

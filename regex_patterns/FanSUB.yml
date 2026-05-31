@@ -1,6 +1,0 @@
-name: FanSUB
-pattern: \b(FanSUB)\b
-description: Regex for FanSUB
-tags:
-- Trash Guides
-tests: []

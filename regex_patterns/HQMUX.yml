@@ -1,6 +1,0 @@
-name: HQMUX
-pattern: ^(HQMUX)$
-description: Regex for HQMUX
-tags:
-- Trash Guides
-tests: []

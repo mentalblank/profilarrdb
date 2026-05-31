@@ -1,6 +1,0 @@
-name: Fumi-Raws
-pattern: Fumi[ ._-]?(Raws)
-description: Regex for Fumi-Raws
-tags:
-- Trash Guides
-tests: []

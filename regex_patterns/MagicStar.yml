@@ -1,6 +1,0 @@
-name: MagicStar
-pattern: ^(MagicStar)$
-description: Regex for MagicStar
-tags:
-- Trash Guides
-tests: []

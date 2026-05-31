@@ -1,6 +1,0 @@
-name: ATELiER
-pattern: ^(ATELiER)$
-description: Regex for ATELiER
-tags:
-- Trash Guides
-tests: []

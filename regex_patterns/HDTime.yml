@@ -1,6 +1,0 @@
-name: HDTime
-pattern: ^(HDTime)$
-description: Regex for HDTime
-tags:
-- Trash Guides
-tests: []

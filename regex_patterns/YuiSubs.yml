@@ -1,6 +1,0 @@
-name: YuiSubs
-pattern: \b(YuiSubs)\b
-description: Regex for YuiSubs
-tags:
-- Trash Guides
-tests: []

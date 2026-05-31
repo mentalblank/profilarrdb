@@ -1,6 +1,0 @@
-name: Noiy
-pattern: \b(Noiy)\b
-description: Regex for Noiy
-tags:
-- Trash Guides
-tests: []

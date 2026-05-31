@@ -1,6 +1,0 @@
-name: EMBER
-pattern: \[EMBER\]|-EMBER\b
-description: Regex for EMBER
-tags:
-- Trash Guides
-tests: []

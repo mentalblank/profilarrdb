@@ -1,6 +1,0 @@
-name: SADPANDA (Group)
-pattern: \b(SADPANDA)\b
-description: Regex for SADPANDA (Group)
-tags:
-- Trash Guides
-tests: []

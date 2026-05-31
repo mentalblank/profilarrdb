@@ -1,6 +1,0 @@
-name: HDS
-pattern: ^(HDS)$
-description: Regex for HDS
-tags:
-- Trash Guides
-tests: []

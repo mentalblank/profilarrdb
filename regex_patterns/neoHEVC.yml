@@ -1,6 +1,0 @@
-name: neoHEVC
-pattern: \b(neoHEVC)\b
-description: Regex for neoHEVC
-tags:
-- Trash Guides
-tests: []

@@ -1,4 +1,3 @@
-import yaml
 from .strings import clean_name
 
 def extract_regex(specifications, patterns_list, service):
@@ -119,22 +118,3 @@ def resolve_regex_names(patterns_list):
         resolved[(orig_name, p_lower)] = temp_resolved[(orig_name, survivor_p_lower)]
                 
     return resolved, final_patterns
-
-def save_regex_patterns(patterns_dict, output_dir):
-    """Save regex patterns to individual YAML files."""
-    print(f"Writing {len(patterns_dict)} Regex Patterns...")
-    # Sort regex pattern filenames case-insensitively
-    sorted_pattern_names = sorted(patterns_dict.keys(), key=lambda x: x.lower())
-    for name in sorted_pattern_names:
-        pattern = patterns_dict[name]
-        cleaned = clean_name(name)
-        # Use cleaned name for internal name field too
-        regex_data = {
-            "name": cleaned,
-            "pattern": pattern,
-            "description": f"Regex for {name}",
-            "tags": ["Trash Guides"],
-            "tests": []
-        }
-        with open(output_dir / f"{cleaned}.yml", 'w') as f:
-            yaml.dump(regex_data, f, sort_keys=False)

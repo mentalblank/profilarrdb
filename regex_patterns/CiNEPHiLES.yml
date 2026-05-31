@@ -1,6 +1,0 @@
-name: CiNEPHiLES
-pattern: ^(CiNEPHiLES)$
-description: Regex for CiNEPHiLES
-tags:
-- Trash Guides
-tests: []

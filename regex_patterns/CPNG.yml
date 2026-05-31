@@ -1,6 +1,0 @@
-name: CPNG
-pattern: \b(CPNG)\b
-description: Regex for CPNG
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: FunArts
-pattern: \b(FunArts)\b
-description: Regex for FunArts
-tags:
-- Trash Guides
-tests: []

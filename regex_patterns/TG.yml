@@ -1,6 +1,0 @@
-name: TG
-pattern: ^(TG)$
-description: Regex for TG
-tags:
-- Trash Guides
-tests: []

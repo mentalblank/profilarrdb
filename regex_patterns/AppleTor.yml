@@ -1,6 +1,0 @@
-name: AppleTor
-pattern: ^(AppleTor)$
-description: Regex for AppleTor
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: MiniFreeza
-pattern: \b(MiniFreeza)\b
-description: Regex for MiniFreeza
-tags:
-- Trash Guides
-tests: []

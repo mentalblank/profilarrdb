@@ -1,6 +1,0 @@
-name: CRUD
-pattern: ^(CRUD)$
-description: Regex for CRUD
-tags:
-- Trash Guides
-tests: []

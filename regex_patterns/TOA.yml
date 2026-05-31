@@ -1,6 +1,0 @@
-name: TOA
-pattern: ^(TOA)$
-description: Regex for TOA
-tags:
-- Trash Guides
-tests: []

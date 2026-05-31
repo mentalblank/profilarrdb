@@ -1,6 +1,0 @@
-name: ECLiPSE
-pattern: ^(ECLiPSE)$
-description: Regex for ECLiPSE
-tags:
-- Trash Guides
-tests: []

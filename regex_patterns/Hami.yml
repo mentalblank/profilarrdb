@@ -1,6 +1,0 @@
-name: Hami
-pattern: \b(hami|HamiVideo)\b
-description: Regex for Hami
-tags:
-- Trash Guides
-tests: []

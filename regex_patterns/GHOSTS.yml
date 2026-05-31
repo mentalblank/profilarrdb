@@ -1,6 +1,0 @@
-name: GHOSTS
-pattern: ^(GHOSTS)$
-description: Regex for GHOSTS
-tags:
-- Trash Guides
-tests: []

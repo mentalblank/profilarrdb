@@ -1,6 +1,0 @@
-name: DEFLATE
-pattern: ^(DEFLATE)$
-description: Regex for DEFLATE
-tags:
-- Trash Guides
-tests: []

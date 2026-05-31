@@ -1,6 +1,0 @@
-name: SHOWTIME
-pattern: \b(sho|showtime)\b[ ._-]web[ ._-]?(dl|rip)?\b
-description: Regex for SHOWTIME
-tags:
-- Trash Guides
-tests: []

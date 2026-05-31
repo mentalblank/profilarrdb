@@ -1,6 +1,0 @@
-name: EA
-pattern: ^(EA)$
-description: Regex for EA
-tags:
-- Trash Guides
-tests: []

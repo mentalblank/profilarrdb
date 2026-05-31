@@ -1,6 +1,0 @@
-name: AsRequested
-pattern: -AsRequested\b
-description: Regex for AsRequested
-tags:
-- Trash Guides
-tests: []

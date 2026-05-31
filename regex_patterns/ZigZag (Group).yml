@@ -1,6 +1,0 @@
-name: ZigZag (Group)
-pattern: ^(ZigZag)$
-description: Regex for ZigZag (Group)
-tags:
-- Trash Guides
-tests: []

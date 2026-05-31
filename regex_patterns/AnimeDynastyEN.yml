@@ -1,6 +1,0 @@
-name: AnimeDynastyEN
-pattern: \b(AnimeDynastyEN)\b
-description: Regex for AnimeDynastyEN
-tags:
-- Trash Guides
-tests: []

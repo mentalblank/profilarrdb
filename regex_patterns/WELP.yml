@@ -1,6 +1,0 @@
-name: WELP
-pattern: ^(WELP)$
-description: Regex for WELP
-tags:
-- Trash Guides
-tests: []

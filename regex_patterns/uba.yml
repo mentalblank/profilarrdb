@@ -1,6 +1,0 @@
-name: uba
-pattern: \[uba\]|-uba\b
-description: Regex for uba
-tags:
-- Trash Guides
-tests: []

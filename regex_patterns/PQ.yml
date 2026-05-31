@@ -1,6 +1,0 @@
-name: PQ
-pattern: \b(PQ)\b
-description: Regex for PQ
-tags:
-- Trash Guides
-tests: []

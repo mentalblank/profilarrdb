@@ -1,5 +1,8 @@
+# Resolution value (arr Resolution enum) -> Profilarr resolution string.
+# Matches arrSource Parser/QualityParser.Resolution + sync/mappings.ts RESOLUTIONS.
 RESOLUTION_MAPPING = {
-    2160: "2160p", 1080: "1080p", 720: "720p", 576: "576p", 480: "480p",
+    2160: "2160p", 1080: "1080p", 720: "720p", 576: "576p",
+    540: "540p", 480: "480p", 360: "360p",
 }
 
 ANIME_RENAME_MAPPING = {
@@ -21,44 +24,57 @@ ANIME_RENAME_MAPPING = {
 
 CUSTOM_PATTERNS = {
     "Non-Latin Scripts": r"[\u4E00-\u9FFF\uAC00-\uD7A3\u0600-\u06FF\u0400-\u04FF\u0370-\u03FF\u0590-\u05FF\u0900-\u097F\u0E00-\u0E7F]",
-    "NoRBiT (Title)": r"^(NoRBiT)$",
-    "NoRBiT (Group)": r"\b(NoRBiT)\b",
-    "PeruGuy (Title)": r"^(PeruGuy)$",
-    "PeruGuy (Group)": r"\b(PeruGuy)\b",
-    "PortalGoods (Title)": r"^(PortalGoods)$",
-    "PortalGoods (Group)": r"\b(PortalGoods)\b",
-    "3Li (Title)": r"^(3Li)$",
-    "3Li (Group)": r"\b(3Li)\b",
-    "MgB (Title)": r"^(MgB)$",
-    "MgB (Group)": r"\b(MgB)\b",
-    "moviesbyrizzo (Title)": r"^(moviesbyrizzo)$",
-    "moviesbyrizzo (Group)": r"\b(moviesbyrizzo)\b",
-    "Japhson (Title)": r"^(Japhson)$",
-    "Japhson (Group)": r"\b(Japhson)\b",
-    "PS3-TEAM (Title)": r"^(PS3-TEAM)$",
-    "PS3-TEAM (Group)": r"\b(PS3-TEAM)\b",
-    "jeddak (Title)": r"^(jeddak)$",
-    "jeddak (Group)": r"\b(jeddak)\b",
-    "RIPRARBG (Title)": r"^(RIPRARBG)$",
-    "RIPRARBG (Group)": r"\b(RIPRARBG)\b",
-    "WinLUNA (Title)": r"^(WinLUNA)$",
-    "WinLUNA (Group)": r"\b(WinLUNA)\b",
-    "RWP (Title)": r"^(RWP)$",
-    "RWP (Group)": r"\b(RWP)\b",
-    "NiXON (Title)": r"^(NiXON)$",
-    "NiXON (Group)": r"\b(NiXON)\b",
-    "SADPANDA (Title)": r"^(SADPANDA)$",
-    "SADPANDA (Group)": r"\b(SADPANDA)\b",
-    "y2flix (Title)": r"^(y2flix)$",
-    "y2flix (Group)": r"\b(y2flix)\b",
+    "NoRBiT (Title)": r"\b(NoRBiT)\b",
+    "NoRBiT (Group)": r"^(NoRBiT)$",
+    "PeruGuy (Title)": r"\b(PeruGuy)\b",
+    "PeruGuy (Group)": r"^(PeruGuy)$",
+    "PortalGoods (Title)": r"\b(PortalGoods)\b",
+    "PortalGoods (Group)": r"^(PortalGoods)$",
+    "3Li (Title)": r"\b(3Li)\b",
+    "3Li (Group)": r"^(3Li)$",
+    "MgB (Title)": r"\b(MgB)\b",
+    "MgB (Group)": r"^(MgB)$",
+    "moviesbyrizzo (Title)": r"\b(moviesbyrizzo)\b",
+    "moviesbyrizzo (Group)": r"^(moviesbyrizzo)$",
+    "Japhson (Title)": r"\b(Japhson)\b",
+    "Japhson (Group)": r"^(Japhson)$",
+    "PS3-TEAM (Title)": r"\b(PS3-TEAM)\b",
+    "PS3-TEAM (Group)": r"^(PS3-TEAM)$",
+    "jeddak (Title)": r"\b(jeddak)\b",
+    "jeddak (Group)": r"^(jeddak)$",
+    "RIPRARBG (Title)": r"\b(RIPRARBG)\b",
+    "RIPRARBG (Group)": r"^(RIPRARBG)$",
+    "WinLUNA (Title)": r"\b(WinLUNA)\b",
+    "WinLUNA (Group)": r"^(WinLUNA)$",
+    "RWP (Title)": r"\b(RWP)\b",
+    "RWP (Group)": r"^(RWP)$",
+    "NiXON (Title)": r"\b(NiXON)\b",
+    "NiXON (Group)": r"^(NiXON)$",
+    "SADPANDA (Title)": r"\b(SADPANDA)\b",
+    "SADPANDA (Group)": r"^(SADPANDA)$",
+    "y2flix (Title)": r"\b(y2flix)\b",
+    "y2flix (Group)": r"^(y2flix)$",
+    "Gi6 (Title)": r"\b(Gi6)\b",
+    "Gi6 (Group)": r"^(Gi6)$",
+    "ION10 (Title)": r"\b(ION10)\b",
+    "ION10 (Group)": r"^(ION10)$",
+    "MIRCrew (Title)": r"\b(MIRCrew)\b",
+    "MIRCrew (Group)": r"^(MIRCrew)$",
+    "UNTOUCHABLES (Title)": r"\b(UNTOUCHABLES)\b",
+    "UNTOUCHABLES (Group)": r"^(UNTOUCHABLES)$",
     "Dual-Audio": r"(dual|multi|funi|eng(lish)?)[\s._-]?(audio|dub(s|bed)?)|[([](dual|multi)[])]|\b([a-zA-Z]{2}\+EN|EN\+[a-zA-Z]{2})\b|\b(\d{3,4}(p|i)|4K|U(ltra)?HD)\b.*\b(DUAL|MULTI)\b(?!.*\(|\))",
 }
 
 EXTRA_LQ_GROUPS = [
     "NoRBiT", "PeruGuy", "PortalGoods", "3Li", "MgB", "moviesbyrizzo",
     "Japhson", "PS3-TEAM", "jeddak", "RIPRARBG", "WinLUNA", "RWP",
-    "NiXON", "SADPANDA", "y2flix"
+    "NiXON", "SADPANDA", "y2flix",
+    "Gi6", "ION10", "MIRCrew", "UNTOUCHABLES",
 ]
+
+# Release groups to REMOVE from the LQ and LQ (Release Title) custom formats
+# (TRaSH includes them; we drop them). Matched by condition name (case-insensitive).
+LQ_REMOVE_GROUPS = ["GalaxyRG", "R&H", "RARBG", "YIFY", "YTS"]
 
 CUSTOM_FORMATS = {
     "non-latin-scripts": {

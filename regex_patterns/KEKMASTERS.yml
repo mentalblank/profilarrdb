@@ -1,6 +1,0 @@
-name: KEKMASTERS
-pattern: \b(KEKMASTERS)\b
-description: Regex for KEKMASTERS
-tags:
-- Trash Guides
-tests: []

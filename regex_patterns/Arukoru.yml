@@ -1,6 +1,0 @@
-name: Arukoru
-pattern: \b(Arukoru)\b
-description: Regex for Arukoru
-tags:
-- Trash Guides
-tests: []

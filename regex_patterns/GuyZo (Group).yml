@@ -1,6 +1,0 @@
-name: GuyZo (Group)
-pattern: ^(GuyZo|BR-GuyZo)$
-description: Regex for GuyZo (Group)
-tags:
-- Trash Guides
-tests: []

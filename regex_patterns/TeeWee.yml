@@ -1,6 +1,0 @@
-name: TeeWee
-pattern: \b(TeeWee)\b
-description: Regex for TeeWee
-tags:
-- Trash Guides
-tests: []

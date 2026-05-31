@@ -1,6 +1,0 @@
-name: Mehul
-pattern: \[Mehul\]|-Mehul\b
-description: Regex for Mehul
-tags:
-- Trash Guides
-tests: []

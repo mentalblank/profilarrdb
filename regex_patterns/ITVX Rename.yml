@@ -1,6 +1,0 @@
-name: ITVX Rename
-pattern: \[(ITVX)\b|\b(ITVX)\]
-description: Regex for ITVX Rename
-tags:
-- Trash Guides
-tests: []

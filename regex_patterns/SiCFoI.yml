@@ -1,6 +1,0 @@
-name: SiCFoI
-pattern: ^(SiCFoI)$
-description: Regex for SiCFoI
-tags:
-- Trash Guides
-tests: []

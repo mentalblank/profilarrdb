@@ -1,6 +1,0 @@
-name: GNOME
-pattern: ^(GNOME)$
-description: Regex for GNOME
-tags:
-- Trash Guides
-tests: []

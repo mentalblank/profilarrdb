@@ -1,6 +1,0 @@
-name: playHD
-pattern: ^(playHD)$
-description: Regex for playHD
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: PiRAMiDHEAD
-pattern: ^(PiRAMiDHEAD)$
-description: Regex for PiRAMiDHEAD
-tags:
-- Trash Guides
-tests: []

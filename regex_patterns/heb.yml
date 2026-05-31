@@ -1,6 +1,0 @@
-name: heb
-pattern: '[.]heb\b'
-description: Regex for .heb
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: LINETV
-pattern: \b(LINETV)\b
-description: Regex for LINETV
-tags:
-- Trash Guides
-tests: []

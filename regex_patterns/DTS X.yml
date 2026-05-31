@@ -1,6 +1,0 @@
-name: DTS X
-pattern: '\b(dts[-_.: ]?x7?)\b(?![-_. ]?(26[456]))'
-description: Regex for DTS X
-tags:
-- Trash Guides
-tests: []

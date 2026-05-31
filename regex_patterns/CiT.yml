@@ -1,6 +1,0 @@
-name: CiT
-pattern: ^(CiT)$
-description: Regex for CiT
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: DDR
-pattern: ^(DDR)$
-description: Regex for DDR
-tags:
-- Trash Guides
-tests: []

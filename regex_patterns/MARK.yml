@@ -1,6 +1,0 @@
-name: MARK
-pattern: ^(MARK)$
-description: Regex for MARK
-tags:
-- Trash Guides
-tests: []

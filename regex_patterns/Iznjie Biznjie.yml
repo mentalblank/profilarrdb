@@ -1,6 +1,0 @@
-name: Iznjie Biznjie
-pattern: \b(Iznjie[ .-]Biznjie)\b
-description: Regex for Iznjie Biznjie
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: FastSUB
-pattern: \b(FastSUB)\b
-description: Regex for FastSUB
-tags:
-- Trash Guides
-tests: []

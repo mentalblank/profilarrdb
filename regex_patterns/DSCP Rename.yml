@@ -1,6 +1,0 @@
-name: DSCP Rename
-pattern: \[(DSCP)\b|\b(DSCP)\]
-description: Regex for DSCP Rename
-tags:
-- Trash Guides
-tests: []

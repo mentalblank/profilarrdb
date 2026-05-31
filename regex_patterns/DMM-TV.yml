@@ -1,6 +1,0 @@
-name: DMM-TV
-pattern: \b(DMM-TV)\b
-description: Regex for DMM-TV
-tags:
-- Trash Guides
-tests: []

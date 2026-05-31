@@ -1,6 +1,0 @@
-name: NYH
-pattern: ^(NYH)$
-description: Regex for NYH
-tags:
-- Trash Guides
-tests: []

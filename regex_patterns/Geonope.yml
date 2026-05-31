@@ -1,6 +1,0 @@
-name: Geonope
-pattern: \b(Geonope)\b
-description: Regex for Geonope
-tags:
-- Trash Guides
-tests: []

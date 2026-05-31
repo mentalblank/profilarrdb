@@ -1,6 +1,0 @@
-name: TvR
-pattern: ^(TvR)$
-description: Regex for TvR
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: VietHD
-pattern: ^(VietHD)$
-description: Regex for VietHD
-tags:
-- Trash Guides
-tests: []

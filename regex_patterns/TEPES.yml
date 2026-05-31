@@ -1,6 +1,0 @@
-name: TEPES
-pattern: ^(TEPES)$
-description: Regex for TEPES
-tags:
-- Trash Guides
-tests: []

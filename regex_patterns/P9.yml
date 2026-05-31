@@ -1,6 +1,0 @@
-name: P9
-pattern: \b(P9)\b
-description: Regex for P9
-tags:
-- Trash Guides
-tests: []

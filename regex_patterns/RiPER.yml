@@ -1,6 +1,0 @@
-name: RiPER
-pattern: ^(RiPER)$
-description: Regex for RiPER
-tags:
-- Trash Guides
-tests: []

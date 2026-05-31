@@ -1,6 +1,0 @@
-name: Quibi
-pattern: \b(qibi|quibi)\b
-description: Regex for Quibi
-tags:
-- Trash Guides
-tests: []

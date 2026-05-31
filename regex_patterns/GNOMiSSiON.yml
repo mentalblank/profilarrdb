@@ -1,6 +1,0 @@
-name: GNOMiSSiON
-pattern: ^(GNOMiSSiON)$
-description: Regex for GNOMiSSiON
-tags:
-- Trash Guides
-tests: []

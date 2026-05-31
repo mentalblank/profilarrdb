@@ -1,6 +1,0 @@
-name: PuyaSubs
-pattern: \b(PuyaSubs)\b
-description: Regex for PuyaSubs
-tags:
-- Trash Guides
-tests: []

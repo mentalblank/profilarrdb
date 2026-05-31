@@ -1,6 +1,0 @@
-name: TnF
-pattern: \b(TnF)\b
-description: Regex for TnF
-tags:
-- Trash Guides
-tests: []

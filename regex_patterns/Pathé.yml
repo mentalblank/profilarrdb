@@ -1,6 +1,0 @@
-name: "Path\xE9"
-pattern: \b(Pathe)\b
-description: "Regex for Path\xE9"
-tags:
-- Trash Guides
-tests: []

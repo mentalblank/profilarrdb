@@ -1,6 +1,0 @@
-name: Maximus
-pattern: \[Maximus\]|-Maximus\b
-description: Regex for Maximus
-tags:
-- Trash Guides
-tests: []

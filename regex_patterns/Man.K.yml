@@ -1,6 +1,0 @@
-name: Man.K
-pattern: \b(Man\.K)\b
-description: Regex for Man.K
-tags:
-- Trash Guides
-tests: []

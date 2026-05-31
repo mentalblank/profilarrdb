@@ -1,6 +1,0 @@
-name: MMR
-pattern: ^(MMR)$
-description: Regex for MMR
-tags:
-- Trash Guides
-tests: []

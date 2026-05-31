@@ -1,6 +1,0 @@
-name: VS
-pattern: \b(V-S)\b
-description: Regex for VS
-tags:
-- Trash Guides
-tests: []

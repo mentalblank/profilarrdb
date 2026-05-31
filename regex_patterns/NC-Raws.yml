@@ -1,6 +1,0 @@
-name: NC-Raws
-pattern: NC[ ._-]?(Raws)
-description: Regex for NC-Raws
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: Special Edition
-pattern: (?<!^)\b(extended|uncut|directors|special|unrated|uncensored|cut|version|(?<!{)edition)(\b|\d)
-description: Regex for Special Edition
-tags:
-- Trash Guides
-tests: []

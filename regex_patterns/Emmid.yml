@@ -1,6 +1,0 @@
-name: Emmid
-pattern: \[Emmid\]|-Emmid\b
-description: Regex for Emmid
-tags:
-- Trash Guides
-tests: []

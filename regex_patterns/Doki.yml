@@ -1,6 +1,0 @@
-name: Doki
-pattern: \[Doki\]|-Doki\b
-description: Regex for Doki
-tags:
-- Trash Guides
-tests: []

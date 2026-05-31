@@ -1,6 +1,0 @@
-name: Vinegar Syndrome
-pattern: \b(Vinegar[ ._-]Syndrome)\b
-description: Regex for Vinegar Syndrome
-tags:
-- Trash Guides
-tests: []

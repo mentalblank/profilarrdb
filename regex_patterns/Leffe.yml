@@ -1,6 +1,0 @@
-name: Leffe
-pattern: ^(Leffe)$
-description: Regex for Leffe
-tags:
-- Trash Guides
-tests: []

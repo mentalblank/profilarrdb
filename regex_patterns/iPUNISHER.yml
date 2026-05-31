@@ -1,6 +1,0 @@
-name: iPUNISHER
-pattern: \b(iPUNISHER)\b
-description: Regex for iPUNISHER
-tags:
-- Trash Guides
-tests: []

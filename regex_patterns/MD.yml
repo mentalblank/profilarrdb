@@ -1,6 +1,0 @@
-name: MD
-pattern: \[MD\]|-MD\b
-description: Regex for MD
-tags:
-- Trash Guides
-tests: []

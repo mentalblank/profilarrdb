@@ -1,6 +1,0 @@
-name: fig
-pattern: \[fig\]|-fig\b
-description: Regex for fig
-tags:
-- Trash Guides
-tests: []

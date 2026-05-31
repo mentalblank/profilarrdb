@@ -1,6 +1,0 @@
-name: BlackBit
-pattern: ^(BlackBit)$
-description: Regex for BlackBit
-tags:
-- Trash Guides
-tests: []

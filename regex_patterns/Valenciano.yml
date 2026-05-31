@@ -1,6 +1,0 @@
-name: Valenciano
-pattern: \b(Valenciano)\b
-description: Regex for Valenciano
-tags:
-- Trash Guides
-tests: []

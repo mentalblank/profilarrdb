@@ -1,6 +1,0 @@
-name: HDHUB4U
-pattern: ^(HDHUB4U)$
-description: Regex for HDHUB4U
-tags:
-- Trash Guides
-tests: []

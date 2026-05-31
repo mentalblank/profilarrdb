@@ -1,6 +1,0 @@
-name: BEN THE MEN
-pattern: \b(BEN[ ._-]THE[ ._-]MEN)\b
-description: Regex for BEN THE MEN
-tags:
-- Trash Guides
-tests: []

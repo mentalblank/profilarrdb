@@ -1,3 +1,20 @@
 /.obsidian
-/scripts/utils/mappings/__pycache__
-/scripts/utils/__pycache__
+
+# Python caches
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Reference checkouts (external, not part of this repo)
+/arrSource
+/database-2
+/Guides-master
+/profilarr-develop
+/profilarr-develop.zip
+
+# Tooling artifacts (not published)
+/build_v2
+/tools_v2/reference.db
+/tools_v2/build.log
+/tools_v2/diff_report.md
+CLAUDE.md

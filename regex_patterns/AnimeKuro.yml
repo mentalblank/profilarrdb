@@ -1,6 +1,0 @@
-name: AnimeKuro
-pattern: \b(AnimeKuro)\b
-description: Regex for AnimeKuro
-tags:
-- Trash Guides
-tests: []

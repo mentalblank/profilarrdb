@@ -1,6 +1,0 @@
-name: Senjou
-pattern: \[Senjou\]|-Senjou\b
-description: Regex for Senjou
-tags:
-- Trash Guides
-tests: []

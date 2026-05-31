@@ -1,6 +1,0 @@
-name: Lulu
-pattern: \[Lulu\]|-Lulu\b
-description: Regex for Lulu
-tags:
-- Trash Guides
-tests: []

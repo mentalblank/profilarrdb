@@ -1,6 +1,0 @@
-name: 3L
-pattern: ^(3L)$
-description: Regex for 3L
-tags:
-- Trash Guides
-tests: []

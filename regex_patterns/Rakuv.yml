@@ -1,6 +1,0 @@
-name: Rakuv
-pattern: -Rakuv\b
-description: Regex for Rakuv
-tags:
-- Trash Guides
-tests: []

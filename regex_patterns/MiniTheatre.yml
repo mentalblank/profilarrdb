@@ -1,6 +1,0 @@
-name: MiniTheatre
-pattern: \b(MiniTheatre)\b
-description: Regex for MiniTheatre
-tags:
-- Trash Guides
-tests: []

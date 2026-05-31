@@ -1,6 +1,0 @@
-name: NanDesuKa
-pattern: \b(NanDesuKa)\b
-description: Regex for NanDesuKa
-tags:
-- Trash Guides
-tests: []

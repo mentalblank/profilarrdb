@@ -1,6 +1,0 @@
-name: RWP (Title)
-pattern: ^(RWP)$
-description: Regex for RWP (Title)
-tags:
-- Trash Guides
-tests: []

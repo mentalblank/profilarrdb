@@ -1,6 +1,0 @@
-name: CHD
-pattern: ^(CHD)$
-description: Regex for CHD
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: Not FLAC
-pattern: \bFLAC(\b|\d)
-description: Regex for Not FLAC
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: BBQ
-pattern: ^(BBQ)$
-description: Regex for BBQ
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: SPiRiT
-pattern: ^(SPiRiT)$
-description: Regex for SPiRiT
-tags:
-- Trash Guides
-tests: []

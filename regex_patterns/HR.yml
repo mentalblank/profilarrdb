@@ -1,6 +1,0 @@
-name: HR
-pattern: \[HR\]|-HR\b
-description: Regex for HR
-tags:
-- Trash Guides
-tests: []

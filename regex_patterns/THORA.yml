@@ -1,6 +1,0 @@
-name: THORA
-pattern: \b(THORA)\b
-description: Regex for THORA
-tags:
-- Trash Guides
-tests: []

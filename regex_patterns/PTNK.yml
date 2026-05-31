@@ -1,6 +1,0 @@
-name: PTNK
-pattern: ^(PTNK)$
-description: Regex for PTNK
-tags:
-- Trash Guides
-tests: []

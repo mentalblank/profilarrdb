@@ -1,6 +1,0 @@
-name: KiyoshiStar
-pattern: \b(KS|KiyoshiStar)\b
-description: Regex for KiyoshiStar
-tags:
-- Trash Guides
-tests: []

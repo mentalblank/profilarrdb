@@ -1,6 +1,0 @@
-name: Videoland
-pattern: \b(vdl|Videoland)\b
-description: Regex for Videoland
-tags:
-- Trash Guides
-tests: []

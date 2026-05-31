@@ -1,6 +1,0 @@
-name: Anime Chap
-pattern: \b(Anime[ .-]?Chap)\b
-description: Regex for Anime Chap
-tags:
-- Trash Guides
-tests: []

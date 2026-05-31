@@ -1,6 +1,0 @@
-name: M@nI
-pattern: \b(M@nI)\b
-description: Regex for M@nI
-tags:
-- Trash Guides
-tests: []

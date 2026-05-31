@@ -1,6 +1,0 @@
-name: iTsOK
-pattern: ^(iTsOK)$
-description: Regex for iTsOK
-tags:
-- Trash Guides
-tests: []

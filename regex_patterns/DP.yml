@@ -1,6 +1,0 @@
-name: DP
-pattern: \b(DP)\b
-description: Regex for DP
-tags:
-- Trash Guides
-tests: []

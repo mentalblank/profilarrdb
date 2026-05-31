@@ -1,6 +1,0 @@
-name: SiC (Group)
-pattern: ^(SiC)$
-description: Regex for SiC (Group)
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: NEXT
-pattern: ^(NEXT)$
-description: Regex for NEXT
-tags:
-- Trash Guides
-tests: []

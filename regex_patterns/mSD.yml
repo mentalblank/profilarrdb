@@ -1,6 +1,0 @@
-name: mSD
-pattern: ^(mSD)$
-description: Regex for mSD
-tags:
-- Trash Guides
-tests: []

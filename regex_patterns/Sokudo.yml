@@ -1,6 +1,0 @@
-name: Sokudo
-pattern: \[Sokudo\]|-Sokudo\b
-description: Regex for Sokudo
-tags:
-- Trash Guides
-tests: []

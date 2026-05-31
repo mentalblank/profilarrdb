@@ -1,6 +1,0 @@
-name: Cytox
-pattern: \b(Cytox)\b
-description: Regex for Cytox
-tags:
-- Trash Guides
-tests: []

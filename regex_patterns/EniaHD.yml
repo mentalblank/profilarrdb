@@ -1,6 +1,0 @@
-name: EniaHD
-pattern: ^(EniaHD)$
-description: Regex for EniaHD
-tags:
-- Trash Guides
-tests: []

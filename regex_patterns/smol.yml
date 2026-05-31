@@ -1,6 +1,0 @@
-name: smol
-pattern: \[smol\]|-smol\b
-description: Regex for smol
-tags:
-- Trash Guides
-tests: []

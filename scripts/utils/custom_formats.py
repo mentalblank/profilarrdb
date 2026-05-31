@@ -1,5 +1,4 @@
 import re
-import yaml
 from pathlib import Path
 from .strings import clean_name, clean_html
 from .mappings.source import SOURCE_MAPPING
@@ -71,21 +70,24 @@ def convert_cf_to_dict(json_data, source_map, stem, resolved_patterns=None):
         elif impl == "LanguageSpecification":
             condition["type"] = "language"
             val = fields.get("value")
-            condition["language"] = LANGUAGE_MAPPING["radarr" if "Radarr" in str(source_map) else "sonarr"].get(val, str(val)).lower()
+            condition["language"] = LANGUAGE_MAPPING["radarr" if source_map is SOURCE_MAPPING["radarr"] else "sonarr"].get(val, str(val)).lower()
             if "exceptLanguage" in fields:
                 condition["exceptLanguage"] = fields["exceptLanguage"]
         elif impl == "QualityModifierSpecification":
             condition["type"] = "quality_modifier"
             val = fields.get("value")
-            condition["modifier"] = QUALITY_MODIFIER_MAPPING["radarr" if "Radarr" in str(source_map) else "sonarr"].get(val, str(val))
+            condition["modifier"] = QUALITY_MODIFIER_MAPPING["radarr" if source_map is SOURCE_MAPPING["radarr"] else "sonarr"].get(val, str(val))
         elif impl == "IndexerFlagSpecification":
             condition["type"] = "indexer_flag"
             val = fields.get("value")
-            condition["flag"] = INDEXER_FLAG_MAPPING["radarr" if "Radarr" in str(source_map) else "sonarr"].get(val, str(val))
+            # TRaSH stores the flag bitmask as a string; mapping keys are ints.
+            key = int(val) if isinstance(val, str) and val.lstrip("-").isdigit() else val
+            condition["flag"] = INDEXER_FLAG_MAPPING["radarr" if source_map is SOURCE_MAPPING["radarr"] else "sonarr"].get(key, str(val))
         elif impl == "ReleaseTypeSpecification":
             condition["type"] = "release_type"
             val = fields.get("value")
-            condition["releaseType"] = RELEASE_TYPE_MAPPING["radarr" if "Radarr" in str(source_map) else "sonarr"].get(val, str(val))
+            key = int(val) if isinstance(val, str) and val.lstrip("-").isdigit() else val
+            condition["releaseType"] = RELEASE_TYPE_MAPPING["radarr" if source_map is SOURCE_MAPPING["radarr"] else "sonarr"].get(key, str(val))
         else:
             condition["type"] = impl.lower().replace("specification", "")
             for k, v in fields.items():

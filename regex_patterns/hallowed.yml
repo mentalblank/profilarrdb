@@ -1,6 +1,0 @@
-name: hallowed
-pattern: ^(hallowed)$
-description: Regex for hallowed
-tags:
-- Trash Guides
-tests: []

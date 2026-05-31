@@ -1,6 +1,0 @@
-name: AnoZu
-pattern: \b(AnoZu)\b
-description: Regex for AnoZu
-tags:
-- Trash Guides
-tests: []

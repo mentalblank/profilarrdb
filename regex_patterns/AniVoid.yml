@@ -1,6 +1,0 @@
-name: AniVoid
-pattern: \b(AniVoid)\b
-description: Regex for AniVoid
-tags:
-- Trash Guides
-tests: []

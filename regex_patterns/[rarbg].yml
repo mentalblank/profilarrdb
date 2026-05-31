@@ -1,6 +1,0 @@
-name: '[rarbg]'
-pattern: \[rarbg\]
-description: Regex for [rarbg]
-tags:
-- Trash Guides
-tests: []

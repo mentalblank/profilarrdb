@@ -1,6 +1,0 @@
-name: HONE
-pattern: ^(HONE)$
-description: Regex for HONE
-tags:
-- Trash Guides
-tests: []

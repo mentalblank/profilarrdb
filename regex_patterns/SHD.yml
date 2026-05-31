@@ -1,6 +1,0 @@
-name: SHD
-pattern: ^(SHD)$
-description: Regex for SHD
-tags:
-- Trash Guides
-tests: []

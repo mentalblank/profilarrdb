@@ -1,6 +1,0 @@
-name: SYFY
-pattern: \b(SYFY)\b
-description: Regex for SYFY
-tags:
-- Trash Guides
-tests: []

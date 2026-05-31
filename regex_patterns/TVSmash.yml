@@ -1,6 +1,0 @@
-name: TVSmash
-pattern: ^(TVSmash)$
-description: Regex for TVSmash
-tags:
-- Trash Guides
-tests: []

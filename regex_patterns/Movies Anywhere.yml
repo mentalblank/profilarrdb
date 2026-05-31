@@ -1,6 +1,0 @@
-name: Movies Anywhere
-pattern: (?<!dts[ .-]?hd[ .-]?)\b(ma|ykw)\b(?=.*\bweb[ ._-]?(dl|rip)\b)
-description: Regex for Movies Anywhere
-tags:
-- Trash Guides
-tests: []

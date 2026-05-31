@@ -1,6 +1,0 @@
-name: SYNFM
-pattern: ^(SYNFM)$
-description: Regex for SYNFM
-tags:
-- Trash Guides
-tests: []

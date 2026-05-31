@@ -1,6 +1,0 @@
-name: Quetzal
-pattern: \b(Quetzal)\b
-description: Regex for Quetzal
-tags:
-- Trash Guides
-tests: []

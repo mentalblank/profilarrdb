@@ -1,14 +1,19 @@
+"""TRaSH Guides model builder.
+
+Loads TRaSH Guides JSON into the in-memory custom-format / regex / profile model
+shared by the v2 ops emitter (see generate_v2.py). This module no longer writes
+any output itself; run `python scripts/generate_v2.py` to build the database.
+"""
+
 import json
-import yaml
-import shutil
+import copy
 from pathlib import Path
 
-from utils.file_utils import clear_output_dirs
 from utils.strings import clean_name
-from utils.regex_patterns import extract_regex, resolve_regex_names, save_regex_patterns
+from utils.regex_patterns import extract_regex, resolve_regex_names
 from utils.custom_formats import (
-    convert_cf_to_dict, 
-    sort_and_group_conditions, 
+    convert_cf_to_dict,
+    sort_and_group_conditions,
     deduplicate_conditions,
     is_cf_equal,
     fuzzy_merge_cf,
@@ -17,45 +22,42 @@ from utils.custom_formats import (
     is_union_mergeable
 )
 from utils.profiles import process_profiles, apply_customizations, should_skip
-from utils.media_management import generate_naming_config, generate_quality_definitions
 from utils.mappings.source import SOURCE_MAPPING
-from utils.mappings.misc import CUSTOM_FORMATS, CUSTOM_PATTERNS, EXTRA_LQ_GROUPS
+from utils.mappings.misc import CUSTOM_FORMATS, CUSTOM_PATTERNS, EXTRA_LQ_GROUPS, LQ_REMOVE_GROUPS
 
-def main():
-    # Check current and parent directory for Guides-master
-    guides_root = None
+def find_guides_dir():
+    """Locate Guides-master/docs/json in the current or parent directory."""
     for prefix in [Path("."), Path("..")]:
         if (prefix / "Guides-master/docs/json").exists():
-            guides_root = prefix / "Guides-master/docs/json"
-            break
-            
-    if not guides_root:
-        print("Error: Guides-master/docs/json not found!")
-        return
+            return prefix / "Guides-master/docs/json"
+    return None
 
-    guides_dir = guides_root
-    profilarr_dir = Path(".")
-    cf_dir, regex_dir, profiles_dir, mm_dir = [
-        profilarr_dir / d for d in ["custom_formats", "regex_patterns", "profiles", "media_management"]
-    ]
 
-    # Clear existing folders
-    clear_output_dirs([cf_dir, regex_dir, profiles_dir, mm_dir])
+def build_cfs_and_regex(guides_dir):
+    """Build the custom-format and regex model from TRaSH Guides JSON.
 
+    Returns a dict with the in-memory model shared by the v1 YAML writer and
+    the v2 ops emitter:
+        merged_cfs           stem -> CF dict (name, description, tags, conditions, ...)
+        final_patterns_dict  regex final_name -> pattern
+        resolved_patterns    (orig_name, pattern_lower) -> final_name
+        final_cf_names       (service, stem) -> final CF name
+        radarr_raw/sonarr_raw stem -> raw TRaSH JSON (needed for profiles)
+    """
     # 1. First Pass: Load JSON and Collect all raw patterns
     raw_patterns_list = []
     radarr_raw, sonarr_raw = {}, {}
     
     print("Loading Radarr JSON and collecting patterns...")
     for f in (guides_dir / "radarr" / "cf").glob("*.json"):
-        with open(f, 'r') as jf: data = json.load(jf)
+        with open(f, 'r', encoding='utf-8') as jf: data = json.load(jf)
         if should_skip(data, f.stem): continue
         radarr_raw[f.stem] = data
         extract_regex(data.get("specifications", []), raw_patterns_list, "radarr")
         
     print("Loading Sonarr JSON and collecting patterns...")
     for f in (guides_dir / "sonarr" / "cf").glob("*.json"):
-        with open(f, 'r') as jf: data = json.load(jf)
+        with open(f, 'r', encoding='utf-8') as jf: data = json.load(jf)
         if should_skip(data, f.stem): continue
         sonarr_raw[f.stem] = data
         extract_regex(data.get("specifications", []), raw_patterns_list, "sonarr")
@@ -170,13 +172,21 @@ def main():
         data["name"] = clean_name(data["name"])
         merged_cfs[stem] = data
 
+    # Remove unwanted release groups from LQ / LQ (Release Title) (by name).
+    _lq_remove = {g.lower() for g in LQ_REMOVE_GROUPS}
+    for _stem in ("lq", "lq-release-title"):
+        if _stem in merged_cfs:
+            merged_cfs[_stem]["conditions"] = [
+                c for c in merged_cfs[_stem]["conditions"]
+                if c.get("name", "").lower() not in _lq_remove
+            ]
+
     # Inject Extra LQ Groups
     print("Injecting Extra LQ Groups into LQ and LQ (Release Title)...")
     if "lq" in merged_cfs:
         for group in EXTRA_LQ_GROUPS:
-            # Group regex for LQ
-            # Use resolved name if it exists (e.g. if it had to be NoRBiT (Group))
-            pat_key = (group, f"\\b({group})\\b".lower())
+            # release_group condition -> exact group pattern ^(X)$
+            pat_key = (group, f"^({group})$".lower())
             pat_name = resolved_patterns.get(pat_key, group)
             merged_cfs["lq"]["conditions"].append({
                 "name": group, "negate": False, "required": False,
@@ -186,8 +196,8 @@ def main():
 
     if "lq-release-title" in merged_cfs:
         for group in EXTRA_LQ_GROUPS:
-            # Title regex for LQ (Release Title)
-            pat_key = (group, f"^({group})$".lower())
+            # release_title condition -> word-boundary substring pattern \b(X)\b
+            pat_key = (group, f"\\b({group})\\b".lower())
             pat_name = resolved_patterns.get(pat_key, group)
             merged_cfs["lq-release-title"]["conditions"].append({
                 "name": group, "negate": False, "required": False,
@@ -195,87 +205,73 @@ def main():
             })
         merged_cfs["lq-release-title"]["conditions"] = sort_and_group_conditions(deduplicate_conditions(merged_cfs["lq-release-title"]["conditions"]))
 
-    print(f"Writing {len(merged_cfs)} Custom Formats...")
-    for stem, data in merged_cfs.items():
-        filename = clean_name(data["name"])
-        with open(cf_dir / f"{filename}.yml", 'w') as f:
-            yaml.dump(data, f, sort_keys=False)
+    return {
+        "merged_cfs": merged_cfs,
+        "final_patterns_dict": final_patterns_dict,
+        "resolved_patterns": resolved_patterns,
+        "final_cf_names": final_cf_names,
+        "radarr_raw": radarr_raw,
+        "sonarr_raw": sonarr_raw,
+    }
 
-    # Save Regex Patterns
-    save_regex_patterns(final_patterns_dict, regex_dir)
 
-    # Media Management
-    generate_naming_config(guides_dir, mm_dir)
-    generate_quality_definitions(guides_dir, mm_dir)
+def build_profiles(guides_dir, model):
+    """Build all quality-profile dicts (base + custom copies) in memory.
 
-    # Processing Quality Profiles
-    print("Processing Quality Profiles...")
+    Returns (profiles, used_qualities). Shared by the v1 YAML writer and the
+    v2 ops emitter. No files are written or read back.
+    """
+    radarr_raw = model["radarr_raw"]
+    sonarr_raw = model["sonarr_raw"]
+    final_cf_names = model["final_cf_names"]
     used_qualities = {"radarr": set(), "sonarr": set()}
-    
-    process_profiles(guides_dir / "radarr" / "quality-profiles", radarr_raw, "Radarr", profiles_dir, used_qualities, final_cf_names=final_cf_names)
-    
+
+    profiles = []
+    profiles += process_profiles(
+        guides_dir / "radarr" / "quality-profiles", radarr_raw, "Radarr",
+        None, used_qualities, final_cf_names=final_cf_names)
+
     sonarr_profile_path = guides_dir / "sonarr" / "quality-profiles"
-    for pattern in ["web-1080p.json", "web-1080p-alternative.json", "anime-remux-1080p.json", "web-2160p*.json"]:
+    for pattern in ["web-1080p.json", "web-1080p-alternative.json",
+                    "anime-remux-1080p.json", "web-2160p*.json"]:
         for f in sonarr_profile_path.glob(pattern):
-            process_profiles(sonarr_profile_path, sonarr_raw, "Sonarr", profiles_dir, used_qualities, final_cf_names=final_cf_names, specific_file=f)
+            profiles += process_profiles(
+                sonarr_profile_path, sonarr_raw, "Sonarr", None,
+                used_qualities, final_cf_names=final_cf_names, specific_file=f)
 
-    # Custom Profile Copies (Movies, TV, Anime)
-    print("Creating custom profile copies...")
-    
-    # TV (Season Packs) and TV (Singles)
-    source_s = profiles_dir / (clean_name("(S) WEB-1080p (Alternative)") + ".yml")
-    if source_s.exists():
-        with open(source_s, 'r') as f: s_data = yaml.safe_load(f)
-        for name_base in ["TV (Season Packs)", "TV (Singles)", "TV (Season Packs Bypass Dub)", "TV (Singles Bypass Dub)"]:
-            prefixed = "(S) " + name_base
-            new_data = s_data.copy()
+    by_name = {p["name"]: p for p in profiles}
+    copies = []
+
+    def derive(src_name, arr, name_bases, drop_2160p=False):
+        src = by_name.get(src_name)
+        if not src:
+            return
+        for name_base in name_bases:
+            prefixed = ("(R) " if arr == "Radarr" else "(S) ") + name_base
+            new_data = copy.deepcopy(src)
             new_data["name"] = prefixed
-            apply_customizations(new_data, "Sonarr", profile_name=prefixed)
-            with open(profiles_dir / (clean_name(prefixed) + ".yml"), 'w') as f:
-                yaml.dump(new_data, f, sort_keys=False)
+            if drop_2160p:
+                # Keep the full quality list; disable 2160p instead of removing.
+                for q in new_data.get("qualities", []):
+                    if "2160p" in q["name"]:
+                        q["enabled"] = False
+            apply_customizations(new_data, arr, profile_name=prefixed)
+            copies.append(new_data)
 
-    # Movies
-    source_r = profiles_dir / (clean_name("(R) Remux 2160p (Alternative)") + ".yml")
-    if source_r.exists():
-        with open(source_r, 'r') as f: r_data = yaml.safe_load(f)
-        for name_base in ["Movies", "Movies (Bypass Dub)"]:
-            prefixed = "(R) " + name_base
-            new_data = r_data.copy()
-            new_data["name"] = prefixed
-            new_data["qualities"] = [q for q in r_data.get("qualities", []) if "2160p" not in q["name"]]
-            # Fix nested qualities
-            for q in new_data["qualities"]:
-                if "qualities" in q:
-                    q["qualities"] = [nq for nq in q["qualities"] if "2160p" not in nq["name"]]
-            apply_customizations(new_data, "Radarr", profile_name=prefixed)
-            with open(profiles_dir / (clean_name(prefixed) + ".yml"), 'w') as f:
-                yaml.dump(new_data, f, sort_keys=False)
+    derive("(S) WEB-1080p (Alternative)", "Sonarr",
+           ["TV (Season Packs)", "TV (Singles)",
+            "TV (Season Packs Bypass Dub)", "TV (Singles Bypass Dub)"])
+    derive("(R) Remux 2160p (Alternative)", "Radarr",
+           ["Movies", "Movies (Bypass Dub)"], drop_2160p=True)
+    derive("(R) [Anime] Remux-1080p", "Radarr",
+           ["Anime", "Anime (Bypass Dub)"])
+    derive("(S) [Anime] Remux-1080p", "Sonarr",
+           ["Anime (Season Packs)", "Anime (Singles)",
+            "Anime (Season Pack Bypass Dub)", "Anime (Singles Bypass Dub)"])
 
-    # Anime (Radarr)
-    source_a_r = profiles_dir / (clean_name("(R) [Anime] Remux-1080p") + ".yml")
-    if source_a_r.exists():
-        with open(source_a_r, 'r') as f: a_data = yaml.safe_load(f)
-        for name_base in ["Anime", "Anime (Bypass Dub)"]:
-            prefixed = "(R) " + name_base
-            new_data = a_data.copy()
-            new_data["name"] = prefixed
-            apply_customizations(new_data, "Radarr", profile_name=prefixed)
-            with open(profiles_dir / (clean_name(prefixed) + ".yml"), 'w') as f:
-                yaml.dump(new_data, f, sort_keys=False)
+    return profiles + copies, used_qualities
 
-    # Anime (Sonarr)
-    source_a_s = profiles_dir / (clean_name("(S) [Anime] Remux-1080p") + ".yml")
-    if source_a_s.exists():
-        with open(source_a_s, 'r') as f: a_data = yaml.safe_load(f)
-        for name_base in ["Anime (Season Packs)", "Anime (Singles)", "Anime (Season Pack Bypass Dub)", "Anime (Singles Bypass Dub)"]:
-            prefixed = "(S) " + name_base
-            new_data = a_data.copy()
-            new_data["name"] = prefixed
-            apply_customizations(new_data, "Sonarr", profile_name=prefixed)
-            with open(profiles_dir / (clean_name(prefixed) + ".yml"), 'w') as f:
-                yaml.dump(new_data, f, sort_keys=False)
-
-    print("Conversion complete!")
 
 if __name__ == "__main__":
-    main()
+    print("This module only builds the in-memory model. "
+          "Run: python scripts/generate_v2.py")

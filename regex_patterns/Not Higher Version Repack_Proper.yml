@@ -1,6 +1,0 @@
-name: Not Higher Version Repack_Proper
-pattern: \b((repack|proper)[23])\b|\bREAL\.(REAL\.)?(PROPER|REPACK)\b
-description: Regex for Not Higher Version Repack/Proper
-tags:
-- Trash Guides
-tests: []

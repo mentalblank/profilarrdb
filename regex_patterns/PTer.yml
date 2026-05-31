@@ -1,6 +1,0 @@
-name: PTer
-pattern: ^(PTer)$
-description: Regex for PTer
-tags:
-- Trash Guides
-tests: []

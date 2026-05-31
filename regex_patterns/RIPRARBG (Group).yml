@@ -1,6 +1,0 @@
-name: RIPRARBG (Group)
-pattern: \b(RIPRARBG)\b
-description: Regex for RIPRARBG (Group)
-tags:
-- Trash Guides
-tests: []

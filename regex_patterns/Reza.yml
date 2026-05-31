@@ -1,6 +1,0 @@
-name: Reza
-pattern: \b(Reza)\b
-description: Regex for Reza
-tags:
-- Trash Guides
-tests: []

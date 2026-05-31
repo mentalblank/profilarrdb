@@ -1,6 +1,0 @@
-name: PMR
-pattern: ^(?=.*\b(PMR)\b)(?=.*\b(Remux)\b)
-description: Regex for PMR
-tags:
-- Trash Guides
-tests: []

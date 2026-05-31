@@ -1,6 +1,0 @@
-name: CyC
-pattern: \b(CyC)\b
-description: Regex for CyC
-tags:
-- Trash Guides
-tests: []

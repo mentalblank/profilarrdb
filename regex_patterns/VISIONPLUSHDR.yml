@@ -1,6 +1,0 @@
-name: VISIONPLUSHDR
-pattern: ^(VISIONPLUSHDR(-X|1000)?)$
-description: Regex for VISIONPLUSHDR
-tags:
-- Trash Guides
-tests: []

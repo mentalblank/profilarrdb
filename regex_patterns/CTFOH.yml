@@ -1,6 +1,0 @@
-name: CTFOH
-pattern: ^(CTFOH)$
-description: Regex for CTFOH
-tags:
-- Trash Guides
-tests: []

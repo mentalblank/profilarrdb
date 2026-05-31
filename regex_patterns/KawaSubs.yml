@@ -1,6 +1,0 @@
-name: KawaSubs
-pattern: \b(KawaSubs)\b
-description: Regex for KawaSubs
-tags:
-- Trash Guides
-tests: []

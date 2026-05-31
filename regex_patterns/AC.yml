@@ -1,6 +1,0 @@
-name: AC
-pattern: \[AC\]|-AC$
-description: Regex for AC
-tags:
-- Trash Guides
-tests: []

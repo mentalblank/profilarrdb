@@ -1,6 +1,0 @@
-name: Aergia
-pattern: \[Aergia\]|-Aergia(?!-raws)\b
-description: Regex for Aergia
-tags:
-- Trash Guides
-tests: []

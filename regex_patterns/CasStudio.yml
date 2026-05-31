@@ -1,6 +1,0 @@
-name: CasStudio
-pattern: ^(CasStudio)$
-description: Regex for CasStudio
-tags:
-- Trash Guides
-tests: []

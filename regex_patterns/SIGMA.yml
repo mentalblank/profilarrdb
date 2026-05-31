@@ -1,6 +1,0 @@
-name: SiGMA
-pattern: ^(SiGMA)$
-description: Regex for SiGMA
-tags:
-- Trash Guides
-tests: []

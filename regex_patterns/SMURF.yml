@@ -1,6 +1,0 @@
-name: SMURF
-pattern: ^(SMURF)$
-description: Regex for SMURF
-tags:
-- Trash Guides
-tests: []

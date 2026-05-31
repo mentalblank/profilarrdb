@@ -1,6 +1,0 @@
-name: VAV
-pattern: '[.]VAV\b'
-description: Regex for .VAV
-tags:
-- Trash Guides
-tests: []

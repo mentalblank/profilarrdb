@@ -1,6 +1,0 @@
-name: 24xHD
-pattern: \b(24xHD)\b
-description: Regex for 24xHD
-tags:
-- Trash Guides
-tests: []

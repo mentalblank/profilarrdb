@@ -1,6 +1,0 @@
-name: NanakoRaws
-pattern: Nanako[ ._-]?(Raws)
-description: Regex for NanakoRaws
-tags:
-- Trash Guides
-tests: []

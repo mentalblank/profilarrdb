@@ -1,6 +1,0 @@
-name: TVer
-pattern: \b(tver)\b
-description: Regex for TVer
-tags:
-- Trash Guides
-tests: []

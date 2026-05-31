@@ -1,6 +1,5 @@
 import re
 import json
-import yaml
 from .strings import clean_name, clean_html
 from .mappings.misc import ANIME_RENAME_MAPPING
 from .mappings.qualities import QUALITY_MAPPING
@@ -15,33 +14,35 @@ def should_skip(json_data, stem=""):
                 
     return False
 
-def apply_customizations(data, tag, profile_name=None):
-    """Apply custom profile modifications."""
-    # 1. Remove Remuxes
-    if "qualities" in data:
-        new_qs = []
-        for q in data["qualities"]:
-            if "Remux" in q["name"]:
-                continue
-            if "qualities" in q:
-                q["qualities"] = [sq for sq in q["qualities"] if "Remux" not in sq["name"]]
-                if not q["qualities"]: continue
-                # Flatten group if it only has one quality
-                if len(q["qualities"]) == 1:
-                    original_group_name = q["name"]
-                    q = q["qualities"][0]
-                    # Update upgrade_until if it was the group
-                    if "upgrade_until" in data and data["upgrade_until"].get("name") == original_group_name:
-                        data["upgrade_until"] = {"id": q.get("id"), "name": q["name"]}
-            new_qs.append(q)
-        data["qualities"] = new_qs
-    
-    # 2. Update upgrade_until if it was a Remux
-    if "upgrade_until" in data and "Remux" in data["upgrade_until"].get("name", ""):
-        if data["qualities"]:
-            data["upgrade_until"] = {"id": data["qualities"][0].get("id"), "name": data["qualities"][0]["name"]}
+
+def _fix_cutoff(data):
+    """Make sure upgrade_until references an enabled quality/group.
+
+    If the current cutoff is missing or disabled, fall back to the first enabled
+    quality item (top of the list).
+    """
+    quals = data.get("qualities", [])
+    enabled = [q for q in quals if q.get("enabled", True)]
+    cut = data.get("upgrade_until")
+    cut_ok = cut and any(
+        q.get("name") == cut.get("name") and q.get("enabled", True) for q in quals)
+    if not cut_ok:
+        if enabled:
+            top = enabled[0]
+            data["upgrade_until"] = {"id": top.get("id"), "name": top["name"]}
         else:
             data.pop("upgrade_until", None)
+
+def apply_customizations(data, tag, profile_name=None):
+    """Apply custom profile modifications."""
+    # 1. Disable Remuxes (keep the full quality list; just turn them off).
+    if "qualities" in data:
+        for q in data["qualities"]:
+            if "Remux" in q["name"]:
+                q["enabled"] = False
+
+    # 2. Ensure upgrade_until points at an enabled quality.
+    _fix_cutoff(data)
 
     # 3. Add Custom Formats
     cf_key = "custom_formats_" + tag.lower()
@@ -78,13 +79,19 @@ def apply_customizations(data, tag, profile_name=None):
         )
 
 def process_profiles(profile_path, raw_cf_map, tag, profiles_dir, used_qualities, final_cf_names=None, specific_file=None):
-    """Convert and save quality profiles."""
+    """Convert quality profiles to in-memory dicts.
+
+    Returns a list of profile dicts (the v1 YAML writer and the v2 ops emitter
+    both consume these). `profiles_dir` is kept for signature compatibility but
+    no longer written to here.
+    """
     app_tag = tag.lower()
-    
+    results = []
+
     files = [specific_file] if specific_file else profile_path.glob("*.json")
     for json_file in files:
         if json_file.name == "groups.json": continue
-        with open(json_file, 'r') as f: data = json.load(f)
+        with open(json_file, 'r', encoding='utf-8') as f: data = json.load(f)
         if should_skip(data, json_file.stem): continue
         
         orig_name = data.get("name")
@@ -181,21 +188,22 @@ def process_profiles(profile_path, raw_cf_map, tag, profiles_dir, used_qualities
         cutoff_item = None
 
         for item in raw_items:
-            if not item.get("allowed", False):
-                continue
+            # Keep ALL qualities (Profilarr/arr expect the complete ordered list);
+            # disallowed ones are emitted disabled (enabled=False), not dropped.
+            enabled = item.get("allowed", False)
 
             q_name = item.get("name")
             q_info = QUALITY_MAPPING.get(q_name.lower(), {"name": q_name})
             target_name = q_info["name"]
-            new_item = {"name": target_name}
-            
+            new_item = {"name": target_name, "enabled": enabled}
+
             used_qualities[app_tag].add(target_name)
-            
+
             if "items" in item:
                 new_item["id"] = group_id_counter
                 new_item["description"] = ""
                 group_id_counter -= 1
-                
+
                 nested_qualities = []
                 for ni in item["items"]:
                     ni_info = QUALITY_MAPPING.get(ni.lower(), {"name": ni})
@@ -203,14 +211,14 @@ def process_profiles(profile_path, raw_cf_map, tag, profiles_dir, used_qualities
                     ni_dict = {"id": ni_info.get("id"), "name": ni_name}
                     nested_qualities.append(ni_dict)
                     used_qualities[app_tag].add(ni_name)
-                    if ni_name == cutoff_name:
+                    if enabled and ni_name == cutoff_name:
                         cutoff_item = ni_dict
                 new_item["qualities"] = nested_qualities
             else:
                 if "id" in q_info:
                     new_item["id"] = q_info["id"]
-            
-            if target_name == cutoff_name:
+
+            if enabled and target_name == cutoff_name:
                 cutoff_item = {"id": new_item.get("id"), "name": target_name}
 
             processed_items.append(new_item)
@@ -219,6 +227,6 @@ def process_profiles(profile_path, raw_cf_map, tag, profiles_dir, used_qualities
         if cutoff_item:
             profile_yaml["upgrade_until"] = cutoff_item
         
-        filename = clean_name(prefixed_name)
-        with open(profiles_dir / f"{filename}.yml", 'w') as f:
-            yaml.dump(profile_yaml, f, sort_keys=False)
+        results.append(profile_yaml)
+
+    return results

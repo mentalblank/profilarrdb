@@ -1,6 +1,0 @@
-name: '[rartv]'
-pattern: \[rartv\]
-description: Regex for [rartv]
-tags:
-- Trash Guides
-tests: []

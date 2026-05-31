@@ -1,6 +1,0 @@
-name: PD
-pattern: ^(PD)$
-description: Regex for PD
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: Obfuscated
-pattern: -Obfuscated\b
-description: Regex for Obfuscated
-tags:
-- Trash Guides
-tests: []

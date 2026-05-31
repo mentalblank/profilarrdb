@@ -1,6 +1,0 @@
-name: Yameii
-pattern: \[Yameii\]|-Yameii\b
-description: Regex for Yameii
-tags:
-- Trash Guides
-tests: []

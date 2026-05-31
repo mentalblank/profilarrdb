@@ -1,6 +1,0 @@
-name: Legion
-pattern: \[Legion\]|-Legion\b
-description: Regex for Legion
-tags:
-- Trash Guides
-tests: []

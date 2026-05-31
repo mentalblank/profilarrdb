@@ -1,6 +1,0 @@
-name: ROKU
-pattern: \b(ROKU)\b
-description: Regex for ROKU
-tags:
-- Trash Guides
-tests: []

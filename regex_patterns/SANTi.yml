@@ -1,6 +1,0 @@
-name: SANTi
-pattern: ^(SANTi)$
-description: Regex for SANTi
-tags:
-- Trash Guides
-tests: []

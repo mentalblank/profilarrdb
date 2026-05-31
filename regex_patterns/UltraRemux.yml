@@ -1,6 +1,0 @@
-name: UltraRemux
-pattern: \b(UltraRemux)\b
-description: Regex for UltraRemux
-tags:
-- Trash Guides
-tests: []

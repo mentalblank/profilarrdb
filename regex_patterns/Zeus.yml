@@ -1,6 +1,0 @@
-name: Zeus
-pattern: ^(Zeus)$
-description: Regex for Zeus
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: HiFi
-pattern: ^(HiFi)$
-description: Regex for HiFi
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: GuyZo (Title)
-pattern: \b(GuyZo|BR-GuyZo)\b
-description: Regex for GuyZo (Title)
-tags:
-- Trash Guides
-tests: []

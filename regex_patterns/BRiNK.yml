@@ -1,6 +1,0 @@
-name: BRiNK
-pattern: ^(BRiNK)$
-description: Regex for BRiNK
-tags:
-- Trash Guides
-tests: []

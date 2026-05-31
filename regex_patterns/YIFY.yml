@@ -1,6 +1,0 @@
-name: YIFY
-pattern: ^(YIFY)$
-description: Regex for YIFY
-tags:
-- Trash Guides
-tests: []

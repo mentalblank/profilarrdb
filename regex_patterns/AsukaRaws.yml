@@ -1,6 +1,0 @@
-name: AsukaRaws
-pattern: Asuka[ ._-]?(Raws)
-description: Regex for AsukaRaws
-tags:
-- Trash Guides
-tests: []

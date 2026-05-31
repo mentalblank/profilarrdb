@@ -1,6 +1,0 @@
-name: SoLCE
-pattern: \b(SoLCE)\b
-description: Regex for SoLCE
-tags:
-- Trash Guides
-tests: []

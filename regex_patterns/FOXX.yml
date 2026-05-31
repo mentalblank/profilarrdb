@@ -1,6 +1,0 @@
-name: FOXX
-pattern: ^(FOXX)$
-description: Regex for FOXX
-tags:
-- Trash Guides
-tests: []

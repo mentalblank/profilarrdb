@@ -1,6 +1,0 @@
-name: NoRBiT (Group)
-pattern: \b(NoRBiT)\b
-description: Regex for NoRBiT (Group)
-tags:
-- Trash Guides
-tests: []

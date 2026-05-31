@@ -1,6 +1,0 @@
-name: USD
-pattern: \[USD\]|-USD\b
-description: Regex for USD
-tags:
-- Trash Guides
-tests: []

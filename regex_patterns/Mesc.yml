@@ -1,6 +1,0 @@
-name: Mesc
-pattern: ^(Mesc)$
-description: Regex for Mesc
-tags:
-- Trash Guides
-tests: []

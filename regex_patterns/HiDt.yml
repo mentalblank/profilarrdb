@@ -1,6 +1,0 @@
-name: HiDt
-pattern: ^(HiDt)$
-description: Regex for HiDt
-tags:
-- Trash Guides
-tests: []

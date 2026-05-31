@@ -1,6 +1,0 @@
-name: Tigole
-pattern: ^(Tigole)$
-description: Regex for Tigole
-tags:
-- Trash Guides
-tests: []

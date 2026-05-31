@@ -1,6 +1,0 @@
-name: Not DTS-ES
-pattern: dts.?es
-description: Regex for Not DTS-ES
-tags:
-- Trash Guides
-tests: []

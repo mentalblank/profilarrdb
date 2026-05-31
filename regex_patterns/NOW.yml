@@ -1,6 +1,0 @@
-name: NOW
-pattern: \b(now)\b[ ._-]web[ ._-]?(dl|rip)?\b
-description: Regex for NOW
-tags:
-- Trash Guides
-tests: []

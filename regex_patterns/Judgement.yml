@@ -1,6 +1,0 @@
-name: Judgement
-pattern: \[Judgment\]|-Judgment\b
-description: Regex for Judgement
-tags:
-- Trash Guides
-tests: []

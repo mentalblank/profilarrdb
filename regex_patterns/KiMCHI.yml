@@ -1,6 +1,0 @@
-name: KiMCHI
-pattern: ^(KiMCHI)$
-description: Regex for KiMCHI
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: Not Hulu
-pattern: \b(hulu)\b
-description: Regex for Not Hulu
-tags:
-- Trash Guides
-tests: []

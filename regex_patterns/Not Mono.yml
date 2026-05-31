@@ -1,6 +1,0 @@
-name: Not Mono
-pattern: '[^0-9]1[ .]0\b|\bMono\b|\[PCM \]'
-description: Regex for Not Mono
-tags:
-- Trash Guides
-tests: []

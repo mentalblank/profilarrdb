@@ -1,6 +1,0 @@
-name: DEEP
-pattern: ^(DEEP)$
-description: Regex for DEEP
-tags:
-- Trash Guides
-tests: []

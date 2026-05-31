@@ -1,6 +1,0 @@
-name: naiyas
-pattern: \[naiyas\]|-naiyas\b
-description: Regex for naiyas
-tags:
-- Trash Guides
-tests: []

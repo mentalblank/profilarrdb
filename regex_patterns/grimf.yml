@@ -1,6 +1,0 @@
-name: grimf
-pattern: \b(grimf)\b
-description: Regex for grimf
-tags:
-- Trash Guides
-tests: []

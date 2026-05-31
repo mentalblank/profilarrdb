@@ -1,6 +1,0 @@
-name: DIY
-pattern: \[DIY\]|-DIY\b
-description: Regex for DIY
-tags:
-- Trash Guides
-tests: []

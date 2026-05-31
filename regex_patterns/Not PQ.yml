@@ -1,6 +1,0 @@
-name: Not PQ
-pattern: \b(PQ)\b
-description: Regex for Not PQ
-tags:
-- Trash Guides
-tests: []

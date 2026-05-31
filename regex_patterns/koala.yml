@@ -1,6 +1,0 @@
-name: koala
-pattern: \[koala\]|-koala\b
-description: Regex for koala
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: GSK_kun
-pattern: \b(GSK[._-]kun)\b
-description: Regex for GSK_kun
-tags:
-- Trash Guides
-tests: []

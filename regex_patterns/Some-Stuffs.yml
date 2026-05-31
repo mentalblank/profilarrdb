@@ -1,6 +1,0 @@
-name: Some-Stuffs
-pattern: \b(Some-Stuffs)\b
-description: Regex for Some-Stuffs
-tags:
-- Trash Guides
-tests: []

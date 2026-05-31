@@ -1,6 +1,0 @@
-name: Judas
-pattern: \[Judas\]|-Judas
-description: Regex for Judas
-tags:
-- Trash Guides
-tests: []

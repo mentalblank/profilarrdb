@@ -1,6 +1,0 @@
-name: CtrlHD
-pattern: ^(CtrlHD)$
-description: Regex for CtrlHD
-tags:
-- Trash Guides
-tests: []

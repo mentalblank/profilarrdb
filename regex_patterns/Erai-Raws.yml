@@ -1,6 +1,0 @@
-name: Erai-Raws
-pattern: \b(Erai-raws)\b
-description: Regex for Erai-Raws
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: WiLDCAT
-pattern: ^(WiLDCAT)$
-description: Regex for WiLDCAT
-tags:
-- Trash Guides
-tests: []

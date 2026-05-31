@@ -1,6 +1,0 @@
-name: RAI
-pattern: \b(RAI)\b
-description: Regex for RAI
-tags:
-- Trash Guides
-tests: []

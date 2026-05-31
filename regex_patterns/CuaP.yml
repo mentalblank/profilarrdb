@@ -1,6 +1,0 @@
-name: CuaP
-pattern: \b(CuaP)\b
-description: Regex for CuaP
-tags:
-- Trash Guides
-tests: []

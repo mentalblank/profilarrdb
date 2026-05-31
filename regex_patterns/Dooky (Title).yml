@@ -1,6 +1,0 @@
-name: Dooky (Title)
-pattern: \b(Dooky)\b
-description: Regex for Dooky (Title)
-tags:
-- Trash Guides
-tests: []

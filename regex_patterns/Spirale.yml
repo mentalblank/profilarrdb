@@ -1,6 +1,0 @@
-name: Spirale
-pattern: \b(Spirale)\b
-description: Regex for Spirale
-tags:
-- Trash Guides
-tests: []

@@ -1,6 +1,0 @@
-name: Not IMAX Edition
-pattern: \b(IMAX[ ._-]Edition)\b
-description: Regex for Not IMAX Edition
-tags:
-- Trash Guides
-tests: []

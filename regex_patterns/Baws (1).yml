@@ -1,6 +1,0 @@
-name: Baws (1)
-pattern: \b(Baws)\b
-description: Regex for Baws (1)
-tags:
-- Trash Guides
-tests: []

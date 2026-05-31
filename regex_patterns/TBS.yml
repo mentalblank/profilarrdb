@@ -1,6 +1,0 @@
-name: TBS
-pattern: ^(TBS)$
-description: Regex for TBS
-tags:
-- Trash Guides
-tests: []

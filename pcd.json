@@ -1,0 +1,26 @@
+{
+  "name": "Profilarr Database",
+  "version": "2.0.0",
+  "description": "Profilarr Database v2",
+  "arr_types": [
+    "radarr",
+    "sonarr"
+  ],
+  "dependencies": {
+    "https://github.com/Dictionarry-Hub/schema": "1.1.0"
+  },
+  "authors": [
+    {
+      "name": "Profilarr Team"
+    }
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/mentalblank/profilarrdb",
+  "links": {
+    "homepage": "https://dictionarry.dev",
+    "issues": "https://github.com/mentalblank/profilarrdb/issues"
+  },
+  "profilarr": {
+    "minimum_version": "2.0.0"
+  }
+}

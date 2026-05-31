@@ -1,6 +1,0 @@
-name: NZBGeek
-pattern: -NZBGeek\b
-description: Regex for NZBGeek
-tags:
-- Trash Guides
-tests: []

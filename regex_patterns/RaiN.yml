@@ -1,6 +1,0 @@
-name: RaiN
-pattern: \[RaiN\]|-RaiN\b
-description: Regex for RaiN
-tags:
-- Trash Guides
-tests: []

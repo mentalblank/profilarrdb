@@ -1,6 +1,0 @@
-name: DemiHuman
-pattern: \b(DemiHuman)\b
-description: Regex for DemiHuman
-tags:
-- Trash Guides
-tests: []

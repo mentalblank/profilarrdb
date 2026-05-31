@@ -1,6 +1,0 @@
-name: DKB
-pattern: \b(DKB)\b
-description: Regex for DKB
-tags:
-- Trash Guides
-tests: []

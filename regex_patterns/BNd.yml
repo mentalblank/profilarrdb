@@ -1,6 +1,0 @@
-name: BNd
-pattern: ^(BNd)$
-description: Regex for BNd
-tags:
-- Trash Guides
-tests: []

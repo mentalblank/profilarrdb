@@ -1,6 +1,0 @@
-name: NTRM
-pattern: \b(NTRM)\b
-description: Regex for NTRM
-tags:
-- Trash Guides
-tests: []

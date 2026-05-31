@@ -1,6 +1,0 @@
-name: KKTV
-pattern: \b(KKTV)\b
-description: Regex for KKTV
-tags:
-- Trash Guides
-tests: []
