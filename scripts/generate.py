@@ -17,9 +17,8 @@ from utils.custom_formats import (
     deduplicate_conditions,
     is_cf_equal,
     fuzzy_merge_cf,
-    union_merge_cf,
     has_incompatible_language,
-    is_union_mergeable
+    arr_merge_cf,
 )
 from utils.profiles import process_profiles, apply_customizations, should_skip
 from utils.mappings.source import SOURCE_MAPPING
@@ -121,43 +120,11 @@ def build_cfs_and_regex(guides_dir):
                 merged_cfs[stem] = merged
                 final_cf_names[("radarr", stem)] = merged["name"]
                 final_cf_names[("sonarr", stem)] = merged["name"]
-            elif is_union_mergeable(r_cf, s_cf):
-                # Union Merge (Only Group/Title lists differ)
-                merged = union_merge_cf(r_cf, s_cf)
+            else:
+                merged = arr_merge_cf(r_cf, s_cf)
                 merged_cfs[stem] = merged
                 final_cf_names[("radarr", stem)] = merged["name"]
                 final_cf_names[("sonarr", stem)] = merged["name"]
-            else:
-                # Different - keep both with prefixes, but synchronize unique groups/titles
-                r_new = r_cf.copy()
-                s_new = s_cf.copy()
-                
-                # Identify all unique group/title conditions from both
-                r_regex = {c["name"].lower(): c for c in r_cf.get("conditions", []) if c.get("type") in ["release_group", "release_title"]}
-                s_regex = {c["name"].lower(): c for c in s_cf.get("conditions", []) if c.get("type") in ["release_group", "release_title"]}
-                
-                # Synchronize Radarr -> Sonarr
-                s_final_conds = s_cf.get("conditions", []).copy()
-                for name_l, cond in r_regex.items():
-                    if name_l not in s_regex:
-                        s_final_conds.append(cond)
-                
-                # Synchronize Sonarr -> Radarr
-                r_final_conds = r_cf.get("conditions", []).copy()
-                for name_l, cond in s_regex.items():
-                    if name_l not in r_regex:
-                        r_final_conds.append(cond)
-                
-                r_new["conditions"] = sort_and_group_conditions(deduplicate_conditions(r_final_conds))
-                s_new["conditions"] = sort_and_group_conditions(deduplicate_conditions(s_final_conds))
-                
-                r_new["name"] = f"(R) {r_cf['name']}"
-                merged_cfs[f"radarr-{stem}"] = r_new
-                final_cf_names[("radarr", stem)] = r_new["name"]
-                
-                s_new["name"] = f"(S) {s_cf['name']}"
-                merged_cfs[f"sonarr-{stem}"] = s_new
-                final_cf_names[("sonarr", stem)] = s_new["name"]
         elif r_cf:
             # Radarr only - no collision, no prefix
             merged_cfs[stem] = r_cf

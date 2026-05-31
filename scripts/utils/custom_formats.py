@@ -201,6 +201,70 @@ def is_union_mergeable(cf1, cf2):
             
     return True
 
+def non_regex_conditions_match(cf1, cf2):
+    """True if the two CFs have identical non-(group/title) conditions.
+
+    (Same as is_union_mergeable's first half, but does not also require shared
+    regex conditions to have identical patterns — those are reconciled per-arr.)
+    """
+    r_other = [c for c in cf1.get("conditions", []) if c.get("type") not in ("release_group", "release_title")]
+    s_other = [c for c in cf2.get("conditions", []) if c.get("type") not in ("release_group", "release_title")]
+    if len(r_other) != len(s_other):
+        return False
+
+    def norm(c):
+        nc = {k: v for k, v in c.items() if not k.startswith("_") and k != "arrType"}
+        nc["name"] = str(nc.get("name", "")).lower()
+        return str(sorted(nc.items()))
+
+    return set(norm(c) for c in r_other) == set(norm(c) for c in s_other)
+
+
+def _cond_key(c):
+    """Identity of a condition ignoring arr_type and internal fields."""
+    d = {k: v for k, v in c.items() if not k.startswith("_") and k != "arrType"}
+    d["name"] = str(d.get("name", "")).lower()
+    return tuple(sorted((k, str(v)) for k, v in d.items()))
+
+
+def arr_merge_cf(cf1, cf2):
+    """Merge a Radarr (cf1) and Sonarr (cf2) CF into one using per-condition
+    arr_type. Conditions identical in both -> arr_type 'all'; conditions present
+    only in one app (e.g. Radarr quality_modifier=remux vs Sonarr source=bluray_raw,
+    or app-specific release-group regex) -> tagged with that app.
+    """
+    merged = cf1.copy()
+    merged["name"] = re.sub(r'^\([RS]\) ', '', cf1["name"])
+    merged["tags"] = sorted(set(cf1.get("tags", [])) | set(cf2.get("tags", [])))
+    d1, d2 = cf1.get("description", ""), cf2.get("description", "")
+    merged["description"] = d1 if len(d1) >= len(d2) else d2
+
+    r_conds = cf1.get("conditions", [])
+    s_conds = cf2.get("conditions", [])
+    r_keys = {_cond_key(c) for c in r_conds}
+    s_keys = {_cond_key(c) for c in s_conds}
+    shared = r_keys & s_keys
+
+    out = []
+    seen = set()
+    for c in r_conds:
+        k = _cond_key(c)
+        nc = c.copy()
+        nc["arrType"] = "all" if k in shared else "radarr"
+        out.append(nc)
+        seen.add(k)
+    for c in s_conds:
+        k = _cond_key(c)
+        if k in shared:
+            continue  # already emitted as 'all'
+        nc = c.copy()
+        nc["arrType"] = "sonarr"
+        out.append(nc)
+
+    merged["conditions"] = sort_and_group_conditions(deduplicate_conditions(out))
+    return merged
+
+
 def union_merge_cf(cf1, cf2):
     """Perform a union merge of conditions, combining group/title lists."""
     merged = cf1.copy()
