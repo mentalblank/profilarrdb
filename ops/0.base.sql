@@ -1,7 +1,7 @@
 -- @operation: export
 -- @entity: batch
 -- @name: Base import from TRaSH Guides
--- @exportedAt: 2026-06-03T01:21:43.000Z
+-- @exportedAt: 2026-06-04T01:21:41.000Z
 
 -- Tags
 INSERT INTO tags (name) VALUES ('1080p');
@@ -1076,251 +1076,6 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ZQ', '^(ZQ)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ZR', '\b(ZR)\b|-ZR-', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('zza', '\[zza\]|-zza\b', NULL, NULL);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WAVVE', 'Wavve
-
-Wavve is a South Korean subscription streaming service operated by SK Telecom, offering TV dramas, variety shows, films, documentaries, animations, and sports. It was launched in September 2019 as a joint venture between SK Telecom and South Korea''s three major broadcasters — KBS, MBC, and SBS. Wavve has received approval to merge with fellow Korean streaming service TVING.
-
-For more information, visit the Wavve Wikipedia page (https://en.wikipedia.org/wiki/Wavve).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WAVVE', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WAVVE', 'WAVVE', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WAVVE', 'WAVVE', 'WAVVE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WAVVE', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WAVVE', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WAVVE', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WAVVE', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH AD', 'With Audio Description
-
-Audio Description (AD) is an extra narration track that describes key visual details — such as scenery, costumes, and actions — for blind or visually impaired viewers. It makes TV and film content more accessible by explaining what cannot be heard in the main audio.
-
-Some releases include Audio Description, marked as `WITH AD` or `AD`. Note: this is not the same as advertisements.
-
-For more information, visit the Audio Description Wikipedia page (https://en.wikipedia.org/wiki/Audio_description).', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH AD', 'Audio Description', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH AD', 'Audio Description', 'Audio Description');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('iT', 'iTunes
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/ITunes)
-
-Apple introduced iTunes 6, enabling support for purchasing and viewing video content purchased from the iTunes Store. At launch, the store offered popular shows from the ABC network along with Disney Channel series. In 2008, Apple and select film studios introduced "iTunes Digital Copy", a feature on select DVDs and Blu-ray discs allowing a digital copy in iTunes and associated media players.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('iT', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'iTunes', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iT', 'iTunes', 'iTunes');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'iT Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iT', 'iT Rename', 'iT Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iT', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iT', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEBDL Boost', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEBDL Boost', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEBDL Boost', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEBDL Boost', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEBDL Boost', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEBDL Boost', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEBDL Boost', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Obfuscated', 'Obfuscated
-
-Obfuscated releases are something you find on Usenet to do re-posts of common/popular releases.
-
-Several indexers that rely on auto-generating their NZB from groups by seeing things in the clear will suffer the fate of having those NZB DMCA''ed after time, as others can just see what it is and request a file takedown.
-You want indexers that get/do obfuscated releases and allow NZBs to be submitted directly to the NZB-indexer. Then, even thousands of days old releases still work fine unless someone leaks those NZBs to one of those public sites, where they can be requested to be taken down.
-
-- In general, if you''re using Usenet, DO NOT use this Custom Format.
-- Use this Custom Format ONLY if you DO NOT prefer Obfuscated releases.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', '4P', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '4P', '4P');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', '4Planet', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '4Planet', '4Planet');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', '_nzb', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '_nzb', '_nzb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'AsRequested', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'AsRequested', 'AsRequested');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'BUYMORE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'BUYMORE', 'BUYMORE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'CAPTCHA', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'CAPTCHA', 'CAPTCHA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Chamele0n', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Chamele0n', 'Chamele0n');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'GEROV', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'GEROV', 'GEROV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'iNC0GNiTO', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'iNC0GNiTO', 'iNC0GNiTO');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'NZBGeek', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'NZBGeek', 'NZBGeek');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Obfuscated', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Obfuscated', 'Obfuscated');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'postbot', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'postbot', 'postbot');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Rakuv', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Rakuv', 'Rakuv');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Scrambled', 'release_title', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Scrambled', '(R) Scrambled');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Scrambled (sonarr)', 'release_title', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Scrambled (sonarr)', '(S) Scrambled');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'WhiteRev', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'WhiteRev', 'WhiteRev');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'WRTEAM', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'WRTEAM', 'WRTEAM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'xpost', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'xpost', 'xpost');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Anime BD Tier 02
-
-Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Aergia', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Aergia', 'Aergia');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arg0', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arg0', 'Arg0');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arid', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arid', 'Arid');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'FateSucks', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'FateSucks', 'FateSucks');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hchcsen', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hchcsen', 'hchcsen');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hydes', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hydes', 'hydes');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JOHNTiTOR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JOHNTiTOR', 'JOHNTiTOR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JySzE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JySzE', 'JySzE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'koala', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'koala', 'koala');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Kulot', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Kulot', 'Kulot');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'LostYears', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'LostYears', 'LostYears');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Lulu', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Lulu', 'Lulu');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Meakes', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Meakes', 'Meakes');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Orphan', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Orphan', 'Orphan');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'PMR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'PMR', 'PMR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Vodes', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Vodes', 'Vodes');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'WAP', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'WAP', 'WAP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'YURI', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'YURI', 'YURI');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'ZeroBuild', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'ZeroBuild', 'ZeroBuild');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray Remux', 'bluray_raw');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'DVD', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('1.0 Mono', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1.0 Mono', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1.0 Mono', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Mono', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Mono', 'Mono');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Not 3.0ch', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Not 3.0ch', 'Not 3.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Not 4.0ch', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Not 4.0ch', 'Not 4.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Not High Channel Count', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Not High Channel Count', 'Not High Channel Count');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MainFrame', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MainFrame', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MainFrame', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MainFrame', 'Resolution');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MainFrame', 'MainFrame', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MainFrame', 'MainFrame', 'MainFrame');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MainFrame', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('MainFrame', '2160p', '2160p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FLAC', 'FLAC (Free Lossless Audio Codec – lossless)
-
-FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3 - but lossless, meaning that the audio compressed with FLAC does not receive any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FLAC', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FLAC', 'Lossless Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'FLAC', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'FLAC', 'FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not PCM', 'Not PCM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Theatrical Cut', 'Theatrical Cut
-
-The Theatrical Cut is the film''s version shown in the cinemas.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Theatrical Cut', 'Edition');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Theatrical Cut', 'Theatrical', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Theatrical Cut', 'Theatrical', 'Theatrical');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian Tier 02', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 02', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 02', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 02', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 02', 'PandaMoon', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 02', 'PandaMoon', 'PandaMoon');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 02', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 02', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 02', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 02', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remux Tier 03', 'Remux Tier 03
-
-Groups that:
-
-- Are new and haven''t released many titles yet
-- Have retired and their releases don''t meet current quality standards
-- Pay good attention to detail and use reliable sources
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'Remux', 'quality_modifier', 'radarr', 0, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('Remux Tier 03', 'Remux', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', '12GaugeShotgun', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', '12GaugeShotgun', '12GaugeShotgun');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'decibeL', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'decibeL', 'decibeL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'EPSiLON', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'EPSiLON', 'EPSiLON');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'HiFi', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'HiFi', 'HiFi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'iFT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'iFT', 'iFT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'KRaLiMaRKo', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'KRaLiMaRKo', 'KRaLiMaRKo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'NTb', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'NTb', 'NTb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'PTP', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'PTP', 'PTP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'SumVision', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'SumVision', 'SumVision');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'TOA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'TOA', 'TOA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'TRiToN', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'TRiToN', 'TRiToN');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Vinegar Syndrome', 'Vinegar Syndrome
-
-Vinegar Syndrome is a US-based company founded in 2012 to preserve and distribute old X-rated films. Over time, they expanded their catalog to include other types of cult and exploitation films, specializing in horror and action genres.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Vinegar Syndrome', 'Vinegar Syndrome', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Vinegar Syndrome', 'Vinegar Syndrome', 'Vinegar Syndrome');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Vinegar Syndrome', 'VS', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Vinegar Syndrome', 'VS', 'VS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Vinegar Syndrome', 'VinSyn', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Vinegar Syndrome', 'VinSyn', 'VinSyn');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('2160p', '2160p
-
-This Custom Format can boost 2160p releases. It is only useful if you use Merge Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2160p', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2160p', 'Resolution');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2160p', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('2160p', '2160p', '2160p');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 06 (FanSubs)', 'Anime Web Tier 06
 
 FanSub groups that are consistent.', 0);
@@ -1357,114 +1112,36 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 06 (FanSubs)', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 06 (FanSubs)', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 06 (FanSubs)', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x266', 'x266
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('IMAX', 'IMAX
 
-Versatile Video Coding (VVC), also known as H.266, ISO/IEC 23090-3, and MPEG-I Part 3, is a video compression standard finalized on 6 July 2020. Wikipedia (https://en.wikipedia.org/wiki/Versatile_Video_Coding).
+From In Depth Cine (https://www.indepthcine.com/videos/imax)
 
-This applies to all x266/VVC releases that are not Remux.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x266', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x266', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x266', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x266', 'Not Remux', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x266', 'x|h266', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x266', 'x|h266', 'xh266');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x266', 'Not Remux (sonarr)', 'source', 'sonarr', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x266', 'Not Remux (sonarr)', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('U-NEXT', 'U-NEXT
-
-U-NEXT is a Japanese subscription streaming service launched in 2007, and is one of Japan''s leading streaming platforms. It holds a 17.9% market share in Japan''s subscription streaming sector, ranking second only to Netflix. It offers a wide range of movies, dramas, anime, live sports, and original content, along with an extensive e-book and manga library. It is primarily available in Japan.
-
-For more information, visit the U-NEXT Wikipedia page (https://en.wikipedia.org/wiki/U-Next).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('U-NEXT', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('U-NEXT', 'U-NEXT', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('U-NEXT', 'U-NEXT', 'U-NEXT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('U-NEXT', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('U-NEXT', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('U-NEXT', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('U-NEXT', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('STAN', 'Stan
+IMAX films are shot in tall aspect ratios, typically 1.9:1 or sometimes 1.43:1. Most IMAX film releases also have scenes shot at wider aspect ratios and, as a result, the aspect ratio will change throughout. Because they are shot on large format cameras, there is often less film grain present. This results in a clearer picture.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX', 'Aspect Ratio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX', 'Edition');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IMAX', 'IMAX', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IMAX', 'IMAX', 'IMAX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IMAX', 'NOT: IMAX Enhanced', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IMAX', 'NOT: IMAX Enhanced', 'NOT - IMAX Enhanced');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CBC', 'Canadian Broadcasting Corporation
 
 From Wikipedia, the free encyclopedia ()
 
-Stan is an Australian over-the-top streaming service. The service offers a broad range of film and television content from both local and foreign productions, particularly from the United States and United Kingdom. Stan also includes a growing library of their own original film and television content. With over 2.6 million subscribers, as of June 2023 Stan is the fourth largest streaming service in Australia, behind Disney+, Amazon Prime Video and Netflix.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('STAN', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('STAN', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'Stan', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STAN', 'Stan', 'Stan');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'Stan Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STAN', 'Stan Rename', 'Stan Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STAN', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STAN', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BW', 'Black & White Versions
+The Canadian Broadcasting Corporation (French: Société Radio-Canada), branded as CBC/Radio-Canada, is the Canadian public broadcaster for both radio and television. It is a Crown corporation that serves as the national public broadcaster, with its English-language and French-language service units known as CBC and Radio-Canada, respectively.
 
-Some shows are released in both Color and Black & White versions. Users who prefer the color version should keep the default negative score of -10000. Since Sonarr doesn’t support editions, if you prefer the Black & White version, assign a positive score (1-5 should be enough) to this Custom Format. Sonarr will then prefer the Black & White releases, and the Custom Format will also be used in your naming scheme.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BW', 'Blackout/B&W/Black&Chrome', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BW', 'Blackout/B&W/Black&Chrome', '(S) Blackout_B&W_Black&Chrome');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v0', 'v0
+CBC Gem
 
-Custom Format to cover releases named with v0 which we don''t want.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v0', 'v0', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v0', 'v0', 'v0');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 03', 'UHD Bluray Tier 03
+From Wikipedia, the free encyclopedia ()
 
-Groups that:
-
-- Are new, and have released several dozen objectively good quality releases
-- Have retired and their releases don''t meet current quality standards
-- Pay good attention to detail and use reliable sources
-- Groups that have been added in conjunction with specific quality profiles
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'UHD Bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 03', 'Not REMUX', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'Not WEBDL', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 03', 'Not WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'Not WEBRIP', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 03', 'Not WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Bluray Tier 03', '2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'BHDStudio', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'BHDStudio', 'BHDStudio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'hallowed', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'hallowed', 'hallowed');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'HONE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'HONE', 'HONE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'PTer', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'PTer', 'PTer');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'SPHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'SPHD', 'SPHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'WEBDV', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'WEBDV', 'WEBDV');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('B-Global', 'B-Global
-
-From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Bilibili)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('B-Global', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('B-Global', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('B-Global', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('B-Global', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('B-Global', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'B-Global', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('B-Global', 'B-Global', 'B-Global');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HDR10+ Boost', 'HDR10+ Boost
-
-If you prefer HDR10+ releases and have compatible equipment, add the HDR10+ Boost custom format. This custom format prioritizes releases containing HDR10+ over standard HDR releases.
-
-*This custom format also boosts DV HDR10+ releases if you prefer them over DV HDR10.*', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HDR10+ Boost', 'HDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR10+ Boost', 'HDR10+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR10+ Boost', 'HDR10+', 'HDR10+');
+CBC Gem is CBC Television''s over-the-top streaming platform; it launched in 2018, replacing the existing CBC TV app. The service carries live and on-demand programming from CBC Television, CBC News, and CBC Sports, as well as short- and long-form original programming and acquisitions (including films and television series).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CBC', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CBC', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CBC', 'CBC', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CBC', 'CBC', 'CBC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CBC', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CBC', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CBC', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CBC', 'WEBRIP', 'webrip');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 01 (Top SeaDex Muxers)', 'Anime BD Tier 01
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
@@ -1499,113 +1176,6 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 01 (Top SeaDex Muxers)', 'Bluray Remux', 'bluray_raw');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 01 (Top SeaDex Muxers)', 'DVD', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 01 (Top SeaDex Muxers)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('1080p', '1080p
-
-This Custom Format can boost 1080p releases. It is only useful if you use Merge Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1080p', '1080p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1080p', 'Resolution');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1080p', '1080p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('1080p', '1080p', '1080p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ROKU', 'ROKU
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/The_Roku_Channel)
-
-The Roku Channel is an over-the-top streaming television service available in the United States, Canada, Mexico and the United Kingdom. The service was launched in 2017, and is owned and operated by Roku, Inc. It is the most popular free ad-supported streaming television (FAST) service in the United States, reportedly reaching 145 million people, as of 2024.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ROKU', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ROKU', 'ROKU', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ROKU', 'ROKU', 'ROKU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ROKU', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ROKU', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ROKU', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ROKU', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DV (Disk)', 'DV (Disk)
-
-This will boost the score for Dolby Vision Releases using the original full-quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (Disk)', 'HDR');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (Disk)', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'FraMeSToR', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'FraMeSToR', 'FraMeSToR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'DV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'DV', 'DV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'No FANRES', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'No FANRES', 'No FANRES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'Not Hybrid', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'Not Hybrid', 'Not Hybrid');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'Not Hybrid Release Group', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'Not Hybrid Release Group', 'Not Hybrid Release Group (Title)');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Streaming Boost', 'UHD Streaming Boost
-
-Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services'' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Streaming Boost', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Streaming Boost', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Streaming Boost', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'Disney+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'Disney+', 'Disney+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'HBO Max', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'HBO Max', 'HBO Max');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'HMAX Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'HMAX Rename', 'HMAX Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'Netflix', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'Netflix', 'Netflix');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Streaming Boost', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Streaming Boost', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Streaming Boost', '2160p', '2160p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('720p', '720p
-
-This Custom Format can boost 720p releases. It is only useful if you use Merge Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('720p', '720p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('720p', 'Resolution');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('720p', '720p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('720p', '720p', '720p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Wrong Language', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Wrong Language', 'Language');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Wrong Language', 'Not Original', 'language', 'all', 0, 1);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Wrong Language', 'Not Original', 'Original', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Wrong Language', 'Not English Language', 'language', 'all', 1, 1);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Wrong Language', 'Not English Language', 'English', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Wrong Language', 'Dual-Audio', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Wrong Language', 'Dual-Audio', 'Dual-Audio');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Streaming Boost', 'HD Streaming Boost
-
-Some streaming services have HD releases that are generally better than their UHD counterparts. The HD Streaming Boost custom format increases those streaming services'' scores appropriately for HD releases. Use this in conjunction with the regular streaming service custom formats.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Streaming Boost', '1080p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Streaming Boost', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Streaming Boost', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', 'Disney+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Streaming Boost', 'Disney+', 'Disney+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Streaming Boost', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Streaming Boost', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', '1080p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Streaming Boost', '1080p', '1080p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Language - Not Original', 'Language: Not Original (Original Only)
-
-Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the original audio a score of `-10000`.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Language - Not Original', 'Language');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Language - Not Original', 'Not Original Language', 'language', 'all', 1, 0);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language - Not Original', 'Not Original Language', 'Original', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian LQ', 'Asian LQ
-
-A collection of Asian release groups that either do not provide subtitles or are groups that cause issues during importing.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian LQ', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'AppleTor', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'AppleTor', 'AppleTor');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'Luvmichelle', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'Luvmichelle', 'Luvmichelle');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'MagicStar', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'MagicStar', 'MagicStar');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'NEXT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'NEXT', 'NEXT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'Taengoo', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'Taengoo', 'Taengoo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'unco', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'unco', 'unco');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'unco@AvistaZ', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'unco@AvistaZ', 'unco@AvistaZ');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Raws', 'Anime Raws
 
 A collection of known groups that release raws.', 0);
@@ -1654,28 +1224,636 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Raws', 'Seicher-Raws', 'Seicher-Raws');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Raws', 'Shiniori-Raws', 'release_title', 'all', 0, 0);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Raws', 'Shiniori-Raws', 'Shiniori-Raws');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Bilibili', 'Bilibili
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('U-NEXT', 'U-NEXT
 
-From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Bilibili)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Bilibili', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Bilibili', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Bilibili', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Bilibili', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Bilibili', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'Bilibili', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bilibili', 'Bilibili', 'Bilibili');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Line_Mic Dubbed', 'Line/Mic Dubbed
+U-NEXT is a Japanese subscription streaming service launched in 2007, and is one of Japan''s leading streaming platforms. It holds a 17.9% market share in Japan''s subscription streaming sector, ranking second only to Netflix. It offers a wide range of movies, dramas, anime, live sports, and original content, along with an extensive e-book and manga library. It is primarily available in Japan.
 
-- This seems to be often used with German releases, and this will block the low-quality audio.
-- Line Dubbed = Sound extracted in the cinema by cable.
-- Mic Dubbed = Sound extracted in the cinema by a microphone.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Line_Mic Dubbed', 'Line Dubbed', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Line_Mic Dubbed', 'Line Dubbed', 'Line Dubbed');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Line_Mic Dubbed', 'Mic Dubbed', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Line_Mic Dubbed', 'Mic Dubbed', 'Mic Dubbed');
+For more information, visit the U-NEXT Wikipedia page (https://en.wikipedia.org/wiki/U-Next).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('U-NEXT', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('U-NEXT', 'U-NEXT', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('U-NEXT', 'U-NEXT', 'U-NEXT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('U-NEXT', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('U-NEXT', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('U-NEXT', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('U-NEXT', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Open Matte', 'Open Matte
+
+Open matte is a filming technique that involves matting out the top and bottom of the film frame in the movie projector (known as a soft matte) for the widescreen theatrical release and then scanning the film without a matte (at an Academy ratio) for a full-screen home video release.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Open Matte', 'Aspect Ratio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Open Matte', 'Open Matte', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Open Matte', 'Open Matte', 'Open Matte');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PCM', 'PCM (Pulse Code Modulation – lossless, uncompressed)
+
+PCM is the method of encoding typically used for uncompressed digital audio.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PCM', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PCM', 'Lossless Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'PCM', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'PCM', 'PCM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MA', 'Movies Anywhere
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Movies_Anywhere)
+
+Movies Anywhere (MA) is a cloud-based digital rights locker and over-the-top streaming platform that allows users to stream and download purchased films, including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services. Movies Anywhere is operated by The Walt Disney Company. The platform provides content from Walt Disney Studios, Sony Pictures, Universal Pictures, and Warner Bros. The system utilizes an internal platform known as KeyChest, which synchronizes content licenses from digital distribution platforms linked to a central user account.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MA', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MA', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MA', 'Movies Anywhere', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MA', 'Movies Anywhere', 'Movies Anywhere');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Tier 02', 'WEB Tier 02
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', '3cTWeB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', '3cTWeB', '3cTWeB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'BLUTONiUM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'BLUTONiUM', 'BLUTONiUM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'BTW', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'BTW', 'BTW');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'BYNDR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'BYNDR', 'BYNDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Chotab', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Chotab', 'Chotab');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Cinefeel', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Cinefeel', 'Cinefeel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'CiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'CiT', 'CiT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'CMRG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'CMRG', 'CMRG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Coo7', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Coo7', 'Coo7');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'dB', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'dB', 'dB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'DEEP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'DEEP', 'DEEP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'END', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'END', 'END');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'ETHiCS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'ETHiCS', 'ETHiCS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'FC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'FC', 'FC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Flights', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Flights', 'Flights');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'GNOME', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'GNOME', 'GNOME');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'iJP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'iJP', 'iJP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'iKA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'iKA', 'iKA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'iT00NZ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'iT00NZ', 'iT00NZ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'JETIX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'JETIX', 'JETIX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'KHN', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'KHN', 'KHN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'KiMCHI', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'KiMCHI', 'KiMCHI');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'LAZY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'LAZY', 'LAZY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'MiU', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'MiU', 'MiU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'monkee', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'monkee', 'monkee');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'MZABI', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'MZABI', 'MZABI');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'NPMS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'NPMS', 'NPMS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'NYH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'NYH', 'NYH');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'orbitron', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'orbitron', 'orbitron');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'PHOENiX', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'PHOENiX', 'PHOENiX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'playWEB', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'playWEB', 'playWEB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'PSiG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'PSiG', 'PSiG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'ROCCaT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'ROCCaT', 'ROCCaT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'RTFM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'RTFM', 'RTFM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SA89', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SA89', 'SA89');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SbR', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SbR', 'SbR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SDCC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SDCC', 'SDCC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SIGMA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SIGMA', 'SIGMA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SMURF', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SMURF', 'SMURF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SPiRiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SPiRiT', 'SPiRiT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'TEPES', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TEPES', 'TEPES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'TOMMY', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TOMMY', 'TOMMY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'TVSmash', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TVSmash', 'TVSmash');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WELP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'WELP', 'WELP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'XEBEC', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'XEBEC', 'XEBEC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 02', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 02', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Dual Audio Asian', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Dual Audio Asian', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Dual Audio Asian', 'Dual Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Dual Audio Asian', 'Language');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Dual Audio', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Dual Audio Asian', 'Dual Audio', 'Dual Audio (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Not Single Language Only', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Dual Audio Asian', 'Not Single Language Only', 'Not Single Language Only');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Japanese Language', 'language', 'all', 0, 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Dual Audio Asian', 'Japanese Language', 'Japanese', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Chinese Language', 'language', 'all', 0, 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Dual Audio Asian', 'Chinese Language', 'Chinese', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Korean Language', 'language', 'all', 0, 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Dual Audio Asian', 'Korean Language', 'Korean', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NF', 'Netflix
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Netflix)
+
+Netflix is an American subscription video on-demand over-the-top streaming service. The service primarily distributes original and acquired films and television shows from various genres, and it is available internationally in multiple languages.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NF', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NF', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NF', 'Netflix', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NF', 'Netflix', 'Netflix');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NF', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NF', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NF', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NF', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DSCP', 'Discovery+
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Discovery%2B)
+
+Discovery+ (pronounced "Discovery Plus"; stylized as discovery+) is an American subscription video on-demand over-the-top streaming service owned by Warner Bros. Discovery (WBD). The service focuses on factual programming drawn from the libraries of Discovery''s main channel brands, as well as original series (including spin-offs of programs from Discovery''s television networks), and other acquired content.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DSCP', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'Discovery+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DSCP', 'Discovery+', 'Discovery+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'DSCP Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DSCP', 'DSCP Rename', 'DSCP Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSCP', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSCP', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian Tier 03', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 03', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 03', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 03', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'ADWeb', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'ADWeb', 'ADWeb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'CHDWEB', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'CHDWEB', 'CHDWEB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'HDCTV', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'HDCTV', 'HDCTV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'HHWEB', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'HHWEB', 'HHWEB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'OurTV', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'OurTV', 'OurTV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'SHiNE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'SHiNE', 'SHiNE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 03', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 03', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Repack3', '', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack3', 'Repack/Proper 3 or REAL.REAL.PROPER/REPACK', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack3', 'Repack/Proper 3 or REAL.REAL.PROPER/REPACK', 'Repack_Proper 3 or REAL.REAL.PROPER_REPACK');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ATVP', 'Apple TV+
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Apple_TV%2B)
+
+Apple TV+ is an American subscription streaming service owned and operated by Apple Inc. Launched on November 1, 2019, it offers a selection of original production film and television series called Apple Originals.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATVP', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATVP', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATVP', 'Apple TV+', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATVP', 'Apple TV+', 'Apple TV+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATVP', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATVP', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATVP', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATVP', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AAC', 'AAC (Advanced Audio Codec – lossy)
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Advanced_Audio_Coding)
+Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AAC', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AAC', 'Lossy Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'AAC', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'AAC', 'AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not PCM', 'Not PCM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x266', 'x266
+
+Versatile Video Coding (VVC), also known as H.266, ISO/IEC 23090-3, and MPEG-I Part 3, is a video compression standard finalized on 6 July 2020. Wikipedia (https://en.wikipedia.org/wiki/Versatile_Video_Coding).
+
+This applies to all x266/VVC releases that are not Remux.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x266', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x266', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x266', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x266', 'Not Remux', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x266', 'x|h266', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x266', 'x|h266', 'xh266');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x266', 'Not Remux (sonarr)', 'source', 'sonarr', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x266', 'Not Remux (sonarr)', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Repack_Proper', '', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack_Proper', 'Repack/Proper/Rerip', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack_Proper', 'Repack/Proper/Rerip', 'Repack_Proper_Rerip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack_Proper', 'Not Higher Version Repack/Proper', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack_Proper', 'Not Higher Version Repack/Proper', 'Not Higher Version Repack_Proper');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('3.0 Sound', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('3.0 Sound', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('3.0 Sound', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', '3.0ch', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', '3.0ch', '3.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not Mono', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not Mono', 'Not Mono');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not Stereo', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not Stereo', 'Not Stereo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not 4.0ch', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not 4.0ch', 'Not 4.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not High Channel Count', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not High Channel Count', 'Not High Channel Count');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('INTERNAL', 'Internal
+
+- Those who prefer scene releases may want to boost internals, as they generally have higher settings that may not conform to the ruleset.
+- In some rare cases, P2P use is also INTERNAL.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('INTERNAL', 'Flag');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('INTERNAL', 'INTERNAL', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('INTERNAL', 'INTERNAL', 'INTERNAL');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('LINETV', 'LINE TV
+
+LINE TV is a free, ad-supported streaming service owned by Japan-based LINE Corporation, operating mainly in Taiwan. It offers dramas, variety shows, movies, anime, and original content. It is especially popular for Taiwanese, Korean, and Chinese content. In November 2025, LINE TV announced a full merger with KKTV, combining both platforms'' content libraries to offer a wider range of Asian dramas and new features such as offline viewing and dual subtitles.
+
+For more information, visit the LINE TV Wikipedia page (https://en.wikipedia.org/wiki/Line_TV).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('LINETV', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LINETV', 'LINETV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LINETV', 'LINETV', 'LINETV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LINETV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('LINETV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LINETV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('LINETV', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Upscaled', 'Upscaled
+
+This custom format is used to prevent grabbing upscaled releases.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'AI Upscales', 'release_title', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'AI Upscales', '(R) AI Upscales');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'AI Upscales (sonarr)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'AI Upscales (sonarr)', '(S) AI Upscales');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'AIUS', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'AIUS', 'AIUS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'GuyZo', 'release_title', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'GuyZo', 'GuyZo (Title)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Regrade', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Regrade', 'Regrade');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'RW', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'RW', 'RW');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'TheUpscaler', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'TheUpscaler', 'TheUpscaler');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Upscaled', 'release_title', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Upscaled', '(R) Upscaled');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Upscaled (sonarr)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Upscaled (sonarr)', '(S) Upscaled');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FreeLeech', 'FreeLeech
+
+Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is useful if you do not have the best ratio yet.
+
+!!! warning
+
+    Keep in mind not all trackers support this option.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FreeLeech', 'Flag');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FreeLeech', 'Freeleech');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FreeLeech', 'FreeLeech', 'indexer_flag', 'all', 0, 0);
+INSERT INTO condition_indexer_flags (custom_format_name, condition_name, flag) VALUES ('FreeLeech', 'FreeLeech', 'freeleech');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 01 (Muxers)', 'Anime Web Tier 01
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Arg0', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Arg0', 'Arg0');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Arid', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Arid', 'Arid');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Baws', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Baws', 'Baws (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'FLE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'FLE', 'FLE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'LostYears', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'LostYears', 'LostYears');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'LYS1TH3A', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'LYS1TH3A', 'LYS1TH3A');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'McBalls', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'McBalls', 'McBalls');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'sam', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'sam', 'sam');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'SCY', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'SCY', 'SCY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Setsugen', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Setsugen', 'Setsugen');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'smol', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'smol', 'smol');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'SoM', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'SoM', 'SoM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Vodes', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Vodes', 'Vodes');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Z4ST1N', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Z4ST1N', 'Z4ST1N');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'ZeroBuild', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'ZeroBuild', 'ZeroBuild');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01 (Muxers)', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BCORE', 'Bravia Core aka Sony Pictures Core
+
+From Sony (https://electronics.sony.com/bravia-core)
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Sony_Pictures_Core)
+
+Sony Pictures Core (formerly known as Bravia Core) is a video on demand service from Sony for its televisions and smartphones, launched in April 2021. The service offers the streaming of movies at up to 4K resolution provided by Sony Pictures Entertainment. CORE stands for Centre of Real Entertainment.
+Sony claims that Bravia Core has one of the largest libraries of IMAX Enhanced format film content. Streaming, which is marketed as Pure Stream, is claimed to be at speeds of up to 80 Mbit/s.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('BCORE', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BCORE', 'Bravia Core', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BCORE', 'Bravia Core', 'Bravia Core');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BCORE', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('BCORE', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BCORE', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('BCORE', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CC', 'Comedy Central
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Comedy_Central)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CC', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'Comedy Central', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CC', 'Comedy Central', 'Comedy Central');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'CC Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CC', 'CC Rename', 'CC Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CC', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CC', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Masters of Cinema', 'Masters of Cinema
+
+Masters of Cinema is a line of DVD and Blu-ray releases published through Eureka Entertainment. Because of the uniformly branded and spine-numbered packaging and the standard inclusion of booklets and analysis by recurring film historians, the line is often perceived as the UK equivalent of The Criterion Collection.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Masters of Cinema', 'Masters of Cinema', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Masters of Cinema', 'Masters of Cinema', 'Masters of Cinema');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Masters of Cinema', 'MoC', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Masters of Cinema', 'MoC', 'MoC');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Anime Web Tier 02
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', '0x539', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', '0x539', '0x539');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Asakura', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Asakura', 'Asakura');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cyan', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cyan', 'Cyan');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cytox', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cytox', 'Cytox');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Dae', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Dae', 'Dae');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Foxtrot', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Foxtrot', 'Foxtrot');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Gao', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Gao', 'Gao');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'GSK_kun', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'GSK_kun', 'GSK_kun');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Half-Baked', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Half-Baked', 'Half-Baked');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'HatSubs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'HatSubs', 'HatSubs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MALD', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MALD', 'MALD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MTBB', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MTBB', 'MTBB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Not-Vodes', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Not-Vodes', 'Not-Vodes');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Okay-Subs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Okay-Subs', 'Okay-Subs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Pizza', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Pizza', 'Pizza');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Reza', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Reza', 'Reza');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Slyfox', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Slyfox', 'Slyfox');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'SoLCE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'SoLCE', 'SoLCE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Tenshi', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Tenshi', 'Tenshi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('IMAX Enhanced', 'IMAX Enhanced
+
+Get more picture and fewer black bars (letterboxing).
+
+From Wired (https://www.wired.com/story/what-is-imax-enhanced/)
+
+IMAX Enhanced is a standard for digital releases. It features scenes shot on IMAX cameras and produced in HDR10 DV. IMAX Enhanced releases often have a higher bitrate than other WEB options and are encoded into various formats, including SDR conversions.
+
+Due to the higher bitrate and implied picture quality improvement, it is recommended that the IMAX Enhanced custom format be enabled on WEB profiles, especially for those seeking ''The IMAX Experience''—including fewer "black bars" or letterboxing.
+
+!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.1.png)
+
+!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.2.png)
+
+!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.3.png)
+
+!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.4.png)
+
+!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.5.png)', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX Enhanced', 'Aspect Ratio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX Enhanced', 'Edition');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IMAX Enhanced', 'IMAX Enhanced', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IMAX Enhanced', 'IMAX Enhanced', 'IMAX Enhanced');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('2160p', '2160p
+
+This Custom Format can boost 2160p releases. It is only useful if you use Merge Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2160p', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2160p', 'Resolution');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2160p', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('2160p', '2160p', '2160p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Bad Dual Groups', 'Bad Dual/Multi groups
+
+These release groups often do not set the original language of the media as the first audio track. Since ffprobe relies on the first audio track to determine the release''s primary language, incorrect ordering can cause parsing errors. This may lead to failed imports, misidentified files, or download loops. To ensure proper processing, the original language should always be the first audio track in the release.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Bad Dual Groups', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'alfaHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'alfaHD', 'alfaHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BAT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BAT', 'BAT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BiOMA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BiOMA', 'BiOMA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BlackBit', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BlackBit', 'BlackBit');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BNd', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BNd', 'BNd');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'C.A.A', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'C.A.A', 'C.A.A');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'Cory', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'Cory', 'Cory');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'CYPHER', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'CYPHER', 'CYPHER');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'EniaHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'EniaHD', 'EniaHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'EXTREME', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'EXTREME', 'EXTREME');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'FF', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'FF', 'FF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'FOXX', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'FOXX', 'FOXX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'G4RiS', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'G4RiS', 'G4RiS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'GUEIRA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'GUEIRA', 'GUEIRA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'LCD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'LCD', 'LCD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'MGE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'MGE', 'MGE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'MLH', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'MLH', 'MLH');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'N3G4N', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'N3G4N', 'N3G4N');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'ONLYMOViE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'ONLYMOViE', 'ONLYMOViE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'PD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'PD', 'PD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'PTHome', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'PTHome', 'PTHome');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'RiPER', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'RiPER', 'RiPER');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'RK', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'RK', 'RK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'SiGLA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'SiGLA', 'SiGLA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'Tars', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'Tars', 'Tars');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'TM', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'TM', 'TM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'tokar86a', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'tokar86a', 'tokar86a');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'TURG', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'TURG', 'TURG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'TvR', 'TvR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'vnlls', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'vnlls', 'vnlls');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'WTV', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'WTV', 'WTV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'XiQUEXiQUE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'XiQUEXiQUE', 'XiQUEXiQUE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'Yatogam1', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'Yatogam1', 'Yatogam1');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'YusukeFLA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'YusukeFLA', 'YusukeFLA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'ZigZag', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'ZigZag', 'ZigZag (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'ZNM', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'ZNM', 'ZNM');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('iT', 'iTunes
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/ITunes)
+
+Apple introduced iTunes 6, enabling support for purchasing and viewing video content purchased from the iTunes Store. At launch, the store offered popular shows from the ABC network along with Disney Channel series. In 2008, Apple and select film studios introduced "iTunes Digital Copy", a feature on select DVDs and Blu-ray discs allowing a digital copy in iTunes and associated media players.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('iT', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'iTunes', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iT', 'iTunes', 'iTunes');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'iT Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iT', 'iT Rename', 'iT Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iT', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iT', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DV Boost', 'DV Boost
+
+If you prefer Dolby Vision and have compatible equipment, add the DV Boost custom format. This custom format prioritizes releases containing Dolby Vision over standard HDR releases.
+
+*This custom format accepts DV Profile 5 and also upgrades from DV/HDR10/HDR10+ to DV HDR10 or DV HDR10+.*', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV Boost', 'HDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV Boost', 'DV', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV Boost', 'DV', 'DV');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 06 (FanSubs)', 'Anime BD Tier 06
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'ANE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'ANE', 'ANE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bunny-Apocalypse', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bunny-Apocalypse', 'Bunny-Apocalypse');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'CyC', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'CyC', 'CyC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Datte13', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Datte13', 'Datte13');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'EJF', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'EJF', 'EJF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'GetItTwisted', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'GetItTwisted', 'GetItTwisted');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'GSK_kun', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'GSK_kun', 'GSK_kun');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'iKaos', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'iKaos', 'iKaos');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'karios', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'karios', 'karios');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Pookie', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Pookie', 'Pookie');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'RASETSU', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'RASETSU', 'RASETSU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Starbez', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Starbez', 'Starbez');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Tsundere', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Tsundere', 'Tsundere');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Yoghurt', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Yoghurt', 'Yoghurt');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'YURASUKA', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'YURASUKA', 'YURASUKA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray Remux', 'bluray_raw');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'DVD', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06 (FanSubs)', 'DVD', 'dvd');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SiC', '', 0);
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SiC', '2160p');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SiC', 'Resolution');
@@ -1690,53 +1868,409 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SiC', 'HDR', '(R) HDR');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SiC', 'DV', 'release_title', 'all', 0, 1);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SiC', 'DV', 'DV');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CPNG', 'Coupang Play
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FraMeSToR', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FraMeSToR', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FraMeSToR', 'FraMeSToR', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FraMeSToR', 'FraMeSToR', 'FraMeSToR (1)');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 03', 'UHD Bluray Tier 03
 
-Coupang Play is a South Korean streaming service launched by Coupang in December 2020. It offers movies, dramas, variety shows, and live sports — including the Premier League, NBA, and more. It is included with Coupang''s Rocket Wow membership.
+Groups that:
 
-For more information, visit the Coupang Play Wikipedia page (https://en.wikipedia.org/wiki/Coupang_Play).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CPNG', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CPNG', 'CPNG', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CPNG', 'CPNG', 'CPNG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CPNG', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CPNG', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CPNG', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CPNG', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('friDay', 'friDay Video
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Pay good attention to detail and use reliable sources
+- Groups that have been added in conjunction with specific quality profiles
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 03', 'UHD Bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 03', 'Not REMUX', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'Not WEBDL', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 03', 'Not WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'Not WEBRIP', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 03', 'Not WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Bluray Tier 03', '2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'BHDStudio', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'BHDStudio', 'BHDStudio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'hallowed', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'hallowed', 'hallowed');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'HONE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'HONE', 'HONE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'PTer', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'PTer', 'PTer');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'SPHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'SPHD', 'SPHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 03', 'WEBDV', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 03', 'WEBDV', 'WEBDV');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VIU', 'VIU
 
-friDay Video is a Taiwanese streaming service owned by Far EasTone, one of Taiwan''s major telecom providers. It is Taiwan''s number one domestic streaming platform, offering movies, dramas, variety shows, live news, and anime. It is especially popular for Korean, Japanese, and local Taiwanese content.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('friDay', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('friDay', 'friDay', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('friDay', 'friDay', 'friDay');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('friDay', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('friDay', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('friDay', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('friDay', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Multi-Episode', 'Multi-Episode
+From Wikipedia, the free encyclopedia ()
 
-!!! danger "This CF utilizes functionality only available in Sonarr v4.0.2.1262 or later."
+Viu (pronounced as view) is a Hong Kong-based over-the-top (OTT) video streaming provider, Viu delivers content in different genres from Asia''s top content providers with local language subtitles, as well as original production series under the Viu Original initiative (similar to original programming from other services like Disney+, Amazon Prime Video and Netflix).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VIU', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'VIU', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VIU', 'VIU', 'VIU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'VIU Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VIU', 'VIU Rename', 'VIU Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VIU', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VIU', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian Tier 02', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 02', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 02', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 02', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 02', 'PandaMoon', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 02', 'PandaMoon', 'PandaMoon');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 02', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 02', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 02', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 02', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Retags', 'Retags
 
-This Custom Format will recognize multi-episode releases (e.g. episodes named with ''S01E01E02''), instead of single-episode or season packs, using Sonarr''s built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Multi-Episode', 'Multi-Episode', 'release_type', 'sonarr', 0, 0);
-INSERT INTO condition_release_types (custom_format_name, condition_name, release_type) VALUES ('Multi-Episode', 'Multi-Episode', 'multi_episode');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TheFarm', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TheFarm', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TheFarm', 'TheFarm', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TheFarm', 'TheFarm', 'TheFarm');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PLAY', 'PLAY
+Retags are often seen on public trackers, where the tracker or uploader adds their name to the torrent. They may also appear on some Usenet indexers.
 
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Google_TV_(service))
+- If you rely on public trackers, DO NOT use this Custom Format.
+- Use this Custom Format ONLY if you DO NOT prefer Retagged releases.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '.heb', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '.heb', 'heb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '.VAV', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '.VAV', 'VAV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[eztv]', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[eztv]', '[eztv]');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[rarbg]', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[rarbg]', '[rarbg]');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[rartv]', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[rartv]', '[rartv]');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[TGx]', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[TGx]', '[TGx]');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', 'ORARBG', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', 'ORARBG', 'ORARBG');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PMTP', 'Paramount+
 
-Google TV, formerly known as Google Play Movies & TV, is a digital distribution service for movies and television series developed by Google. Launched in 2011 as part of the Google Play product line, the service offers search and discovery of video titles across multiple streaming services, including rental or purchase options, alongside watchlist features for accessing titles from eligible devices and platforms.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PLAY', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'PLAY', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PLAY', 'PLAY', 'PLAY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'PLAY Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PLAY', 'PLAY Rename', 'PLAY Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PLAY', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PLAY', 'WEBRIP', 'webrip');
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Paramount%2B)
+
+Paramount+ is an American subscription video on-demand over-the-top streaming service owned by Paramount Global. The service''s content is drawn primarily from the libraries of CBS Media Ventures, CBS Studios, Paramount Media Networks (formerly Viacom Media Networks and ViacomCBS Domestic Media Networks), and Paramount Pictures, while also including original series and films, live streaming sports coverage, and in the United States, live streaming of local CBS broadcast stations.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PMTP', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PMTP', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'Paramount+', 'release_title', 'radarr', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PMTP', 'Paramount+', '(R) Paramount+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'Paramount+ (sonarr)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PMTP', 'Paramount+ (sonarr)', '(S) Paramount+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PMTP', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PMTP', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('126811', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('126811', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('126811', '126811', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('126811', '126811', '126811');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remux Tier 02', 'Remux Tier 02
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Pay very close attention to detail and use multiple high-quality sources
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('Remux Tier 02', 'Remux', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', '12GaugeShotgun', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', '12GaugeShotgun', '12GaugeShotgun');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'ATELiER', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'ATELiER', 'ATELiER');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'decibeL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'decibeL', 'decibeL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'EPSiLON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'EPSiLON', 'EPSiLON');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'HiFi', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'HiFi', 'HiFi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'KRaLiMaRKo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'KRaLiMaRKo', 'KRaLiMaRKo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'NCmt', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'NCmt', 'NCmt');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'playBD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'playBD', 'playBD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'PTer', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'PTer', 'PTer');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'SiCFoI', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'SiCFoI', 'SiCFoI');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'SURFINBIRD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'SURFINBIRD', 'SURFINBIRD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'TEPES', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'TEPES', 'TEPES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'TRiToN', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'TRiToN', 'TRiToN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'Remux (sonarr)', 'source', 'sonarr', 0, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Remux Tier 02', 'Remux (sonarr)', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HTSR', 'Disney+ Hotstar
+
+Disney+ Hotstar is an Indian subscription streaming service owned by JioStar. It was originally launched in 2015 as Hotstar, offering films, TV series, live sports, and original programming. Following Disney''s acquisition of 21st Century Fox in 2019, Hotstar was rebranded as Disney+ Hotstar in April 2020, adding content from Disney, Pixar, Marvel, Lucasfilm, and National Geographic. It also operates in Indonesia, Malaysia, and Thailand, combining local content with the Disney+ library. It is the second largest streaming platform in the world by subscribers, behind only Netflix.
+
+For more information, visit the Disney+ Hotstar Wikipedia page (https://en.wikipedia.org/wiki/Disney%2B_Hotstar).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HTSR', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HTSR', 'Hotstar', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HTSR', 'Hotstar', 'Hotstar');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HTSR', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HTSR', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HTSR', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HTSR', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Season Pack', 'Season Pack
+
+!!! danger "This CF utilizes functionality only available starting in Sonarr v4.0.2.1262."
+
+This Custom Format can be used to prefer or exclude season packs
+
+- Give it a score of `10` if you prefer a season pack.
+- Give it a score of `-10000` if you prefer to not download season packs.
+- Utilizes the "Release Type" custom format condition added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
+
+!!! info
+
+    - This Custom Format could previously result in download loops. The new "Release Type" custom format condition now prevents this undesired behavior. :bangbang:
+    - This will upgrade your already downloaded single episodes :bangbang:', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Season Pack', 'Season Packs', 'release_type', 'sonarr', 0, 0);
+INSERT INTO condition_release_types (custom_format_name, condition_name, release_type) VALUES ('Season Pack', 'Season Packs', 'season_pack');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HIDIVE', 'HIDIVE
+
+From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/HIDIVE)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HIDIVE', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HIDIVE', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HIDIVE', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HIDIVE', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HIDIVE', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'HIDIVE', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HIDIVE', 'HIDIVE', 'HIDIVE');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ROKU', 'ROKU
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/The_Roku_Channel)
+
+The Roku Channel is an over-the-top streaming television service available in the United States, Canada, Mexico and the United Kingdom. The service was launched in 2017, and is owned and operated by Roku, Inc. It is the most popular free ad-supported streaming television (FAST) service in the United States, reportedly reaching 145 million people, as of 2024.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ROKU', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ROKU', 'ROKU', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ROKU', 'ROKU', 'ROKU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ROKU', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ROKU', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ROKU', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ROKU', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DV (w_o HDR fallback)', 'DV (w/o HDR fallback)
+
+If ^^NOT^^ every device accessing your media server supports Dolby Vision, add the DV (w/o HDR fallback) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don''t fully support Dolby Vision.
+
+*This also applies to Dolby Vision releases without HDR10 fallback (Profile 5).*', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (w_o HDR fallback)', 'HDR');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (w_o HDR fallback)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (w_o HDR fallback)', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Dolby Vision', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Dolby Vision', 'Dolby Vision');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DV (w_o HDR fallback)', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DV (w_o HDR fallback)', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Not RlsGrp', 'release_group', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Not RlsGrp', 'Not RlsGrp');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Not HDR', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Not HDR', 'Not HDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Not Hulu', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Not Hulu', 'Not Hulu');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('720p', '720p
+
+This Custom Format can boost 720p releases. It is only useful if you use Merge Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('720p', '720p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('720p', 'Resolution');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('720p', '720p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('720p', '720p', '720p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Wrong Language', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Wrong Language', 'Language');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Wrong Language', 'Not Original', 'language', 'all', 0, 1);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Wrong Language', 'Not Original', 'Original', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Wrong Language', 'Not English Language', 'language', 'all', 1, 1);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Wrong Language', 'Not English Language', 'English', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Wrong Language', 'Dual-Audio', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Wrong Language', 'Dual-Audio', 'Dual-Audio');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Hami', 'Hami Video
+
+Hami Video is a Taiwanese streaming service owned by Chunghwa Telecom, Taiwan''s largest telecom provider. It offers live TV channels, dramas, anime, and major sporting events, including the Olympics.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Hami', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hami', 'Hami', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hami', 'Hami', 'Hami');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hami', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hami', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hami', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hami', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH AD', 'With Audio Description
+
+Audio Description (AD) is an extra narration track that describes key visual details — such as scenery, costumes, and actions — for blind or visually impaired viewers. It makes TV and film content more accessible by explaining what cannot be heard in the main audio.
+
+Some releases include Audio Description, marked as `WITH AD` or `AD`. Note: this is not the same as advertisements.
+
+For more information, visit the Audio Description Wikipedia page (https://en.wikipedia.org/wiki/Audio_description).', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH AD', 'Audio Description', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH AD', 'Audio Description', 'Audio Description');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('4.0 Sound', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4.0 Sound', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4.0 Sound', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', '4.0ch', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', '4.0ch', '4.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not Mono', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not Mono', 'Not Mono');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not Stereo', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not Stereo', 'Not Stereo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not 3.0ch', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not 3.0ch', 'Not 3.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not High Channel Count', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not High Channel Count', 'Not High Channel Count');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WAVVE', 'Wavve
+
+Wavve is a South Korean subscription streaming service operated by SK Telecom, offering TV dramas, variety shows, films, documentaries, animations, and sports. It was launched in September 2019 as a joint venture between SK Telecom and South Korea''s three major broadcasters — KBS, MBC, and SBS. Wavve has received approval to merge with fellow Korean streaming service TVING.
+
+For more information, visit the Wavve Wikipedia page (https://en.wikipedia.org/wiki/Wavve).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WAVVE', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WAVVE', 'WAVVE', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WAVVE', 'WAVVE', 'WAVVE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WAVVE', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WAVVE', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WAVVE', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WAVVE', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DCU', 'DC Universe (streaming service)
+
+From Wikipedia, the free encyclopedia ()
+
+DC Universe was an American subscription video-on-demand (SVOD) and digital comics service operated by DC Entertainment and Warner Bros. Digital Networks, both divisions of WarnerMedia. Launched on September 15, 2018, the service featured a streaming library of animated series and films based on DC Comics properties, new original television series adapted from DC properties, as well as a rotating back catalogue of DC Comics publications, and online community features. In 2020.
+
+In June 2020, WarnerMedia began to phase out DC Universe in favor of its new flagship streaming service HBO Max, initially by offering a promotional offer via DC Universe for new subscribers. DC Universe''s original series and future streaming productions were moved to HBO Max and became Max Originals.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DCU', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DCU', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DCU', 'DC Universe', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DCU', 'DC Universe', 'DC Universe');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DCU', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DCU', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DCU', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DCU', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Scene', 'WEB Scene
+
+One of the few scene groups that released quality releases.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'Flag');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Scene', 'DEFLATE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Scene', 'DEFLATE', 'DEFLATE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Scene', 'INFLATE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Scene', 'INFLATE', 'INFLATE');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Bluray Tier 02', 'HD Bluray Tier 02
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Use high-quality sources
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('HD Bluray Tier 02', 'Not REMUX', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'ATELiER', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'ATELiER', 'ATELiER');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'EA', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'EA', 'EA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'HiDt', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'HiDt', 'HiDt');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'HiSD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'HiSD', 'HiSD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'iFT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'iFT', 'iFT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'NTb', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'NTb', 'NTb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'QOQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'QOQ', 'QOQ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'SA89', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'SA89', 'SA89');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'sbR', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'sbR', 'sbR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'Not 2160p', 'resolution', 'all', 1, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Bluray Tier 02', 'Not 2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'BLURAY', 'source', 'all', 0, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 02', 'BLURAY', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'Not REMUX (sonarr)', 'source', 'sonarr', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 02', 'Not REMUX (sonarr)', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS', 'DTS (Original DTS format – lossy)
+
+Digital Theater Sound (DTS) is a digital audio technology developed by DTS, Inc, which focuses on digital surround sound formats for consumer and commercial applications as well as theatrical purposes. Compared to the Dolby Digital standard, DTS uses four times less compression and digitizes audio sounds at 20 bits instead of 16 bits. This makes DTS-based audio richer in sound and more detailed than Dolby Digital-based ones.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS', 'Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Basic DTS', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Basic DTS', 'Basic DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not DTS-HD', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not DTS-HD', 'Not DTS-HD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not DTS-HD HRA/ES', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not DTS-HD HRA/ES', 'Not DTS-HD HRA_ES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not DTS X', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not DTS X', 'Not DTS X');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not PCM', 'Not PCM');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Scene', 'Scene
+
+This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Scene', 'Flag');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not GERMAN', 'release_title', 'radarr', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not GERMAN', '(R) Not GERMAN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not GERMAN (sonarr)', 'release_title', 'sonarr', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not GERMAN (sonarr)', '(S) Not GERMAN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not INFLATE/DEFLATE', 'release_title', 'radarr', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not INFLATE/DEFLATE', '(R) Not INFLATE_DEFLATE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not INFLATE/DEFLATE (sonarr)', 'release_title', 'sonarr', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not INFLATE/DEFLATE (sonarr)', '(S) Not INFLATE_DEFLATE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Scene Groups + Naming', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Scene Groups + Naming', 'Scene Groups + Naming');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TrueHD', 'TrueHD (Dolby TrueHD – lossless)
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_TrueHD)
+
+Dolby TrueHD is a lossless multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Discs and compatible hardware.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD', 'Dolby');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD', 'Lossless Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'ATMOS', 'ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not RlsGrp (TrueHD only)', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not RlsGrp (TrueHD only)', 'Not RlsGrp (TrueHD only)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'TrueHD', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'TrueHD', 'TrueHD');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Tier 01', 'WEB Tier 01
 
 Groups that:
@@ -1815,440 +2349,55 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 01', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 01', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 01', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Bluray Tier 02', 'HD Bluray Tier 02
-
-Groups that:
-
-- Have proven themselves by consistently delivering good quality releases
-- Use high-quality sources
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 02', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('HD Bluray Tier 02', 'Not REMUX', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'ATELiER', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'ATELiER', 'ATELiER');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'EA', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'EA', 'EA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'HiDt', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'HiDt', 'HiDt');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'HiSD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'HiSD', 'HiSD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'iFT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'iFT', 'iFT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'NTb', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'NTb', 'NTb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'QOQ', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'QOQ', 'QOQ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'SA89', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'SA89', 'SA89');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'sbR', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 02', 'sbR', 'sbR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'Not 2160p', 'resolution', 'all', 1, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Bluray Tier 02', 'Not 2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'BLURAY', 'source', 'all', 0, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 02', 'BLURAY', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 02', 'Not REMUX (sonarr)', 'source', 'sonarr', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 02', 'Not REMUX (sonarr)', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NLZ', 'NLZiet
-
-NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free. The streaming service brings the best of all channels straight to your preferred device and lets you see your favorite tv content in high quality on all available platforms; anytime and anywhere.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NLZ', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NLZ', 'NLZiet', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NLZ', 'NLZiet', 'NLZiet');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NLZ', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NLZ', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NLZ', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NLZ', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Uncensored', 'Uncensored
-
-This Custom Format covers releases that are uncensored.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Uncensored', 'Uncensored', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Uncensored', 'Uncensored', 'Uncensored');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Hami', 'Hami Video
-
-Hami Video is a Taiwanese streaming service owned by Chunghwa Telecom, Taiwan''s largest telecom provider. It offers live TV channels, dramas, anime, and major sporting events, including the Olympics.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Hami', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hami', 'Hami', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hami', 'Hami', 'Hami');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hami', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hami', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hami', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hami', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ABEMA', 'Abema
-
-From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Abema)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ABEMA', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ABEMA', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'ABEMA', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ABEMA', 'ABEMA', 'ABEMA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ABEMA', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ABEMA', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ABEMA', 'WEB', 'television');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('4.0 Sound', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4.0 Sound', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4.0 Sound', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', '4.0ch', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', '4.0ch', '4.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not Mono', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not Mono', 'Not Mono');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not Stereo', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not Stereo', 'Not Stereo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not 3.0ch', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not 3.0ch', 'Not 3.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4.0 Sound', 'Not High Channel Count', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4.0 Sound', 'Not High Channel Count', 'Not High Channel Count');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FreeLeech', 'FreeLeech
-
-Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is useful if you do not have the best ratio yet.
-
-!!! warning
-
-    Keep in mind not all trackers support this option.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FreeLeech', 'Flag');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FreeLeech', 'Freeleech');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FreeLeech', 'FreeLeech', 'indexer_flag', 'all', 0, 0);
-INSERT INTO condition_indexer_flags (custom_format_name, condition_name, flag) VALUES ('FreeLeech', 'FreeLeech', 'freeleech');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Extras', 'Extras
-
-This Custom Format is used to prevent from grabbing releases containing only extras (bonus footage, outtakes, etc).', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Extras', 'Extras', 'release_title', 'radarr', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Extras', 'Extras', '(R) Extras');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Extras', 'Extras (sonarr)', 'release_title', 'sonarr', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Extras', 'Extras (sonarr)', '(S) Extras');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 02', 'UHD Bluray Tier 02
-
-Groups that:
-
-- Have proven themselves by consistently delivering good quality releases
-- Use high-quality sources
-- Make releases that contain lossless audio tracks where available
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'UHD Bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 02', 'Not REMUX', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'Not WEBDL', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 02', 'Not WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'Not WEBRIP', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 02', 'Not WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Bluray Tier 02', '2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'HQMUX', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 02', 'HQMUX', 'HQMUX');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HTSR', 'Disney+ Hotstar
-
-Disney+ Hotstar is an Indian subscription streaming service owned by JioStar. It was originally launched in 2015 as Hotstar, offering films, TV series, live sports, and original programming. Following Disney''s acquisition of 21st Century Fox in 2019, Hotstar was rebranded as Disney+ Hotstar in April 2020, adding content from Disney, Pixar, Marvel, Lucasfilm, and National Geographic. It also operates in Indonesia, Malaysia, and Thailand, combining local content with the Disney+ library. It is the second largest streaming platform in the world by subscribers, behind only Netflix.
-
-For more information, visit the Disney+ Hotstar Wikipedia page (https://en.wikipedia.org/wiki/Disney%2B_Hotstar).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HTSR', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HTSR', 'Hotstar', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HTSR', 'Hotstar', 'Hotstar');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HTSR', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HTSR', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HTSR', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HTSR', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NOW', 'NOW
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('4OD', '4OD
 
 From Wikipedia, the free encyclopedia ()
 
-Now (formerly Now TV and often stylised as NOW) is a subscription over-the-top streaming television service operated by British satellite television provider Sky Group.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NOW', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'NOW', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NOW', 'NOW', 'NOW');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'NOW Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NOW', 'NOW Rename', 'NOW Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NOW', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NOW', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sing-Along Versions', 'Sing-Along Versions
+4OD is a previous name for the UK''s Channel4 VOD service. Releases are usually identified with either ''ALL4'' or ''4OD'', not ''Channel4''.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4OD', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4OD', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4OD', '4OD', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4OD', '4OD', '4OD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4OD', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('4OD', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4OD', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('4OD', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS-HD MA', 'DTS-HD MA (DTS-HD Master Audio – lossless)
 
-Versions of musical films that have sing-along lyrics hardcoded into the video stream.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sing-Along Versions', 'Sing-Along', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Sing-Along Versions', 'Sing-Along', 'Sing-Along');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AV1', 'AV1
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/DTS-HD_Master_Audio)
 
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.
+DTS-HD Master Audio is a multi-channel lossless audio codec developed by DTS that extends the lossy DTS Coherent Acoustics codec (DTS CA; usually referred to as simply "DTS"). Rather than being an entirely new coding mechanism, DTS-HD MA encodes an audio master in lossy DTS first, then stores a concurrent stream of supplementary data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy "core" able to be played back by devices that cannot decode the more complex lossless audio. DTS-HD MA''s primary application is audio storage and playback for Blu-ray Disc media.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Lossless Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'DTS-HD MA', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'DTS-HD MA', 'DTS-HD MA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not DTS X', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not DTS X', 'Not DTS X');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not PCM', 'Not PCM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not DTS-HD HRA/ES', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not DTS-HD HRA/ES', 'Not DTS-HD HRA_ES');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v4', 'v4
 
-- This is a new codec and you need modern devices that support it.
-- We also had reports of playback/transcoding issues.
-- No main group is actually using it (yet).
-- It''s better to ignore this new codec to prevent compatibility issues', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AV1', 'Codec');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AV1', 'AV1', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AV1', 'AV1', 'AV1');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Open Matte', 'Open Matte
-
-Open matte is a filming technique that involves matting out the top and bottom of the film frame in the movie projector (known as a soft matte) for the widescreen theatrical release and then scanning the film without a matte (at an Academy ratio) for a full-screen home video release.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Open Matte', 'Aspect Ratio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Open Matte', 'Open Matte', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Open Matte', 'Open Matte', 'Open Matte');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HDR', 'HDR
-
-All users with HDR-capable equipment should add the HDR custom format.
-
-*This is a catch-all custom format for all HDR-related formats, including those with HDR10 or HDR10+ fallback capabilities, such as DV HDR10 or DV HDR10+.*', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HDR', 'HDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'DV With HDR10 fallback', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'DV With HDR10 fallback', 'DV With HDR10 fallback');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HDR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HDR', 'HDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HDR10', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HDR10', 'HDR10');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HDR10+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HDR10+', 'HDR10+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HLG', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HLG', 'HLG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'PQ', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'PQ', 'PQ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'RlsGrp (Missing HDR)', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'RlsGrp (Missing HDR)', 'RlsGrp (Missing HDR)');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DD+ ATMOS', 'DD+ ATMOS (Dolby Digital Plus with Atmos – lossy)
-
-Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+ ATMOS', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+ ATMOS', 'Dolby');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+ ATMOS', 'Lossy Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Dolby Digital Plus', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Dolby Digital Plus', 'Dolby Digital Plus (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'ATMOS', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'ATMOS', 'ATMOS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not TrueHD', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not TrueHD', 'Not TrueHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not PCM', 'Not PCM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS-HD HRA', 'DTS-HD HRA (DTS-HD High-Resolution Audio – lossy)
-
-Technical Whitepaper (https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf)
-
-| Codec      | Page   | Paragraph |
-| ---------- | ------ | --------- |
-| DTS-HD MA  | Page 6 | 5.1.1     |
-| DTS-HD HRA | Page 7 | 5.1.2     |
-
-DTS-HD HRA is the lossy version of DTS-HD MA.
-
-| Codec          | DTS-HRA          | DTS-MA            |
-| -------------- | ---------------- | ----------------- |
-| Lossy/lossless | Lossy            | Lossless          |
-| Data rate      | 1.5 - 6.0 Mbit/s | VBR - 24.5 Mbit/s |
-| Channels       | Up to 7.1 ch     | Up to 7.1 ch      |
-| Sampling Freq. | 96 kHz           | 192 kHz           |
-| Resolution     | -                | Up to 24-bit      |', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD HRA', 'Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'DTS-HD HRA', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'DTS-HD HRA', 'DTS-HD HRA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not Basic DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not Basic DTS', 'Not Basic DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not DTS X', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not DTS X', 'Not DTS X');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not PCM', 'Not PCM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not DTS-ES', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not DTS-ES', 'Not DTS-ES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not 6.1 Surround', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not 6.1 Surround', 'Not 6.1 Surround');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Repack2', '', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack2', 'Repack/Proper 2 or REAL.PROPER/REPACK', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack2', 'Repack/Proper 2 or REAL.PROPER/REPACK', 'Repack_Proper 2 or REAL.PROPER_REPACK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack2', 'Not Repack/Proper 3', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack2', 'Not Repack/Proper 3', 'Not Repack_Proper 3');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('STRP', 'Star+
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Star%2B)
-
-Star+ (Star Plus; stylized as ST★R+) is a subscription video on-demand over-the-top streaming service available in almost all Ibero-American states. The service is owned by The Walt Disney Company through the Disney Entertainment division and business segment.
-
-In December 2023, it was confirmed that Star+ will be merged into Disney+ in the second quarter of 2024 with all of its content, including live sports from ESPN, migrating to Disney+ and its standalone app being discontinued.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('STRP', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STRP', 'Star+', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STRP', 'Star+', 'Star+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STRP', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STRP', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STRP', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STRP', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 04 (Official Subs)', 'Anime Web Tier 04
-
-Official sub groups.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'Erai-Raws', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Erai-Raws', 'Erai-Raws');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'ToonsHub', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'ToonsHub', 'ToonsHub');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'VARYG', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'VARYG', 'VARYG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 01 (Muxers)', 'Anime Web Tier 01
-
-Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 01 (Muxers)', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Arg0', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Arg0', 'Arg0');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Arid', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Arid', 'Arid');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Baws', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Baws', 'Baws (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'FLE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'FLE', 'FLE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'LostYears', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'LostYears', 'LostYears');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'LYS1TH3A', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'LYS1TH3A', 'LYS1TH3A');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'McBalls', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'McBalls', 'McBalls');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'sam', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'sam', 'sam');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'SCY', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'SCY', 'SCY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Setsugen', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Setsugen', 'Setsugen');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'smol', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'smol', 'smol');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'SoM', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'SoM', 'SoM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Vodes', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Vodes', 'Vodes');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'Z4ST1N', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'Z4ST1N', 'Z4ST1N');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'ZeroBuild', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 01 (Muxers)', 'ZeroBuild', 'ZeroBuild');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01 (Muxers)', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01 (Muxers)', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Masters of Cinema', 'Masters of Cinema
-
-Masters of Cinema is a line of DVD and Blu-ray releases published through Eureka Entertainment. Because of the uniformly branded and spine-numbered packaging and the standard inclusion of booklets and analysis by recurring film historians, the line is often perceived as the UK equivalent of The Criterion Collection.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Masters of Cinema', 'Masters of Cinema', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Masters of Cinema', 'Masters of Cinema', 'Masters of Cinema');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Masters of Cinema', 'MoC', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Masters of Cinema', 'MoC', 'MoC');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('3D', '3D
-
-If you prefer or not prefer 3D.
-
-You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('3D', 'Aspect Ratio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3D', '3D', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3D', '3D', '3D');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3D', 'BluRay3D', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3D', 'BluRay3D', 'BluRay3D');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3D', 'BD3D', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3D', 'BD3D', 'BD3D');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Scene', 'WEB Scene
-
-One of the few scene groups that released quality releases.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'Flag');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Scene', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Scene', 'DEFLATE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Scene', 'DEFLATE', 'DEFLATE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Scene', 'INFLATE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Scene', 'INFLATE', 'INFLATE');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HIDIVE', 'HIDIVE
-
-From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/HIDIVE)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HIDIVE', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HIDIVE', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HIDIVE', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HIDIVE', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HIDIVE', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HIDIVE', 'HIDIVE', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HIDIVE', 'HIDIVE', 'HIDIVE');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Generated Dynamic HDR', 'Generated Dynamic HDR
-
-- A collection of groups known for generating their own dynamic HDR metadata—Dolby Vision and/or HDR10+.
-- This generated dynamic HDR metadata does not come from official retail sources (discs or streaming services), so it is usually undesirable. Because of the substantial effort needed and the almost impossible task of reliably ensuring quality without reviewing each movie manually.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Generated Dynamic HDR', 'HDR');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Generated Dynamic HDR', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'BiTOR', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'BiTOR', 'BiTOR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'DepraveD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'DepraveD', 'DepraveD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'Flights', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'Flights', 'Flights');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'GuyZo', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'GuyZo', 'GuyZo (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'SasukeducK', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'SasukeducK', 'SasukeducK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'tarunk9c', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'tarunk9c', 'tarunk9c');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'VD0N', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VD0N', 'VD0N');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'VECTOR', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VECTOR', 'VECTOR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'VisionXpert', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VisionXpert', 'VisionXpert');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'HDR10+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'HDR10+', '(R) HDR10+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'DV', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'DV', 'DV');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Scene', 'Scene
-
-This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Scene', 'Flag');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not GERMAN', 'release_title', 'radarr', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not GERMAN', '(R) Not GERMAN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not GERMAN (sonarr)', 'release_title', 'sonarr', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not GERMAN (sonarr)', '(S) Not GERMAN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not INFLATE/DEFLATE', 'release_title', 'radarr', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not INFLATE/DEFLATE', '(R) Not INFLATE_DEFLATE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Not INFLATE/DEFLATE (sonarr)', 'release_title', 'sonarr', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Not INFLATE/DEFLATE (sonarr)', '(S) Not INFLATE_DEFLATE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Scene', 'Scene Groups + Naming', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Scene', 'Scene Groups + Naming', 'Scene Groups + Naming');
+Custom Format to cover v4 releases.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v4', 'v4', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v4', 'v4', 'v4');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FLUX', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FLUX', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLUX', 'FLUX', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLUX', 'FLUX', 'FLUX');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PCOK', 'Peacock TV
 
 From Wikipedia, the free encyclopedia ()
@@ -2264,59 +2413,184 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PCOK', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCOK', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PCOK', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SDR', 'SDR
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AV1', 'AV1
 
-This will prevent grabbing UHD/4k releases without HDR Formats.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR', 'HDR');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR', 'Resolution');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('SDR', '2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR', 'HDR Formats', 'release_title', 'all', 1, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR', 'HDR Formats', 'HDR Formats');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR', 'SDR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR', 'SDR', 'SDR');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Single Episode', 'Single Episode
-
-!!! danger "This CF utilizes functionality only available starting in Sonarr v4.0.2.1262."
-
-This Custom Format will recognize single-episode releases, instead of multi-episode or season packs, using Sonarr''s built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Single Episode', 'Single Episode', 'release_type', 'sonarr', 0, 0);
-INSERT INTO condition_release_types (custom_format_name, condition_name, release_type) VALUES ('Single Episode', 'Single Episode', 'single_episode');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VP9', 'VP9
+AV1 encodes are currently targeting small file sizes, rather than good visual quality.
 
 - This is a new codec and you need modern devices that support it.
 - We also had reports of playback/transcoding issues.
-- No respectable release group is using it (yet).
-- It''s better to ignore this new codec to prevent compatibility issues.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VP9', 'VP9', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VP9', 'VP9', 'VP9');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 (no HDR_DV)', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'Codec');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'HEVC');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'h265');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'x265');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR_DV)', 'x265/HEVC', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (no HDR_DV)', 'x265/HEVC', 'x265_HEVC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR_DV)', 'Not HDR/DV', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (no HDR_DV)', 'Not HDR/DV', 'Not HDR_DV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR_DV)', 'Not 2160p', 'resolution', 'all', 1, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('x265 (no HDR_DV)', 'Not 2160p', '2160p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NF', 'Netflix
+- No main group is actually using it (yet).
+- It''s better to ignore this new codec to prevent compatibility issues', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AV1', 'Codec');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AV1', 'AV1', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AV1', 'AV1', 'AV1');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CR', 'Crunchyroll
 
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Netflix)
+From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Crunchyroll)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CR', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CR', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CR', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CR', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CR', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'Crunchyroll', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CR', 'Crunchyroll', 'Crunchyroll');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ABEMA', 'Abema
 
-Netflix is an American subscription video on-demand over-the-top streaming service. The service primarily distributes original and acquired films and television shows from various genres, and it is available internationally in multiple languages.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NF', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NF', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NF', 'Netflix', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NF', 'Netflix', 'Netflix');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NF', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NF', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NF', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NF', 'WEBRIP', 'webrip');
+From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Abema)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ABEMA', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ABEMA', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'ABEMA', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ABEMA', 'ABEMA', 'ABEMA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ABEMA', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ABEMA', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ABEMA', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ABEMA', 'WEB', 'television');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DD+', 'DD+ (Dolby Digital Plus – lossy)
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Digital_Plus)
+
+Dolby Digital Plus, also known as Enhanced AC-3 (commonly abbreviated as DD+ or E-AC-3, or EC-3), is the successor to Dolby Digital (AC-3). It is a digital audio compression scheme developed by Dolby Labs for the transport and storage of multi-channel digital audio.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+', 'Dolby');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+', 'Lossy Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Dolby Digital Plus', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Dolby Digital Plus', 'Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not PCM', 'Not PCM');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FastSUB', 'FastSUB
+
+FanSUB, but made as quickly as possible, at the expense of quality.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FastSUB', 'FastSUB', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FastSUB', 'FastSUB', 'FastSUB');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Tier 03', 'WEB Tier 03
+
+Groups that:
+
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'BLOOM', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'BLOOM', 'BLOOM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'Dooky', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'Dooky', 'Dooky (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'DRACULA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'DRACULA', 'DRACULA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'GNOMiSSiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'GNOMiSSiON', 'GNOMiSSiON');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'HHWEB', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'HHWEB', 'HHWEB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'NINJACENTRAL', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'NINJACENTRAL', 'NINJACENTRAL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'NPMS', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'NPMS', 'NPMS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'ROCCaT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'ROCCaT', 'ROCCaT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'SiGMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SiGMA', 'SiGMA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'SLiGNOME', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SLiGNOME', 'SLiGNOME');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'SwAgLaNdEr', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SwAgLaNdEr', 'SwAgLaNdEr');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'T4H', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'T4H', 'T4H');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'ViSiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'ViSiON', 'ViSiON');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 03', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 03', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x264', 'x264
+
+x264 is a *free software library* and *application* for encoding video streams into the H.264/MPEG-4 AVC (https://en.wikipedia.org/wiki/H.264) compression format, and is released under the terms of the GNU GPL (https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+x264 is primarily used for 720p/1080p encodes and has better direct-play and compatibility support.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Codec');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'h264');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'x264');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x264', 'Remux', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'x|h264', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x264', 'x|h264', 'xh264');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'Not Remux', 'source', 'sonarr', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x264', 'Not Remux', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BR-DISK (BTN)', 'BR-DISK (BTN)
+
+This Custom Format works the same as the BR-DISK Custom Format, but is specific to a tracker called BTN.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BR-DISK (BTN)', 'BR-DISK', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BR-DISK (BTN)', 'BR-DISK', '(S) BR-DISK');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('KKTV', 'KKTV
+
+KKTV is a Taiwanese streaming service offering dramas, films, and anime from Taiwan, Japan, South Korea, Thailand, and Hong Kong, as well as original series. It was founded in 2016 and is based in Taipei, Taiwan. It is especially known for offering the latest Japanese dramas, with some released within hours or days of their premiere in Japan. In November 2025, KKTV merged with LINE TV.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('KKTV', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KKTV', 'KKTV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('KKTV', 'KKTV', 'KKTV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KKTV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('KKTV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KKTV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('KKTV', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('1.0 Mono', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1.0 Mono', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1.0 Mono', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Mono', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Mono', 'Mono');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Not 3.0ch', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Not 3.0ch', 'Not 3.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Not 4.0ch', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Not 4.0ch', 'Not 4.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1.0 Mono', 'Not High Channel Count', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('1.0 Mono', 'Not High Channel Count', 'Not High Channel Count');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v0', 'v0
+
+Custom Format to cover releases named with v0 which we don''t want.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v0', 'v0', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v0', 'v0', 'v0');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265', 'x265
+
+x265 is a *free software library* and *application* for encoding video streams into the H.265/MPEG-H HEVC (http://en.wikipedia.org/wiki/H.265) compression format, and is released under the terms of the GNU GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+This applies to all x265/HEVC releases that are not remux.
+
+x265 is primarily used for 2160p encodes and for 1080p encodes that have HDR Formats included (DV, DV HDR10, HDR, etc.). x265 is good for 4K content or 1080p if they use the remuxes (untouched source) as the source. If the media isn''t source quality or remux, then there will be a loss of quality. If you are storage-poor and just need to save space, use x265 (10-20% space-saving). The catch is that if you want the best quality x265, you need high-quality source files, so you will still have huge file sizes. It''s a shame that many x265 groups microsize their releases or use x264 as a source, which results in low-quality releases. The few groups that do use the correct source suffer from it.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'Codec');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'HEVC');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'h265');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'x265');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x265', 'Not Remux', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265', 'x|h265', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265', 'x|h265', 'xh265');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265', 'Not Remux (sonarr)', 'source', 'sonarr', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x265', 'Not Remux (sonarr)', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Vinegar Syndrome', 'Vinegar Syndrome
+
+Vinegar Syndrome is a US-based company founded in 2012 to preserve and distribute old X-rated films. Over time, they expanded their catalog to include other types of cult and exploitation films, specializing in horror and action genres.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Vinegar Syndrome', 'Vinegar Syndrome', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Vinegar Syndrome', 'Vinegar Syndrome', 'Vinegar Syndrome');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Vinegar Syndrome', 'VS', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Vinegar Syndrome', 'VS', 'VS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Vinegar Syndrome', 'VinSyn', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Vinegar Syndrome', 'VinSyn', 'VinSyn');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 03 (SeaDex Muxers)', 'Anime BD Tier 03
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
@@ -2391,65 +2665,6 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 03 (SeaDex Muxers)', 'Bluray Remux', 'bluray_raw');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 03 (SeaDex Muxers)', 'DVD', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 03 (SeaDex Muxers)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x264', 'x264
-
-x264 is a *free software library* and *application* for encoding video streams into the H.264/MPEG-4 AVC (https://en.wikipedia.org/wiki/H.264) compression format, and is released under the terms of the GNU GPL (https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
-
-x264 is primarily used for 720p/1080p encodes and has better direct-play and compatibility support.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Codec');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'h264');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'x264');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'Remux', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x264', 'Remux', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'x|h264', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x264', 'x|h264', 'xh264');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'Not Remux', 'source', 'sonarr', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x264', 'Not Remux', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AAC', 'AAC (Advanced Audio Codec – lossy)
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Advanced_Audio_Coding)
-Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AAC', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AAC', 'Lossy Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'AAC', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'AAC', 'AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not PCM', 'Not PCM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AAC', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AAC', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('IMAX Enhanced', 'IMAX Enhanced
-
-Get more picture and fewer black bars (letterboxing).
-
-From Wired (https://www.wired.com/story/what-is-imax-enhanced/)
-
-IMAX Enhanced is a standard for digital releases. It features scenes shot on IMAX cameras and produced in HDR10 DV. IMAX Enhanced releases often have a higher bitrate than other WEB options and are encoded into various formats, including SDR conversions.
-
-Due to the higher bitrate and implied picture quality improvement, it is recommended that the IMAX Enhanced custom format be enabled on WEB profiles, especially for those seeking ''The IMAX Experience''—including fewer "black bars" or letterboxing.
-
-!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.1.png)
-
-!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.2.png)
-
-!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.3.png)
-
-!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.4.png)
-
-!!Imax Enhanced Example (/Radarr/images/imax-e/imax-e.5.png)', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX Enhanced', 'Aspect Ratio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX Enhanced', 'Edition');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IMAX Enhanced', 'IMAX Enhanced', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IMAX Enhanced', 'IMAX Enhanced', 'IMAX Enhanced');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('KCW', 'KOCOWA aka KCW
 
 KOCOWA is a premium Korean streaming service that offers Korean dramas, variety shows, and K-Pop content from major broadcasters KBS, MBC, and SBS. New shows are available within 6 hours of their original airtime in Korea, with subtitles in English, Portuguese, and Spanish.
@@ -2462,106 +2677,60 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('KCW', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KCW', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('KCW', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MyTVSuper', 'myTV SUPER
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS-HD HRA', 'DTS-HD HRA (DTS-HD High-Resolution Audio – lossy)
 
-myTV SUPER is a subscription-based streaming service launched in April 2016 by MyTV Super Limited, a subsidiary of Television Broadcasts Limited (TVB) in Hong Kong. It offers TVB dramas, variety shows, movies, anime, live sports, and horse racing content, with some content supporting up to 4K resolution. The service is primarily available in Hong Kong and Macau.
+Technical Whitepaper (https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf)
 
-For more information, visit the myTV SUPER Wikipedia page (https://en.wikipedia.org/wiki/MyTV_Super).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MyTVSuper', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MyTVSuper', 'MyTVSuper', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MyTVSuper', 'MyTVSuper', 'MyTVSuper');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MyTVSuper', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MyTVSuper', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MyTVSuper', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MyTVSuper', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('YOUKU', 'Youku
+| Codec      | Page   | Paragraph |
+| ---------- | ------ | --------- |
+| DTS-HD MA  | Page 6 | 5.1.1     |
+| DTS-HD HRA | Page 7 | 5.1.2     |
 
-Youku is one of China''s leading video streaming platforms, founded in 2006 and headquartered in Beijing. It has been part of the Alibaba Group since its acquisition in 2015. It offers original TV dramas, variety shows, and licensed international content, including Korean dramas, Japanese anime, and selected Western series. The service is primarily aimed at audiences in China.
+DTS-HD HRA is the lossy version of DTS-HD MA.
 
-For more information, visit the Youku Wikipedia page (https://en.wikipedia.org/wiki/Youku).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('YOUKU', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('YOUKU', 'YOUKU', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('YOUKU', 'YOUKU', 'YOUKU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('YOUKU', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('YOUKU', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('YOUKU', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('YOUKU', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DV (w_o HDR fallback)', 'DV (w/o HDR fallback)
-
-If ^^NOT^^ every device accessing your media server supports Dolby Vision, add the DV (w/o HDR fallback) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don''t fully support Dolby Vision.
-
-*This also applies to Dolby Vision releases without HDR10 fallback (Profile 5).*', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (w_o HDR fallback)', 'HDR');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (w_o HDR fallback)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (w_o HDR fallback)', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Dolby Vision', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Dolby Vision', 'Dolby Vision');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DV (w_o HDR fallback)', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DV (w_o HDR fallback)', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Not RlsGrp', 'release_group', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Not RlsGrp', 'Not RlsGrp');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Not HDR', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Not HDR', 'Not HDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (w_o HDR fallback)', 'Not Hulu', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (w_o HDR fallback)', 'Not Hulu', 'Not Hulu');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Pathe', 'Pathé Thuis
-
-From Wikipedia, the free encyclopedia (https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis)
-
-Pathé Thuis is a Dutch streaming service for renting and purchasing films.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Pathe', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'Pathé', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Pathe', 'Pathé', 'Pathé');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Pathe', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Pathe', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MA', 'Movies Anywhere
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Movies_Anywhere)
-
-Movies Anywhere (MA) is a cloud-based digital rights locker and over-the-top streaming platform that allows users to stream and download purchased films, including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services. Movies Anywhere is operated by The Walt Disney Company. The platform provides content from Walt Disney Studios, Sony Pictures, Universal Pictures, and Warner Bros. The system utilizes an internal platform known as KeyChest, which synchronizes content licenses from digital distribution platforms linked to a central user account.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MA', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MA', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MA', 'Movies Anywhere', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MA', 'Movies Anywhere', 'Movies Anywhere');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DSNP', 'Disney+
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Disney%2B)
-
-Disney+ is an American subscription video on-demand over-the-top streaming media service owned and operated by Disney Streaming, the streaming division of Disney Entertainment, a major business segment of the Walt Disney Company.The service primarily distributes films and television shows produced by Walt Disney Studios and Disney Television Studios, with dedicated content hubs for Disney''s flagship brands; Disney, Pixar, Marvel, Star Wars, National Geographic, and Hulu as well as showcasing original and exclusive films and television shows.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DSNP', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DSNP', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSNP', 'Disney+', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DSNP', 'Disney+', 'Disney+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSNP', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSNP', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSNP', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSNP', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HMAX', 'Max (streaming service) aka HBO Max
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/HBO_Max)
-
-Max, formerly and in some markets still HBO Max, is an American subscription video on-demand over-the-top streaming service. It is a proprietary unit of Warner Bros. Discovery Global Streaming & Interactive Entertainment, which is itself a division of Warner Bros. Discovery (WBD). First launched (as HBO Max) in the United States on May 27, 2020, the service offers content from the libraries of Warner Bros., Discovery Channel, HBO, CNN, Cartoon Network, Adult Swim, Animal Planet, Eurosport, and their related brands.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HMAX', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HMAX', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'HBO Max', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HMAX', 'HBO Max', 'HBO Max');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'HMAX Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HMAX', 'HMAX Rename', 'HMAX Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HMAX', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HMAX', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MPEG2', '', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MPEG2', 'MPEG2', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MPEG2', 'MPEG2', 'MPEG2');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FLUX', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FLUX', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLUX', 'FLUX', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLUX', 'FLUX', 'FLUX');
+| Codec          | DTS-HRA          | DTS-MA            |
+| -------------- | ---------------- | ----------------- |
+| Lossy/lossless | Lossy            | Lossless          |
+| Data rate      | 1.5 - 6.0 Mbit/s | VBR - 24.5 Mbit/s |
+| Channels       | Up to 7.1 ch     | Up to 7.1 ch      |
+| Sampling Freq. | 96 kHz           | 192 kHz           |
+| Resolution     | -                | Up to 24-bit      |', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD HRA', 'Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'DTS-HD HRA', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'DTS-HD HRA', 'DTS-HD HRA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not Basic DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not Basic DTS', 'Not Basic DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not DTS X', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not DTS X', 'Not DTS X');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not PCM', 'Not PCM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not DTS-ES', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not DTS-ES', 'Not DTS-ES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD HRA', 'Not 6.1 Surround', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD HRA', 'Not 6.1 Surround', 'Not 6.1 Surround');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('2.0 Stereo', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2.0 Stereo', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2.0 Stereo', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Stereo', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Stereo', 'Stereo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not 3.0ch', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not 3.0ch', 'Not 3.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not 4.0ch', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not 4.0ch', 'Not 4.0ch');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not High Channel Count', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not High Channel Count', 'Not High Channel Count');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not Mono', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not Mono', 'Not Mono');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Dual Audio', 'Anime Dual Audio
 
 This Custom Format covers releases that have Dual Audio.', 0);
@@ -2579,70 +2748,630 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Anime Dual Audio', 'Chinese Language', 'Chinese', 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Dual Audio', 'Korean Language', 'language', 'all', 0, 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Anime Dual Audio', 'Korean Language', 'Korean', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VRV', 'VRV
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('IP', 'BBC iPlayer aka iP
 
-From Wikipedia, the free encyclopedia ()', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VRV', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VRV', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'VRV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VRV', 'VRV', 'VRV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VRV', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VRV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VRV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v2', 'v2
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/BBC_iPlayer)
 
-Custom Format to cover v2 releases.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v2', 'v2', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v2', 'v2', 'v2');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v2', 'Not Higher Versions', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v2', 'Not Higher Versions', 'Not Higher Versions');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 06 (FanSubs)', 'Anime BD Tier 06
+BBC iPlayer is a video on demand service from the BBC. iPlayer services delivered to UK-based viewers feature no commercial advertising.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IP', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IP', 'BBC iPlayer', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IP', 'BBC iPlayer', 'BBC iPlayer');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IP', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('IP', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IP', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('IP', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Obfuscated', 'Obfuscated
 
-FanSub groups that are consistent.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'ANE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'ANE', 'ANE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bunny-Apocalypse', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bunny-Apocalypse', 'Bunny-Apocalypse');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'CyC', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'CyC', 'CyC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Datte13', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Datte13', 'Datte13');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'EJF', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'EJF', 'EJF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'GetItTwisted', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'GetItTwisted', 'GetItTwisted');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'GSK_kun', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'GSK_kun', 'GSK_kun');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'iKaos', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'iKaos', 'iKaos');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'karios', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'karios', 'karios');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Pookie', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Pookie', 'Pookie');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'RASETSU', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'RASETSU', 'RASETSU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Starbez', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Starbez', 'Starbez');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Tsundere', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Tsundere', 'Tsundere');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Yoghurt', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'Yoghurt', 'Yoghurt');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'YURASUKA', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 06 (FanSubs)', 'YURASUKA', 'YURASUKA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06 (FanSubs)', 'Bluray Remux', 'bluray_raw');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 06 (FanSubs)', 'DVD', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06 (FanSubs)', 'DVD', 'dvd');
+Obfuscated releases are something you find on Usenet to do re-posts of common/popular releases.
+
+Several indexers that rely on auto-generating their NZB from groups by seeing things in the clear will suffer the fate of having those NZB DMCA''ed after time, as others can just see what it is and request a file takedown.
+You want indexers that get/do obfuscated releases and allow NZBs to be submitted directly to the NZB-indexer. Then, even thousands of days old releases still work fine unless someone leaks those NZBs to one of those public sites, where they can be requested to be taken down.
+
+- In general, if you''re using Usenet, DO NOT use this Custom Format.
+- Use this Custom Format ONLY if you DO NOT prefer Obfuscated releases.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', '4P', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '4P', '4P');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', '4Planet', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '4Planet', '4Planet');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', '_nzb', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '_nzb', '_nzb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'AsRequested', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'AsRequested', 'AsRequested');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'BUYMORE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'BUYMORE', 'BUYMORE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'CAPTCHA', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'CAPTCHA', 'CAPTCHA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Chamele0n', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Chamele0n', 'Chamele0n');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'GEROV', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'GEROV', 'GEROV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'iNC0GNiTO', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'iNC0GNiTO', 'iNC0GNiTO');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'NZBGeek', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'NZBGeek', 'NZBGeek');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Obfuscated', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Obfuscated', 'Obfuscated');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'postbot', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'postbot', 'postbot');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Rakuv', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Rakuv', 'Rakuv');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Scrambled', 'release_title', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Scrambled', '(R) Scrambled');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'Scrambled (sonarr)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'Scrambled (sonarr)', '(S) Scrambled');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'WhiteRev', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'WhiteRev', 'WhiteRev');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'WRTEAM', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'WRTEAM', 'WRTEAM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Obfuscated', 'xpost', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', 'xpost', 'xpost');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('7.1 Surround', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('7.1 Surround', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('7.1 Surround', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('7.1 Surround', '7.1 Surround', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('7.1 Surround', '7.1 Surround', '7.1 Surround');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('7.1 Surround', 'Not Low Channel Count', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('7.1 Surround', 'Not Low Channel Count', 'Not Low Channel Count');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Anime BD Tier 04
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'ABdex', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'ABdex', 'ABdex');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Afro', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Afro', 'Afro');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'aRMX', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'aRMX', 'aRMX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BiRJU', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BiRJU', 'BiRJU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BKC', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BKC', 'BKC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'CBT', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'CBT', 'CBT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Chimera', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Chimera', 'Chimera');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'derp', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'derp', 'derp');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DIY', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DIY', 'DIY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'EXP', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'EXP', 'EXP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Foxtrot', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Foxtrot', 'Foxtrot');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'grimf', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'grimf', 'grimf');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'IK', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'IK', 'IK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Iznjie Biznjie', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Iznjie Biznjie', 'Iznjie Biznjie');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kaleido-subs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kaleido-subs', 'Kaleido-subs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kametsu', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kametsu', 'Kametsu');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kawatare', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kawatare', 'Kawatare');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'KH', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'KH', 'KH');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'LazyRemux', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'LazyRemux', 'LazyRemux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Metal', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Metal', 'Metal');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'MK', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'MK', 'MK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'neko-kBaraka', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'neko-kBaraka', 'neko-kBaraka');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'OZR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'OZR', 'OZR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Pizza', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Pizza', 'Pizza');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'pog42', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'pog42', 'pog42');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Quetzal', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Quetzal', 'Quetzal');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Reza', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Reza', 'Reza');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'SCY', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'SCY', 'SCY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Shimatta', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Shimatta', 'Shimatta');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Smoke', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Smoke', 'Smoke');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Spirale', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Spirale', 'Spirale');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UDF', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UDF', 'UDF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UQW', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UQW', 'UQW');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Vanilla', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Vanilla', 'Vanilla');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Virtuality', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Virtuality', 'Virtuality');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'VULCAN', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'VULCAN', 'VULCAN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray Remux', 'bluray_raw');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DVD', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DVD', 'dvd');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TrueHD ATMOS', 'TrueHD ATMOS (Dolby TrueHD with Atmos – lossless)
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Atmos)
+
+Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD ATMOS', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD ATMOS', 'Dolby');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD ATMOS', 'Lossless Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'ATMOS', 'release_title', 'radarr', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'ATMOS', '(R) ATMOS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'ATMOS (sonarr)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'ATMOS (sonarr)', 'ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not DTS X', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not DTS X', 'Not DTS X');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'TrueHD', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'TrueHD', 'TrueHD');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HULU', 'Hulu
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Hulu)
+
+Hulu (/ˈhuːluː/) is an American subscription streaming service owned by The Walt Disney Company. It was launched on October 29, 2007.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HULU', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HULU', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'Hulu', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HULU', 'Hulu', 'Hulu');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HULU', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HULU', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v1', 'v1
+
+Custom Format to cover v1 releases.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v1', 'v1', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v1', 'v1', 'v1');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('P2P Internal', 'P2P Internal
+
+This Custom Format matches on the Internal Indexer flag that some trackers use to promote their own internal releases. You can use this Custom Format to favor their internal releases, or, when the same release exists on multiple trackers, it will prefer the release from the home tracker.
+For this to work, the tracker must support the Internal Indexer flag!', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('P2P Internal', 'Flag');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('P2P Internal', 'Internal', 'indexer_flag', 'all', 0, 0);
+INSERT INTO condition_indexer_flags (custom_format_name, condition_name, flag) VALUES ('P2P Internal', 'Internal', 'internal');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SDR (no WEBDL)', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'HDR');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'HDR Formats', 'release_title', 'all', 1, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR (no WEBDL)', 'HDR Formats', 'HDR Formats');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'SDR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR (no WEBDL)', 'SDR', 'SDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('SDR (no WEBDL)', '2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'Not WEBDL', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SDR (no WEBDL)', 'Not WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'Not WEBRIP', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SDR (no WEBDL)', 'Not WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('LQ', 'LQ
+
+- A collection of known low-quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from the scene and quick-to-release P2P groups that, while adequate, are typically not regarded as high quality.
+- Release groups that disrupt the Starr apps automation because their poor naming could potentially create download loops, even if their overall quality is excellent.
+
+--8<-- "includes/cf-descriptions/apply-10000.md"', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('LQ', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '24xHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '24xHD', '24xHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '3Li', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '3Li', '3Li (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '41RGB', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '41RGB', '41RGB');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '4K4U', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '4K4U', '4K4U');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'AOC', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'AOC', 'AOC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'AROMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'AROMA', 'AROMA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'aXXo', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'aXXo', 'aXXo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'AZAZE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'AZAZE', 'AZAZE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BARC0DE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BARC0DE', 'BARC0DE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BAUCKLEY', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BAUCKLEY', 'BAUCKLEY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BdC', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BdC', 'BdC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'beAst', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'beAst', 'beAst');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BRiNK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BRiNK', 'BRiNK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BTM', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BTM', 'BTM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'C1NEM4', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'C1NEM4', 'C1NEM4');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'C4K', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'C4K', 'C4K');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CDDHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CDDHD', 'CDDHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CHAOS', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CHAOS', 'CHAOS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CHD', 'CHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CHX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CHX', 'CHX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CiNE', 'CiNE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'COLLECTiVE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'COLLECTiVE', 'COLLECTiVE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CREATiVE24', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CREATiVE24', 'CREATiVE24 (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CrEwSaDe', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CrEwSaDe', 'CrEwSaDe');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CTFOH', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CTFOH', 'CTFOH');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'd3g', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'd3g', 'd3g');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DDR', 'DDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DepraveD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DepraveD', 'DepraveD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DNL', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DNL', 'DNL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DRX', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DRX', 'DRX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'E', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'E', 'E');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'EPiC', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'EPiC', 'EPiC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'EuReKA', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'EuReKA', 'EuReKA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'EVO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'EVO', 'EVO');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FaNGDiNG0', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FaNGDiNG0', 'FaNGDiNG0');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Feranki1980', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Feranki1980', 'Feranki1980 (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FGT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FGT', 'FGT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FMD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FMD', 'FMD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FRDS', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FRDS', 'FRDS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FZHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FZHD', 'FZHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'GHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'GHD', 'GHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'GHOSTS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'GHOSTS', 'GHOSTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Gi6', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Gi6', 'Gi6 (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'GPTHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'GPTHD', 'GPTHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDHUB4U', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDHUB4U', 'HDHUB4U');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDS', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDS', 'HDS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDT', 'HDT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDTime', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDTime', 'HDTime');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDWinG', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDWinG', 'HDWinG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HiQVE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HiQVE', 'HiQVE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'iNTENSO', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'iNTENSO', 'iNTENSO');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'ION10', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'ION10', 'ION10 (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'iPlanet', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'iPlanet', 'iPlanet');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'iVy', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'iVy', 'iVy');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Japhson', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Japhson', 'Japhson (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'jeddak', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'jeddak', 'jeddak (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'jennaortega', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'jennaortega', 'jennaortega (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'JFF', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'JFF', 'JFF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'KC', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'KC', 'KC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'KiNGDOM', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'KiNGDOM', 'KiNGDOM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'KIRA', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'KIRA', 'KIRA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'L0SERNIGHT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'L0SERNIGHT', 'L0SERNIGHT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'LAMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'LAMA', 'LAMA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Leffe', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Leffe', 'Leffe');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Liber8', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Liber8', 'Liber8');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'LiGaS', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'LiGaS', 'LiGaS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'LUCY', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'LUCY', 'LUCY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MarkII', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MarkII', 'MarkII');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MeGusta', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MeGusta', 'MeGusta');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Mesc', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Mesc', 'Mesc');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MgB', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MgB', 'MgB (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'mHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'mHD', 'mHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MIRCrew', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MIRCrew', 'MIRCrew (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'moviesbyrizzo', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'moviesbyrizzo', 'moviesbyrizzo (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'mSD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'mSD', 'mSD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MTeam', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MTeam', 'MTeam');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MySiLU', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MySiLU', 'MySiLU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NhaNc3', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NhaNc3', 'NhaNc3');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nhanc3', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nhanc3', 'nhanc3');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nHD', 'nHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nikt0', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nikt0', 'nikt0');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NiXON', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NiXON', 'NiXON (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NoGroup', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NoGroup', 'NoGroup');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NoRBiT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NoRBiT', 'NoRBiT (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nSD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nSD', 'nSD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'OFT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'OFT', 'OFT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Pahe', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Pahe', 'Pahe');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PATOMiEL', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PATOMiEL', 'PATOMiEL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PeruGuy', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PeruGuy', 'PeruGuy (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PortalGoods', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PortalGoods', 'PortalGoods (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PRODJi', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PRODJi', 'PRODJi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PS3-TEAM', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PS3-TEAM', 'PS3-TEAM (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PSA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PSA', 'PSA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PTNK', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PTNK', 'PTNK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RDN', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RDN', 'RDN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RiffTrax', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RiffTrax', 'RiffTrax');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RIPRARBG', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RIPRARBG', 'RIPRARBG (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RU4HD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RU4HD', 'RU4HD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RWP', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RWP', 'RWP (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SADPANDA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SADPANDA', 'SADPANDA (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SANTi', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SANTi', 'SANTi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SasukeducK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SasukeducK', 'SasukeducK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Scene', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Scene', 'Scene');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SHD', 'SHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'ShieldBearer', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'ShieldBearer', 'ShieldBearer');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'STUTTERSHIT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'STUTTERSHIT', 'STUTTERSHIT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SUNSCREEN', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SUNSCREEN', 'SUNSCREEN');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TBS', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TBS', 'TBS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TEKNO3D', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TEKNO3D', 'TEKNO3D (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TG', 'TG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Tigole', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Tigole', 'Tigole');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TIKO', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TIKO', 'TIKO');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'UNTOUCHABLES', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'UNTOUCHABLES', 'UNTOUCHABLES (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'VIDEOHOLE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'VIDEOHOLE', 'VIDEOHOLE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'VISIONPLUSHDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'VISIONPLUSHDR', 'VISIONPLUSHDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'WAF', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'WAF', 'WAF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'WiKi', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'WiKi', 'WiKi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'WinLUNA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'WinLUNA', 'WinLUNA (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'worldmkv', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'worldmkv', 'worldmkv');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'x0r', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'x0r', 'x0r');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'XLF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'XLF', 'XLF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'y2flix', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'y2flix', 'y2flix (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Zero00', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Zero00', 'Zero00');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Zeus', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Zeus', 'Zeus');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DV (Disk)', 'DV (Disk)
+
+This will boost the score for Dolby Vision Releases using the original full-quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (Disk)', 'HDR');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV (Disk)', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'FraMeSToR', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'FraMeSToR', 'FraMeSToR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'DV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'DV', 'DV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'No FANRES', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'No FANRES', 'No FANRES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'Not Hybrid', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'Not Hybrid', 'Not Hybrid');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV (Disk)', 'Not Hybrid Release Group', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV (Disk)', 'Not Hybrid Release Group', 'Not Hybrid Release Group (Title)');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VDL', 'Videoland
+
+From Wikipedia, the free encyclopedia ()
+
+Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally it was a retail chain of video rental stores. Its main competitor is Netflix.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VDL', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VDL', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VDL', 'Videoland', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VDL', 'Videoland', 'Videoland');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VDL', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VDL', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VDL', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VDL', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HDR10+ Boost', 'HDR10+ Boost
+
+If you prefer HDR10+ releases and have compatible equipment, add the HDR10+ Boost custom format. This custom format prioritizes releases containing HDR10+ over standard HDR releases.
+
+*This custom format also boosts DV HDR10+ releases if you prefer them over DV HDR10.*', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HDR10+ Boost', 'HDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR10+ Boost', 'HDR10+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR10+ Boost', 'HDR10+', 'HDR10+');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Pathe', 'Pathé Thuis
+
+From Wikipedia, the free encyclopedia (https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis)
+
+Pathé Thuis is a Dutch streaming service for renting and purchasing films.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Pathe', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'Pathé', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Pathe', 'Pathé', 'Pathé');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Pathe', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Pathe', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CPNG', 'Coupang Play
+
+Coupang Play is a South Korean streaming service launched by Coupang in December 2020. It offers movies, dramas, variety shows, and live sports — including the Premier League, NBA, and more. It is included with Coupang''s Rocket Wow membership.
+
+For more information, visit the Coupang Play Wikipedia page (https://en.wikipedia.org/wiki/Coupang_Play).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CPNG', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CPNG', 'CPNG', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CPNG', 'CPNG', 'CPNG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CPNG', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CPNG', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CPNG', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CPNG', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MPEG2', '', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MPEG2', 'MPEG2', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MPEG2', 'MPEG2', 'MPEG2');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ALL4', 'ALL4
+
+From Wikipedia, the free encyclopedia ()
+
+ALL4 is a previous name for the UK''s Channel4 VOD service. Releases are usually identified with either ''ALL4'' or ''4OD'', not ''Channel4''.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ALL4', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ALL4', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ALL4', 'ALL4', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ALL4', 'ALL4', 'ALL4');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ALL4', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ALL4', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ALL4', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ALL4', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NLZ', 'NLZiet
+
+NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free. The streaming service brings the best of all channels straight to your preferred device and lets you see your favorite tv content in high quality on all available platforms; anytime and anywhere.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NLZ', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NLZ', 'NLZiet', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NLZ', 'NLZiet', 'NLZiet');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NLZ', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NLZ', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NLZ', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NLZ', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('5.1 Surround', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('5.1 Surround', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('5.1 Surround', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('5.1 Surround', '5.1 Surround', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('5.1 Surround', '5.1 Surround', '5.1 Surround');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('5.1 Surround', 'Not 6.1 Surround', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('5.1 Surround', 'Not 6.1 Surround', 'Not 6.1 Surround');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('5.1 Surround', 'Not 7.1 Surround', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('5.1 Surround', 'Not 7.1 Surround', 'Not 7.1 Surround');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remux Tier 01', 'Remux Tier 01
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Pay exceptional attention to detail and carefully analyze all available sources
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('Remux Tier 01', 'Remux', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', '3L', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', '3L', '3L');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'BiZKiT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'BiZKiT', 'BiZKiT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'BLURANiUM', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'BLURANiUM', 'BLURANiUM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'BMF', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'BMF', 'BMF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'CiNEPHiLES', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'CiNEPHiLES', 'CiNEPHiLES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'FraMeSToR', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'FraMeSToR', 'FraMeSToR (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'PiRAMiDHEAD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'PiRAMiDHEAD', 'PiRAMiDHEAD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'PmP', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'PmP', 'PmP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'WiLDCAT', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'WiLDCAT', 'WiLDCAT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'ZQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'ZQ', 'ZQ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'Remux (sonarr)', 'source', 'sonarr', 0, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Remux Tier 01', 'Remux (sonarr)', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH BASL', 'BASL (Black American Sign Language)
+
+BASL is a dialect of ASL used primarily by Black Deaf Americans, originating from segregated schools in the South. Compared to mainstream ASL, it uses a larger signing space, more two-handed signs, and greater emotional expression.
+
+For more information, visit the Black American Sign Language Wikipedia page (https://en.wikipedia.org/wiki/Black_American_Sign_Language).', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH BASL', 'Black American Sign Language', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH BASL', 'Black American Sign Language', 'Black American Sign Language');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BR-DISK', 'BR-DISK
+
+This is a custom format to help Radarr/Sonarr recognize and ignore BR-DISK (ISOs and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+
+!!! note
+
+    Depending on your renaming scheme, it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
+    This is a cosmetic annoyance until we come up with another way to solve this,
+    Since this Custom Format is used not to download BR-DISK, it fulfills its purpose as intended.
+    There are several reasons why this is happening:
+
+    - Blame the often incorrectly used naming of x265 encodes.
+    - Radarr/Sonarr uses dynamic custom formats.
+
+--8<-- "includes/cf-descriptions/apply-10000.md"', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BR-DISK', 'BR-DISK', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BR-DISK', 'BR-DISK', 'BR-DISK');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FUNi', 'Funimation
 
 Funimation was an American anime streaming service launched in 2016, known for popular titles such as Dragon Ball, One Piece, Attack on Titan, and My Hero Academia. It was one of the leading distributors of anime in North America and was owned by Sony. On April 2, 2024, Funimation shut down and merged into Crunchyroll, where most of its content library is now available.
@@ -2658,53 +3387,132 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FUNi', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FUNi', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FUNi', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ALL4', 'ALL4
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian Tier 01', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 01', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 01', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 01', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'ANDY', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'ANDY', 'ANDY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'Archie', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'Archie', 'Archie');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'ECLiPSE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'ECLiPSE', 'ECLiPSE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'HBO', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'HBO', 'HBO (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'HeavenlyOppa', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'HeavenlyOppa', 'HeavenlyOppa');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'iTsOK', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'iTsOK', 'iTsOK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'JKCT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'JKCT', 'JKCT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'LoveBug', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'LoveBug', 'LoveBug');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'MARK', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'MARK', 'MARK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'MMR', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'MMR', 'MMR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'MrHulk', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'MrHulk', 'MrHulk');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'Phanteam', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'Phanteam', 'Phanteam');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'SH3LBY', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'SH3LBY', 'SH3LBY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'SYNFM', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'SYNFM', 'SYNFM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'Wendy', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'Wendy', 'Wendy');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 01', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 01', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('OViD', 'OViD
 
-From Wikipedia, the free encyclopedia ()
+OViD Website (https://search.ovid.tv/other/about)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('OViD', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('OViD', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'OViD', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('OViD', 'OViD', 'OViD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('OViD', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('OViD', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PLAY', 'PLAY
 
-ALL4 is a previous name for the UK''s Channel4 VOD service. Releases are usually identified with either ''ALL4'' or ''4OD'', not ''Channel4''.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ALL4', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ALL4', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ALL4', 'ALL4', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ALL4', 'ALL4', 'ALL4');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ALL4', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ALL4', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ALL4', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ALL4', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS-ES', 'DTS-ES (DTS Extended Surround – lossy)
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Google_TV_(service))
 
-DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1 and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-ES', 'Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'DTS-ES', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'DTS-ES', 'DTS-ES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not Basic DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not Basic DTS', 'Not Basic DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not DTS X', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not DTS X', 'Not DTS X');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not PCM', 'Not PCM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FOD', 'FOD (Fuji TV On Demand)
+Google TV, formerly known as Google Play Movies & TV, is a digital distribution service for movies and television series developed by Google. Launched in 2011 as part of the Google Play product line, the service offers search and discovery of video titles across multiple streaming services, including rental or purchase options, alongside watchlist features for accessing titles from eligible devices and platforms.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PLAY', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'PLAY', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PLAY', 'PLAY', 'PLAY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'PLAY Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PLAY', 'PLAY Rename', 'PLAY Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PLAY', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PLAY', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PLAY', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 05 (FanSubs)', 'Anime Web Tier 05
 
-FOD (Fuji TV On Demand) is a video-on-demand streaming service owned by Fuji Television Network, Inc. It was launched in 2005 and offers Japanese dramas, anime, movies, and variety shows. It is primarily aimed at viewers in Japan and focuses on content from Fuji TV''s broadcast library, including past episodes of popular series and exclusive original programming.
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'BlueLobster', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'BlueLobster', 'BlueLobster');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'GST', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'GST', 'GST');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleRips', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleRips', 'HorribleRips');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleSubs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleSubs', 'HorribleSubs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'KAN3D2M', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'KAN3D2M', 'KAN3D2M');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'KiyoshiStar', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'KiyoshiStar', 'KiyoshiStar');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'Lia', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Lia', 'Lia');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'NanDesuKa', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'NanDesuKa', 'NanDesuKa');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'PlayWeb', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'PlayWeb', 'PlayWeb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'SobsPlease', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'SobsPlease', 'SobsPlease');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'Some-Stuffs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Some-Stuffs', 'Some-Stuffs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'SubsPlease', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'SubsPlease', 'SubsPlease');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'URANIME', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'URANIME', 'URANIME');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'ZigZag', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'ZigZag', 'ZigZag (Title)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('1080p', '1080p
 
-For more information, visit the Fuji Television Wikipedia page (https://en.wikipedia.org/wiki/Fuji_Television).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FOD', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FOD', 'FOD', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FOD', 'FOD', 'FOD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FOD', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FOD', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FOD', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FOD', 'WEBRIP', 'webrip');
+This Custom Format can boost 1080p releases. It is only useful if you use Merge Qualities (/Radarr/Tips/Merge-quality/) in your Quality Profile.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1080p', '1080p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1080p', 'Resolution');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1080p', '1080p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('1080p', '1080p', '1080p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TVING', 'TVING
+
+TVING is a South Korean streaming service offering Korean dramas, movies, variety shows, and original content. It launched on October 1, 2020, as a joint venture between CJ ENM and JTBC, combining both companies'' streaming services into one platform. It is primarily available in South Korea and is one of the country''s leading streaming platforms.
+
+For more information, visit the TVING Wikipedia page (https://en.wikipedia.org/wiki/TVING).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TVING', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'TVING', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TVING', 'TVING', 'TVING');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'TVING Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TVING', 'TVING Rename', 'TVING Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVING', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVING', 'WEBRIP', 'webrip');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime LQ Groups', 'Anime LQ Groups
 
 A collection of known low-quality groups.', 0);
@@ -2983,237 +3791,20 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime LQ Groups', 'Yun', 'Yun');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime LQ Groups', 'zza', 'release_title', 'all', 0, 0);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime LQ Groups', 'zza', 'zza');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remaster', 'Remaster
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ITVX', 'ITVX aka ITV
 
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Remaster)
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/ITVX)
 
-For the software term, see Software remastering.
-Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remaster', 'Edition');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remaster', 'Remaster', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remaster', 'Remaster', 'Remaster');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remaster', 'Not 4K Remaster', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remaster', 'Not 4K Remaster', 'Not 4K Remaster');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FastSUB', 'FastSUB
-
-FanSUB, but made as quickly as possible, at the expense of quality.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FastSUB', 'FastSUB', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FastSUB', 'FastSUB', 'FastSUB');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remux Tier 02', 'Remux Tier 02
-
-Groups that:
-
-- Have proven themselves by consistently delivering good quality releases
-- Pay very close attention to detail and use multiple high-quality sources
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 02', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'Remux', 'quality_modifier', 'radarr', 0, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('Remux Tier 02', 'Remux', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', '12GaugeShotgun', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', '12GaugeShotgun', '12GaugeShotgun');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'ATELiER', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'ATELiER', 'ATELiER');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'decibeL', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'decibeL', 'decibeL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'EPSiLON', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'EPSiLON', 'EPSiLON');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'HiFi', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'HiFi', 'HiFi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'KRaLiMaRKo', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'KRaLiMaRKo', 'KRaLiMaRKo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'NCmt', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'NCmt', 'NCmt');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'playBD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'playBD', 'playBD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'PTer', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'PTer', 'PTer');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'SiCFoI', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'SiCFoI', 'SiCFoI');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'SURFINBIRD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'SURFINBIRD', 'SURFINBIRD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'TEPES', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'TEPES', 'TEPES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'TRiToN', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 02', 'TRiToN', 'TRiToN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 02', 'Remux (sonarr)', 'source', 'sonarr', 0, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Remux Tier 02', 'Remux (sonarr)', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FanSUB', 'FanSUB
-
-Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so-called FastSUBs.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FanSUB', 'FanSUB', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FanSUB', 'FanSUB', 'FanSUB');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Viki', 'Viki (Rakuten Viki)
-
-Rakuten Viki is a streaming service owned by Rakuten that specialises in Asian TV shows and films, particularly Korean, Chinese, Taiwanese, and Japanese productions. It is available worldwide and is unique for its community-created subtitles, with content available in more than 200 languages.
-
-For more information, visit the Rakuten Viki Wikipedia page (https://en.wikipedia.org/wiki/Rakuten_Viki).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Viki', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Viki', 'Viki', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Viki', 'Viki', 'Viki');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Viki', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Viki', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Viki', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Viki', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TrueHD ATMOS', 'TrueHD ATMOS (Dolby TrueHD with Atmos – lossless)
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Atmos)
-
-Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD ATMOS', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD ATMOS', 'Dolby');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD ATMOS', 'Lossless Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'ATMOS', 'release_title', 'radarr', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'ATMOS', '(R) ATMOS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'ATMOS (sonarr)', 'release_title', 'sonarr', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'ATMOS (sonarr)', 'ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not DTS X', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not DTS X', 'Not DTS X');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'TrueHD', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'TrueHD', 'TrueHD');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH BASL', 'BASL (Black American Sign Language)
-
-BASL is a dialect of ASL used primarily by Black Deaf Americans, originating from segregated schools in the South. Compared to mainstream ASL, it uses a larger signing space, more two-handed signs, and greater emotional expression.
-
-For more information, visit the Black American Sign Language Wikipedia page (https://en.wikipedia.org/wiki/Black_American_Sign_Language).', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH BASL', 'Black American Sign Language', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH BASL', 'Black American Sign Language', 'Black American Sign Language');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SHO', 'SHOWTIME
-
-From Wikipedia, the free encyclopedia ()
-
-Paramount+ with Showtime, also known as Showtime (the former name of its main channel from 1976 to 2024, but still used for certain marketing and channel branding contexts), is an American premium television network and the flagship property of Showtime Networks, a sub-division of the Paramount Media Networks division of Paramount Global. Paramount+ with Showtime''s programming includes original television series produced exclusively for the linear network and developed for the co-owned Paramount+ streaming service, theatrically released and independent motion pictures, documentaries, and occasional stand-up comedy specials, made-for-TV movies and softcore adult programming.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SHO', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SHO', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'SHOWTIME', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SHO', 'SHOWTIME', 'SHOWTIME');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'SHO Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SHO', 'SHO Rename', 'SHO Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SHO', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SHO', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DCU', 'DC Universe (streaming service)
-
-From Wikipedia, the free encyclopedia ()
-
-DC Universe was an American subscription video-on-demand (SVOD) and digital comics service operated by DC Entertainment and Warner Bros. Digital Networks, both divisions of WarnerMedia. Launched on September 15, 2018, the service featured a streaming library of animated series and films based on DC Comics properties, new original television series adapted from DC properties, as well as a rotating back catalogue of DC Comics publications, and online community features. In 2020.
-
-In June 2020, WarnerMedia began to phase out DC Universe in favor of its new flagship streaming service HBO Max, initially by offering a promotional offer via DC Universe for new subscribers. DC Universe''s original series and future streaming productions were moved to HBO Max and became Max Originals.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DCU', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DCU', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DCU', 'DC Universe', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DCU', 'DC Universe', 'DC Universe');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DCU', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DCU', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DCU', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DCU', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 03 (Official Subs)', 'Anime Web Tier 03
-
-Official sub groups that tend to be more consistent and release fast.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'AnoZu', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'AnoZu', 'AnoZu');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'Dooky', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Dooky', 'Dooky (Title)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'Kitsune', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Kitsune', 'Kitsune (Title)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'SubsPlus+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'SubsPlus+', 'SubsPlus+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'ZR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'ZR', 'ZR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS-HD MA', 'DTS-HD MA (DTS-HD Master Audio – lossless)
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/DTS-HD_Master_Audio)
-
-DTS-HD Master Audio is a multi-channel lossless audio codec developed by DTS that extends the lossy DTS Coherent Acoustics codec (DTS CA; usually referred to as simply "DTS"). Rather than being an entirely new coding mechanism, DTS-HD MA encodes an audio master in lossy DTS first, then stores a concurrent stream of supplementary data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy "core" able to be played back by devices that cannot decode the more complex lossless audio. DTS-HD MA''s primary application is audio storage and playback for Blu-ray Disc media.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Lossless Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-HD MA', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'DTS-HD MA', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'DTS-HD MA', 'DTS-HD MA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not DTS X', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not DTS X', 'Not DTS X');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not PCM', 'Not PCM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-HD MA', 'Not DTS-HD HRA/ES', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-HD MA', 'Not DTS-HD HRA/ES', 'Not DTS-HD HRA_ES');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DMM-TV', 'DMM TV
-
-DMM TV is a Japanese streaming service by DMM.com, offering anime, movies, dramas, and variety shows. It is especially popular for its large anime library. Content is primarily aimed at viewers in Japan.
-
-For more information, visit the DMM TV Wikipedia page (https://en.wikipedia.org/wiki/DMM.com).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DMM-TV', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DMM-TV', 'DMM-TV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DMM-TV', 'DMM-TV', 'DMM-TV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DMM-TV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DMM-TV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DMM-TV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DMM-TV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HLG', 'HLG
-
-This Custom Format matches HLG releases. The default score can be used to prevent downloading HLG releases on devices that can''t play them properly, e.g., the picture appears very dark and murky, making it unwatchable.
-
-HLG or HLG10 is an HDR format developed by NHK (JP) and the BBC, suitable for both video and still images. This format is backwards compatible with SDR UHD TVs but not with older SDR displays that do not support Rec. 2020 color standards.
-
-You will mainly see this with cable, satellite, and over-the-air TV broadcasts from networks like the BBC and National Geographic.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HLG', 'HDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'HLG', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'HLG', 'HLG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'Not HDR10+', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'Not HDR10+', 'Not HDR10+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'Not HDR10', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'Not HDR10', 'Not HDR10');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'Not PQ', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'Not PQ', 'Not PQ');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BR-DISK', 'BR-DISK
-
-This is a custom format to help Radarr/Sonarr recognize and ignore BR-DISK (ISOs and Blu-ray folder structure) in addition to the standard BR-DISK quality.
-
-!!! note
-
-    Depending on your renaming scheme, it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-    This is a cosmetic annoyance until we come up with another way to solve this,
-    Since this Custom Format is used not to download BR-DISK, it fulfills its purpose as intended.
-    There are several reasons why this is happening:
-
-    - Blame the often incorrectly used naming of x265 encodes.
-    - Radarr/Sonarr uses dynamic custom formats.
-
---8<-- "includes/cf-descriptions/apply-10000.md"', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BR-DISK', 'BR-DISK', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BR-DISK', 'BR-DISK', 'BR-DISK');
+ITVX (formerly ITV Hub) is a British ad-supported video-on-demand streaming service operated by ITV. The service offers original content from the broadcaster, as well as some exclusive and licensed programming.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ITVX', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'ITVX', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ITVX', 'ITVX', 'ITVX');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'ITVX Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ITVX', 'ITVX Rename', 'ITVX Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ITVX', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ITVX', 'WEBRIP', 'webrip');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Dubs Only', 'Dubs Only
 
 This Custom Format covers releases that only have Dubs.', 0);
@@ -3231,1431 +3822,58 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Dubs Only', 'torenter69', 'torenter69');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dubs Only', 'Yameii', 'release_title', 'all', 0, 0);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Dubs Only', 'Yameii', 'Yameii');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VDL', 'Videoland
-
-From Wikipedia, the free encyclopedia ()
-
-Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally it was a retail chain of video rental stores. Its main competitor is Netflix.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VDL', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VDL', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VDL', 'Videoland', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VDL', 'Videoland', 'Videoland');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VDL', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VDL', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VDL', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VDL', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('126811', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('126811', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('126811', '126811', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('126811', '126811', '126811');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Upscaled', 'Upscaled
-
-This custom format is used to prevent grabbing upscaled releases.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'AI Upscales', 'release_title', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'AI Upscales', '(R) AI Upscales');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'AI Upscales (sonarr)', 'release_title', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'AI Upscales (sonarr)', '(S) AI Upscales');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'AIUS', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'AIUS', 'AIUS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'GuyZo', 'release_title', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'GuyZo', 'GuyZo (Title)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Regrade', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Regrade', 'Regrade');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'RW', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'RW', 'RW');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'TheUpscaler', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'TheUpscaler', 'TheUpscaler');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Upscaled', 'release_title', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Upscaled', '(R) Upscaled');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Upscaled (sonarr)', 'release_title', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Upscaled (sonarr)', '(S) Upscaled');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 05 (FanSubs)', 'Anime Web Tier 05
-
-FanSub groups that are consistent.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'BlueLobster', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'BlueLobster', 'BlueLobster');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'GST', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'GST', 'GST');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleRips', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleRips', 'HorribleRips');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleSubs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'HorribleSubs', 'HorribleSubs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'KAN3D2M', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'KAN3D2M', 'KAN3D2M');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'KiyoshiStar', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'KiyoshiStar', 'KiyoshiStar');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'Lia', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Lia', 'Lia');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'NanDesuKa', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'NanDesuKa', 'NanDesuKa');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'PlayWeb', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'PlayWeb', 'PlayWeb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'SobsPlease', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'SobsPlease', 'SobsPlease');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'Some-Stuffs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'Some-Stuffs', 'Some-Stuffs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'SubsPlease', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'SubsPlease', 'SubsPlease');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'URANIME', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'URANIME', 'URANIME');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'ZigZag', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 05 (FanSubs)', 'ZigZag', 'ZigZag (Title)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS X', 'DTS X (Can be either lossy or lossless depending on the underlying codec, usually DTS-HD MA for lossless or DTS-HD HRA for lossy.)
-
-DTS:X is an object-based audio codec (https://www.whathifi.com/advice/dtsx-what-it-how-can-you-get-it) which aims to create a multi-dimensional sound that “moves around you like it would in real life”.
-You may think that sounds similar to Dolby Atmos, and you’d be right, but where DTS:X''s differences lie in the required speaker configuration. While Dolby Atmos requires adding additional overhead channels to your 5.1 or 7.1 setup, DTS:X works with standard surround speaker setups – just like the one you might already have at home. It can support up to 32 speaker locations and an 11.2-channel system.
-DTS:X, like other higher-quality DTS formats (e.g. DTS-HD MA), is lossless.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS X', 'Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'DTS X', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'DTS X', 'DTS X');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not Basic DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not Basic DTS', 'Not Basic DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not PCM', 'Not PCM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CRAV', 'CRAVE
-
-From Wikipedia, the free encyclopedia ()
-
-Crave (originally CraveTV) is a Canadian subscription video on demand service. The service competes directly with other subscription-based over-the-top streaming services operating in Canada, primarily against American-based services.
-The service features Bell Media original programming, exclusive Canadian access to programming acquired from several U.S. television and streaming services, and various theatrically-released films. Crave''s major programming supplier is Warner Bros. Discovery (HBO / Max and Warner Bros. films). Starz, offered in partnership with Lionsgate.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRAV', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRAV', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'Crave', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRAV', 'Crave', 'Crave');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'Crave Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRAV', 'Crave Rename', 'Crave Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRAV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRAV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('4K Remaster', '4K Remaster
-
-A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible current release of the movie.
-
-To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colors, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
-
-Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ color specification. This delivers an expanded color range closer to that contained in source material.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4K Remaster', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4K Remaster', 'Edition');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4K Remaster', 'Resolution');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4K Remaster', 'Remaster', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4K Remaster', 'Remaster', 'Remaster');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4K Remaster', '4K', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4K Remaster', '4K', '4K');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4K Remaster', 'Not 4K Resolution', 'resolution', 'all', 1, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('4K Remaster', 'Not 4K Resolution', '2160p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CC', 'Comedy Central
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Comedy_Central)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CC', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'Comedy Central', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CC', 'Comedy Central', 'Comedy Central');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'CC Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CC', 'CC Rename', 'CC Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CC', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CC', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CC', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('7.1 Surround', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('7.1 Surround', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('7.1 Surround', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('7.1 Surround', '7.1 Surround', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('7.1 Surround', '7.1 Surround', '7.1 Surround');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('7.1 Surround', 'Not Low Channel Count', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('7.1 Surround', 'Not Low Channel Count', 'Not Low Channel Count');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BHDStudio', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('BHDStudio', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BHDStudio', 'BHDStudio', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BHDStudio', 'BHDStudio', 'BHDStudio');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian Tier 01', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 01', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 01', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 01', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'ANDY', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'ANDY', 'ANDY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'Archie', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'Archie', 'Archie');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'ECLiPSE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'ECLiPSE', 'ECLiPSE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'HBO', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'HBO', 'HBO (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'HeavenlyOppa', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'HeavenlyOppa', 'HeavenlyOppa');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'iTsOK', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'iTsOK', 'iTsOK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'JKCT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'JKCT', 'JKCT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'LoveBug', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'LoveBug', 'LoveBug');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'MARK', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'MARK', 'MARK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'MMR', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'MMR', 'MMR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'MrHulk', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'MrHulk', 'MrHulk');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'Phanteam', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'Phanteam', 'Phanteam');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'SH3LBY', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'SH3LBY', 'SH3LBY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'SYNFM', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'SYNFM', 'SYNFM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'Wendy', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 01', 'Wendy', 'Wendy');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 01', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 01', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 01', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('hallowed', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('hallowed', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('hallowed', 'hallowed', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('hallowed', 'hallowed', 'hallowed');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('4OD', '4OD
-
-From Wikipedia, the free encyclopedia ()
-
-4OD is a previous name for the UK''s Channel4 VOD service. Releases are usually identified with either ''ALL4'' or ''4OD'', not ''Channel4''.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4OD', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4OD', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4OD', '4OD', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4OD', '4OD', '4OD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4OD', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('4OD', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4OD', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('4OD', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('OViD', 'OViD
-
-OViD Website (https://search.ovid.tv/other/about)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('OViD', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('OViD', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'OViD', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('OViD', 'OViD', 'OViD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('OViD', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('OViD', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Special Edition', 'Special Edition
-
-Custom format that matches various special editions (non-theatrical edition)
-
-- The Director''s Cut is the version edited by the Director, usually for additional home media releases.
-- An Extended Cut is usually any version of the film that is longer than the theatrical cut (though in very rare cases, its shorter).', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Special Edition', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Special Edition', 'Special Edition');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not IMAX Edition', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not IMAX Edition', 'Not IMAX Edition');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not Open Matte', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not Open Matte', 'Not Open Matte');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not Theatrical', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not Theatrical', 'Not Theatrical');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not Extended Clip', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not Extended Clip', 'Not Extended Clip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('6.1 Surround', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('6.1 Surround', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('6.1 Surround', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('6.1 Surround', '6.1 Surround', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('6.1 Surround', '6.1 Surround', '6.1 Surround');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('6.1 Surround', 'Not 7.1 Surround', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('6.1 Surround', 'Not 7.1 Surround', 'Not 7.1 Surround');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v1', 'v1
-
-Custom Format to cover v1 releases.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v1', 'v1', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v1', 'v1', 'v1');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ITVX', 'ITVX aka ITV
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/ITVX)
-
-ITVX (formerly ITV Hub) is a British ad-supported video-on-demand streaming service operated by ITV. The service offers original content from the broadcaster, as well as some exclusive and licensed programming.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ITVX', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'ITVX', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ITVX', 'ITVX', 'ITVX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'ITVX Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ITVX', 'ITVX Rename', 'ITVX Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ITVX', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ITVX', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ITVX', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Tier 03', 'WEB Tier 03
-
-Groups that:
-
-- Are new, and have released several dozen objectively good quality releases
-- Have retired and their releases don''t meet current quality standards
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 03', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'BLOOM', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'BLOOM', 'BLOOM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'Dooky', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'Dooky', 'Dooky (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'DRACULA', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'DRACULA', 'DRACULA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'GNOMiSSiON', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'GNOMiSSiON', 'GNOMiSSiON');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'HHWEB', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'HHWEB', 'HHWEB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'NINJACENTRAL', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'NINJACENTRAL', 'NINJACENTRAL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'NPMS', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'NPMS', 'NPMS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'ROCCaT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'ROCCaT', 'ROCCaT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'SiGMA', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SiGMA', 'SiGMA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'SLiGNOME', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SLiGNOME', 'SLiGNOME');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'SwAgLaNdEr', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SwAgLaNdEr', 'SwAgLaNdEr');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'T4H', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'T4H', 'T4H');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'ViSiON', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'ViSiON', 'ViSiON');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 03', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 03', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MULTi', '', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MULTi', 'Multi', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MULTi', 'Multi', 'Multi');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BR-DISK (BTN)', 'BR-DISK (BTN)
-
-This Custom Format works the same as the BR-DISK Custom Format, but is specific to a tracker called BTN.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BR-DISK (BTN)', 'BR-DISK', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BR-DISK (BTN)', 'BR-DISK', '(S) BR-DISK');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SYFY', 'Syfy
-
-From Wikipedia, the free encyclopedia ()
-
-Syfy is an American basic cable television channel. Launched on September 24, 1992, the channel broadcasts programming relating to the science fiction, horror, and fantasy genres.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SYFY', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SYFY', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SYFY', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'SYFY', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SYFY', 'SYFY', 'SYFY');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian Tier 03', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 03', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 03', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian Tier 03', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'ADWeb', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'ADWeb', 'ADWeb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'CHDWEB', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'CHDWEB', 'CHDWEB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'HDCTV', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'HDCTV', 'HDCTV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'HHWEB', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'HHWEB', 'HHWEB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'OurTV', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'OurTV', 'OurTV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'SHiNE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian Tier 03', 'SHiNE', 'SHiNE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 03', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian Tier 03', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Asian Tier 03', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TrueHD', 'TrueHD (Dolby TrueHD – lossless)
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_TrueHD)
-
-Dolby TrueHD is a lossless multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Discs and compatible hardware.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD', 'Dolby');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TrueHD', 'Lossless Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'ATMOS', 'ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not RlsGrp (TrueHD only)', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not RlsGrp (TrueHD only)', 'Not RlsGrp (TrueHD only)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'TrueHD', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'TrueHD', 'TrueHD');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HFR', 'HFR
-
-HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, which could result in smoother and more detailed motion.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HFR', 'HFR', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HFR', 'HFR', 'HFR');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DSCP', 'Discovery+
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Discovery%2B)
-
-Discovery+ (pronounced "Discovery Plus"; stylized as discovery+) is an American subscription video on-demand over-the-top streaming service owned by Warner Bros. Discovery (WBD). The service focuses on factual programming drawn from the libraries of Discovery''s main channel brands, as well as original series (including spin-offs of programs from Discovery''s television networks), and other acquired content.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DSCP', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'Discovery+', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DSCP', 'Discovery+', 'Discovery+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'DSCP Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DSCP', 'DSCP Rename', 'DSCP Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSCP', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSCP', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSCP', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BCORE', 'Bravia Core aka Sony Pictures Core
-
-From Sony (https://electronics.sony.com/bravia-core)
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Sony_Pictures_Core)
-
-Sony Pictures Core (formerly known as Bravia Core) is a video on demand service from Sony for its televisions and smartphones, launched in April 2021. The service offers the streaming of movies at up to 4K resolution provided by Sony Pictures Entertainment. CORE stands for Centre of Real Entertainment.
-Sony claims that Bravia Core has one of the largest libraries of IMAX Enhanced format film content. Streaming, which is marketed as Pure Stream, is claimed to be at speeds of up to 80 Mbit/s.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('BCORE', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BCORE', 'Bravia Core', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BCORE', 'Bravia Core', 'Bravia Core');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BCORE', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('BCORE', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BCORE', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('BCORE', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 (HD)', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'Codec');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'HEVC');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'h265');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'x265');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (HD)', 'x265/HEVC', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (HD)', 'x265/HEVC', 'x265_HEVC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (HD)', 'Not 2160p', 'resolution', 'all', 1, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('x265 (HD)', 'Not 2160p', '2160p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 05 (Remuxes)', 'Anime BD Tier 05
-
-Groups that are consistent and do Remuxes.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Animorphs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Animorphs', 'Animorphs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'AOmundson', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'AOmundson', 'AOmundson');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'ASC', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'ASC', 'ASC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'B00BA', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'B00BA', 'B00BA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Baws', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Baws', 'Baws');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Beatrice', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Beatrice', 'Beatrice');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Cait-Sidhe', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Cait-Sidhe', 'Cait-Sidhe');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'CsS', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'CsS', 'CsS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'CTR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'CTR', 'CTR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'D4C', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'D4C', 'D4C');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'deanzel', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'deanzel', 'deanzel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Drag', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Drag', 'Drag');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'eldon', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'eldon', 'eldon');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Freehold', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Freehold', 'Freehold');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'GHS', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'GHS', 'GHS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Hark0N', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Hark0N', 'Hark0N');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Holomux', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Holomux', 'Holomux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Judgement', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Judgement', 'Judgement');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'MC', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'MC', 'MC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'mottoj', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'mottoj', 'mottoj');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'NH', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'NH', 'NH');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'NTRM', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'NTRM', 'NTRM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'o7', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'o7', 'o7');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'QM', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'QM', 'QM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Thighs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Thighs', 'Thighs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'TTGA', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'TTGA', 'TTGA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'UltraRemux', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'UltraRemux', 'UltraRemux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'WBDP', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'WBDP', 'WBDP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'WSE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'WSE', 'WSE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Yuki', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Yuki', 'Yuki');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray Remux', 'bluray_raw');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'DVD', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05 (Remuxes)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('IMAX', 'IMAX
-
-From In Depth Cine (https://www.indepthcine.com/videos/imax)
-
-IMAX films are shot in tall aspect ratios, typically 1.9:1 or sometimes 1.43:1. Most IMAX film releases also have scenes shot at wider aspect ratios and, as a result, the aspect ratio will change throughout. Because they are shot on large format cameras, there is often less film grain present. This results in a clearer picture.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX', 'Aspect Ratio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IMAX', 'Edition');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IMAX', 'IMAX', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IMAX', 'IMAX', 'IMAX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IMAX', 'NOT: IMAX Enhanced', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IMAX', 'NOT: IMAX Enhanced', 'NOT - IMAX Enhanced');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Language - Not English', 'Language: Not English (English Only)
-
-Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the English audio a score of `-10000`.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Language - Not English', 'Language');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Language - Not English', 'Not English Language', 'language', 'all', 1, 0);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language - Not English', 'Not English Language', 'English', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TVer', 'TVer
-
-TVer is a free, ad-supported Japanese streaming service launched in October 2015. It is a joint venture by Japan''s five major commercial TV networks — Nippon TV, TV Asahi, TBS Television, TV Tokyo, and Fuji TV. It offers dramas, variety shows, anime, and documentaries, typically available for one week after their original broadcast. It is primarily available in Japan.
-
-For more information, visit the TVer Wikipedia page (https://en.wikipedia.org/wiki/TVer_(streaming_service)).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TVer', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVer', 'TVer', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TVer', 'TVer', 'TVer');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVer', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVer', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVer', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVer', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SDR (no WEBDL)', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'HDR');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR (no WEBDL)', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'HDR Formats', 'release_title', 'all', 1, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR (no WEBDL)', 'HDR Formats', 'HDR Formats');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'SDR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR (no WEBDL)', 'SDR', 'SDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('SDR (no WEBDL)', '2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'Not WEBDL', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SDR (no WEBDL)', 'Not WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR (no WEBDL)', 'Not WEBRIP', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SDR (no WEBDL)', 'Not WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ATVP', 'Apple TV+
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Apple_TV%2B)
-
-Apple TV+ is an American subscription streaming service owned and operated by Apple Inc. Launched on November 1, 2019, it offers a selection of original production film and television series called Apple Originals.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATVP', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATVP', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATVP', 'Apple TV+', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATVP', 'Apple TV+', 'Apple TV+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATVP', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATVP', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATVP', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATVP', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ATMOS (undefined)', 'ATMOS (undefined) (Atmos is an object-based audio format that can be paired with lossless TrueHD or lossy DD+.)
-
-This custom format covers cases where _ONLY_ "Atmos" is specified in the release title, without noting DD+ (Lossy) or TrueHD (Lossless).
-
-!!! note
-
-    Apply the same score as Lossy (DD+) Atmos. On import, it will be updated to reflect either lossy or lossless based on the media''s info using ffprobe.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATMOS (undefined)', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATMOS (undefined)', 'Dolby');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'ATMOS', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'ATMOS', 'ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not PCM', 'Not PCM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not RlsGrp (Atmos Only)', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not RlsGrp (Atmos Only)', 'Not RlsGrp (Atmos Only)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not TrueHD', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not TrueHD', 'Not TrueHD');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Bluray Tier 03', 'HD Bluray Tier 03
-
-Groups that:
-
-- Are new, and have released several dozen objectively good quality releases
-- Have retired and their releases don''t meet current quality standards
-- Pay good attention to detail and use reliable sources
-- Groups that have been added in conjunction with specific quality profiles
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'BLURAY', 'source', 'all', 0, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 03', 'BLURAY', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('HD Bluray Tier 03', 'Not REMUX', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'Not 2160p', 'resolution', 'all', 1, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Bluray Tier 03', 'Not 2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'BHDStudio', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'BHDStudio', 'BHDStudio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'hallowed', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'hallowed', 'hallowed');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'HiFi', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'HiFi', 'HiFi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'HONE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'HONE', 'HONE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'LoRD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'LoRD', 'LoRD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'playHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'playHD', 'playHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'SPHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'SPHD', 'SPHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'W4NK3R', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'W4NK3R', 'W4NK3R');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Repack_Proper', '', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack_Proper', 'Repack/Proper/Rerip', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack_Proper', 'Repack/Proper/Rerip', 'Repack_Proper_Rerip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack_Proper', 'Not Higher Version Repack/Proper', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack_Proper', 'Not Higher Version Repack/Proper', 'Not Higher Version Repack_Proper');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Retags', 'Retags
-
-Retags are often seen on public trackers, where the tracker or uploader adds their name to the torrent. They may also appear on some Usenet indexers.
-
-- If you rely on public trackers, DO NOT use this Custom Format.
-- Use this Custom Format ONLY if you DO NOT prefer Retagged releases.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '.heb', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '.heb', 'heb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '.VAV', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '.VAV', 'VAV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[eztv]', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[eztv]', '[eztv]');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[rarbg]', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[rarbg]', '[rarbg]');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[rartv]', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[rartv]', '[rartv]');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', '[TGx]', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', '[TGx]', '[TGx]');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Retags', 'ORARBG', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Retags', 'ORARBG', 'ORARBG');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('iQIY', 'iQIYI
-
-iQIYI is a Chinese streaming service offering a wide range of Asian content, including Chinese dramas, anime, variety shows, and original movies. Initially available only in China, it has since expanded to international viewers. It is owned by Baidu and is one of the largest online video platforms in the world.
-
-For more information, visit the iQIYI Wikipedia page (https://en.wikipedia.org/wiki/IQIYI).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('iQIY', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iQIY', 'iQIY', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iQIY', 'iQIY', 'iQIY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iQIY', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iQIY', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iQIY', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iQIY', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('3.0 Sound', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('3.0 Sound', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('3.0 Sound', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', '3.0ch', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', '3.0ch', '3.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not Mono', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not Mono', 'Not Mono');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not Stereo', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not Stereo', 'Not Stereo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not 4.0ch', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not 4.0ch', 'Not 4.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3.0 Sound', 'Not High Channel Count', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3.0 Sound', 'Not High Channel Count', 'Not High Channel Count');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265', 'x265
-
-x265 is a *free software library* and *application* for encoding video streams into the H.265/MPEG-H HEVC (http://en.wikipedia.org/wiki/H.265) compression format, and is released under the terms of the GNU GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
-
-This applies to all x265/HEVC releases that are not remux.
-
-x265 is primarily used for 2160p encodes and for 1080p encodes that have HDR Formats included (DV, DV HDR10, HDR, etc.). x265 is good for 4K content or 1080p if they use the remuxes (untouched source) as the source. If the media isn''t source quality or remux, then there will be a loss of quality. If you are storage-poor and just need to save space, use x265 (10-20% space-saving). The catch is that if you want the best quality x265, you need high-quality source files, so you will still have huge file sizes. It''s a shame that many x265 groups microsize their releases or use x264 as a source, which results in low-quality releases. The few groups that do use the correct source suffer from it.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'Codec');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'HEVC');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'h265');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265', 'x265');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x265', 'Not Remux', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265', 'x|h265', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265', 'x|h265', 'xh265');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265', 'Not Remux (sonarr)', 'source', 'sonarr', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x265', 'Not Remux (sonarr)', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('LINETV', 'LINE TV
-
-LINE TV is a free, ad-supported streaming service owned by Japan-based LINE Corporation, operating mainly in Taiwan. It offers dramas, variety shows, movies, anime, and original content. It is especially popular for Taiwanese, Korean, and Chinese content. In November 2025, LINE TV announced a full merger with KKTV, combining both platforms'' content libraries to offer a wider range of Asian dramas and new features such as offline viewing and dual subtitles.
-
-For more information, visit the LINE TV Wikipedia page (https://en.wikipedia.org/wiki/Line_TV).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('LINETV', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LINETV', 'LINETV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LINETV', 'LINETV', 'LINETV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LINETV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('LINETV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LINETV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('LINETV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('INTERNAL', 'Internal
-
-- Those who prefer scene releases may want to boost internals, as they generally have higher settings that may not conform to the ruleset.
-- In some rare cases, P2P use is also INTERNAL.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('INTERNAL', 'Flag');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('INTERNAL', 'INTERNAL', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('INTERNAL', 'INTERNAL', 'INTERNAL');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DD', 'DD (Dolby Digital – lossy)
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Digital)
-
-Dolby Digital, also known as Dolby AC-3, is a lossy audio compression format.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD', 'Dolby');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD', 'Lossy Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Basic Dolby Digital', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Basic Dolby Digital', 'Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not PCM', 'Not PCM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('KKTV', 'KKTV
-
-KKTV is a Taiwanese streaming service offering dramas, films, and anime from Taiwan, Japan, South Korea, Thailand, and Hong Kong, as well as original series. It was founded in 2016 and is based in Taipei, Taiwan. It is especially known for offering the latest Japanese dramas, with some released within hours or days of their premiere in Japan. In November 2025, KKTV merged with LINE TV.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('KKTV', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KKTV', 'KKTV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('KKTV', 'KKTV', 'KKTV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KKTV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('KKTV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('KKTV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('KKTV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEB Tier 02', 'WEB Tier 02
-
-Groups that:
-
-- Have proven themselves by consistently delivering good quality releases
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEB Tier 02', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', '3cTWeB', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', '3cTWeB', '3cTWeB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'BLUTONiUM', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'BLUTONiUM', 'BLUTONiUM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'BTW', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'BTW', 'BTW');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'BYNDR', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'BYNDR', 'BYNDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Chotab', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Chotab', 'Chotab');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Cinefeel', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Cinefeel', 'Cinefeel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'CiT', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'CiT', 'CiT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'CMRG', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'CMRG', 'CMRG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Coo7', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Coo7', 'Coo7');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'dB', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'dB', 'dB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'DEEP', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'DEEP', 'DEEP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'END', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'END', 'END');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'ETHiCS', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'ETHiCS', 'ETHiCS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'FC', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'FC', 'FC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'Flights', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'Flights', 'Flights');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'GNOME', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'GNOME', 'GNOME');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'iJP', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'iJP', 'iJP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'iKA', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'iKA', 'iKA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'iT00NZ', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'iT00NZ', 'iT00NZ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'JETIX', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'JETIX', 'JETIX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'KHN', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'KHN', 'KHN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'KiMCHI', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'KiMCHI', 'KiMCHI');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'LAZY', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'LAZY', 'LAZY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'MiU', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'MiU', 'MiU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'monkee', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'monkee', 'monkee');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'MZABI', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'MZABI', 'MZABI');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'NPMS', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'NPMS', 'NPMS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'NYH', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'NYH', 'NYH');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'orbitron', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'orbitron', 'orbitron');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'PHOENiX', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'PHOENiX', 'PHOENiX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'playWEB', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'playWEB', 'playWEB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'PSiG', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'PSiG', 'PSiG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'ROCCaT', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'ROCCaT', 'ROCCaT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'RTFM', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'RTFM', 'RTFM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SA89', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SA89', 'SA89');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SbR', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SbR', 'SbR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SDCC', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SDCC', 'SDCC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SIGMA', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SIGMA', 'SIGMA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SMURF', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SMURF', 'SMURF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'SPiRiT', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'SPiRiT', 'SPiRiT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'TEPES', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TEPES', 'TEPES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'TOMMY', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TOMMY', 'TOMMY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'TVSmash', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TVSmash', 'TVSmash');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WELP', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'WELP', 'WELP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'XEBEC', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'XEBEC', 'XEBEC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 02', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEB Tier 02', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS', 'DTS (Original DTS format – lossy)
-
-Digital Theater Sound (DTS) is a digital audio technology developed by DTS, Inc, which focuses on digital surround sound formats for consumer and commercial applications as well as theatrical purposes. Compared to the Dolby Digital standard, DTS uses four times less compression and digitizes audio sounds at 20 bits instead of 16 bits. This makes DTS-based audio richer in sound and more detailed than Dolby Digital-based ones.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS', 'Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Basic DTS', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Basic DTS', 'Basic DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not DTS-HD', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not DTS-HD', 'Not DTS-HD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not DTS-HD HRA/ES', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not DTS-HD HRA/ES', 'Not DTS-HD HRA_ES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not DTS X', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not DTS X', 'Not DTS X');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS', 'Not PCM', 'Not PCM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Season Pack', 'Season Pack
-
-!!! danger "This CF utilizes functionality only available starting in Sonarr v4.0.2.1262."
-
-This Custom Format can be used to prefer or exclude season packs
-
-- Give it a score of `10` if you prefer a season pack.
-- Give it a score of `-10000` if you prefer to not download season packs.
-- Utilizes the "Release Type" custom format condition added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
-
-!!! info
-
-    - This Custom Format could previously result in download loops. The new "Release Type" custom format condition now prevents this undesired behavior. :bangbang:
-    - This will upgrade your already downloaded single episodes :bangbang:', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Season Pack', 'Season Packs', 'release_type', 'sonarr', 0, 0);
-INSERT INTO condition_release_types (custom_format_name, condition_name, release_type) VALUES ('Season Pack', 'Season Packs', 'season_pack');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CBC', 'Canadian Broadcasting Corporation
-
-From Wikipedia, the free encyclopedia ()
-
-The Canadian Broadcasting Corporation (French: Société Radio-Canada), branded as CBC/Radio-Canada, is the Canadian public broadcaster for both radio and television. It is a Crown corporation that serves as the national public broadcaster, with its English-language and French-language service units known as CBC and Radio-Canada, respectively.
-
-CBC Gem
-
-From Wikipedia, the free encyclopedia ()
-
-CBC Gem is CBC Television''s over-the-top streaming platform; it launched in 2018, replacing the existing CBC TV app. The service carries live and on-demand programming from CBC Television, CBC News, and CBC Sports, as well as short- and long-form original programming and acquisitions (including films and television series).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CBC', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CBC', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CBC', 'CBC', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CBC', 'CBC', 'CBC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CBC', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CBC', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CBC', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CBC', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MY5', 'MY5
-
-From Wikipedia, the free encyclopedia ()
-
-My5 (previously Five Download and later Demand 5) is the brand name of video-on-demand services offered by Channel 5 in the United Kingdom.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MY5', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MY5', 'My5', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MY5', 'My5', 'My5');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MY5', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MY5', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MY5', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MY5', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AUBC', 'AUBC
-
-From Wikipedia, the free encyclopedia ()
-
-The Australian Broadcasting Corporation (ABC) is the national broadcaster of Australia', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AUBC', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AUBC', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AUBC', 'AUBC', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AUBC', 'AUBC', 'AUBC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AUBC', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AUBC', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AUBC', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AUBC', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FraMeSToR', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FraMeSToR', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FraMeSToR', 'FraMeSToR', 'release_group', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FraMeSToR', 'FraMeSToR', 'FraMeSToR (1)');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Bad Dual Groups', 'Bad Dual/Multi groups
-
-These release groups often do not set the original language of the media as the first audio track. Since ffprobe relies on the first audio track to determine the release''s primary language, incorrect ordering can cause parsing errors. This may lead to failed imports, misidentified files, or download loops. To ensure proper processing, the original language should always be the first audio track in the release.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Bad Dual Groups', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'alfaHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'alfaHD', 'alfaHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BAT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BAT', 'BAT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BiOMA', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BiOMA', 'BiOMA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BlackBit', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BlackBit', 'BlackBit');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'BNd', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'BNd', 'BNd');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'C.A.A', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'C.A.A', 'C.A.A');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'Cory', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'Cory', 'Cory');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'CYPHER', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'CYPHER', 'CYPHER');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'EniaHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'EniaHD', 'EniaHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'EXTREME', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'EXTREME', 'EXTREME');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'FF', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'FF', 'FF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'FOXX', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'FOXX', 'FOXX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'G4RiS', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'G4RiS', 'G4RiS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'GUEIRA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'GUEIRA', 'GUEIRA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'LCD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'LCD', 'LCD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'MGE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'MGE', 'MGE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'MLH', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'MLH', 'MLH');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'N3G4N', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'N3G4N', 'N3G4N');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'ONLYMOViE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'ONLYMOViE', 'ONLYMOViE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'PD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'PD', 'PD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'PTHome', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'PTHome', 'PTHome');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'RiPER', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'RiPER', 'RiPER');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'RK', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'RK', 'RK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'SiGLA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'SiGLA', 'SiGLA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'Tars', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'Tars', 'Tars');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'TM', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'TM', 'TM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'tokar86a', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'tokar86a', 'tokar86a');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'TURG', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'TURG', 'TURG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'TvR', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'TvR', 'TvR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'vnlls', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'vnlls', 'vnlls');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'WTV', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'WTV', 'WTV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'XiQUEXiQUE', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'XiQUEXiQUE', 'XiQUEXiQUE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'Yatogam1', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'Yatogam1', 'Yatogam1');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'YusukeFLA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'YusukeFLA', 'YusukeFLA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'ZigZag', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'ZigZag', 'ZigZag (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bad Dual Groups', 'ZNM', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bad Dual Groups', 'ZNM', 'ZNM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH BSL', 'BSL (British Sign Language)
-
-BSL is a sign language used across the United Kingdom. It uses a two-handed alphabet and is part of the BANZSL language family, alongside Australian and New Zealand sign languages. BSL relies on body movement and hand shapes to convey meaning, and often follows a topic-comment sentence structure.
-
-For more information, visit the British Sign Language Wikipedia page (https://en.wikipedia.org/wiki/British_Sign_Language).', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH BSL', 'British Sign Language', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH BSL', 'British Sign Language', 'British Sign Language');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Anime Web Tier 02
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Anime BD Tier 02
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEB-DL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', '0x539', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', '0x539', '0x539');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Asakura', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Asakura', 'Asakura');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cyan', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cyan', 'Cyan');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cytox', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Cytox', 'Cytox');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Dae', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Dae', 'Dae');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Foxtrot', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Foxtrot', 'Foxtrot');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Gao', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Gao', 'Gao');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'GSK_kun', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'GSK_kun', 'GSK_kun');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Half-Baked', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Half-Baked', 'Half-Baked');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'HatSubs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'HatSubs', 'HatSubs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MALD', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MALD', 'MALD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MTBB', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'MTBB', 'MTBB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Not-Vodes', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Not-Vodes', 'Not-Vodes');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Okay-Subs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Okay-Subs', 'Okay-Subs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Pizza', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Pizza', 'Pizza');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Reza', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Reza', 'Reza');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Slyfox', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Slyfox', 'Slyfox');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'SoLCE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'SoLCE', 'SoLCE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Tenshi', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Tenshi', 'Tenshi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PCM', 'PCM (Pulse Code Modulation – lossless, uncompressed)
-
-PCM is the method of encoding typically used for uncompressed digital audio.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PCM', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PCM', 'Lossless Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'PCM', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'PCM', 'PCM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PCM', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PCM', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Black and White Editions', 'Black and White Editions
-
-Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Blackout/B&W/Black&Chrome', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Blackout/B&W/Black&Chrome', '(R) Blackout_B&W_Black&Chrome');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Monochrome', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Monochrome', 'Monochrome');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Noir', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Noir', 'Noir');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Shush Cut', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Shush Cut', 'Shush Cut');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'No/Minus Color', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'No/Minus Color', 'No_Minus Color');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Grayscale', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Grayscale', 'Grayscale');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Darkness and Light', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Darkness and Light', 'Darkness and Light');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HULU', 'Hulu
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Hulu)
-
-Hulu (/ˈhuːluː/) is an American subscription streaming service owned by The Walt Disney Company. It was launched on October 29, 2007.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HULU', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HULU', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'Hulu', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HULU', 'Hulu', 'Hulu');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HULU', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HULU', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Hybrid', 'Hybrid
-
-A hybrid release means any combination of sources (video + audio) and not a direct encoding of a single source. Generally, you can be sure that any hybrid put together should be the best quality release of a particular title. However, not all release groups always mention that their release is a hybrid release.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Hybrid', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Hybrid', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Not Hybrid Release Group', 'release_group', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hybrid', 'Not Hybrid Release Group', 'Not Hybrid Release Group (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Hybrid', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hybrid', 'Hybrid', 'Hybrid');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hybrid', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Remux', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hybrid', 'Remux', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Anime BD Tier 08
-
-Know groups that do mini encodes.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'AkihitoSubs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'AkihitoSubs', 'AkihitoSubs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Arukoru', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Arukoru', 'Arukoru');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EDGE', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EDGE', 'EDGE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EMBER', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EMBER', 'EMBER');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'GHOST', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'GHOST', 'GHOST');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Judas', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Judas', 'Judas');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'naiyas', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'naiyas', 'naiyas');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Nep_Blanc', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Nep_Blanc', 'Nep_Blanc');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Prof', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Prof', 'Prof');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Shirσ', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Shirσ', 'Shirσ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray Remux', 'bluray_raw');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'DVD', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('2.0 Stereo', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2.0 Stereo', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2.0 Stereo', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Stereo', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Stereo', 'Stereo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not 3.0ch', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not 3.0ch', 'Not 3.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not 4.0ch', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not 4.0ch', 'Not 4.0ch');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not High Channel Count', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not High Channel Count', 'Not High Channel Count');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not Mono', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not Mono', 'Not Mono');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ATV', 'Apple TV
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Apple_TV%2B)
-
-Apple TV is Apple Inc.''s video on demand service, offering movies and TV shows that are not Apple Originals.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATV', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATV', 'Apple TV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATV', 'Apple TV', 'Apple TV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DV Boost', 'DV Boost
-
-If you prefer Dolby Vision and have compatible equipment, add the DV Boost custom format. This custom format prioritizes releases containing Dolby Vision over standard HDR releases.
-
-*This custom format accepts DV Profile 5 and also upgrades from DV/HDR10/HDR10+ to DV HDR10 or DV HDR10+.*', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DV Boost', 'HDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DV Boost', 'DV', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DV Boost', 'DV', 'DV');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DD+', 'DD+ (Dolby Digital Plus – lossy)
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Digital_Plus)
-
-Dolby Digital Plus, also known as Enhanced AC-3 (commonly abbreviated as DD+ or E-AC-3, or EC-3), is the successor to Dolby Digital (AC-3). It is a digital audio compression scheme developed by Dolby Labs for the transport and storage of multi-channel digital audio.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+', 'Dolby');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+', 'Lossy Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Dolby Digital Plus', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Dolby Digital Plus', 'Dolby Digital Plus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not DTS', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not DTS', 'Not DTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not FLAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not FLAC', 'Not FLAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not AAC', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not AAC', 'Not AAC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+', 'Not PCM', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+', 'Not PCM', 'Not PCM');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('P2P Internal', 'P2P Internal
-
-This Custom Format matches on the Internal Indexer flag that some trackers use to promote their own internal releases. You can use this Custom Format to favor their internal releases, or, when the same release exists on multiple trackers, it will prefer the release from the home tracker.
-For this to work, the tracker must support the Internal Indexer flag!', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('P2P Internal', 'Flag');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('P2P Internal', 'Internal', 'indexer_flag', 'all', 0, 0);
-INSERT INTO condition_indexer_flags (custom_format_name, condition_name, flag) VALUES ('P2P Internal', 'Internal', 'internal');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH ASL', 'ASL (American Sign Language)
-
-ASL is a sign language used in the United States and English-speaking Canada. It uses a one-handed alphabet and was heavily influenced by French Sign Language (LSF). ASL relies on spatial organization and facial expressions to convey meaning and grammar.
-
-For more information, visit the American Sign Language Wikipedia page (https://en.wikipedia.org/wiki/American_Sign_Language).', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH ASL', 'American Sign Language', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH ASL', 'American Sign Language', 'American Sign Language');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('No-RlsGroup', 'No-RlsGroup
-
-Some indexers stripped out the release group, which could result in LQ groups receiving higher scores.
-For example, many EVO releases are stripped of the group name, so they appear as "upgrades" and receive a decent score if other factors match.
-
-!!! warning
-
-    If you DO NOT use decent filenames (like not adding release groups), DO NOT add this Custom Format unless you want to upgrade them.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('No-RlsGroup', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('No-RlsGroup', 'No Parsed Group', 'release_group', 'all', 1, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('No-RlsGroup', 'No Parsed Group', 'No Parsed Group');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CR', 'Crunchyroll
-
-From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Crunchyroll)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CR', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CR', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CR', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CR', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'WEB', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CR', 'WEB', 'television');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CR', 'Crunchyroll', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CR', 'Crunchyroll', 'Crunchyroll');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Bluray Tier 01', 'HD Bluray Tier 01
-
-Groups that:
-
-- Have built a strong reputation for consistently delivering excellent quality releases
-- Optimize their releases whilst keeping them transparent, using high-quality sources
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('HD Bluray Tier 01', 'Not REMUX', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'BBQ', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'BBQ', 'BBQ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'BMF', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'BMF', 'BMF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'c0kE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'c0kE', 'c0kE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Chotab', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'Chotab', 'Chotab');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'CRiSC', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'CRiSC', 'CRiSC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'CtrlHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'CtrlHD', 'CtrlHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'D-Z0N3', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'D-Z0N3', 'D-Z0N3');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Dariush', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'Dariush', 'Dariush');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'decibeL', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'decibeL', 'decibeL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'DON', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'DON', 'DON');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'EbP', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'EbP', 'EbP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'EDPH', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'EDPH', 'EDPH');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Geek', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'Geek', 'Geek');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'LolHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'LolHD', 'LolHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'NCmt', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'NCmt', 'NCmt');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'NTb', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'NTb', 'NTb');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'PTer', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'PTer', 'PTer');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'TayTO', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'TayTO', 'TayTO');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'TDD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'TDD', 'TDD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'TnP', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'TnP', 'TnP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'VietHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'VietHD', 'VietHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'ZoroSenpai', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'ZoroSenpai', 'ZoroSenpai');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'ZQ', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'ZQ', 'ZQ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Not 2160p', 'resolution', 'all', 1, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Bluray Tier 01', 'Not 2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'BLURAY', 'source', 'all', 0, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 01', 'BLURAY', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Not REMUX (sonarr)', 'source', 'sonarr', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 01', 'Not REMUX (sonarr)', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('QIBI', 'Quibi
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Quibi)
-
-Quibi (/ˈkwɪbi/ KWIB-ee) was an American short-form streaming platform, It launched in April 2020, but shut down in December 2020 after falling short of its subscriber projections.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('QIBI', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('QIBI', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('QIBI', 'Quibi', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('QIBI', 'Quibi', 'Quibi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('QIBI', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('QIBI', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('QIBI', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('QIBI', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MP3', 'MP3 (MPEG-1 Audio Layer III – lossy)
-
-MP3 (MPEG-1 and/or MPEG-2 Audio Layer 3) is a lossy data compression format for audio.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MP3', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MP3', 'Lossy Audio');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MP3', 'MP3', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MP3', 'MP3', 'MP3');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 01', 'UHD Bluray Tier 01
-
-Groups that:
-
-- Have built a strong reputation for consistently delivering excellent quality releases
-- Optimize their releases whilst keeping them transparent, using high-quality sources
-- Make releases that contain lossless audio tracks where available
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', '2160p');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Resolution');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'UHD Bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 01', 'Not REMUX', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'Not WEBDL', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 01', 'Not WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'Not WEBRIP', 'source', 'all', 1, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 01', 'Not WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', '2160p', 'resolution', 'all', 0, 1);
-INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Bluray Tier 01', '2160p', '2160p');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'CtrlHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'CtrlHD', 'CtrlHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'MainFrame', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'MainFrame', 'MainFrame');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'DON', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'DON', 'DON');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'W4NK3R', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'W4NK3R', 'W4NK3R');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CRiT', 'Criterion Channel
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/The_Criterion_Collection#Streaming_as_The_Criterion_Channel)', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRiT', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRiT', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'CRiT', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRiT', 'CRiT', 'CRiT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRiT', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRiT', 'WEBRIP', 'webrip');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'Not Criterion RlsGrp', 'release_group', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRiT', 'Not Criterion RlsGrp', 'Not Criterion RlsGrp');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('5.1 Surround', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('5.1 Surround', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('5.1 Surround', 'Channel');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('5.1 Surround', '5.1 Surround', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('5.1 Surround', '5.1 Surround', '5.1 Surround');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('5.1 Surround', 'Not 6.1 Surround', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('5.1 Surround', 'Not 6.1 Surround', 'Not 6.1 Surround');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('5.1 Surround', 'Not 7.1 Surround', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('5.1 Surround', 'Not 7.1 Surround', 'Not 7.1 Surround');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AMZN', 'Amazon Prime Video
-
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Amazon_Prime_Video)
-
-Amazon Prime Video, or simply Prime Video, is an American subscription video on-demand over-the-top streaming and rental service of Amazon offered as a standalone service or as part of Amazon''s Prime subscription. The service primarily distributes films and television series produced by Amazon MGM Studios or licensed to Amazon, as Amazon Originals, with the service also hosting content from other providers, content add-ons, live sporting events, and video rental and purchasing services.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AMZN', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AMZN', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AMZN', 'Amazon', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AMZN', 'Amazon', 'Amazon');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AMZN', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AMZN', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AMZN', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AMZN', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MAX', '', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MAX', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MAX', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'Max', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MAX', 'Max', 'Max');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'MAX Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MAX', 'MAX Rename', 'MAX Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MAX', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MAX', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Criterion Collection', 'Criterion Collection
-
-The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company that focuses on licensing "important classic and contemporary films" and selling them to film aficionados. Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Criterion Collection', 'Edition');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Criterion Collection', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Criterion Collection', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Criterion Collection', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'DVD', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Criterion Collection', 'DVD', 'dvd');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'Criterion', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Criterion Collection', 'Criterion', 'Criterion');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'CC', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Criterion Collection', 'CC', 'CC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'Not Criterion RlsGrp', 'release_group', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Criterion Collection', 'Not Criterion RlsGrp', 'Not Criterion RlsGrp');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Aergia', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Aergia', 'Aergia');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arg0', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arg0', 'Arg0');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arid', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Arid', 'Arid');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'FateSucks', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'FateSucks', 'FateSucks');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hchcsen', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hchcsen', 'hchcsen');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hydes', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'hydes', 'hydes');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JOHNTiTOR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JOHNTiTOR', 'JOHNTiTOR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JySzE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'JySzE', 'JySzE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'koala', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'koala', 'koala');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Kulot', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Kulot', 'Kulot');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'LostYears', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'LostYears', 'LostYears');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Lulu', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Lulu', 'Lulu');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Meakes', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Meakes', 'Meakes');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Orphan', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Orphan', 'Orphan');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'PMR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'PMR', 'PMR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Vodes', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Vodes', 'Vodes');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'WAP', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'WAP', 'WAP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'YURI', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'YURI', 'YURI');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'ZeroBuild', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'ZeroBuild', 'ZeroBuild');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'Bluray Remux', 'bluray_raw');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'DVD', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', 'DVD', 'dvd');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('LQ (Release Title)', 'LQ (Release Title)
 
 A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
@@ -4731,297 +3949,41 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'WinLUNA', 'WinLUNA (Title)');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'y2flix', 'release_title', 'all', 0, 0);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'y2flix', 'y2flix (Title)');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('PMTP', 'Paramount+
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('B-Global', 'B-Global
 
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Paramount%2B)
+From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Bilibili)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('B-Global', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('B-Global', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('B-Global', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('B-Global', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('B-Global', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('B-Global', 'B-Global', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('B-Global', 'B-Global', 'B-Global');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS-ES', 'DTS-ES (DTS Extended Surround – lossy)
 
-Paramount+ is an American subscription video on-demand over-the-top streaming service owned by Paramount Global. The service''s content is drawn primarily from the libraries of CBS Media Ventures, CBS Studios, Paramount Media Networks (formerly Viacom Media Networks and ViacomCBS Domestic Media Networks), and Paramount Pictures, while also including original series and films, live streaming sports coverage, and in the United States, live streaming of local CBS broadcast stations.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PMTP', 'Source');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PMTP', 'Streaming Service');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'Paramount+', 'release_title', 'radarr', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PMTP', 'Paramount+', '(R) Paramount+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'Paramount+ (sonarr)', 'release_title', 'sonarr', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('PMTP', 'Paramount+ (sonarr)', '(S) Paramount+');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PMTP', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('PMTP', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('PMTP', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v3', 'v3
-
-Custom Format to cover v3 releases.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v3', 'v3', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v3', 'v3', 'v3');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v3', 'Not Higher Versions', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v3', 'Not Higher Versions', 'Not Higher Versions (1)');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TVING', 'TVING
-
-TVING is a South Korean streaming service offering Korean dramas, movies, variety shows, and original content. It launched on October 1, 2020, as a joint venture between CJ ENM and JTBC, combining both companies'' streaming services into one platform. It is primarily available in South Korea and is one of the country''s leading streaming platforms.
-
-For more information, visit the TVING Wikipedia page (https://en.wikipedia.org/wiki/TVING).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TVING', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'TVING', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TVING', 'TVING', 'TVING');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'TVING Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TVING', 'TVING Rename', 'TVING Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVING', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVING', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVING', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('LQ', 'LQ
-
-- A collection of known low-quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from the scene and quick-to-release P2P groups that, while adequate, are typically not regarded as high quality.
-- Release groups that disrupt the Starr apps automation because their poor naming could potentially create download loops, even if their overall quality is excellent.
-
---8<-- "includes/cf-descriptions/apply-10000.md"', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('LQ', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '24xHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '24xHD', '24xHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '3Li', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '3Li', '3Li (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '41RGB', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '41RGB', '41RGB');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', '4K4U', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', '4K4U', '4K4U');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'AOC', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'AOC', 'AOC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'AROMA', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'AROMA', 'AROMA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'aXXo', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'aXXo', 'aXXo');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'AZAZE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'AZAZE', 'AZAZE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BARC0DE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BARC0DE', 'BARC0DE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BAUCKLEY', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BAUCKLEY', 'BAUCKLEY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BdC', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BdC', 'BdC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'beAst', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'beAst', 'beAst');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BRiNK', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BRiNK', 'BRiNK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'BTM', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'BTM', 'BTM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'C1NEM4', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'C1NEM4', 'C1NEM4');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'C4K', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'C4K', 'C4K');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CDDHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CDDHD', 'CDDHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CHAOS', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CHAOS', 'CHAOS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CHD', 'CHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CHX', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CHX', 'CHX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CiNE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CiNE', 'CiNE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'COLLECTiVE', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'COLLECTiVE', 'COLLECTiVE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CREATiVE24', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CREATiVE24', 'CREATiVE24 (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CrEwSaDe', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CrEwSaDe', 'CrEwSaDe');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'CTFOH', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'CTFOH', 'CTFOH');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'd3g', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'd3g', 'd3g');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DDR', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DDR', 'DDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DepraveD', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DepraveD', 'DepraveD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DNL', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DNL', 'DNL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'DRX', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'DRX', 'DRX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'E', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'E', 'E');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'EPiC', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'EPiC', 'EPiC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'EuReKA', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'EuReKA', 'EuReKA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'EVO', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'EVO', 'EVO');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FaNGDiNG0', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FaNGDiNG0', 'FaNGDiNG0');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Feranki1980', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Feranki1980', 'Feranki1980 (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FGT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FGT', 'FGT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FMD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FMD', 'FMD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FRDS', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FRDS', 'FRDS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'FZHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'FZHD', 'FZHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'GHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'GHD', 'GHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'GHOSTS', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'GHOSTS', 'GHOSTS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Gi6', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Gi6', 'Gi6 (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'GPTHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'GPTHD', 'GPTHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDHUB4U', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDHUB4U', 'HDHUB4U');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDS', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDS', 'HDS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDT', 'HDT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDTime', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDTime', 'HDTime');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HDWinG', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HDWinG', 'HDWinG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'HiQVE', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'HiQVE', 'HiQVE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'iNTENSO', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'iNTENSO', 'iNTENSO');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'ION10', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'ION10', 'ION10 (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'iPlanet', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'iPlanet', 'iPlanet');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'iVy', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'iVy', 'iVy');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Japhson', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Japhson', 'Japhson (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'jeddak', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'jeddak', 'jeddak (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'jennaortega', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'jennaortega', 'jennaortega (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'JFF', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'JFF', 'JFF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'KC', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'KC', 'KC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'KiNGDOM', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'KiNGDOM', 'KiNGDOM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'KIRA', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'KIRA', 'KIRA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'L0SERNIGHT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'L0SERNIGHT', 'L0SERNIGHT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'LAMA', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'LAMA', 'LAMA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Leffe', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Leffe', 'Leffe');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Liber8', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Liber8', 'Liber8');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'LiGaS', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'LiGaS', 'LiGaS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'LUCY', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'LUCY', 'LUCY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MarkII', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MarkII', 'MarkII');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MeGusta', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MeGusta', 'MeGusta');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Mesc', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Mesc', 'Mesc');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MgB', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MgB', 'MgB (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'mHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'mHD', 'mHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MIRCrew', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MIRCrew', 'MIRCrew (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'moviesbyrizzo', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'moviesbyrizzo', 'moviesbyrizzo (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'mSD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'mSD', 'mSD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MTeam', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MTeam', 'MTeam');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'MySiLU', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'MySiLU', 'MySiLU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NhaNc3', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NhaNc3', 'NhaNc3');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nhanc3', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nhanc3', 'nhanc3');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nHD', 'nHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nikt0', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nikt0', 'nikt0');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NiXON', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NiXON', 'NiXON (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NoGroup', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NoGroup', 'NoGroup');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'NoRBiT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'NoRBiT', 'NoRBiT (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'nSD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'nSD', 'nSD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'OFT', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'OFT', 'OFT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Pahe', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Pahe', 'Pahe');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PATOMiEL', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PATOMiEL', 'PATOMiEL');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PeruGuy', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PeruGuy', 'PeruGuy (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PortalGoods', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PortalGoods', 'PortalGoods (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PRODJi', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PRODJi', 'PRODJi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PS3-TEAM', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PS3-TEAM', 'PS3-TEAM (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PSA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PSA', 'PSA');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'PTNK', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'PTNK', 'PTNK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RDN', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RDN', 'RDN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RiffTrax', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RiffTrax', 'RiffTrax');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RIPRARBG', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RIPRARBG', 'RIPRARBG (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RU4HD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RU4HD', 'RU4HD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'RWP', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'RWP', 'RWP (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SADPANDA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SADPANDA', 'SADPANDA (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SANTi', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SANTi', 'SANTi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SasukeducK', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SasukeducK', 'SasukeducK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Scene', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Scene', 'Scene');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SHD', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SHD', 'SHD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'ShieldBearer', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'ShieldBearer', 'ShieldBearer');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'STUTTERSHIT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'STUTTERSHIT', 'STUTTERSHIT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'SUNSCREEN', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'SUNSCREEN', 'SUNSCREEN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TBS', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TBS', 'TBS');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TEKNO3D', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TEKNO3D', 'TEKNO3D (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TG', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TG', 'TG');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Tigole', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Tigole', 'Tigole');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'TIKO', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'TIKO', 'TIKO');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'UNTOUCHABLES', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'UNTOUCHABLES', 'UNTOUCHABLES (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'VIDEOHOLE', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'VIDEOHOLE', 'VIDEOHOLE');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'VISIONPLUSHDR', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'VISIONPLUSHDR', 'VISIONPLUSHDR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'WAF', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'WAF', 'WAF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'WiKi', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'WiKi', 'WiKi');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'WinLUNA', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'WinLUNA', 'WinLUNA (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'worldmkv', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'worldmkv', 'worldmkv');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'x0r', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'x0r', 'x0r');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'XLF', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'XLF', 'XLF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'y2flix', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'y2flix', 'y2flix (Group)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Zero00', 'release_group', 'sonarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Zero00', 'Zero00');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ', 'Zeus', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ', 'Zeus', 'Zeus');
+DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1 and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS-ES', 'Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'DTS-ES', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'DTS-ES', 'DTS-ES');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not Basic DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not Basic DTS', 'Not Basic DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not DTS X', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not DTS X', 'Not DTS X');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS-ES', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS-ES', 'Not PCM', 'Not PCM');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CNLP', 'Canal+
 
 Canal+ is a French subscription streaming service and pay TV provider, launched as a satellite service in 1992 and relaunched as a streaming platform in 2013. It is a subsidiary of Canal+ S.A. It offers movies, dramas, original series, and live sports — including top football leagues. The service is available across Europe, Africa, Oceania, Myanmar, and Vietnam, with over 26.8 million subscribers.
@@ -5034,121 +3996,134 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CNLP', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CNLP', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CNLP', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Opus', 'Opus (Highly efficient lossy codec)
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MY5', 'MY5
 
 From Wikipedia, the free encyclopedia ()
 
-Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors. Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Lossy Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Release Group');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Opus', 'Opus', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Opus', 'Opus', 'Opus');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Opus', 'Not OPUS Release Group', 'release_group', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Opus', 'Not OPUS Release Group', 'Not OPUS Release Group');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Anime BD Tier 04
+My5 (previously Five Download and later Demand 5) is the brand name of video-on-demand services offered by Channel 5 in the United Kingdom.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MY5', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MY5', 'My5', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MY5', 'My5', 'My5');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MY5', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MY5', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MY5', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MY5', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Repack2', '', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack2', 'Repack/Proper 2 or REAL.PROPER/REPACK', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack2', 'Repack/Proper 2 or REAL.PROPER/REPACK', 'Repack_Proper 2 or REAL.PROPER_REPACK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack2', 'Not Repack/Proper 3', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack2', 'Not Repack/Proper 3', 'Not Repack_Proper 3');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Hybrid', 'Hybrid
 
-Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Anime');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'ABdex', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'ABdex', 'ABdex');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Afro', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Afro', 'Afro');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'aRMX', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'aRMX', 'aRMX');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BiRJU', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BiRJU', 'BiRJU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BKC', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'BKC', 'BKC');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'CBT', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'CBT', 'CBT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Chimera', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Chimera', 'Chimera');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'derp', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'derp', 'derp');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DIY', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DIY', 'DIY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'EXP', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'EXP', 'EXP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Foxtrot', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Foxtrot', 'Foxtrot');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'grimf', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'grimf', 'grimf');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'IK', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'IK', 'IK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Iznjie Biznjie', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Iznjie Biznjie', 'Iznjie Biznjie');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kaleido-subs', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kaleido-subs', 'Kaleido-subs');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kametsu', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kametsu', 'Kametsu');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kawatare', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Kawatare', 'Kawatare');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'KH', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'KH', 'KH');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'LazyRemux', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'LazyRemux', 'LazyRemux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Metal', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Metal', 'Metal');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'MK', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'MK', 'MK');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'neko-kBaraka', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'neko-kBaraka', 'neko-kBaraka');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'OZR', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'OZR', 'OZR');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Pizza', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Pizza', 'Pizza');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'pog42', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'pog42', 'pog42');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Quetzal', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Quetzal', 'Quetzal');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Reza', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Reza', 'Reza');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'SCY', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'SCY', 'SCY');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Shimatta', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Shimatta', 'Shimatta');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Smoke', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Smoke', 'Smoke');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Spirale', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Spirale', 'Spirale');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UDF', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UDF', 'UDF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UQW', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'UQW', 'UQW');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Vanilla', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Vanilla', 'Vanilla');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Virtuality', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Virtuality', 'Virtuality');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'VULCAN', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'VULCAN', 'VULCAN');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray', 'bluray');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'Bluray Remux', 'bluray_raw');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DVD', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VIU', 'VIU
+A hybrid release means any combination of sources (video + audio) and not a direct encoding of a single source. Generally, you can be sure that any hybrid put together should be the best quality release of a particular title. However, not all release groups always mention that their release is a hybrid release.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Hybrid', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Hybrid', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Not Hybrid Release Group', 'release_group', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hybrid', 'Not Hybrid Release Group', 'Not Hybrid Release Group (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Hybrid', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hybrid', 'Hybrid', 'Hybrid');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hybrid', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hybrid', 'Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Hybrid', 'Remux', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('STRP', 'Star+
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Star%2B)
+
+Star+ (Star Plus; stylized as ST★R+) is a subscription video on-demand over-the-top streaming service available in almost all Ibero-American states. The service is owned by The Walt Disney Company through the Disney Entertainment division and business segment.
+
+In December 2023, it was confirmed that Star+ will be merged into Disney+ in the second quarter of 2024 with all of its content, including live sports from ESPN, migrating to Disney+ and its standalone app being discontinued.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('STRP', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STRP', 'Star+', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STRP', 'Star+', 'Star+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STRP', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STRP', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STRP', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STRP', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remux Tier 03', 'Remux Tier 03
+
+Groups that:
+
+- Are new and haven''t released many titles yet
+- Have retired and their releases don''t meet current quality standards
+- Pay good attention to detail and use reliable sources
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 03', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('Remux Tier 03', 'Remux', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', '12GaugeShotgun', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', '12GaugeShotgun', '12GaugeShotgun');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'decibeL', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'decibeL', 'decibeL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'EPSiLON', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'EPSiLON', 'EPSiLON');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'HiFi', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'HiFi', 'HiFi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'iFT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'iFT', 'iFT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'KRaLiMaRKo', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'KRaLiMaRKo', 'KRaLiMaRKo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'NTb', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'NTb', 'NTb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'PTP', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'PTP', 'PTP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'SumVision', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'SumVision', 'SumVision');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'TOA', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'TOA', 'TOA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 03', 'TRiToN', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 03', 'TRiToN', 'TRiToN');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AMZN', 'Amazon Prime Video
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Amazon_Prime_Video)
+
+Amazon Prime Video, or simply Prime Video, is an American subscription video on-demand over-the-top streaming and rental service of Amazon offered as a standalone service or as part of Amazon''s Prime subscription. The service primarily distributes films and television series produced by Amazon MGM Studios or licensed to Amazon, as Amazon Originals, with the service also hosting content from other providers, content add-ons, live sporting events, and video rental and purchasing services.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AMZN', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AMZN', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AMZN', 'Amazon', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AMZN', 'Amazon', 'Amazon');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AMZN', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AMZN', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AMZN', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AMZN', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BHDStudio', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('BHDStudio', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BHDStudio', 'BHDStudio', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BHDStudio', 'BHDStudio', 'BHDStudio');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SHO', 'SHOWTIME
 
 From Wikipedia, the free encyclopedia ()
 
-Viu (pronounced as view) is a Hong Kong-based over-the-top (OTT) video streaming provider, Viu delivers content in different genres from Asia''s top content providers with local language subtitles, as well as original production series under the Viu Original initiative (similar to original programming from other services like Disney+, Amazon Prime Video and Netflix).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VIU', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'VIU', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VIU', 'VIU', 'VIU');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'VIU Rename', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VIU', 'VIU Rename', 'VIU Rename');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VIU', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VIU', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VIU', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Repack3', '', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Repack3', 'Repack/Proper 3 or REAL.REAL.PROPER/REPACK', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Repack3', 'Repack/Proper 3 or REAL.REAL.PROPER/REPACK', 'Repack_Proper 3 or REAL.REAL.PROPER_REPACK');
+Paramount+ with Showtime, also known as Showtime (the former name of its main channel from 1976 to 2024, but still used for certain marketing and channel branding contexts), is an American premium television network and the flagship property of Showtime Networks, a sub-division of the Paramount Media Networks division of Paramount Global. Paramount+ with Showtime''s programming includes original television series produced exclusively for the linear network and developed for the co-owned Paramount+ streaming service, theatrically released and independent motion pictures, documentaries, and occasional stand-up comedy specials, made-for-TV movies and softcore adult programming.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SHO', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SHO', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'SHOWTIME', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SHO', 'SHOWTIME', 'SHOWTIME');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'SHO Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SHO', 'SHO Rename', 'SHO Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SHO', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SHO', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SHO', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('4K Remaster', '4K Remaster
+
+A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible current release of the movie.
+
+To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colors, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
+
+Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ color specification. This delivers an expanded color range closer to that contained in source material.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4K Remaster', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4K Remaster', 'Edition');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('4K Remaster', 'Resolution');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4K Remaster', 'Remaster', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4K Remaster', 'Remaster', 'Remaster');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4K Remaster', '4K', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('4K Remaster', '4K', '4K');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('4K Remaster', 'Not 4K Resolution', 'resolution', 'all', 1, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('4K Remaster', 'Not 4K Resolution', '2160p');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 07 (P2P_Scene)', 'Anime BD Tier 07
 
 Known P2P and Scene Anime groups.', 0);
@@ -5231,80 +4206,40 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 07 (P2P_Scene)', 'Bluray Remux', 'bluray_raw');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 07 (P2P_Scene)', 'DVD', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 07 (P2P_Scene)', 'DVD', 'dvd');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v4', 'v4
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Anime BD Tier 08
 
-Custom Format to cover v4 releases.', 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v4', 'v4', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v4', 'v4', 'v4');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('10bit', '10bit
-
-This Custom Format covers releases that are 10bit.', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('10bit', 'Codec');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('10bit', '10bit', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('10bit', '10bit', '10bit');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('10bit', 'hi10p', 'release_title', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('10bit', 'hi10p', 'hi10p');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remux Tier 01', 'Remux Tier 01
-
-Groups that:
-
-- Have built a strong reputation for consistently delivering excellent quality releases
-- Pay exceptional attention to detail and carefully analyze all available sources
-- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Release Group');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Release Group Tier');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Remux');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'Remux', 'quality_modifier', 'radarr', 0, 1);
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('Remux Tier 01', 'Remux', 'remux');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', '3L', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', '3L', '3L');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'BiZKiT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'BiZKiT', 'BiZKiT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'BLURANiUM', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'BLURANiUM', 'BLURANiUM');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'BMF', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'BMF', 'BMF');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'CiNEPHiLES', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'CiNEPHiLES', 'CiNEPHiLES');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'FraMeSToR', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'FraMeSToR', 'FraMeSToR (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'PiRAMiDHEAD', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'PiRAMiDHEAD', 'PiRAMiDHEAD');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'PmP', 'release_group', 'all', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'PmP', 'PmP');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'WiLDCAT', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'WiLDCAT', 'WiLDCAT');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'ZQ', 'release_group', 'radarr', 0, 0);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remux Tier 01', 'ZQ', 'ZQ');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remux Tier 01', 'Remux (sonarr)', 'source', 'sonarr', 0, 1);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Remux Tier 01', 'Remux (sonarr)', 'bluray_raw');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WETV', 'WeTV
-
-WeTV is the international version of Tencent Video, a Chinese streaming service owned by Tencent. It was launched in 2018 and offers Chinese, Korean, Thai, and Japanese dramas, movies, anime, and original productions. It serves content from various Asian countries, including Indonesia, Korea, Thailand, Malaysia, the Philippines, and Japan, and also produces local original content in the regions where it operates.
-
-For more information, visit the Tencent Video Wikipedia page (https://en.wikipedia.org/wiki/Tencent_Video).', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WETV', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WETV', 'WETV', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WETV', 'WETV', 'WETV');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WETV', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WETV', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WETV', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WETV', 'WEBRIP', 'webrip');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Dual Audio Asian', '', 0);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Dual Audio Asian', 'Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Dual Audio Asian', 'Dual Audio');
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Dual Audio Asian', 'Language');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Dual Audio', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Dual Audio Asian', 'Dual Audio', 'Dual Audio (1)');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Not Single Language Only', 'release_title', 'all', 1, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Dual Audio Asian', 'Not Single Language Only', 'Not Single Language Only');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Japanese Language', 'language', 'all', 0, 0);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Dual Audio Asian', 'Japanese Language', 'Japanese', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Chinese Language', 'language', 'all', 0, 0);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Dual Audio Asian', 'Chinese Language', 'Chinese', 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Dual Audio Asian', 'Korean Language', 'language', 'all', 0, 0);
-INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Dual Audio Asian', 'Korean Language', 'Korean', 0);
+Know groups that do mini encodes.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'AkihitoSubs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'AkihitoSubs', 'AkihitoSubs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Arukoru', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Arukoru', 'Arukoru');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EDGE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EDGE', 'EDGE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EMBER', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'EMBER', 'EMBER');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'GHOST', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'GHOST', 'GHOST');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Judas', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Judas', 'Judas');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'naiyas', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'naiyas', 'naiyas');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Nep_Blanc', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Nep_Blanc', 'Nep_Blanc');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Prof', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Prof', 'Prof');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Shirσ', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Shirσ', 'Shirσ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'Bluray Remux', 'bluray_raw');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'DVD', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08 (Mini Encodes)', 'DVD', 'dvd');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HBO', 'HBO
 
 From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/HBO)
@@ -5319,6 +4254,807 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HBO', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HBO', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HBO', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TVer', 'TVer
+
+TVer is a free, ad-supported Japanese streaming service launched in October 2015. It is a joint venture by Japan''s five major commercial TV networks — Nippon TV, TV Asahi, TBS Television, TV Tokyo, and Fuji TV. It offers dramas, variety shows, anime, and documentaries, typically available for one week after their original broadcast. It is primarily available in Japan.
+
+For more information, visit the TVer Wikipedia page (https://en.wikipedia.org/wiki/TVer_(streaming_service)).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TVer', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVer', 'TVer', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TVer', 'TVer', 'TVer');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVer', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVer', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TVer', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('TVer', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DD+ ATMOS', 'DD+ ATMOS (Dolby Digital Plus with Atmos – lossy)
+
+Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+ ATMOS', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+ ATMOS', 'Dolby');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD+ ATMOS', 'Lossy Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Dolby Digital Plus', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Dolby Digital Plus', 'Dolby Digital Plus (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'ATMOS', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'ATMOS', 'ATMOS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not TrueHD', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not TrueHD', 'Not TrueHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD+ ATMOS', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD+ ATMOS', 'Not PCM', 'Not PCM');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HLG', 'HLG
+
+This Custom Format matches HLG releases. The default score can be used to prevent downloading HLG releases on devices that can''t play them properly, e.g., the picture appears very dark and murky, making it unwatchable.
+
+HLG or HLG10 is an HDR format developed by NHK (JP) and the BBC, suitable for both video and still images. This format is backwards compatible with SDR UHD TVs but not with older SDR displays that do not support Rec. 2020 color standards.
+
+You will mainly see this with cable, satellite, and over-the-air TV broadcasts from networks like the BBC and National Geographic.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HLG', 'HDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'HLG', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'HLG', 'HLG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'Not HDR10+', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'Not HDR10+', 'Not HDR10+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'Not HDR10', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'Not HDR10', 'Not HDR10');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HLG', 'Not PQ', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HLG', 'Not PQ', 'Not PQ');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Bilibili', 'Bilibili
+
+From Wikipedia, the free encyclopedia (https://www.wikiwand.com/en/Bilibili)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Bilibili', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Bilibili', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Bilibili', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Bilibili', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Bilibili', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Bilibili', 'Bilibili', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Bilibili', 'Bilibili', 'Bilibili');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MainFrame', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MainFrame', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MainFrame', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MainFrame', 'Resolution');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MainFrame', 'MainFrame', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MainFrame', 'MainFrame', 'MainFrame');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MainFrame', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('MainFrame', '2160p', '2160p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('3D', '3D
+
+If you prefer or not prefer 3D.
+
+You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('3D', 'Aspect Ratio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3D', '3D', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3D', '3D', '3D');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3D', 'BluRay3D', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3D', 'BluRay3D', 'BluRay3D');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('3D', 'BD3D', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('3D', 'BD3D', 'BD3D');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Single Episode', 'Single Episode
+
+!!! danger "This CF utilizes functionality only available starting in Sonarr v4.0.2.1262."
+
+This Custom Format will recognize single-episode releases, instead of multi-episode or season packs, using Sonarr''s built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Single Episode', 'Single Episode', 'release_type', 'sonarr', 0, 0);
+INSERT INTO condition_release_types (custom_format_name, condition_name, release_type) VALUES ('Single Episode', 'Single Episode', 'single_episode');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DTS X', 'DTS X (Can be either lossy or lossless depending on the underlying codec, usually DTS-HD MA for lossless or DTS-HD HRA for lossy.)
+
+DTS:X is an object-based audio codec (https://www.whathifi.com/advice/dtsx-what-it-how-can-you-get-it) which aims to create a multi-dimensional sound that “moves around you like it would in real life”.
+You may think that sounds similar to Dolby Atmos, and you’d be right, but where DTS:X''s differences lie in the required speaker configuration. While Dolby Atmos requires adding additional overhead channels to your 5.1 or 7.1 setup, DTS:X works with standard surround speaker setups – just like the one you might already have at home. It can support up to 32 speaker locations and an 11.2-channel system.
+DTS:X, like other higher-quality DTS formats (e.g. DTS-HD MA), is lossless.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DTS X', 'Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'DTS X', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'DTS X', 'DTS X');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not Basic DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not Basic DTS', 'Not Basic DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DTS X', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DTS X', 'Not PCM', 'Not PCM');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('QIBI', 'Quibi
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Quibi)
+
+Quibi (/ˈkwɪbi/ KWIB-ee) was an American short-form streaming platform, It launched in April 2020, but shut down in December 2020 after falling short of its subscriber projections.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('QIBI', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('QIBI', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('QIBI', 'Quibi', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('QIBI', 'Quibi', 'Quibi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('QIBI', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('QIBI', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('QIBI', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('QIBI', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Viki', 'Viki (Rakuten Viki)
+
+Rakuten Viki is a streaming service owned by Rakuten that specialises in Asian TV shows and films, particularly Korean, Chinese, Taiwanese, and Japanese productions. It is available worldwide and is unique for its community-created subtitles, with content available in more than 200 languages.
+
+For more information, visit the Rakuten Viki Wikipedia page (https://en.wikipedia.org/wiki/Rakuten_Viki).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Viki', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Viki', 'Viki', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Viki', 'Viki', 'Viki');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Viki', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Viki', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Viki', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Viki', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('No-RlsGroup', 'No-RlsGroup
+
+Some indexers stripped out the release group, which could result in LQ groups receiving higher scores.
+For example, many EVO releases are stripped of the group name, so they appear as "upgrades" and receive a decent score if other factors match.
+
+!!! warning
+
+    If you DO NOT use decent filenames (like not adding release groups), DO NOT add this Custom Format unless you want to upgrade them.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('No-RlsGroup', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('No-RlsGroup', 'No Parsed Group', 'release_group', 'all', 1, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('No-RlsGroup', 'No Parsed Group', 'No Parsed Group');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SYFY', 'Syfy
+
+From Wikipedia, the free encyclopedia ()
+
+Syfy is an American basic cable television channel. Launched on September 24, 1992, the channel broadcasts programming relating to the science fiction, horror, and fantasy genres.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SYFY', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SYFY', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SYFY', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'SYFY', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SYFY', 'SYFY', 'SYFY');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HDR', 'HDR
+
+All users with HDR-capable equipment should add the HDR custom format.
+
+*This is a catch-all custom format for all HDR-related formats, including those with HDR10 or HDR10+ fallback capabilities, such as DV HDR10 or DV HDR10+.*', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HDR', 'HDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'DV With HDR10 fallback', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'DV With HDR10 fallback', 'DV With HDR10 fallback');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HDR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HDR', 'HDR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HDR10', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HDR10', 'HDR10');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HDR10+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HDR10+', 'HDR10+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'HLG', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'HLG', 'HLG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'PQ', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'PQ', 'PQ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HDR', 'RlsGrp (Missing HDR)', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HDR', 'RlsGrp (Missing HDR)', 'RlsGrp (Missing HDR)');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('SDR', 'SDR
+
+This will prevent grabbing UHD/4k releases without HDR Formats.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR', 'HDR');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('SDR', 'Resolution');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('SDR', '2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR', 'HDR Formats', 'release_title', 'all', 1, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR', 'HDR Formats', 'HDR Formats');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SDR', 'SDR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SDR', 'SDR', 'SDR');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Streaming Boost', 'HD Streaming Boost
+
+Some streaming services have HD releases that are generally better than their UHD counterparts. The HD Streaming Boost custom format increases those streaming services'' scores appropriately for HD releases. Use this in conjunction with the regular streaming service custom formats.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Streaming Boost', '1080p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Streaming Boost', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Streaming Boost', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', 'Disney+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Streaming Boost', 'Disney+', 'Disney+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Streaming Boost', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Streaming Boost', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Streaming Boost', '1080p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Streaming Boost', '1080p', '1080p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WETV', 'WeTV
+
+WeTV is the international version of Tencent Video, a Chinese streaming service owned by Tencent. It was launched in 2018 and offers Chinese, Korean, Thai, and Japanese dramas, movies, anime, and original productions. It serves content from various Asian countries, including Indonesia, Korea, Thailand, Malaysia, the Philippines, and Japan, and also produces local original content in the regions where it operates.
+
+For more information, visit the Tencent Video Wikipedia page (https://en.wikipedia.org/wiki/Tencent_Video).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WETV', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WETV', 'WETV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WETV', 'WETV', 'WETV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WETV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WETV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WETV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WETV', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HMAX', 'Max (streaming service) aka HBO Max
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/HBO_Max)
+
+Max, formerly and in some markets still HBO Max, is an American subscription video on-demand over-the-top streaming service. It is a proprietary unit of Warner Bros. Discovery Global Streaming & Interactive Entertainment, which is itself a division of Warner Bros. Discovery (WBD). First launched (as HBO Max) in the United States on May 27, 2020, the service offers content from the libraries of Warner Bros., Discovery Channel, HBO, CNN, Cartoon Network, Adult Swim, Animal Planet, Eurosport, and their related brands.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HMAX', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HMAX', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'HBO Max', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HMAX', 'HBO Max', 'HBO Max');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'HMAX Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HMAX', 'HMAX Rename', 'HMAX Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HMAX', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HMAX', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Streaming Boost', 'UHD Streaming Boost
+
+Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services'' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Streaming Boost', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Streaming Boost', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Streaming Boost', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'Disney+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'Disney+', 'Disney+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'HBO Max', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'HBO Max', 'HBO Max');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'HMAX Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'HMAX Rename', 'HMAX Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'Netflix', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Streaming Boost', 'Netflix', 'Netflix');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Streaming Boost', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Streaming Boost', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Streaming Boost', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Streaming Boost', '2160p', '2160p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ATV', 'Apple TV
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Apple_TV%2B)
+
+Apple TV is Apple Inc.''s video on demand service, offering movies and TV shows that are not Apple Originals.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATV', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATV', 'Apple TV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATV', 'Apple TV', 'Apple TV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('ATV', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MAX', '', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MAX', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MAX', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'Max', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MAX', 'Max', 'Max');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'MAX Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MAX', 'MAX Rename', 'MAX Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MAX', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MAX', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MAX', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 05 (Remuxes)', 'Anime BD Tier 05
+
+Groups that are consistent and do Remuxes.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Animorphs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Animorphs', 'Animorphs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'AOmundson', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'AOmundson', 'AOmundson');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'ASC', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'ASC', 'ASC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'B00BA', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'B00BA', 'B00BA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Baws', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Baws', 'Baws');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Beatrice', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Beatrice', 'Beatrice');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Cait-Sidhe', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Cait-Sidhe', 'Cait-Sidhe');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'CsS', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'CsS', 'CsS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'CTR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'CTR', 'CTR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'D4C', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'D4C', 'D4C');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'deanzel', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'deanzel', 'deanzel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Drag', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Drag', 'Drag');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'eldon', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'eldon', 'eldon');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Freehold', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Freehold', 'Freehold');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'GHS', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'GHS', 'GHS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Hark0N', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Hark0N', 'Hark0N');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Holomux', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Holomux', 'Holomux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Judgement', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Judgement', 'Judgement');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'MC', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'MC', 'MC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'mottoj', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'mottoj', 'mottoj');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'NH', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'NH', 'NH');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'NTRM', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'NTRM', 'NTRM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'o7', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'o7', 'o7');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'QM', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'QM', 'QM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Thighs', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Thighs', 'Thighs');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'TTGA', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'TTGA', 'TTGA');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'UltraRemux', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'UltraRemux', 'UltraRemux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'WBDP', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'WBDP', 'WBDP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'WSE', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'WSE', 'WSE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Yuki', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime BD Tier 05 (Remuxes)', 'Yuki', 'Yuki');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05 (Remuxes)', 'Bluray Remux', 'bluray_raw');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 05 (Remuxes)', 'DVD', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05 (Remuxes)', 'DVD', 'dvd');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH BSL', 'BSL (British Sign Language)
+
+BSL is a sign language used across the United Kingdom. It uses a two-handed alphabet and is part of the BANZSL language family, alongside Australian and New Zealand sign languages. BSL relies on body movement and hand shapes to convey meaning, and often follows a topic-comment sentence structure.
+
+For more information, visit the British Sign Language Wikipedia page (https://en.wikipedia.org/wiki/British_Sign_Language).', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH BSL', 'British Sign Language', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH BSL', 'British Sign Language', 'British Sign Language');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Generated Dynamic HDR', 'Generated Dynamic HDR
+
+- A collection of groups known for generating their own dynamic HDR metadata—Dolby Vision and/or HDR10+.
+- This generated dynamic HDR metadata does not come from official retail sources (discs or streaming services), so it is usually undesirable. Because of the substantial effort needed and the almost impossible task of reliably ensuring quality without reviewing each movie manually.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Generated Dynamic HDR', 'HDR');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Generated Dynamic HDR', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'BiTOR', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'BiTOR', 'BiTOR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'DepraveD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'DepraveD', 'DepraveD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'Flights', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'Flights', 'Flights');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'GuyZo', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'GuyZo', 'GuyZo (Group)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'SasukeducK', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'SasukeducK', 'SasukeducK');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'tarunk9c', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'tarunk9c', 'tarunk9c');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'VD0N', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VD0N', 'VD0N');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'VECTOR', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VECTOR', 'VECTOR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'VisionXpert', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VisionXpert', 'VisionXpert');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'HDR10+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'HDR10+', '(R) HDR10+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Generated Dynamic HDR', 'DV', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'DV', 'DV');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('10bit', '10bit
+
+This Custom Format covers releases that are 10bit.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('10bit', 'Codec');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('10bit', '10bit', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('10bit', '10bit', '10bit');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('10bit', 'hi10p', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('10bit', 'hi10p', 'hi10p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('ATMOS (undefined)', 'ATMOS (undefined) (Atmos is an object-based audio format that can be paired with lossless TrueHD or lossy DD+.)
+
+This custom format covers cases where _ONLY_ "Atmos" is specified in the release title, without noting DD+ (Lossy) or TrueHD (Lossless).
+
+!!! note
+
+    Apply the same score as Lossy (DD+) Atmos. On import, it will be updated to reflect either lossy or lossless based on the media''s info using ffprobe.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATMOS (undefined)', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('ATMOS (undefined)', 'Dolby');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'ATMOS', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'ATMOS', 'ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not PCM', 'Not PCM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not RlsGrp (Atmos Only)', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not RlsGrp (Atmos Only)', 'Not RlsGrp (Atmos Only)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('ATMOS (undefined)', 'Not TrueHD', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('ATMOS (undefined)', 'Not TrueHD', 'Not TrueHD');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Bluray Tier 01', 'HD Bluray Tier 01
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Optimize their releases whilst keeping them transparent, using high-quality sources
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 01', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('HD Bluray Tier 01', 'Not REMUX', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'BBQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'BBQ', 'BBQ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'BMF', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'BMF', 'BMF');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'c0kE', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'c0kE', 'c0kE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Chotab', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'Chotab', 'Chotab');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'CRiSC', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'CRiSC', 'CRiSC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'CtrlHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'CtrlHD', 'CtrlHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'D-Z0N3', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'D-Z0N3', 'D-Z0N3');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Dariush', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'Dariush', 'Dariush');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'decibeL', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'decibeL', 'decibeL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'DON', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'DON', 'DON');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'EbP', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'EbP', 'EbP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'EDPH', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'EDPH', 'EDPH');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Geek', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'Geek', 'Geek');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'LolHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'LolHD', 'LolHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'NCmt', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'NCmt', 'NCmt');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'NTb', 'release_group', 'sonarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'NTb', 'NTb');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'PTer', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'PTer', 'PTer');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'TayTO', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'TayTO', 'TayTO');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'TDD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'TDD', 'TDD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'TnP', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'TnP', 'TnP');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'VietHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'VietHD', 'VietHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'ZoroSenpai', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'ZoroSenpai', 'ZoroSenpai');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'ZQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 01', 'ZQ', 'ZQ');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Not 2160p', 'resolution', 'all', 1, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Bluray Tier 01', 'Not 2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'BLURAY', 'source', 'all', 0, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 01', 'BLURAY', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 01', 'Not REMUX (sonarr)', 'source', 'sonarr', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 01', 'Not REMUX (sonarr)', 'bluray_raw');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FanSUB', 'FanSUB
+
+Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so-called FastSUBs.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FanSUB', 'FanSUB', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FanSUB', 'FanSUB', 'FanSUB');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Black and White Editions', 'Black and White Editions
+
+Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Blackout/B&W/Black&Chrome', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Blackout/B&W/Black&Chrome', '(R) Blackout_B&W_Black&Chrome');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Monochrome', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Monochrome', 'Monochrome');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Noir', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Noir', 'Noir');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Shush Cut', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Shush Cut', 'Shush Cut');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'No/Minus Color', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'No/Minus Color', 'No_Minus Color');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Grayscale', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Grayscale', 'Grayscale');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Black and White Editions', 'Darkness and Light', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Black and White Editions', 'Darkness and Light', 'Darkness and Light');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v2', 'v2
+
+Custom Format to cover v2 releases.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v2', 'v2', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v2', 'v2', 'v2');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v2', 'Not Higher Versions', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v2', 'Not Higher Versions', 'Not Higher Versions');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WiTH ASL', 'ASL (American Sign Language)
+
+ASL is a sign language used in the United States and English-speaking Canada. It uses a one-handed alphabet and was heavily influenced by French Sign Language (LSF). ASL relies on spatial organization and facial expressions to convey meaning and grammar.
+
+For more information, visit the American Sign Language Wikipedia page (https://en.wikipedia.org/wiki/American_Sign_Language).', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WiTH ASL', 'American Sign Language', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WiTH ASL', 'American Sign Language', 'American Sign Language');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 03 (Official Subs)', 'Anime Web Tier 03
+
+Official sub groups that tend to be more consistent and release fast.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'AnoZu', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'AnoZu', 'AnoZu');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'Dooky', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Dooky', 'Dooky (Title)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'Kitsune', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'Kitsune', 'Kitsune (Title)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'SubsPlus+', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'SubsPlus+', 'SubsPlus+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'ZR', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 03 (Official Subs)', 'ZR', 'ZR');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sing-Along Versions', 'Sing-Along Versions
+
+Versions of musical films that have sing-along lyrics hardcoded into the video stream.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sing-Along Versions', 'Sing-Along', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Sing-Along Versions', 'Sing-Along', 'Sing-Along');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Criterion Collection', 'Criterion Collection
+
+The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company that focuses on licensing "important classic and contemporary films" and selling them to film aficionados. Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Criterion Collection', 'Edition');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Criterion Collection', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Criterion Collection', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'Bluray', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Criterion Collection', 'Bluray', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'DVD', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Criterion Collection', 'DVD', 'dvd');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'Criterion', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Criterion Collection', 'Criterion', 'Criterion');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'CC', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Criterion Collection', 'CC', 'CC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Criterion Collection', 'Not Criterion RlsGrp', 'release_group', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Criterion Collection', 'Not Criterion RlsGrp', 'Not Criterion RlsGrp');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('iQIY', 'iQIYI
+
+iQIYI is a Chinese streaming service offering a wide range of Asian content, including Chinese dramas, anime, variety shows, and original movies. Initially available only in China, it has since expanded to international viewers. It is owned by Baidu and is one of the largest online video platforms in the world.
+
+For more information, visit the iQIYI Wikipedia page (https://en.wikipedia.org/wiki/IQIYI).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('iQIY', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iQIY', 'iQIY', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iQIY', 'iQIY', 'iQIY');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iQIY', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iQIY', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iQIY', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('iQIY', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('WEBDL Boost', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEBDL Boost', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('WEBDL Boost', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEBDL Boost', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEBDL Boost', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEBDL Boost', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('WEBDL Boost', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('STAN', 'Stan
+
+From Wikipedia, the free encyclopedia ()
+
+Stan is an Australian over-the-top streaming service. The service offers a broad range of film and television content from both local and foreign productions, particularly from the United States and United Kingdom. Stan also includes a growing library of their own original film and television content. With over 2.6 million subscribers, as of June 2023 Stan is the fourth largest streaming service in Australia, behind Disney+, Amazon Prime Video and Netflix.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('STAN', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('STAN', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'Stan', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STAN', 'Stan', 'Stan');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'Stan Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STAN', 'Stan Rename', 'Stan Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STAN', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('STAN', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('STAN', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AUBC', 'AUBC
+
+From Wikipedia, the free encyclopedia ()
+
+The Australian Broadcasting Corporation (ABC) is the national broadcaster of Australia', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AUBC', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('AUBC', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AUBC', 'AUBC', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('AUBC', 'AUBC', 'AUBC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AUBC', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AUBC', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('AUBC', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('AUBC', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CRiT', 'Criterion Channel
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/The_Criterion_Collection#Streaming_as_The_Criterion_Channel)', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRiT', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRiT', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'CRiT', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRiT', 'CRiT', 'CRiT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRiT', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRiT', 'WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRiT', 'Not Criterion RlsGrp', 'release_group', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRiT', 'Not Criterion RlsGrp', 'Not Criterion RlsGrp');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MULTi', '', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MULTi', 'Multi', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MULTi', 'Multi', 'Multi');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 04 (Official Subs)', 'Anime Web Tier 04
+
+Official sub groups.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Anime');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEB-DL');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'Erai-Raws', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'Erai-Raws', 'Erai-Raws');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'ToonsHub', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'ToonsHub', 'ToonsHub');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'VARYG', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Anime Web Tier 04 (Official Subs)', 'VARYG', 'VARYG');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Language - Not English', 'Language: Not English (English Only)
+
+Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the English audio a score of `-10000`.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Language - Not English', 'Language');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Language - Not English', 'Not English Language', 'language', 'all', 1, 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language - Not English', 'Not English Language', 'English', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MyTVSuper', 'myTV SUPER
+
+myTV SUPER is a subscription-based streaming service launched in April 2016 by MyTV Super Limited, a subsidiary of Television Broadcasts Limited (TVB) in Hong Kong. It offers TVB dramas, variety shows, movies, anime, live sports, and horse racing content, with some content supporting up to 4K resolution. The service is primarily available in Hong Kong and Macau.
+
+For more information, visit the myTV SUPER Wikipedia page (https://en.wikipedia.org/wiki/MyTV_Super).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MyTVSuper', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MyTVSuper', 'MyTVSuper', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MyTVSuper', 'MyTVSuper', 'MyTVSuper');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MyTVSuper', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MyTVSuper', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MyTVSuper', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('MyTVSuper', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('6.1 Surround', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('6.1 Surround', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('6.1 Surround', 'Channel');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('6.1 Surround', '6.1 Surround', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('6.1 Surround', '6.1 Surround', '6.1 Surround');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('6.1 Surround', 'Not 7.1 Surround', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('6.1 Surround', 'Not 7.1 Surround', 'Not 7.1 Surround');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TheFarm', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('TheFarm', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TheFarm', 'TheFarm', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TheFarm', 'TheFarm', 'TheFarm');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NOW', 'NOW
+
+From Wikipedia, the free encyclopedia ()
+
+Now (formerly Now TV and often stylised as NOW) is a subscription over-the-top streaming television service operated by British satellite television provider Sky Group.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('NOW', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'NOW', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NOW', 'NOW', 'NOW');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'NOW Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NOW', 'NOW Rename', 'NOW Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NOW', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('NOW', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Special Edition', 'Special Edition
+
+Custom format that matches various special editions (non-theatrical edition)
+
+- The Director''s Cut is the version edited by the Director, usually for additional home media releases.
+- An Extended Cut is usually any version of the film that is longer than the theatrical cut (though in very rare cases, its shorter).', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Special Edition', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Special Edition', 'Special Edition');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not IMAX Edition', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not IMAX Edition', 'Not IMAX Edition');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not Open Matte', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not Open Matte', 'Not Open Matte');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not Theatrical', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not Theatrical', 'Not Theatrical');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Special Edition', 'Not Extended Clip', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Special Edition', 'Not Extended Clip', 'Not Extended Clip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DMM-TV', 'DMM TV
+
+DMM TV is a Japanese streaming service by DMM.com, offering anime, movies, dramas, and variety shows. It is especially popular for its large anime library. Content is primarily aimed at viewers in Japan.
+
+For more information, visit the DMM TV Wikipedia page (https://en.wikipedia.org/wiki/DMM.com).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DMM-TV', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DMM-TV', 'DMM-TV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DMM-TV', 'DMM-TV', 'DMM-TV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DMM-TV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DMM-TV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DMM-TV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DMM-TV', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('BW', 'Black & White Versions
+
+Some shows are released in both Color and Black & White versions. Users who prefer the color version should keep the default negative score of -10000. Since Sonarr doesn’t support editions, if you prefer the Black & White version, assign a positive score (1-5 should be enough) to this Custom Format. Sonarr will then prefer the Black & White releases, and the Custom Format will also be used in your naming scheme.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('BW', 'Blackout/B&W/Black&Chrome', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('BW', 'Blackout/B&W/Black&Chrome', '(S) Blackout_B&W_Black&Chrome');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VRV', 'VRV
+
+From Wikipedia, the free encyclopedia ()', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VRV', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('VRV', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'VRV', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VRV', 'VRV', 'VRV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VRV', 'WEB', 'television');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VRV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VRV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('VRV', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('YOUKU', 'Youku
+
+Youku is one of China''s leading video streaming platforms, founded in 2006 and headquartered in Beijing. It has been part of the Alibaba Group since its acquisition in 2015. It offers original TV dramas, variety shows, and licensed international content, including Korean dramas, Japanese anime, and selected Western series. The service is primarily aimed at audiences in China.
+
+For more information, visit the Youku Wikipedia page (https://en.wikipedia.org/wiki/Youku).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('YOUKU', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('YOUKU', 'YOUKU', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('YOUKU', 'YOUKU', 'YOUKU');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('YOUKU', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('YOUKU', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('YOUKU', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('YOUKU', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 01', 'UHD Bluray Tier 01
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Optimize their releases whilst keeping them transparent, using high-quality sources
+- Make releases that contain lossless audio tracks where available
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 01', 'UHD Bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 01', 'Not REMUX', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'Not WEBDL', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 01', 'Not WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'Not WEBRIP', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 01', 'Not WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Bluray Tier 01', '2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'CtrlHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'CtrlHD', 'CtrlHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'MainFrame', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'MainFrame', 'MainFrame');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'DON', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'DON', 'DON');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 01', 'W4NK3R', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 01', 'W4NK3R', 'W4NK3R');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('CRAV', 'CRAVE
+
+From Wikipedia, the free encyclopedia ()
+
+Crave (originally CraveTV) is a Canadian subscription video on demand service. The service competes directly with other subscription-based over-the-top streaming services operating in Canada, primarily against American-based services.
+The service features Bell Media original programming, exclusive Canadian access to programming acquired from several U.S. television and streaming services, and various theatrically-released films. Crave''s major programming supplier is Warner Bros. Discovery (HBO / Max and Warner Bros. films). Starz, offered in partnership with Lionsgate.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRAV', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('CRAV', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'Crave', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRAV', 'Crave', 'Crave');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'Crave Rename', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('CRAV', 'Crave Rename', 'Crave Rename');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRAV', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('CRAV', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('CRAV', 'WEBRIP', 'webrip');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('RED', 'Youtube Red
 
 From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/YouTube_Premium)', 1);
@@ -5331,6 +5067,229 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('RED', 'WEBDL', 'web_dl');
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('RED', 'WEBRIP', 'source', 'all', 0, 0);
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('RED', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 (no HDR_DV)', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'Codec');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'HEVC');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'h265');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (no HDR_DV)', 'x265');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR_DV)', 'x265/HEVC', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (no HDR_DV)', 'x265/HEVC', 'x265_HEVC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR_DV)', 'Not HDR/DV', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (no HDR_DV)', 'Not HDR/DV', 'Not HDR_DV');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR_DV)', 'Not 2160p', 'resolution', 'all', 1, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('x265 (no HDR_DV)', 'Not 2160p', '2160p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DD', 'DD (Dolby Digital – lossy)
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Dolby_Digital)
+
+Dolby Digital, also known as Dolby AC-3, is a lossy audio compression format.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD', 'Dolby');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DD', 'Lossy Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Basic Dolby Digital', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Basic Dolby Digital', 'Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not FLAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not FLAC', 'Not FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DD', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DD', 'Not PCM', 'Not PCM');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 (HD)', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'Codec');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'HEVC');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'h265');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x265 (HD)', 'x265');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (HD)', 'x265/HEVC', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (HD)', 'x265/HEVC', 'x265_HEVC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (HD)', 'Not 2160p', 'resolution', 'all', 1, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('x265 (HD)', 'Not 2160p', '2160p');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Multi-Episode', 'Multi-Episode
+
+!!! danger "This CF utilizes functionality only available in Sonarr v4.0.2.1262 or later."
+
+This Custom Format will recognize multi-episode releases (e.g. episodes named with ''S01E01E02''), instead of single-episode or season packs, using Sonarr''s built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Multi-Episode', 'Multi-Episode', 'release_type', 'sonarr', 0, 0);
+INSERT INTO condition_release_types (custom_format_name, condition_name, release_type) VALUES ('Multi-Episode', 'Multi-Episode', 'multi_episode');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Uncensored', 'Uncensored
+
+This Custom Format covers releases that are uncensored.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Uncensored', 'Uncensored', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Uncensored', 'Uncensored', 'Uncensored');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 02', 'UHD Bluray Tier 02
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Use high-quality sources
+- Make releases that contain lossless audio tracks where available
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('UHD Bluray Tier 02', 'UHD Bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 02', 'Not REMUX', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'Not WEBDL', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 02', 'Not WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'Not WEBRIP', 'source', 'all', 1, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Bluray Tier 02', 'Not WEBRIP', 'webrip');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', '2160p', 'resolution', 'all', 0, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('UHD Bluray Tier 02', '2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('UHD Bluray Tier 02', 'HQMUX', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('UHD Bluray Tier 02', 'HQMUX', 'HQMUX');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FLAC', 'FLAC (Free Lossless Audio Codec – lossless)
+
+FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3 - but lossless, meaning that the audio compressed with FLAC does not receive any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FLAC', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FLAC', 'Lossless Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'FLAC', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'FLAC', 'FLAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not PCM', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not PCM', 'Not PCM');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not AAC', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not AAC', 'Not AAC');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not DTS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not DTS', 'Not DTS');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not TrueHD/ATMOS', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not TrueHD/ATMOS', 'Not TrueHD_ATMOS (1)');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not Basic Dolby Digital', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FLAC', 'Not Dolby Digital Plus', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FLAC', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VP9', 'VP9
+
+- This is a new codec and you need modern devices that support it.
+- We also had reports of playback/transcoding issues.
+- No respectable release group is using it (yet).
+- It''s better to ignore this new codec to prevent compatibility issues.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VP9', 'VP9', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VP9', 'VP9', 'VP9');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Language - Not Original', 'Language: Not Original (Original Only)
+
+Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the original audio a score of `-10000`.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Language - Not Original', 'Language');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Language - Not Original', 'Not Original Language', 'language', 'all', 1, 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language - Not Original', 'Not Original Language', 'Original', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('MP3', 'MP3 (MPEG-1 Audio Layer III – lossy)
+
+MP3 (MPEG-1 and/or MPEG-2 Audio Layer 3) is a lossy data compression format for audio.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MP3', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('MP3', 'Lossy Audio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('MP3', 'MP3', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('MP3', 'MP3', 'MP3');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Line_Mic Dubbed', 'Line/Mic Dubbed
+
+- This seems to be often used with German releases, and this will block the low-quality audio.
+- Line Dubbed = Sound extracted in the cinema by cable.
+- Mic Dubbed = Sound extracted in the cinema by a microphone.', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Line_Mic Dubbed', 'Line Dubbed', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Line_Mic Dubbed', 'Line Dubbed', 'Line Dubbed');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Line_Mic Dubbed', 'Mic Dubbed', 'release_title', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Line_Mic Dubbed', 'Mic Dubbed', 'Mic Dubbed');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('DSNP', 'Disney+
+
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Disney%2B)
+
+Disney+ is an American subscription video on-demand over-the-top streaming media service owned and operated by Disney Streaming, the streaming division of Disney Entertainment, a major business segment of the Walt Disney Company.The service primarily distributes films and television shows produced by Walt Disney Studios and Disney Television Studios, with dedicated content hubs for Disney''s flagship brands; Disney, Pixar, Marvel, Star Wars, National Geographic, and Hulu as well as showcasing original and exclusive films and television shows.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DSNP', 'Source');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('DSNP', 'Streaming Service');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSNP', 'Disney+', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('DSNP', 'Disney+', 'Disney+');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSNP', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSNP', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('DSNP', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DSNP', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HD Bluray Tier 03', 'HD Bluray Tier 03
+
+Groups that:
+
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Pay good attention to detail and use reliable sources
+- Groups that have been added in conjunction with specific quality profiles
+- Follow the Contributing General Guidelines (https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', '2160p');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Bluray');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Release Group');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Release Group Tier');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Remux');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Resolution');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('HD Bluray Tier 03', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'BLURAY', 'source', 'all', 0, 1);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Bluray Tier 03', 'BLURAY', 'bluray');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('HD Bluray Tier 03', 'Not REMUX', 'remux');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'Not 2160p', 'resolution', 'all', 1, 1);
+INSERT INTO condition_resolutions (custom_format_name, condition_name, resolution) VALUES ('HD Bluray Tier 03', 'Not 2160p', '2160p');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'BHDStudio', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'BHDStudio', 'BHDStudio');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'hallowed', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'hallowed', 'hallowed');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'HiFi', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'HiFi', 'HiFi');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'HONE', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'HONE', 'HONE');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'LoRD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'LoRD', 'LoRD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'playHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'playHD', 'playHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'SPHD', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'SPHD', 'SPHD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HD Bluray Tier 03', 'W4NK3R', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HD Bluray Tier 03', 'W4NK3R', 'W4NK3R');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Asian LQ', 'Asian LQ
+
+A collection of Asian release groups that either do not provide subtitles or are groups that cause issues during importing.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Asian LQ', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'AppleTor', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'AppleTor', 'AppleTor');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'Luvmichelle', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'Luvmichelle', 'Luvmichelle');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'MagicStar', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'MagicStar', 'MagicStar');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'NEXT', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'NEXT', 'NEXT');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'Taengoo', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'Taengoo', 'Taengoo');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'unco', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'unco', 'unco');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Asian LQ', 'unco@AvistaZ', 'release_group', 'all', 0, 0);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Asian LQ', 'unco@AvistaZ', 'unco@AvistaZ');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Opus', 'Opus (Highly efficient lossy codec)
+
+From Wikipedia, the free encyclopedia ()
+
+Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors. Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Lossy Audio');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Opus', 'Opus', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Opus', 'Opus', 'Opus');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Opus', 'Not OPUS Release Group', 'release_group', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Opus', 'Not OPUS Release Group', 'Not OPUS Release Group');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HFR', 'HFR
+
+HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, which could result in smoother and more detailed motion.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HFR', 'HFR', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HFR', 'HFR', 'HFR');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('hallowed', '', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('hallowed', 'Release Group');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('hallowed', 'hallowed', 'release_group', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('hallowed', 'hallowed', 'hallowed');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('VC-1', 'VC-1
 
 From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/VC-1)
@@ -5342,18 +5301,59 @@ When it comes to remuxing, many release groups upgrade older VC-1 encoded conten
 If you are looking for better quality versions of films or shows that were originally released in VC-1, it''s common for modern remuxes to include AVC encoding, making them more compatible with current playback devices and ensuring a better viewing experience.', 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VC-1', 'VC-1', 'release_title', 'all', 0, 1);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VC-1', 'VC-1', 'VC-1');
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('IP', 'BBC iPlayer aka iP
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Remaster', 'Remaster
 
-From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/BBC_iPlayer)
+From Wikipedia, the free encyclopedia (https://en.wikipedia.org/wiki/Remaster)
 
-BBC iPlayer is a video on demand service from the BBC. iPlayer services delivered to UK-based viewers feature no commercial advertising.', 1);
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('IP', 'Source');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IP', 'BBC iPlayer', 'release_title', 'all', 0, 1);
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('IP', 'BBC iPlayer', 'BBC iPlayer');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IP', 'WEBDL', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('IP', 'WEBDL', 'web_dl');
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('IP', 'WEBRIP', 'source', 'all', 0, 0);
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('IP', 'WEBRIP', 'webrip');
+For the software term, see Software remastering.
+Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remaster', 'Edition');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remaster', 'Remaster', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remaster', 'Remaster', 'Remaster');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Remaster', 'Not 4K Remaster', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Remaster', 'Not 4K Remaster', 'Not 4K Remaster');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Extras', 'Extras
+
+This Custom Format is used to prevent from grabbing releases containing only extras (bonus footage, outtakes, etc).', 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Extras', 'Extras', 'release_title', 'radarr', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Extras', 'Extras', '(R) Extras');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Extras', 'Extras (sonarr)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Extras', 'Extras (sonarr)', '(S) Extras');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Theatrical Cut', 'Theatrical Cut
+
+The Theatrical Cut is the film''s version shown in the cinemas.', 0);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Theatrical Cut', 'Edition');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Theatrical Cut', 'Theatrical', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Theatrical Cut', 'Theatrical', 'Theatrical');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('FOD', 'FOD (Fuji TV On Demand)
+
+FOD (Fuji TV On Demand) is a video-on-demand streaming service owned by Fuji Television Network, Inc. It was launched in 2005 and offers Japanese dramas, anime, movies, and variety shows. It is primarily aimed at viewers in Japan and focuses on content from Fuji TV''s broadcast library, including past episodes of popular series and exclusive original programming.
+
+For more information, visit the Fuji Television Wikipedia page (https://en.wikipedia.org/wiki/Fuji_Television).', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FOD', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FOD', 'FOD', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('FOD', 'FOD', 'FOD');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FOD', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FOD', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('FOD', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FOD', 'WEBRIP', 'webrip');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('v3', 'v3
+
+Custom Format to cover v3 releases.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v3', 'v3', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v3', 'v3', 'v3');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v3', 'Not Higher Versions', 'release_title', 'all', 1, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v3', 'Not Higher Versions', 'Not Higher Versions (1)');
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('friDay', 'friDay Video
+
+friDay Video is a Taiwanese streaming service owned by Far EasTone, one of Taiwan''s major telecom providers. It is Taiwan''s number one domestic streaming platform, offering movies, dramas, variety shows, live news, and anime. It is especially popular for Korean, Japanese, and local Taiwanese content.', 1);
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('friDay', 'Source');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('friDay', 'friDay', 'release_title', 'all', 0, 1);
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('friDay', 'friDay', 'friDay');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('friDay', 'WEBDL', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('friDay', 'WEBDL', 'web_dl');
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('friDay', 'WEBRIP', 'source', 'all', 0, 0);
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('friDay', 'WEBRIP', 'webrip');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Non-Latin Scripts', 'Matches releases containing non-Latin scripts (Chinese, Korean, Arabic, Cyrillic, etc.) in the title.', 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Non-Latin Scripts', 'Non-Latin Scripts', 'release_title', 'all', 0, 1);
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Non-Latin Scripts', 'Non-Latin Scripts', 'Non-Latin Scripts');
